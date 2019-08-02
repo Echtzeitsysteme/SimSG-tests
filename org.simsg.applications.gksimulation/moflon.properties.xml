@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.core.propertycontainer:MoflonPropertiesContainer
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:org.moflon.core.propertycontainer="platform:/plugin/org.moflon.core.propertycontainer/model/Propertycontainer.ecore"
+    projectName="org.simsg.applications.gksimulation">
+  <importMappings
+      key="platform:/resource/org.simsg.applications.gkmodel"
+      value="org.simsg.applications.gkmodel"/>
+  <importMappings
+      key="Gkmodel"
+      value="org.simsg.applications.gkmodel"/>
+  <importMappings
+      key="gkmodel"
+      value="org.simsg.applications.gkmodel"/>
+  <importMappings
+      key="platform:/resource/org.simsg.applications.gkmodel/model/gkmodel"
+      value="org.simsg.applications.gkmodel"/>
+</org.moflon.core.propertycontainer:MoflonPropertiesContainer>

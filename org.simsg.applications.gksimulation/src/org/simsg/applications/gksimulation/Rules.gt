@@ -1,0 +1,12 @@
+import "platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore"
+
+pattern ktXbound () {
+	k : K {
+		-a_x->t
+	}
+	
+	t : T {
+		-x_a->k
+	} 
+}
+ 
