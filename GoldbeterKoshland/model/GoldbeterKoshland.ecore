@@ -23,7 +23,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="a_y" eType="#//Agent"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="State" abstract="true"/>
-  <eClassifiers xsi:type="ecore:EClass" name="P" eSuperTypes="#//Mixture">
+  <eClassifiers xsi:type="ecore:EClass" name="P" eSuperTypes="#//Agent">
     <eStructuralFeatures xsi:type="ecore:EReference" name="a_y" eType="#//Agent"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="a_x" eType="#//Agent"/>
   </eClassifiers>

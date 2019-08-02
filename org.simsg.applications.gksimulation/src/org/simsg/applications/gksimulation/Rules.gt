@@ -1,6 +1,6 @@
 import "platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore"
 
-pattern ktXbound () {
+abstract pattern ktXbound () {
 	k : K {
 		-a_x->t
 	}
@@ -8,5 +8,198 @@ pattern ktXbound () {
 	t : T {
 		-x_a->k
 	} 
+}
+
+abstract pattern ktYbound () {
+	k : K {
+		-a_y->t
+	}
+	
+	t : T {
+		-y_a->k
+	} 
+}
+
+abstract pattern ptXbound () {
+	p : P {
+		-a_x->t
+	}
+	
+	t : T {
+		-x_a->p 
+	} 
+}
+
+abstract pattern ptYbound () {
+	p : P {
+		-a_y->t
+	}
+	
+	t : T {
+		-y_a->p
+	} 
+}
+
+abstract pattern tBound () {
+	a : Agent
+	
+	t : T {
+		- x_a -> a
+		- y_a -> a	
+	}
+}
+
+condition ktXfree = forbid ktXbound
+condition ktYfree = forbid ktYbound
+condition ptXfree = forbid ptXbound
+condition ptYfree = forbid ptYbound
+condition tUnbound = forbid tBound
+
+pattern tPP() {
+	ps : P_s
+	t : T {
+		-x_p->ps
+		-y_p->ps
+	}
+}
+
+pattern tPPfree() {
+	ps : P_s
+	t : T {
+		-x_p->ps
+		-y_p->ps
+	}
+} when tUnbound
+
+rule ktXfwd() {
+	k : K {
+		++ -a_x->t
+	}
+	
+	t : T {
+		++ -x_a->k
+	} 
+}when ktXfree
+
+rule ktXbwd() {
+	k : K {
+		-a_x->t
+		-- -a_x->t
+	}
+	
+	t : T {
+		-x_a->k
+		-- -x_a->k
+	}
+}
+
+rule ktYfwd() {
+	k : K {
+		++ -a_y->t
+	}
+	
+	t : T {
+		++ -y_a->k
+	} 
+}when ktYfree
+
+rule ktYbwd() {
+	k : K {
+		-a_y->t
+		-- -a_y->t
+	}
+	
+	t : T {
+		-y_a->k
+		-- -y_a->k
+	}
+}
+
+rule ptXfwd() {
+	p : P {
+		++ -a_x->t
+	}
+	
+	t : T {
+		++ -x_a->p
+	} 
+}when ptXfree
+
+rule ptXbwd() {
+	p : P {
+		-a_x->t
+		-- -a_x->t
+	}
+	
+	t : T {
+		-x_a->p
+		-- -x_a->p
+	}
+}
+
+rule ptYfwd() {
+	p : P {
+		++ -a_y->t
+	}
+	
+	t : T {
+		++ -y_a->p
+	} 
+}when ptYfree
+
+rule ptYbwd(){
+	p : P {
+		-a_y->t
+		-- -a_y->t
+	}
+	
+	t : T {
+		-y_a->p
+		-- -y_a->p
+	}
+}
+
+rule ktXactivate() refines ktXbound{
+	us : U_s
+	ps : P_s
+	
+	t : T{
+		-x_u->us
+		++ -x_p->ps
+		-- -x_u->us
+	}
+}
+
+rule ktYactivate() refines ktYbound{
+	us : U_s
+	ps : P_s
+	
+	t : T{
+		-y_u->us
+		++ -y_p->ps
+		-- -y_u->us
+	}
+}
+
+rule ptXdeactivate() refines ptXbound{
+	us : U_s
+	ps : P_s
+	
+	t : T{
+		-x_p->ps
+		++ -x_u->us
+		-- -x_p->ps
+	}
+}
+
+rule ktYdeactivate() refines ptYbound{
+	us : U_s
+	ps : P_s
+	
+	t : T{
+		-y_p->ps
+		++ -y_u->us
+		-- -y_p->ps
+	}
 }
  

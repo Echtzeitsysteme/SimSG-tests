@@ -1,7 +1,6 @@
 Manifest-Version: 1.0
 Automatic-Module-Name: org.simsg.applications.gksimulation
-Bundle-SymbolicName: org.simsg.applications.gksimulation; singleton:=t
- rue
+Bundle-SymbolicName: org.simsg.applications.gksimulation; singleton:=true
 Export-Package: org.simsg.applications.gksimulation.api,
  org.simsg.applications.gksimulation.api.matches,
  org.simsg.applications.gksimulation.api.rules
@@ -16,4 +15,5 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: My Company
-Import-Package: org.apache.log4j,org.apache.commons.logging
+Import-Package: org.apache.log4j,
+ org.apache.commons.logging
