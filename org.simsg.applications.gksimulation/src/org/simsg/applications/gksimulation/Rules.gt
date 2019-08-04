@@ -1,42 +1,18 @@
 import "platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore"
 
-abstract pattern ktXbound () {
-	k : K {
-		-a_x->t
-	}
+abstract pattern xBound () {
+	a : Agent
 	
 	t : T {
-		-x_a->k
+		-x_a->a
 	} 
 }
 
-abstract pattern ktYbound () {
-	k : K {
-		-a_y->t
-	}
+abstract pattern yBound () {
+	a : Agent
 	
 	t : T {
-		-y_a->k
-	} 
-}
-
-abstract pattern ptXbound () {
-	p : P {
-		-a_x->t
-	}
-	
-	t : T {
-		-x_a->p 
-	} 
-}
-
-abstract pattern ptYbound () {
-	p : P {
-		-a_y->t
-	}
-	
-	t : T {
-		-y_a->p
+		-y_a->a
 	} 
 }
 
@@ -49,10 +25,8 @@ abstract pattern tBound () {
 	}
 }
 
-condition ktXfree = forbid ktXbound
-condition ktYfree = forbid ktYbound
-condition ptXfree = forbid ptXbound
-condition ptYfree = forbid ptYbound
+condition xFree = forbid xBound
+condition yFree = forbid yBound
 condition tUnbound = forbid tBound
 
 pattern tPP() {
@@ -79,7 +53,7 @@ rule ktXfwd() {
 	t : T {
 		++ -x_a->k
 	} 
-}when ktXfree
+}when xFree
 
 rule ktXbwd() {
 	k : K {
@@ -101,7 +75,7 @@ rule ktYfwd() {
 	t : T {
 		++ -y_a->k
 	} 
-}when ktYfree
+}when yFree
 
 rule ktYbwd() {
 	k : K {
@@ -123,7 +97,7 @@ rule ptXfwd() {
 	t : T {
 		++ -x_a->p
 	} 
-}when ptXfree
+}when xFree
 
 rule ptXbwd() {
 	p : P {
@@ -145,7 +119,7 @@ rule ptYfwd() {
 	t : T {
 		++ -y_a->p
 	} 
-}when ptYfree
+}when yFree
 
 rule ptYbwd(){
 	p : P {
@@ -159,44 +133,68 @@ rule ptYbwd(){
 	}
 }
 
-rule ktXactivate() refines ktXbound{
+rule ktXactivate(){
 	us : U_s
 	ps : P_s
 	
+	k : K {
+		-a_x->t
+	}
+	
 	t : T{
+		-x_a->k
+		
 		-x_u->us
 		++ -x_p->ps
 		-- -x_u->us
 	}
 }
 
-rule ktYactivate() refines ktYbound{
+rule ktYactivate() {
 	us : U_s
 	ps : P_s
 	
+	k : K {
+		-a_y->t
+	}
+	
 	t : T{
+		-y_a->k
+		
 		-y_u->us
 		++ -y_p->ps
 		-- -y_u->us
 	}
 }
 
-rule ptXdeactivate() refines ptXbound{
+rule ptXdeactivate() {
 	us : U_s
 	ps : P_s
 	
+	p : P {
+		-a_x->t
+	}
+	
 	t : T{
+		-x_a->p
+		
 		-x_p->ps
 		++ -x_u->us
 		-- -x_p->ps
 	}
 }
 
-rule ktYdeactivate() refines ptYbound{
+rule ptYdeactivate() {
 	us : U_s
 	ps : P_s
 	
+	p : P {
+		-a_y->t
+	}
+	
 	t : T{
+		-y_a->p
+		
 		-y_p->ps
 		++ -y_u->us
 		-- -y_p->ps
