@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GoldbeterKoshland:Mixture xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GoldbeterKoshland="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland" xsi:schemaLocation="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland java://GoldbeterKoshland.GoldbeterKoshlandPackage">
+<GoldbeterKoshland:Mixture xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GoldbeterKoshland="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore" xsi:schemaLocation="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore java://GoldbeterKoshland.GoldbeterKoshlandPackage">
   <agents xmi:type="GoldbeterKoshland:K"/>
   <agents xmi:type="GoldbeterKoshland:P"/>
   <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0"/>

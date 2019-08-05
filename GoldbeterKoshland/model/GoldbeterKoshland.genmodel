@@ -15,22 +15,20 @@
     </genClasses>
     <genClasses ecoreClass="GoldbeterKoshland.ecore#//P_s"/>
     <genClasses ecoreClass="GoldbeterKoshland.ecore#//T">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//T/x_a"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//T/y_a"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//T/x_u"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//T/x_p"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//T/y_u"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//T/y_p"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//T/x"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//T/y"/>
     </genClasses>
     <genClasses ecoreClass="GoldbeterKoshland.ecore#//U_s"/>
     <genClasses ecoreClass="GoldbeterKoshland.ecore#//K">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//K/a_x"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//K/a_y"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//K/a"/>
     </genClasses>
     <genClasses image="false" ecoreClass="GoldbeterKoshland.ecore#//State"/>
     <genClasses ecoreClass="GoldbeterKoshland.ecore#//P">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//P/a_y"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//P/a_x"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GoldbeterKoshland.ecore#//P/a"/>
     </genClasses>
     <genClasses image="false" ecoreClass="GoldbeterKoshland.ecore#//Agent"/>
   </genPackages>

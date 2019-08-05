@@ -1,32 +1,52 @@
 import "platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore"
 
-abstract pattern xBound () {
-	a : Agent
-	
-	t : T {
-		-x_a->a
-	} 
-}
-
-abstract pattern yBound () {
-	a : Agent
-	
-	t : T {
-		-y_a->a
-	} 
-}
-
 abstract pattern tBound () {
-	a : Agent
+	a1 : Agent
+	a2 : Agent
 	
 	t : T {
-		- x_a -> a
-		- y_a -> a	
+		- x -> a1
+		- y -> a2	
 	}
 }
 
-condition xFree = forbid xBound
-condition yFree = forbid yBound
+abstract pattern kBound () {
+	k : K {
+		-a->a 
+	}
+	
+	a : Agent
+}
+
+abstract pattern pBound () {
+	p : P {
+		-a->a 
+	}
+	
+	a : Agent
+}
+
+abstract pattern tXBound () {
+	t : T {
+		-x->a
+	}
+	
+	a : Agent
+}
+
+abstract pattern tYBound () {
+	t : T {
+		-y->a
+	}
+	
+	a : Agent
+}
+
+condition kTxFree = forbid kBound && forbid tXBound
+condition kTyFree = forbid kBound && forbid tYBound
+condition pTxFree = forbid pBound && forbid tXBound
+condition pTyFree = forbid pBound && forbid tYBound
+
 condition tUnbound = forbid tBound
 
 pattern tPP() {
@@ -47,89 +67,81 @@ pattern tPPfree() {
 
 rule ktXfwd() {
 	k : K {
-		++ -a_x->t
+		++ -a->t
 	}
 	
 	t : T {
-		++ -x_a->k
+		++ -x->k
 	} 
-}when xFree
+}when kTxFree
 
 rule ktXbwd() {
 	k : K {
-		-a_x->t
-		-- -a_x->t
+		-- -a->t
 	}
 	
 	t : T {
-		-x_a->k
-		-- -x_a->k
+		-- -x->k
 	}
 }
 
 rule ktYfwd() {
 	k : K {
-		++ -a_y->t
+		++ -a->t
 	}
 	
 	t : T {
-		++ -y_a->k
+		++ -y->k
 	} 
-}when yFree
+}when kTyFree
 
 rule ktYbwd() {
 	k : K {
-		-a_y->t
-		-- -a_y->t
+		-- -a->t
 	}
 	
 	t : T {
-		-y_a->k
-		-- -y_a->k
+		-- -y->k
 	}
 }
 
 rule ptXfwd() {
 	p : P {
-		++ -a_x->t
+		++ -a->t
 	}
 	
 	t : T {
-		++ -x_a->p
+		++ -x->p
 	} 
-}when xFree
+}when pTxFree
 
 rule ptXbwd() {
 	p : P {
-		-a_x->t
-		-- -a_x->t
+		-- -a->t
 	}
 	
 	t : T {
-		-x_a->p
-		-- -x_a->p
+		-- -x->p
 	}
 }
 
 rule ptYfwd() {
 	p : P {
-		++ -a_y->t
+		++ -a->t
 	}
 	
 	t : T {
-		++ -y_a->p
+		++ -y->p
 	} 
-}when yFree
+}when pTyFree
 
 rule ptYbwd(){
 	p : P {
-		-a_y->t
-		-- -a_y->t
+		-- -a->t
 	}
 	
 	t : T {
-		-y_a->p
-		-- -y_a->p
+		-- -y->p
 	}
 }
 
@@ -138,13 +150,12 @@ rule ktXactivate(){
 	ps : P_s
 	
 	k : K {
-		-a_x->t
+		-a->t
 	}
 	
 	t : T{
-		-x_a->k
+		-x->k
 		
-		-x_u->us
 		++ -x_p->ps
 		-- -x_u->us
 	}
@@ -155,13 +166,12 @@ rule ktYactivate() {
 	ps : P_s
 	
 	k : K {
-		-a_y->t
+		-a->t
 	}
 	
 	t : T{
-		-y_a->k
+		-y->k
 		
-		-y_u->us
 		++ -y_p->ps
 		-- -y_u->us
 	}
@@ -172,13 +182,12 @@ rule ptXdeactivate() {
 	ps : P_s
 	
 	p : P {
-		-a_x->t
+		-a->t
 	}
 	
 	t : T{
-		-x_a->p
+		-x->p
 		
-		-x_p->ps
 		++ -x_u->us
 		-- -x_p->ps
 	}
@@ -189,13 +198,12 @@ rule ptYdeactivate() {
 	ps : P_s
 	
 	p : P {
-		-a_y->t
+		-a->t
 	}
 	
 	t : T{
-		-y_a->p
+		-y->p
 		
-		-y_p->ps
 		++ -y_u->us
 		-- -y_p->ps
 	}

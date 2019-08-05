@@ -9,7 +9,7 @@ public class Utils {
 		SimulationDefinitionGenerator gen = new SimulationDefinitionGenerator(modelName); 
 		gen.setGtRules("src-gen/org/simsg/applications/gksimulation/api/gt-rules.xmi"); 
 		gen.setIBeXPatterns("src-gen/org/simsg/applications/gksimulation/api/ibex-patterns.xmi");
-		gen.setMetaModel("F:\\Eclipse Workspaces\\SimSG_Applications\\GoldbeterKoshland\\model\\GoldbeterKoshland.ecore");
+		gen.setMetaModel("C:\\Users\\sehmes\\git\\SimSG_Applications\\GoldbeterKoshland\\model\\GoldbeterKoshland.ecore");
 		gen.setModelURI("instances/"+modelName+".xmi"); 
 		gen.addRuleRateAnnotation("ktXfwd", 1.0); 
 		gen.addRuleRateAnnotation("ktXbwd", 10.0);
@@ -27,6 +27,6 @@ public class Utils {
 		gen.addPatternObservation("tPPfree"); 
 		//gen.addTerminationConditionTime(20000); 
 		System.out.println(gen); 
-		gen.saveDefinition("models/"+modelName+".xmi"); 
+		gen.saveDefinition("models/SimulationDefinitions/"+modelName+".xmi"); 
 	}
 }
