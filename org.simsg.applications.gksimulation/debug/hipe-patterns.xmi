@@ -107,10 +107,10 @@
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPattern" name="ktYfwd" partialPatterns="//@patterns.145">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokes="//@patterns.1/@nodes.0 //@patterns.63/@nodes.1 //@patterns.144/@nodes.1 //@patterns.145/@nodes.1">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokes="//@patterns.1/@nodes.0 //@patterns.63/@nodes.0 //@patterns.144/@nodes.0 //@patterns.145/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
     </nodes>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokes="//@patterns.23/@nodes.0 //@patterns.63/@nodes.0 //@patterns.144/@nodes.0 //@patterns.145/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokes="//@patterns.23/@nodes.0 //@patterns.63/@nodes.1 //@patterns.144/@nodes.1 //@patterns.145/@nodes.1">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
     <patternInvocations xmi:type="HiPEPattern:HiPEPatternInvocation" invokedPattern="//@patterns.1" positive="false"/>
@@ -223,10 +223,10 @@
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPattern" name="ptYfwd" partialPatterns="//@patterns.149">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokes="//@patterns.9/@nodes.0 //@patterns.105/@nodes.1 //@patterns.148/@nodes.1 //@patterns.149/@nodes.1">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokes="//@patterns.9/@nodes.0 //@patterns.105/@nodes.0 //@patterns.148/@nodes.0 //@patterns.149/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
     </nodes>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokes="//@patterns.23/@nodes.0 //@patterns.105/@nodes.0 //@patterns.148/@nodes.0 //@patterns.149/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokes="//@patterns.23/@nodes.0 //@patterns.105/@nodes.1 //@patterns.148/@nodes.1 //@patterns.149/@nodes.1">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
     <patternInvocations xmi:type="HiPEPattern:HiPEPatternInvocation" invokedPattern="//@patterns.9" positive="false"/>
@@ -365,7 +365,7 @@
     <edges xmi:type="HiPEPattern:HiPEEdge" name="K_a" source="//@patterns.27/@nodes.0" target="//@patterns.27/@nodes.1">
       <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
     </edges>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.1/@nodes.0 //@patterns.142/@nodes.1 //@patterns.144/@nodes.1" invokes="//@patterns.28/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.1/@nodes.0 //@patterns.142/@nodes.1 //@patterns.144/@nodes.0" invokes="//@patterns.28/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
     </nodes>
     <nodes xmi:type="HiPEPattern:HiPENode" name="a" invokedBy="//@patterns.1/@nodes.1" invokes="//@patterns.29/@nodes.0" local="true">
@@ -714,21 +714,21 @@
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ktYfwd_40" partialPatterns="//@patterns.64 //@patterns.65" parentPattern="//@patterns.144">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.7/@nodes.1 //@patterns.144/@nodes.0" invokes="//@patterns.64/@nodes.0">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-    </nodes>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.7/@nodes.0 //@patterns.144/@nodes.1" invokes="//@patterns.65/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.7/@nodes.0 //@patterns.144/@nodes.0" invokes="//@patterns.64/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
+    </nodes>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.7/@nodes.1 //@patterns.144/@nodes.1" invokes="//@patterns.65/@nodes.0">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ktYfwd_41" parentPattern="//@patterns.63">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.63/@nodes.0">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.63/@nodes.0">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ktYfwd_42" parentPattern="//@patterns.63">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.63/@nodes.1">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.63/@nodes.1">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="pBound_43" partialPatterns="//@patterns.67 //@patterns.68" parentPattern="//@patterns.8">
@@ -757,7 +757,7 @@
     <edges xmi:type="HiPEPattern:HiPEEdge" name="P_a" source="//@patterns.69/@nodes.0" target="//@patterns.69/@nodes.1">
       <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
     </edges>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.9/@nodes.0 //@patterns.146/@nodes.0 //@patterns.148/@nodes.1" invokes="//@patterns.70/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.9/@nodes.0 //@patterns.146/@nodes.0 //@patterns.148/@nodes.0" invokes="//@patterns.70/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
     </nodes>
     <nodes xmi:type="HiPEPattern:HiPENode" name="a" invokedBy="//@patterns.9/@nodes.1" invokes="//@patterns.71/@nodes.0" local="true">
@@ -1106,21 +1106,21 @@
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ptYfwd_82" partialPatterns="//@patterns.106 //@patterns.107" parentPattern="//@patterns.148">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.15/@nodes.1 //@patterns.148/@nodes.0" invokes="//@patterns.106/@nodes.0">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-    </nodes>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.15/@nodes.0 //@patterns.148/@nodes.1" invokes="//@patterns.107/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.15/@nodes.0 //@patterns.148/@nodes.0" invokes="//@patterns.106/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
+    </nodes>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.15/@nodes.1 //@patterns.148/@nodes.1" invokes="//@patterns.107/@nodes.0">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ptYfwd_83" parentPattern="//@patterns.105">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.105/@nodes.0">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.105/@nodes.0">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ptYfwd_84" parentPattern="//@patterns.105">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.105/@nodes.1">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.105/@nodes.1">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="tBound_85" partialPatterns="//@patterns.109 //@patterns.112" parentPattern="//@patterns.16" overlaps="//@patterns.108/@nodes.0">
@@ -1399,7 +1399,7 @@
     <edges xmi:type="HiPEPattern:HiPEEdge" name="T_y" source="//@patterns.139/@nodes.0" target="//@patterns.139/@nodes.1">
       <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
     </edges>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.23/@nodes.0 //@patterns.145/@nodes.0 //@patterns.149/@nodes.0" invokes="//@patterns.140/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.23/@nodes.0 //@patterns.145/@nodes.1 //@patterns.149/@nodes.1" invokes="//@patterns.140/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
     <nodes xmi:type="HiPEPattern:HiPENode" name="a" invokedBy="//@patterns.23/@nodes.1" invokes="//@patterns.141/@nodes.0" local="true">
@@ -1434,19 +1434,19 @@
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ktYfwd_121" partialPatterns="//@patterns.63 //@patterns.27" parentPattern="//@patterns.145" overlaps="//@patterns.63/@nodes.0 //@patterns.63/@nodes.1" positive="false">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.7/@nodes.1 //@patterns.145/@nodes.0" invokes="//@patterns.63/@nodes.0">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-    </nodes>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.7/@nodes.0 //@patterns.145/@nodes.1" invokes="//@patterns.63/@nodes.1 //@patterns.27/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.7/@nodes.0 //@patterns.145/@nodes.0" invokes="//@patterns.63/@nodes.0 //@patterns.27/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
+    </nodes>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.7/@nodes.1 //@patterns.145/@nodes.1" invokes="//@patterns.63/@nodes.1">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ktYfwd_122" partialPatterns="//@patterns.144 //@patterns.139" parentPattern="//@patterns.7" overlaps="//@patterns.144/@nodes.0 //@patterns.144/@nodes.1" positive="false">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.7/@nodes.1" invokes="//@patterns.144/@nodes.0 //@patterns.139/@nodes.0">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-    </nodes>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.7/@nodes.0" invokes="//@patterns.144/@nodes.1">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="k" invokedBy="//@patterns.7/@nodes.0" invokes="//@patterns.144/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
+    </nodes>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.7/@nodes.1" invokes="//@patterns.144/@nodes.1 //@patterns.139/@nodes.0">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ptXfwd_123" partialPatterns="//@patterns.87 //@patterns.69" parentPattern="//@patterns.147" overlaps="//@patterns.87/@nodes.0 //@patterns.87/@nodes.1" positive="false">
@@ -1466,19 +1466,19 @@
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ptYfwd_125" partialPatterns="//@patterns.105 //@patterns.69" parentPattern="//@patterns.149" overlaps="//@patterns.105/@nodes.0 //@patterns.105/@nodes.1" positive="false">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.15/@nodes.1 //@patterns.149/@nodes.0" invokes="//@patterns.105/@nodes.0">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-    </nodes>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.15/@nodes.0 //@patterns.149/@nodes.1" invokes="//@patterns.105/@nodes.1 //@patterns.69/@nodes.0">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.15/@nodes.0 //@patterns.149/@nodes.0" invokes="//@patterns.105/@nodes.0 //@patterns.69/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
+    </nodes>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.15/@nodes.1 //@patterns.149/@nodes.1" invokes="//@patterns.105/@nodes.1">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="ptYfwd_126" partialPatterns="//@patterns.148 //@patterns.139" parentPattern="//@patterns.15" overlaps="//@patterns.148/@nodes.0 //@patterns.148/@nodes.1" positive="false">
-    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.15/@nodes.1" invokes="//@patterns.148/@nodes.0 //@patterns.139/@nodes.0">
-      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-    </nodes>
-    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.15/@nodes.0" invokes="//@patterns.148/@nodes.1">
+    <nodes xmi:type="HiPEPattern:HiPENode" name="p" invokedBy="//@patterns.15/@nodes.0" invokes="//@patterns.148/@nodes.0">
       <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
+    </nodes>
+    <nodes xmi:type="HiPEPattern:HiPENode" name="t" invokedBy="//@patterns.15/@nodes.1" invokes="//@patterns.148/@nodes.1 //@patterns.139/@nodes.0">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
     </nodes>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="tPPfree_127" partialPatterns="//@patterns.125 //@patterns.114" parentPattern="//@patterns.19" overlaps="//@patterns.125/@nodes.0 //@patterns.125/@nodes.1" positive="false">
