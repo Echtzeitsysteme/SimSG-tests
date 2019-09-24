@@ -11,7 +11,7 @@ import org.simsg.core.utils.Runtimer;
 
 import GoldbeterKoshland.util.ModelGenerator;
 
-public class DemoclesBenchmark {
+public class Benchmark {
 	
 	public static void main(String[] args) {
 		//createModels();
@@ -19,9 +19,11 @@ public class DemoclesBenchmark {
 		
 		SimulationConfigurator config = new SimulationConfigurator(); 
 		config.setModelFolder(System.getProperty("user.dir")+"/models"); 
-		config.setModel("default400");
+		config.setModel("default100");
 		config.setIBeXHiPEAsEngine();
 		config.setIBeXHiPEGT();
+//		config.setIBeXDemoclesAsEngine();
+//		config.setIBeXDemoclesGT();
 		config.setStochasticSimulation();
 		config.addSimpleTerminationCondition(10000, -1);
 		//config.addSimpleTerminationCondition(-1, 20.0);
@@ -36,12 +38,14 @@ public class DemoclesBenchmark {
 		sim.finish();
 		
 		System.out.println(Runtimer.getInstance().toString());
-
+		
+		
+		//rawApplications();
 	}
 	
 	public static void rawApplications() {
-		GksimulationApp app = new GksimulationDemoclesApp();
-		app.loadModel(URI.createFileURI("instances/default400.xmi"));
+		GksimulationApp app = new GksimulationHiPEApp();
+		app.loadModel(URI.createFileURI("instances/default800.xmi"));
 		
 		double superTic = System.currentTimeMillis();
 		double tic = System.currentTimeMillis();

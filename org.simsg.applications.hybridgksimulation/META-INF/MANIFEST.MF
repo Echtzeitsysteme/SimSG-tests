@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.simsg.applications.hybridgksimulation
+Bundle-SymbolicName: org.simsg.applications.hybridgksimulation; singleton:=true
+Export-Package: org.simsg.applications.hybridgksimulation.api,
+ org.simsg.applications.hybridgksimulation.api.matches,
+ org.simsg.applications.hybridgksimulation.api.rules
+Bundle-Name: org.simsg.applications.hybridgksimulation
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.emoflon.ibex.common,
+ org.emoflon.ibex.gt,
+ org.emoflon.ibex.gt.democles,
+ org.emoflon.ibex.gt.hipe,
+ GoldbeterKoshland,
+ org.simsg.core;bundle-version="1.0.0",
+ SimulationDefinition;bundle-version="0.1.0"
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: My Company
+Import-Package: org.apache.log4j,
+ org.apache.commons.logging
