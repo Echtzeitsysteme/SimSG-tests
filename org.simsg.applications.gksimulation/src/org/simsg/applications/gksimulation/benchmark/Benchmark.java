@@ -14,16 +14,17 @@ import GoldbeterKoshland.util.ModelGenerator;
 public class Benchmark {
 	
 	public static void main(String[] args) {
+
 		//createModels();
 		
 		
 		SimulationConfigurator config = new SimulationConfigurator(); 
 		config.setModelFolder(System.getProperty("user.dir")+"/models"); 
 		config.setModel("default100");
-		config.setIBeXHiPEAsEngine();
-		config.setIBeXHiPEGT();
-//		config.setIBeXDemoclesAsEngine();
-//		config.setIBeXDemoclesGT();
+//		config.setIBeXHiPEAsEngine();
+//		config.setIBeXHiPEGT();
+		config.setIBeXDemoclesAsEngine();
+		config.setIBeXDemoclesGT();
 		config.setStochasticSimulation();
 		config.addSimpleTerminationCondition(10000, -1);
 		//config.addSimpleTerminationCondition(-1, 20.0);
@@ -38,7 +39,7 @@ public class Benchmark {
 		sim.finish();
 		
 		System.out.println(Runtimer.getInstance().toString());
-		
+
 		
 		//rawApplications();
 	}

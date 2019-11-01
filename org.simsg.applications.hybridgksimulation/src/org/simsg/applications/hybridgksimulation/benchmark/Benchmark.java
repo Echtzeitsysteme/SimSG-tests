@@ -23,14 +23,11 @@ public class Benchmark {
 		
 		SimulationConfigurator config = new SimulationConfigurator(); 
 		config.setModelFolder(System.getProperty("user.dir")+"/models"); 
-		config.setModel("default100");
-//		config.setIBeXHiPEAsEngine();
-//		config.setIBeXHiPEGT();
-//		config.setIBeXDemoclesAsEngine();
-//		config.setIBeXDemoclesGT();
+		config.setModel("default1600");
 		config.setGT(HybridGkHiPEGT.class);
-//		config.setGT(HybridGkDemoclesGT.class);
 		config.setIBeXHiPEAsEngine();
+//		config.setGT(HybridGkDemoclesGT.class);
+//		config.setIBeXDemoclesAsEngine();	
 		config.setPMC(HybridGkPMC.class);
 		config.setStochasticSimulation();
 		config.addSimpleTerminationCondition(10000, -1);

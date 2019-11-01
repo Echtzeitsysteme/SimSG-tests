@@ -1,1205 +1,1205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GoldbeterKoshland:Mixture xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GoldbeterKoshland="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore" xsi:schemaLocation="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore java://GoldbeterKoshland.GoldbeterKoshlandPackage">
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.866"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.970" y="//@agents.732"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.770"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.209"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.469" y="//@agents.492"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.617"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.443"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.283" y="//@agents.706"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.26"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.140"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.396" y="//@agents.826"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.146"/>
   <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.343" y="//@agents.1099"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.993" y="//@agents.411"/>
   <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.314"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.229" y="//@agents.747"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.476"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.761"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1035" y="//@agents.552"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.341"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.760" y="//@agents.313"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.635"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.810" y="//@agents.1083"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.794"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.56"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1179" y="//@agents.898"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.785"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1139"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.619"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.947"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1130"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.984"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1085"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.389"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1063" y="//@agents.472"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.224"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1017"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.782"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1154"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.693" y="//@agents.963"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1073"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.329"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.66" y="//@agents.1147"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.254"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.763" y="//@agents.436"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1058"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.797"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.874" y="//@agents.709"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.299"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.869"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.585" y="//@agents.714"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.713"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.455"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1176" y="//@agents.423"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1079"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.881"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" y="//@agents.22"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.137"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.974"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.942" y="//@agents.579"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.326"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.493" y="//@agents.1126"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.161"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.938"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.912" y="//@agents.201"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.41"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.491"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.690" y="//@agents.1144"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.674"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1039" y="//@agents.646"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.857"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1089" y="//@agents.1050"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.158"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.998"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1182" y="//@agents.816"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.419"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.466" y="//@agents.397"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.779"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.545"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.948" y="//@agents.238"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.896"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.356"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.349"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1061"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.734"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1021" y="//@agents.825"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.986"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.671"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1104"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.860"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.649" y="//@agents.943"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1175"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.151" y="//@agents.1140"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1136"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.242"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.421" y="//@agents.310"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.482"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.449"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.997"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.461"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.128"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.450" y="//@agents.828"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.785"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.212"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1030" y="//@agents.112"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.920"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.110"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.256" y="//@agents.966"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.467"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.814" y="//@agents.1090"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1130"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1043"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.640" y="//@agents.745"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.194"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.701"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.634" y="//@agents.132"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.563"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.695"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.483" y="//@agents.672"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.389"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1157"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.547" y="//@agents.106"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1016"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.416"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.637"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.122"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.697"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1034"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.167"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.57" y="//@agents.489"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.443"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.290"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.856" y="//@agents.955"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.392"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.779"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.154" y="//@agents.877"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.434"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.962"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.474" y="//@agents.804"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.514" y="//@agents.612"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.197"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.98"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.594"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1049"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.143"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.360" y="//@agents.1180"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.287"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.75" y="//@agents.555"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.332"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1025"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.63" y="//@agents.174"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.800"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.641"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.600" y="//@agents.1153"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1010"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.278"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.654" y="//@agents.136"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.551"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1067"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.904"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.263"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.498" y="//@agents.484"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.161"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.371"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1080" y="//@agents.262"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.380"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.923"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.894" y="//@agents.1191"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1109"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.563"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.424" y="//@agents.843"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.488"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.773"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.515"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.863"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.933" y="//@agents.780"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1190"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.642" y="//@agents.1075"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.362"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.992"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.120" y="//@agents.280"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.629"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.365"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.565" y="//@agents.150"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1088"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.797"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.960" y="//@agents.1087"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.65"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.953"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1150" y="//@agents.556"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.329"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.765" y="//@agents.738"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.989"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.887"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.373" y="//@agents.4"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1022"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.109" y="//@agents.778"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.404"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1055"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.234" y="//@agents.1005"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.284"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.722"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.991"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.590"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1025"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.834" y="//@agents.334"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.935"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.542"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.33" y="//@agents.949"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.932"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1148"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.876" y="//@agents.1125"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1055"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.11"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.445" y="//@agents.355"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1049"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1052"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1066" y="//@agents.651"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.215"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1103"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.918" y="//@agents.813"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.515"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.83"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1059" y="//@agents.364"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.422"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.320"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.870" y="//@agents.100"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.677"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.296"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.520" y="//@agents.567"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.317"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.899"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.348" y="//@agents.517"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1010"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.905"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.793" y="//@agents.754"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.485"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.599"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.43" y="//@agents.661"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.566"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.113"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.268" y="//@agents.601"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.629"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.662"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.309" y="//@agents.528"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.848"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.176"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1135" y="//@agents.171"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.524"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.335"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.316" y="//@agents.790"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.917"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.257"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.300" y="//@agents.586"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.983"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.821"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.615" y="//@agents.1117"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.914"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.926"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.879" y="//@agents.720"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1136"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.710"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.448" y="//@agents.166"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.194"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1062" y="//@agents.1105"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.491"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.428"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.610" y="//@agents.216"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1160"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1199"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.157"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1127"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.755"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.583" y="//@agents.139"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1058"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.781" y="//@agents.297"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.572"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.665"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.792" y="//@agents.244"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.293"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.596"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.48" y="//@agents.1185"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.269"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.890"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.757" y="//@agents.462"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.905"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1133"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.906"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1118"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" y="//@agents.1078"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.260"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.101"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.982" y="//@agents.403"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.17"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" y="//@agents.10"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.650"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.266"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.363" y="//@agents.246"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.734"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.902"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1095" y="//@agents.241"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.560"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.456" y="//@agents.628"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.836"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.791"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1011" y="//@agents.60"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.992"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.362"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.40" y="//@agents.204"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1124"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.626"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.406" y="//@agents.159"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1187"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.221"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.796" y="//@agents.265"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.806"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.893"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.630" y="//@agents.688"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.656"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.647"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.652" y="//@agents.16"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.446"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.8"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.886" y="//@agents.1012"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.710"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1108" y="//@agents.525"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.248"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.86"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.735" y="//@agents.1092"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.704"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.527"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1027" y="//@agents.420"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1181"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.230"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.85" y="//@agents.501"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.611"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.788"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1047" y="//@agents.1143"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.155"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.602"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1174" y="//@agents.139"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.863"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.530"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.829" y="//@agents.355"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.17"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.944"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.613" y="//@agents.15"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.764"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.947"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.183" y="//@agents.415"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1145"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.656"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.118" y="//@agents.121"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.179"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1007"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.328" y="//@agents.192"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.317"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.239"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.196" y="//@agents.1189"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.854"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.536"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1054" y="//@agents.897"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1163"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.592" y="//@agents.175"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.830"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.209"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.958" y="//@agents.901"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.740"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.665"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.412" y="//@agents.387"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1088"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.674"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.177" y="//@agents.1161"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.965"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.659"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.396" y="//@agents.1053"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1097"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.818"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.798" y="//@agents.934"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.377"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.539"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.126" y="//@agents.31"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.725"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.141"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.929"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.824"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1119"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.383"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.80"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.538" y="//@agents.855"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1048" y="//@agents.1026"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1076"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.311"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1060" y="//@agents.213"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1169"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.332"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.702" y="//@agents.573"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.410"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.408" y="//@agents.729"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.641"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.377"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.518"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.566"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.669" y="//@agents.130"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.605"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.434"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.78" y="//@agents.748"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.353"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.101"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.240" y="//@agents.442"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.53"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.182"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.889"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1037"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.872"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1056" y="//@agents.283"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.977"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1082"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1032"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.927" y="//@agents.3"/>
   <agents xmi:type="GoldbeterKoshland:K" a="//@agents.962"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.809"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.418" y="//@agents.144"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.866"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.208" y="//@agents.688"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.971"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.212"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.862" y="//@agents.709"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.275"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.497"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.715" y="//@agents.793"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1037"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.404"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1042"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.596"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.344"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.724" y="//@agents.1065"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.53"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.968"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.985" y="//@agents.378"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.248"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.389"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1000" y="//@agents.891"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.434"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.374"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.568" y="//@agents.1173"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.59"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.251"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.42"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.86"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.71"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.615" y="//@agents.814"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.347"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.317"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.364" y="//@agents.51"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1130"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.767"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.571" y="//@agents.619"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1127"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.161"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1165" y="//@agents.873"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1100"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.869"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.705"/>
   <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.44"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1107" y="//@agents.750"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.542"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.707"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.55"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.731"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.371"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.220" y="//@agents.1011"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.320"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.524"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.207"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.857"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.446"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.142"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.380"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.650"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1155" y="//@agents.448"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1160"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.662"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.54"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.617"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.960" y="//@agents.190"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.848"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.512"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.403" y="//@agents.522"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.893"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.644"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.967" y="//@agents.507"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.404"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.398"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1057" y="//@agents.910"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.626"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.625" y="//@agents.955"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.689"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.789" y="//@agents.975"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1031"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.900" y="//@agents.835"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.824"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.538" y="//@agents.1176"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.533"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.563"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.298" y="//@agents.921"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.944"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.593"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.771" y="//@agents.648"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1031"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.23"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.319" y="//@agents.1114"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.446"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.23"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.351" y="//@agents.847"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.239"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.518"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.945"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.399" y="//@agents.840"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.230"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.773"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.909"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.908"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.902"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.177"/>
   <agents xmi:type="GoldbeterKoshland:K"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.422"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.664" y="//@agents.138"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.230"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.342" y="//@agents.1134"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.452"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.278"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.486" y="//@agents.103"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.107"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.833"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.799" y="//@agents.447"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.521"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1031"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.52" y="//@agents.759"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.323"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.680"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.978" y="//@agents.1162"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.632"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.548"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.105"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.302"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1139"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.910"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.500"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.80"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.115" y="//@agents.684"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.980"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.5"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.805" y="//@agents.1071"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1178"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.32"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1156" y="//@agents.495"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.146"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.959"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.12" y="//@agents.724"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.680"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.698"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.568" y="//@agents.829"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.743"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.102" y="//@agents.1195"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.125"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.173"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.252"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.449"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.521"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.183" y="//@agents.591"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.137"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.67" y="//@agents.282"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.5"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.62"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1077" y="//@agents.1164"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.473"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.890"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.700" y="//@agents.976"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.173"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.743"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.657" y="//@agents.465"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.356"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.842"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.550" y="//@agents.1036"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.707"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.908"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.973" y="//@agents.900"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.554"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.919" y="//@agents.771"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1094"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.602"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1101" y="//@agents.922"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.878"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.149"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.186" y="//@agents.237"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1112"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.248"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.414" y="//@agents.439"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1064"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.245"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.453" y="//@agents.487"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.587"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.264" y="//@agents.931"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.347"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.926"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.616" y="//@agents.352"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.260"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.815"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.768" y="//@agents.859"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.393" y="//@agents.603"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.983"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.557"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.520" y="//@agents.1159"/>
   <agents xmi:type="GoldbeterKoshland:K" a="//@agents.749"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1193"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1177"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.578"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.845"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.367" y="//@agents.841"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.11"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.4" y="//@agents.193"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.785"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.80"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.549" y="//@agents.514"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.665"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.314"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.6" y="//@agents.1066"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.941"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.917"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1060" y="//@agents.943"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.674"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.947"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.708"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.467"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1035"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.308"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.494"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.268" y="//@agents.717"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.908"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.221"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.186" y="//@agents.64"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.557"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.281"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.678"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.872"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.230"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.475" y="//@agents.508"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.779"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.761"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.649" y="//@agents.1018"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.233"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.558" y="//@agents.457"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.884"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1028"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1092" y="//@agents.223"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.131"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.242"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.654" y="//@agents.24"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.857"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.254"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.267" y="//@agents.1080"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.20"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.914"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.604" y="//@agents.912"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.161"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.488"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.652"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.644"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.89"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.643"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.140"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1062" y="//@agents.868"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.821"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1028"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.661" y="//@agents.1086"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.794"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.977"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.699" y="//@agents.1197"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.853" y="//@agents.907"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1148"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.206"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.963" y="//@agents.205"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.77"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.29"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1029" y="//@agents.1192"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.431"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.740"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.31" y="//@agents.844"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.869"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.335"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1180" y="//@agents.805"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.329"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.587"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.642" y="//@agents.1129"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.338"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.74"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1171" y="//@agents.160"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.437"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.176"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.685" y="//@agents.345"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.551"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.551"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1095"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.932"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.611"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.166" y="//@agents.126"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1184"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1049"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.817" y="//@agents.172"/>
   <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1151"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.398"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.388"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.989"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.851"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.438" y="//@agents.223"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1121"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.82" y="//@agents.595"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.677"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.128"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.460" y="//@agents.597"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1064"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.503"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.168"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.14"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.773"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.508" y="//@agents.613"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.158"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.203"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.975"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1022"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.321" y="//@agents.1170"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.644"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.123" y="//@agents.181"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.197"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.415" y="//@agents.255"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.245"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.479"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.964" y="//@agents.660"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.977"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.944"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.294" y="//@agents.1014"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.407"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.707"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.751" y="//@agents.1038"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1073"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1172"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.534" y="//@agents.736"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.59"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.590"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1015" y="//@agents.981"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1106"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.290"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1045"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.50"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.269"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.522"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.650"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.219" y="//@agents.580"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.488"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.371"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1051"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.152"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.545"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.298" y="//@agents.694"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.548"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.818"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.916" y="//@agents.253"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.164"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.257"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.708" y="//@agents.511"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1118"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1007"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.808" y="//@agents.417"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.689"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.755"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1138"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.662"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.284"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.357" y="//@agents.913"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.149"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.554"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.990" y="//@agents.861"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.272"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1015" y="//@agents.1149"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.563"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1087" y="//@agents.123"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1004"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.178" y="//@agents.1099"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.668"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.728"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1138"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1103"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1139"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.45" y="//@agents.837"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.488"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.932"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.52"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.434"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.581"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.181" y="//@agents.1113"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1124"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.800"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.306" y="//@agents.933"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.620"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.407"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.624" y="//@agents.949"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.839"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.683"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.802" y="//@agents.390"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.389"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.182"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.158"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.997" y="//@agents.358"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.719"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.767"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1024" y="//@agents.682"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.545"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.614"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.502" y="//@agents.33"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.890"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.977"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.381"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.905"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.569"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.379" y="//@agents.163"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.980"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.2"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1134"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.491"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1157"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.594"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.470"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.770"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.543"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1082"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.981" y="//@agents.516"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1172"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.633"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.866"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.113"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.541" y="//@agents.741"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.386"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1137" y="//@agents.919"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.596"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.657"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.257"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.905"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.156" y="//@agents.783"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.578"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.842"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.901" y="//@agents.922"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.671"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.395"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.145" y="//@agents.1054"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.995"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.326"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.58" y="//@agents.1053"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1070"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.119"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.75" y="//@agents.1039"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1133"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.323"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1098" y="//@agents.322"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.623"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1036" y="//@agents.316"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.860"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.599"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.216" y="//@agents.903"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1166"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1144" y="//@agents.799"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.440"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.812"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.214" y="//@agents.690"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.827"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1085"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.219"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1139"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.836"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.732"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.533"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.40" y="//@agents.388"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.224"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.57" y="//@agents.663"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1184"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.398"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.790" y="//@agents.430"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.122"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.638"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.838"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.521"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.14"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.723" y="//@agents.372"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.863"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.269"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.366" y="//@agents.469"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.413"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.450" y="//@agents.918"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1001"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.59"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.540"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.359"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.737"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.696"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.677"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1163"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.73" y="//@agents.1194"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.356"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.701"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.937" y="//@agents.49"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1190"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.552"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.44"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.281"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.382" y="//@agents.81"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.278"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.380"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.523" y="//@agents.597"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.848"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1067"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.991" y="//@agents.301"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.572"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.344"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.265" y="//@agents.46"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.263"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.701"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.424" y="//@agents.567"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.134"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.875"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.313" y="//@agents.1104"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.5"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.518"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.97" y="//@agents.349"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.125"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.496" y="//@agents.601"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1022"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.92"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.96" y="//@agents.37"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.887"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.259"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.761"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.806"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" y="//@agents.628"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.8"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.361" y="//@agents.1069"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1082"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.20"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.870" y="//@agents.831"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1121"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.665"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.958"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.662"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.830"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" y="//@agents.133"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.392"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.429" y="//@agents.460"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1044"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.425"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.350"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.765" y="//@agents.210"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.578"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.48" y="//@agents.252"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1112"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.535" y="//@agents.222"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.536"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.485"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.333" y="//@agents.658"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1055"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.770"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1014" y="//@agents.1"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1055"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.803"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.120" y="//@agents.79"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.722"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.83"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.693" y="//@agents.748"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.362"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1034"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1038"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.698"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.744" y="//@agents.852"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.683"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.173"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.489" y="//@agents.796"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.716"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.425"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1072"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.860"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.989"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.726" y="//@agents.1048"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.842"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1199"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.928" y="//@agents.154"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1151"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.359"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.742" y="//@agents.288"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.746"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.725"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1081" y="//@agents.1096"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.167"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.553" y="//@agents.630"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.758"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1073"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.627" y="//@agents.861"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1100"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.824"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1135" y="//@agents.739"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1172"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.439" y="//@agents.667"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.740"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.566"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.187" y="//@agents.249"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.458"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.833"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1005" y="//@agents.285"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1115"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.887"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.703" y="//@agents.157"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.653"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.401"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.811" y="//@agents.34"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.572"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.659"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.871" y="//@agents.897"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.275"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.898" y="//@agents.1119"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1193"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.539"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.537" y="//@agents.1020"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.95"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.167"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.856" y="//@agents.588"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.785"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.91" y="//@agents.766"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.917"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.143"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.730"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.293"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.704"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.124" y="//@agents.397"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.593"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.137"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.354"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.92"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.383"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.76" y="//@agents.640"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1061"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.878"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.904" y="//@agents.892"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.752"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.818"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.13"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.342" y="//@agents.111"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.872"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.437"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.438" y="//@agents.1167"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.506"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.110"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1023" y="//@agents.505"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.365"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.299"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.562" y="//@agents.883"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.290"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.710"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.273"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.674"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.695"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.966"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.143"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.797"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.225" y="//@agents.226"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.377"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.476"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.235" y="//@agents.586"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.881"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.136" y="//@agents.162"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.173"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.959"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.660" y="//@agents.876"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.542"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.112" y="//@agents.238"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1001"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.605"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.487" y="//@agents.1105"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.392"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.50"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.925" y="//@agents.280"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.62"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.387" y="//@agents.498"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1169"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.782"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.616"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1136"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.432" y="//@agents.309"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.878"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.253" y="//@agents.672"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1070"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1187"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.784" y="//@agents.622"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1178"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.554"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.855" y="//@agents.217"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.509"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.737"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1012" y="//@agents.618"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.686"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.519" y="//@agents.115"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.287"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1142"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.303" y="//@agents.39"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.383"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1133"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.819" y="//@agents.328"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.881"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.401"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.10"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.134"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.185"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.565" y="//@agents.727"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.941"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.833"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.697" y="//@agents.1006"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.992"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.779"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.777" y="//@agents.229"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1094"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.17"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.274" y="//@agents.1003"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.56"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.575"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.0" y="//@agents.88"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.590"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.62"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.258" y="//@agents.1125"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.584"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.324"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.260"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.101"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.750" y="//@agents.100"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.479"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.410"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.756" y="//@agents.940"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.476"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.668"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.822"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.296"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.704"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.747" y="//@agents.1041"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.893"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1079"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.352"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.746"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.524"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.894" y="//@agents.1158"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.218"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.191"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.94" y="//@agents.189"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.980"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1019"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.813" y="//@agents.1188"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.116"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.170"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.711" y="//@agents.82"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.899"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.188"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.495" y="//@agents.885"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.179"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1049"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.22" y="//@agents.1153"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.305"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.440"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1110" y="//@agents.499"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.560"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.197"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.85" y="//@agents.420"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.347"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.731"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.144" y="//@agents.418"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.671"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.485"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.631" y="//@agents.243"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.938"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.935"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.666" y="//@agents.312"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.581"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.812"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.546" y="//@agents.150"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1085"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1178"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.369" y="//@agents.718"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.164"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.707"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.786" y="//@agents.733"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1121"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.272"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.456" y="//@agents.262"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1046"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.224"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1033" y="//@agents.591"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.728"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.29"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.102"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.335"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1106"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1183" y="//@agents.976"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.449"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1187"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.547" y="//@agents.865"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.368"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.608"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.454" y="//@agents.775"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.200"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1142"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.373" y="//@agents.391"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1115"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.494"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.634" y="//@agents.517"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.68"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.2"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.679" y="//@agents.70"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.152"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.32"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.544"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.650"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1079"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.978" y="//@agents.996"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1046"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.35"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1009" y="//@agents.459"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.158"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.677"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1090" y="//@agents.270"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1073"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.447" y="//@agents.820"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.356"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.41"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.846" y="//@agents.472"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.464"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.605"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.244" y="//@agents.687"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.515"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.72" y="//@agents.664"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.341"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.680"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1045" y="//@agents.798"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.755"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.935"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.589" y="//@agents.367"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.482"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.486" y="//@agents.211"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.299"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.470"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.843"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.455"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.639" y="//@agents.471"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.635"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.449"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.774" y="//@agents.138"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.626"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1157"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.858" y="//@agents.528"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1088"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.809"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.735"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.629"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1010"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.477"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.818"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1109"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.169" y="//@agents.408"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.899"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.18"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.431"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.512"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.271" y="//@agents.61"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.851"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.782"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.289" y="//@agents.442"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.116"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1131" y="//@agents.127"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.749"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.698"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.1191" y="//@agents.994"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.611"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.830"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.168" y="//@agents.610"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1163"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.974"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.769" y="//@agents.574"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.308"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.584"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.511" y="//@agents.141"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.680"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.809"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1146" y="//@agents.1164"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.104"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.350"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.877"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.989"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.35"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.913" y="//@agents.198"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.923"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.458"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.550" y="//@agents.972"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.734"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.332"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.256"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.263"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1111" y="//@agents.445"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1016"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.215"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.409" y="//@agents.1027"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.998"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1094"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.787" y="//@agents.754"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.827"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.497"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.673" y="//@agents.334"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.647"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.56"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1056"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.950"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.233"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.759" y="//@agents.529"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.599"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.722"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.195"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.632"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1199"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.481" y="//@agents.109"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1091"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.5"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.810" y="//@agents.336"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.929"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.14"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.421" y="//@agents.778"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.416"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1148"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.607" y="//@agents.490"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1043"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.107"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.340"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.248"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.353"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.261" y="//@agents.964"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.125"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1154"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.465" y="//@agents.310"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.743"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.212"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.915" y="//@agents.982"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.725"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.122"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.384" y="//@agents.90"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1040"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1124"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1161" y="//@agents.768"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.455"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.203"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.1186"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.587"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.509"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.180" y="//@agents.78"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.752"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1061"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.327" y="//@agents.462"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.479"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.32"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.12" y="//@agents.357"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1043"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.695"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.297" y="//@agents.28"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.194"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.213" y="//@agents.67"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.416"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.500"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.165" y="//@agents.534"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.65"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.956"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.394" y="//@agents.1051"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.560"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.791"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.579" y="//@agents.526"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1076"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.555" y="//@agents.600"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.542"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.174" y="//@agents.1117"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.653"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.965"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.406" y="//@agents.493"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1175"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.926"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.276" y="//@agents.1140"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.47"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.527"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.951" y="//@agents.819"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1028"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.26"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.645" y="//@agents.1128"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.636" y="//@agents.93"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.641"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1037"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1108" y="//@agents.1126"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.500"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.503"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.763" y="//@agents.651"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.107"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.311"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.130" y="//@agents.970"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.329"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.527"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.307" y="//@agents.279"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1196"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.203"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.159" y="//@agents.129"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.128"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.98"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.973" y="//@agents.990"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.185"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.794"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.184"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.845"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.513" y="//@agents.148"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.362"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.302"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1093" y="//@agents.961"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.113"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.311"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.942" y="//@agents.795"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1025"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.569"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.979" y="//@agents.889"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.26"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.467"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.828" y="//@agents.1032"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.959"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.228" y="//@agents.250"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.257"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.986"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.670" y="//@agents.736"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.374"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.669"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.998"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.629"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.606" y="//@agents.147"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.923"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.149"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.114" y="//@agents.16"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.950"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.151" y="//@agents.19"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1088"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.260"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.946" y="//@agents.816"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1050"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.101"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.874"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.419"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.559" y="//@agents.930"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.89"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.920"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.27"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.206"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.839"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1059" y="//@agents.886"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.548"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.95"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1107" y="//@agents.43"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1013"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.902"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.30" y="//@agents.1021"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.797"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.911"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1008" y="//@agents.781"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.104"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.692"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.199" y="//@agents.277"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.713"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.926"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.645" y="//@agents.282"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.293"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.845"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1074" y="//@agents.135"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.44"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.934"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1106"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1007"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.463" y="//@agents.792"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.911"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.386"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1177" y="//@agents.609"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.8"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.776"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.315"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.713"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.269"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.939" y="//@agents.807"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.47"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.564" y="//@agents.363"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.614"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.240" y="//@agents.1128"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.491"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.608"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.988" y="//@agents.25"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.974"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.716"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.757"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.74"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.590"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.969" y="//@agents.1185"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.443"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.236"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1123" y="//@agents.804"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1097"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.170"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.646"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.506"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.971"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.402" y="//@agents.1030"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.539"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.272"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1195" y="//@agents.924"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1118"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.806"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.196" y="//@agents.175"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.209"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1022"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.117" y="//@agents.106"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.929"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.686"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.451"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.155"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.326"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.36" y="//@agents.895"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.452"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.320"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.849" y="//@agents.1084"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.635"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.38"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.834" y="//@agents.864"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.428"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.734"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.714" y="//@agents.684"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1127"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.464"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.655" y="//@agents.232"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.953"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.875"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1078"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.317"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.314"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.444" y="//@agents.441"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.815"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.98"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.965"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.149"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.525" y="//@agents.859"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.194"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.41"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.146"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.385" y="//@agents.1122"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1181"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.413"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.318" y="//@agents.582"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.461"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.478" y="//@agents.721"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.983"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1169"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1143" y="//@agents.880"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1145"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1052"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.712" y="//@agents.637"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.182"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.473"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.414" y="//@agents.291"/>
   <agents xmi:type="GoldbeterKoshland:K"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1040"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.807"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.719"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.737"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.831" y="//@agents.331"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.866"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.323"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.195" y="//@agents.258"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.338"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.758"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.459"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.794"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.122"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.924" y="//@agents.18"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.675" y="//@agents.337"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.197"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.239"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.948" y="//@agents.753"/>
   <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.131"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.772"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.698"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.119"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.163" y="//@agents.411"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.191"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.872"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.562" y="//@agents.663"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.620"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.71"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1113" y="//@agents.340"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1190"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.95"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.315" y="//@agents.588"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.233"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.341"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1042" y="//@agents.726"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.167"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.671"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.789" y="//@agents.339"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.500"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.668"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.382" y="//@agents.730"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.569"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.254"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.259" y="//@agents.609"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.644"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.443"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.295" y="//@agents.376"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.935"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1154"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.658" y="//@agents.783"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.416"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.728"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.655" y="//@agents.91"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.125"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1031"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.379" y="//@agents.70"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.764"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.719"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.546" y="//@agents.243"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.713"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.457" y="//@agents.477"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.740"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1043"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.921"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.467"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.689"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1114" y="//@agents.903"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.338"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.685" y="//@agents.606"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.68"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1127"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.795" y="//@agents.993"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.38"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.596"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1129" y="//@agents.124"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1196"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.134"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.478" y="//@agents.639"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.881"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.497"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.121"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.407"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.812"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.351" y="//@agents.873"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.884"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.574" y="//@agents.504"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.602"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.47"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.277" y="//@agents.345"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.679" y="//@agents.51"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.50"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1033" y="//@agents.915"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1145"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.752"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.676" y="//@agents.624"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.275"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.217" y="//@agents.1074"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.887"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.476"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.895" y="//@agents.390"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.653"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.827"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1057" y="//@agents.670"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.410"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.659"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.871"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.2"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1196"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.318" y="//@agents.88"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.350"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.578"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1006" y="//@agents.625"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.206"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.848"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.681" y="//@agents.375"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1163"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.746"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.481" y="//@agents.499"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.923"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.119"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.826" y="//@agents.742"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.11"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.419"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.531" y="//@agents.1008"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.437"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.575"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.847" y="//@agents.718"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1091"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.251"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.607" y="//@agents.289"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1070"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.302"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1158" y="//@agents.631"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.455"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.17"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.801" y="//@agents.13"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.950"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.44"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.675" y="//@agents.822"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.206"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1004"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.775"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.530"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1097"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" y="//@agents.3"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.509"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.638"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.184" y="//@agents.553"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.767"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1009" y="//@agents.817"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1112"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.212"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.81" y="//@agents.142"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.188"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.293"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.36" y="//@agents.1188"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.668"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.995"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.24" y="//@agents.108"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.788"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.809"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.786" y="//@agents.358"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.656"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.266"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.325" y="//@agents.930"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.296"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.251"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.21" y="//@agents.633"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.692"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.335"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.46" y="//@agents.199"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.386"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.452"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.849" y="//@agents.162"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.761"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.893"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1029" y="//@agents.1002"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.146"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.470"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.336" y="//@agents.846"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.623"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.605"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.433" y="//@agents.787"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.20"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.929"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.883" y="//@agents.703"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.236"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.116"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1018" y="//@agents.529"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.77"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.776"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.598" y="//@agents.385"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.617"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1046"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.850" y="//@agents.271"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.764"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1178"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.394" y="//@agents.939"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.89"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.746"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.727"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.107"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.479"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.372" y="//@agents.940"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.626"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1079"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.451"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.221"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1148"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.324"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.869"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.941"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.928" y="//@agents.909"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.536"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.502" y="//@agents.1141"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.182"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.863"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.535"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.806"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.752"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.261" y="//@agents.739"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.800"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.821"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.541"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1070"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.366"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.398"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.140"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.73" y="//@agents.1068"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1184"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.530"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1194" y="//@agents.94"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.614"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1115"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.844" y="//@agents.187"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1142"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1" y="//@agents.627"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1100"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1052"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.49" y="//@agents.837"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.242"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.731"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.643" y="//@agents.427"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.704"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.47"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.227"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.143"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.513" y="//@agents.1192"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.275"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.55" y="//@agents.699"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.911"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.812"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.705" y="//@agents.1020"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1034"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.344"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.723" y="//@agents.208"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1166"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.425"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.496" y="//@agents.301"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.998"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.802" y="//@agents.337"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.179"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.725"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.84"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.368"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.23"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.247"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.506"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.374"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.319" y="//@agents.1149"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.686"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.170"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.303" y="//@agents.250"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.305"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.956"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.505"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.839"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.464"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.882"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.65"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.611"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.273" y="//@agents.979"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.716"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.599"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.267" y="//@agents.1093"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.236"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.509"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.111" y="//@agents.1069"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.683"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.512"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.178" y="//@agents.744"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.635"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1085"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.526" y="//@agents.274"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1046"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.839"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.393" y="//@agents.811"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.791"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.524"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.225" y="//@agents.1098"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.188"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.386"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.666" y="//@agents.222"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1028"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.956"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.64" y="//@agents.1041"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.824"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.830"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.838" y="//@agents.1122"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.59"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.95"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.571" y="//@agents.1110"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.440"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1193"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.27"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.83"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.224"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.762"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.617"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1016"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1198" y="//@agents.202"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1013"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.140"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.907" y="//@agents.937"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.986"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.374"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.475"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.200"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1091"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.145" y="//@agents.432"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.38"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.569"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.381"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.113"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1197"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1040"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.2"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.988"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1145"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.506"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1003" y="//@agents.58"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.557"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.497"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.429" y="//@agents.570"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.458"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.914"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.468" y="//@agents.1081"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.581"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.311"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.270"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.29"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.957" y="//@agents.90"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1001"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.971"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.540" y="//@agents.207"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.614"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.218"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.193" y="//@agents.327"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.692"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1146" y="//@agents.784"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1094"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.104"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.892" y="//@agents.76"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1067"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.987" y="//@agents.1167"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.803"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.974"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.766"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.215"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.737"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.361" y="//@agents.604"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.749"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.776"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.165" y="//@agents.249"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.326"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.344"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1102" y="//@agents.954"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.572"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.581"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" x="//@agents.952" y="//@agents.129"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.35"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.815"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.884"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.89"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.210" y="//@agents.559"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.220" y="//@agents.160"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.401"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.353"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.936" y="//@agents.618"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.803"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.110"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.454" y="//@agents.673"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.431"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.716"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.885" y="//@agents.135"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.14"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.503"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.426" y="//@agents.1044"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.575"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.71"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.622" y="//@agents.969"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.938"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.653"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.118" y="//@agents.682"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1037"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.584"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.820" y="//@agents.927"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.359"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.401"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.231" y="//@agents.153"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.74"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.593"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.232" y="//@agents.868"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.383"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.368"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.214" y="//@agents.228"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.428"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.728"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.45" y="//@agents.292"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.239"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.404"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.87"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.281"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.32"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.549" y="//@agents.519"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1121"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.233"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.169" y="//@agents.1000"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.857"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.920"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.853" y="//@agents.756"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.470"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.39" y="//@agents.576"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.722"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.191"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.402"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.494"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.308"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.832" y="//@agents.54"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" y="//@agents.825"/>
   <agents xmi:type="GoldbeterKoshland:K" a="//@agents.176"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.980"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1186" y="//@agents.430"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.20"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1160"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.925" y="//@agents.30"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1103"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.200"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.198" y="//@agents.378"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.74"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.116"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.961" y="//@agents.753"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.350"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.917"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.996" y="//@agents.510"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.320"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1157"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.384" y="//@agents.769"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.932"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.8"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_p="//@states.1" y="//@agents.867"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.512"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1013"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.235" y="//@agents.1086"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.92"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.281"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.582"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.437"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.347"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.180" y="//@agents.1165"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.944"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.777" y="//@agents.516"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.647"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.686"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.862"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1166"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.272"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.603" y="//@agents.307"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.395"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.543" y="//@agents.1065"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.941"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.330"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.920"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.612" y="//@agents.808"/>
   <agents xmi:type="GoldbeterKoshland:K" a="//@agents.227"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.62"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.691" y="//@agents.288"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.620"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.695"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.28" y="//@agents.117"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.304" y="//@agents.1137"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.446"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.263"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.99" y="//@agents.276"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1133"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.608"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.25" y="//@agents.463"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.98"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.842"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" y="//@agents.864"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.359"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.68"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.972" y="//@agents.717"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.995"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.41"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.835" y="//@agents.226"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.902"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.203"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.537"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1175"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.164"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.667" y="//@agents.37"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1169"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.473"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1096" y="//@agents.127"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.758"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1084" y="//@agents.285"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.380"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.458"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.741" y="//@agents.370"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.494"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.1017"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.323"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.242"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.66" y="//@agents.480"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1181"/>
   <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1109"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.888" y="//@agents.1116"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1001"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1172"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1155" y="//@agents.405"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.560"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1199"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1168" y="//@agents.577"/>
-  <agents xmi:type="GoldbeterKoshland:K"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.97" y="//@agents.1152"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.53"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.533"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.823" y="//@agents.471"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.23"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.155"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.354"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.77"/>
-  <agents xmi:type="GoldbeterKoshland:P"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.858"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.299"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1082"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.333"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.782"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.365"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.190" y="//@agents.648"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.179"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.878"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.532" y="//@agents.946"/>
-  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.860"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.482"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.696" y="//@agents.733"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.246" y="//@agents.1179"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.395"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.566"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.691" y="//@agents.987"/>
   <agents xmi:type="GoldbeterKoshland:K" a="//@agents.968"/>
-  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.953"/>
-  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.286" y="//@agents.1171"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.896"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1102" y="//@agents.760"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.659"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.803"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.436"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.254"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.119"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.702" y="//@agents.492"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.884"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1026" y="//@agents.1152"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.503"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.681" y="//@agents.417"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1067"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1016"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.850" y="//@agents.255"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.620"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.896"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.63" y="//@agents.1047"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1004"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.218"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.60"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.773"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.598" y="//@agents.321"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.284"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.482"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.577"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.302"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.245"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.339" y="//@agents.247"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.890"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.700" y="//@agents.595"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1076"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.332"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1077" y="//@agents.21"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.788"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1154"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.832" y="//@agents.204"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.236"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.468" y="//@agents.234"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1118"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.656"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1147" y="//@agents.841"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.83"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.751" y="//@agents.286"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.641"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.137"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1198" y="//@agents.84"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.851"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.370" y="//@agents.780"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.788"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.65"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.330"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.536"/>
+  <agents xmi:type="GoldbeterKoshland:P"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.1075" y="//@agents.573"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.221"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.484" y="//@agents.294"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.50"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.11"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" y="//@agents.888"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.110"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.992"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.676" y="//@agents.585"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1103"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.215"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.1101" y="//@agents.1068"/>
+  <agents xmi:type="GoldbeterKoshland:K"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.692"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_p="//@states.1" y_u="//@states.0" x="//@agents.348" y="//@agents.231"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.1013"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.854"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.694" y="//@agents.583"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.647"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1196"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.376"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.776"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.209"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" y="//@agents.504"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.371"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1025"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_p="//@states.1" x="//@agents.1189" y="//@agents.906"/>
+  <agents xmi:type="GoldbeterKoshland:K" a="//@agents.200"/>
+  <agents xmi:type="GoldbeterKoshland:P" a="//@agents.1160"/>
+  <agents xmi:type="GoldbeterKoshland:T" x_u="//@states.0" y_u="//@states.0" x="//@agents.466" y="//@agents.823"/>
   <states xmi:type="GoldbeterKoshland:U_s"/>
   <states xmi:type="GoldbeterKoshland:P_s"/>
 </GoldbeterKoshland:Mixture>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<HiPEPattern:HiPEPatternContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HiPEPattern="org.hipe.pattern/HiPEPattern" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xsi:schemaLocation="org.hipe.pattern/HiPEPattern java://hipe.pattern.HiPEPatternPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage">
+<HiPEPattern:HiPEPatternContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HiPEPattern="platform:/resource/hipe.pattern/model/HiPEPattern" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xsi:schemaLocation="platform:/resource/hipe.pattern/model/HiPEPattern java://hipe.pattern.HiPEPatternPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage">
   <patterns xmi:type="HiPEPattern:HiPEPattern" name="kBound" partialPatterns="//@patterns.28">
     <edges xmi:type="HiPEPattern:HiPEEdge" name="K_a" source="//@patterns.0/@nodes.1" target="//@patterns.0/@nodes.0">
       <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
