@@ -1,6 +1,7 @@
 package org.simsg.adapter;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
@@ -8,6 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 import org.emoflon.ibex.common.operational.SimpleMatch;
 import org.emoflon.ibex.gt.api.GraphTransformationMatch;
@@ -51,6 +53,10 @@ public final class HybridRuleUtils {
 	public final static Map<String, BiFunction<PatternMatchingEngine, Map<String, Collection<SimSGMatch>>, Integer>> MATCH_CONSTRUCTORS = getMatchConstructors();
 	public final static Map<String, Consumer<SimSGMatch>> RULE_APPLICATORS = getRuleApplicators();
 	
+	public final static Map<String, Set<Object>> LEFT_SETS = getSet();
+	public final static Map<String, Set<Object>> RIGHT_SETS = getSet();
+	public final static Map<String, Set<Object>> CONFLICT_SETS = getSet();
+	
 	public final static String ENGINE_TYPE_HIPE = "IBeXHiPEEngine";
 	public final static String ENGINE_TYPE_DEMOCLES = "IBeXDemoclesEngine"; 
 
@@ -83,12 +89,32 @@ public final class HybridRuleUtils {
 		return map;
 	}
 	
+	private static Map<String, Set<Object>> getSet() {
+		Map<String, Set<Object>> map = new LinkedHashMap<>();
+		map.put(KTX_FWD, new HashSet<Object>());
+		map.put(KTY_FWD, new HashSet<Object>());
+		map.put(PTX_FWD, new HashSet<Object>());
+		map.put(PTY_FWD, new HashSet<Object>());
+		return map;
+	}
+	
+	@SuppressWarnings("unchecked")
 	public static int countKTX_FWD_LHS(PatternMatchingEngine engine) {
-//		engine.updateMatches(K_FREE);
-//		engine.updateMatches(TX_FREE);
 		
 		Collection<SimSGMatch> kFree = engine.getMatchesAndUpdate(K_FREE);
 		Collection<SimSGMatch> txFree = engine.getMatchesAndUpdate(TX_FREE);
+		
+//		Set<Object> left = LEFT_SETS.get(KTX_FWD);
+//		Set<Object> right = RIGHT_SETS.get(KTX_FWD);
+//		Set<Object> conflict = CONFLICT_SETS.get(KTX_FWD);
+//		left.clear();
+//		right.clear();
+//		conflict.clear();
+//		
+//		left.addAll((Collection<? extends Object>) kFree.parallelStream().map(match -> match.get(K_PARAM)).collect(Collectors.toSet()));
+//		right.addAll((Collection<? extends Object>) txFree.parallelStream().map(match -> match.get(T_PARAM)).collect(Collectors.toSet()));
+//		conflict.addAll(left.parallelStream().filter(node->right.contains(node)).collect(Collectors.toSet()));
+//		conflict.addAll(right.parallelStream().filter(node->left.contains(node)).collect(Collectors.toSet()));
 		
 		if(kFree.isEmpty())
 			return 0;
@@ -96,19 +122,34 @@ public final class HybridRuleUtils {
 			return 0;
 		
 		return kFree.size()*txFree.size();
+//		return kFree.size()*txFree.size()-conflict.size();
 	}
 	
+	@SuppressWarnings("unchecked")
 	public static int countKTX_FWD_LHS(HybridgksimulationAPI api) {
 		
 		Collection<KFreeMatch> kFree = api.kFree().findMatches();
 		Collection<TxFreeMatch> txFree = api.txFree().findMatches();
 		
+//		Set<Object> left = LEFT_SETS.get(KTX_FWD);
+//		Set<Object> right = RIGHT_SETS.get(KTX_FWD);
+//		Set<Object> conflict = CONFLICT_SETS.get(KTX_FWD);
+//		left.clear();
+//		right.clear();
+//		conflict.clear();
+//		
+//		left.addAll((Collection<? extends Object>) kFree.parallelStream().map(match -> match.getK()));
+//		right.addAll((Collection<? extends Object>) txFree.parallelStream().map(match -> match.getT()));
+//		conflict.addAll(left.parallelStream().filter(node->right.contains(node)).collect(Collectors.toSet()));
+//		conflict.addAll(right.parallelStream().filter(node->left.contains(node)).collect(Collectors.toSet()));
+		
 		if(kFree.isEmpty())
 			return 0;
 		if(txFree.isEmpty())
 			return 0;
 		
 		return kFree.size()*txFree.size();
+//		return kFree.size()*txFree.size()-conflict.size();
 	}
 	
 	public static int constructKTX_FWD_LHS(PatternMatchingEngine engine,  Map<String, Collection<SimSGMatch>> matches) {
