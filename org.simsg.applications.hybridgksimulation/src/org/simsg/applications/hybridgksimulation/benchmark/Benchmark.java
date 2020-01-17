@@ -19,10 +19,10 @@ import GoldbeterKoshland.util.ModelGenerator;
 public class Benchmark {
 	
 	public static void main(String[] args) {
-		//createModels();
+//		createModels();
 		
 		SimulationConfigurator config = new SimulationConfigurator(); 
-		config.setModelFolder(System.getProperty("user.dir")+"/models"); 
+		config.setRootDataFolder(System.getProperty("user.dir")+"/models"); 
 		config.setModel("default100");
 		config.setGT(HybridGkHiPEGT.class);
 		config.setIBeXHiPEAsEngine();
