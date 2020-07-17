@@ -7,6 +7,11 @@ import org.simsg.core.pm.match.SimSGMatch;
 
 public class HybridGkHiPEGT extends IBeXHiPEGT {
 
+	public HybridGkHiPEGT(String fqApiPackageName) {
+		super(fqApiPackageName);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	protected void applyRule(SimSGMatch match) {
 		try {

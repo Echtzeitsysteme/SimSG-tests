@@ -24,12 +24,17 @@ public class Benchmark {
 		SimulationConfigurator config = new SimulationConfigurator(); 
 		config.setRootDataFolder(System.getProperty("user.dir")+"/models"); 
 		config.setModel("default100");
-		config.setGT(HybridGkHiPEGT.class);
-		config.setIBeXHiPEAsEngine();
-//		config.setGT(HybridGkDemoclesGT.class);
-//		config.setIBeXDemoclesAsEngine();	
+		config.setGT(HybridGkHiPEGT.class, "org.simsg.applications.hybridgksimulation.api");
+		config.setIBeXHiPEAsEngine("org.simsg.applications.hybridgksimulation.api");
+//		config.setGT(HybridGkDemoclesGT.class, "org.simsg.applications.hybridgksimulation.api");
+//		config.setIBeXDemoclesAsEngine("org.simsg.applications.hybridgksimulation.api");	
 		config.setPMC(HybridGkPMC.class);
-		config.setStochasticSimulation();
+		try {
+			config.setStochasticSimulation();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		config.addSimpleTerminationCondition(10000, -1);
 		//config.addSimpleTerminationCondition(-1, 20.0);
 		config.addObservableStatistic();

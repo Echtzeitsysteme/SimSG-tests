@@ -7,6 +7,11 @@ import org.simsg.core.pm.match.SimSGMatch;
 
 public class HybridGkDemoclesGT extends IBeXDemoclesGT {
 
+	public HybridGkDemoclesGT(String fqApiPackageName) {
+		super(fqApiPackageName);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	protected void applyRule(SimSGMatch match) {
 		try {
