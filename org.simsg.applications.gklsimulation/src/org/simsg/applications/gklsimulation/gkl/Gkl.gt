@@ -1,0 +1,211 @@
+import "platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore"
+
+abstract pattern tBound () {
+	a1 : Agent
+	a2 : Agent
+	
+	t : T {
+		- x -> a1
+		- y -> a2	
+	}
+}
+
+abstract pattern kBound () {
+	k : K {
+		-a->a 
+	}
+	
+	a : Agent
+}
+
+abstract pattern pBound () {
+	p : P {
+		-a->a 
+	}
+	
+	a : Agent
+}
+
+abstract pattern tXBound () {
+	t : T {
+		-x->a
+	}
+	
+	a : Agent
+}
+
+abstract pattern tYBound () {
+	t : T {
+		-y->a
+	}
+	
+	a : Agent
+}
+
+condition kTxFree = forbid kBound && forbid tXBound
+condition kTyFree = forbid kBound && forbid tYBound
+condition pTxFree = forbid pBound && forbid tXBound
+condition pTyFree = forbid pBound && forbid tYBound
+
+condition tUnbound = forbid tBound
+
+pattern tPP() {
+	ps : P_s
+	t : T {
+		-x_p->ps
+		-y_p->ps
+	}
+}
+
+pattern tPPfree() {
+	ps : P_s
+	t : T {
+		-x_p->ps
+		-y_p->ps
+	}
+} when tUnbound
+
+rule ktXfwd() {
+	k : K {
+		++ -a->t
+	}
+	
+	t : T {
+		++ -x->k
+	} 
+}when kTxFree
+
+rule ktXbwd() {
+	k : K {
+		-- -a->t
+	}
+	
+	t : T {
+		-- -x->k
+	}
+}
+
+rule ktYfwd() {
+	k : K {
+		++ -a->t
+	}
+	
+	t : T {
+		++ -y->k
+	} 
+}when kTyFree
+
+rule ktYbwd() {
+	k : K {
+		-- -a->t
+	}
+	
+	t : T {
+		-- -y->k
+	}
+}
+
+rule ptXfwd() {
+	p : P {
+		++ -a->t
+	}
+	
+	t : T {
+		++ -x->p
+	} 
+}when pTxFree
+
+rule ptXbwd() {
+	p : P {
+		-- -a->t
+	}
+	
+	t : T {
+		-- -x->p
+	}
+}
+
+rule ptYfwd() {
+	p : P {
+		++ -a->t
+	}
+	
+	t : T {
+		++ -y->p
+	} 
+}when pTyFree
+
+rule ptYbwd(){
+	p : P {
+		-- -a->t
+	}
+	
+	t : T {
+		-- -y->p
+	}
+}
+
+rule ktXactivate(){
+	us : U_s
+	ps : P_s
+	
+	k : K {
+		-a->t
+	}
+	
+	t : T{
+		-x->k
+		
+		++ -x_p->ps
+		-- -x_u->us
+	}
+}
+
+rule ktYactivate() {
+	us : U_s
+	ps : P_s
+	
+	k : K {
+		-a->t
+	}
+	
+	t : T{
+		-y->k
+		
+		++ -y_p->ps
+		-- -y_u->us
+	}
+}
+
+rule ptXdeactivate() {
+	us : U_s
+	ps : P_s
+	
+	p : P {
+		-a->t
+	}
+	
+	t : T{
+		-x->p
+		
+		++ -x_u->us
+		-- -x_p->ps
+	}
+}
+
+rule ptYdeactivate() {
+	us : U_s
+	ps : P_s
+	
+	p : P {
+		-a->t
+	}
+	
+	t : T{
+		-y->p
+		
+		++ -y_u->us
+		-- -y_p->ps
+	}
+}
+ 

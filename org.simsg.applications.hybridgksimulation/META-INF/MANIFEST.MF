@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Automatic-Module-Name: org.simsg.applications.hybridgksimulation
-Bundle-SymbolicName: org.simsg.applications.hybridgksimulation; singleton:=true
+Bundle-SymbolicName: org.simsg.applications.hybridgksimulation2;singleton:=true
 Export-Package: org.simsg.applications.hybridgksimulation.api,
  org.simsg.applications.hybridgksimulation.api.matches,
  org.simsg.applications.hybridgksimulation.api.rules
@@ -12,7 +12,8 @@ Require-Bundle: org.emoflon.ibex.common,
  org.emoflon.ibex.gt.hipe,
  GoldbeterKoshland,
  org.simsg.core;bundle-version="1.0.0",
- SimulationDefinition;bundle-version="0.1.0"
+ SimulationDefinition;bundle-version="0.1.0",
+ org.emoflon.ibex.gt.viatra
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

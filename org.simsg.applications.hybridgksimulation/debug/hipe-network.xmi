@@ -7,30 +7,30 @@
   <networknode xmi:type="hipe.network:ReferenceNode" name="K_a_0_reference" inputPort="//@networknode.72/@ports/@port.0 //@networknode.3/@ports/@port.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.4" initializationCode="" constraintName="check_constraint_1" predicateCode="!a.equals(k)">
-        <indices>1</indices>
         <indices>0</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
-        <nodeNames>a</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <nodeNames>k</nodeNames>
+        <nodeNames>a</nodeNames>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.28"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.5" initializationCode="" constraintName="check_constraint_2" predicateCode="!a.equals(k)">
-        <indices>0</indices>
         <indices>1</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-        <nodeNames>k</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
         <nodeNames>a</nodeNames>
+        <nodeNames>k</nodeNames>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.31"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.6" initializationCode="" constraintName="check_constraint_3" predicateCode="!a.equals(k)">
-        <indices>0</indices>
         <indices>1</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-        <nodeNames>k</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
         <nodeNames>a</nodeNames>
+        <nodeNames>k</nodeNames>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.31"/>
       </port>
     </ports>
@@ -53,7 +53,7 @@
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="k" value="0"/>
     <signatureElts xmi:type="hipe.network:IntegerToIntegerMapEntry" key="0" value="0"/>
   </networknode>
-  <networknode xmi:type="hipe.network:NACJunctionNode" name="kFree_115_nacjunction" inputPort="//@networknode.73/@ports/@port.0 //@networknode.2/@ports/@port.2" patternName="kFree_115" overlaps="//@networknode.6/@allOverlaps.0">
+  <networknode xmi:type="hipe.network:NACJunctionNode" name="kFree_7_nacjunction" inputPort="//@networknode.73/@ports/@port.0 //@networknode.2/@ports/@port.2" patternName="kFree_7" overlaps="//@networknode.6/@allOverlaps.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.7"/>
     </ports>
@@ -104,7 +104,7 @@
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ktXactivate_12_junction" inputPort="//@networknode.11/@ports/@port.0 //@networknode.12/@ports/@port.0" patternName="ktXactivate_12" overlaps="//@networknode.13/@allOverlaps.0" mappings="//@networknode.13/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ktXactivate_13_junction" inputPort="//@networknode.11/@ports/@port.0 //@networknode.12/@ports/@port.0" patternName="ktXactivate_13" overlaps="//@networknode.13/@allOverlaps.0" mappings="//@networknode.13/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.14"/>
     </ports>
@@ -115,9 +115,11 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ktXactivate_10_junction" inputPort="//@networknode.9/@ports/@port.0 //@networknode.13/@ports/@port.0" patternName="ktXactivate_10" overlaps="//@networknode.14/@allOverlaps.0" mappings="//@networknode.14/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ktXactivate_11_junction" inputPort="//@networknode.9/@ports/@port.0 //@networknode.13/@ports/@port.0" patternName="ktXactivate_11" overlaps="//@networknode.14/@allOverlaps.0" mappings="//@networknode.14/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.15"/>
     </ports>
@@ -128,9 +130,12 @@
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
     </allMappings>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ktXactivate_8_junction" inputPort="//@networknode.8/@ports/@port.0 //@networknode.14/@ports/@port.0" patternName="ktXactivate_8" overlaps="//@networknode.15/@allOverlaps.0" mappings="//@networknode.15/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ktXactivate_9_junction" inputPort="//@networknode.8/@ports/@port.0 //@networknode.14/@ports/@port.0" patternName="ktXactivate_9" overlaps="//@networknode.15/@allOverlaps.0" mappings="//@networknode.15/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.16"/>
     </ports>
@@ -140,6 +145,10 @@
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="2"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="2"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="ktXactivate_production" inputPort="//@networknode.15/@ports/@port.0" patternName="ktXactivate">
@@ -148,7 +157,7 @@
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="us" value="2"/>
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="k" value="3"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ktXbwd_18_junction" inputPort="//@networknode.11/@ports/@port.1 //@networknode.12/@ports/@port.1" patternName="ktXbwd_18" overlaps="//@networknode.17/@allOverlaps.0" mappings="//@networknode.17/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ktXbwd_19_junction" inputPort="//@networknode.11/@ports/@port.1 //@networknode.12/@ports/@port.1" patternName="ktXbwd_19" overlaps="//@networknode.17/@allOverlaps.0" mappings="//@networknode.17/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.18"/>
     </ports>
@@ -159,6 +168,8 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="ktXbwd_production" inputPort="//@networknode.17/@ports/@port.0" patternName="ktXbwd">
@@ -181,7 +192,7 @@
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ktYactivate_28_junction" inputPort="//@networknode.11/@ports/@port.2 //@networknode.21/@ports/@port.0" patternName="ktYactivate_28" overlaps="//@networknode.22/@allOverlaps.0" mappings="//@networknode.22/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ktYactivate_29_junction" inputPort="//@networknode.11/@ports/@port.2 //@networknode.21/@ports/@port.0" patternName="ktYactivate_29" overlaps="//@networknode.22/@allOverlaps.0" mappings="//@networknode.22/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.23"/>
     </ports>
@@ -192,9 +203,11 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ktYactivate_26_junction" inputPort="//@networknode.20/@ports/@port.0 //@networknode.22/@ports/@port.0" patternName="ktYactivate_26" overlaps="//@networknode.23/@allOverlaps.0" mappings="//@networknode.23/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ktYactivate_27_junction" inputPort="//@networknode.20/@ports/@port.0 //@networknode.22/@ports/@port.0" patternName="ktYactivate_27" overlaps="//@networknode.23/@allOverlaps.0" mappings="//@networknode.23/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.24"/>
     </ports>
@@ -205,9 +218,12 @@
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
     </allMappings>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ktYactivate_24_junction" inputPort="//@networknode.8/@ports/@port.1 //@networknode.23/@ports/@port.0" patternName="ktYactivate_24" overlaps="//@networknode.24/@allOverlaps.0" mappings="//@networknode.24/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ktYactivate_25_junction" inputPort="//@networknode.8/@ports/@port.1 //@networknode.23/@ports/@port.0" patternName="ktYactivate_25" overlaps="//@networknode.24/@allOverlaps.0" mappings="//@networknode.24/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.25"/>
     </ports>
@@ -217,6 +233,10 @@
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="2"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="2"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="ktYactivate_production" inputPort="//@networknode.24/@ports/@port.0" patternName="ktYactivate">
@@ -225,7 +245,7 @@
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="us" value="2"/>
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="k" value="3"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ktYbwd_34_junction" inputPort="//@networknode.11/@ports/@port.3 //@networknode.21/@ports/@port.1" patternName="ktYbwd_34" overlaps="//@networknode.26/@allOverlaps.0" mappings="//@networknode.26/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ktYbwd_35_junction" inputPort="//@networknode.11/@ports/@port.3 //@networknode.21/@ports/@port.1" patternName="ktYbwd_35" overlaps="//@networknode.26/@allOverlaps.0" mappings="//@networknode.26/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.27"/>
     </ports>
@@ -236,6 +256,8 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="ktYbwd_production" inputPort="//@networknode.26/@ports/@port.0" patternName="ktYbwd">
@@ -248,13 +270,13 @@
   <networknode xmi:type="hipe.network:ReferenceNode" name="P_a_0_reference" inputPort="//@networknode.78/@ports/@port.0 //@networknode.3/@ports/@port.1">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.30" initializationCode="" constraintName="check_constraint_4" predicateCode="!a.equals(p)">
-        <indices>1</indices>
         <indices>0</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
-        <nodeNames>a</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <nodeNames>p</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.67"/>
+        <nodeNames>a</nodeNames>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.68"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.31" initializationCode="" constraintName="check_constraint_5" predicateCode="!a.equals(p)">
         <indices>1</indices>
@@ -263,7 +285,7 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
         <nodeNames>a</nodeNames>
         <nodeNames>p</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.70"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.71"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.32" initializationCode="" constraintName="check_constraint_6" predicateCode="!a.equals(p)">
         <indices>1</indices>
@@ -272,7 +294,7 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
         <nodeNames>a</nodeNames>
         <nodeNames>p</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.70"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.71"/>
       </port>
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
@@ -285,7 +307,7 @@
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="p" value="0"/>
     <signatureElts xmi:type="hipe.network:IntegerToIntegerMapEntry" key="0" value="0"/>
   </networknode>
-  <networknode xmi:type="hipe.network:NACJunctionNode" name="pFree_116_nacjunction" inputPort="//@networknode.79/@ports/@port.0 //@networknode.29/@ports/@port.2" patternName="pFree_116" overlaps="//@networknode.32/@allOverlaps.0">
+  <networknode xmi:type="hipe.network:NACJunctionNode" name="pFree_47_nacjunction" inputPort="//@networknode.79/@ports/@port.0 //@networknode.29/@ports/@port.2" patternName="pFree_47" overlaps="//@networknode.32/@allOverlaps.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.33"/>
     </ports>
@@ -312,7 +334,7 @@
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ptXbwd_47_junction" inputPort="//@networknode.34/@ports/@port.0 //@networknode.35/@ports/@port.0" patternName="ptXbwd_47" overlaps="//@networknode.36/@allOverlaps.0" mappings="//@networknode.36/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ptXbwd_49_junction" inputPort="//@networknode.34/@ports/@port.0 //@networknode.35/@ports/@port.0" patternName="ptXbwd_49" overlaps="//@networknode.36/@allOverlaps.0" mappings="//@networknode.36/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.37"/>
     </ports>
@@ -323,6 +345,8 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="ptXbwd_production" inputPort="//@networknode.36/@ports/@port.0" patternName="ptXbwd">
@@ -337,7 +361,7 @@
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x_p"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ptXdeactivate_56_junction" inputPort="//@networknode.34/@ports/@port.1 //@networknode.35/@ports/@port.1" patternName="ptXdeactivate_56" overlaps="//@networknode.39/@allOverlaps.0" mappings="//@networknode.39/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ptXdeactivate_58_junction" inputPort="//@networknode.34/@ports/@port.1 //@networknode.35/@ports/@port.1" patternName="ptXdeactivate_58" overlaps="//@networknode.39/@allOverlaps.0" mappings="//@networknode.39/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.40"/>
     </ports>
@@ -348,9 +372,11 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ptXdeactivate_54_junction" inputPort="//@networknode.38/@ports/@port.0 //@networknode.39/@ports/@port.0" patternName="ptXdeactivate_54" overlaps="//@networknode.40/@allOverlaps.0" mappings="//@networknode.40/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ptXdeactivate_56_junction" inputPort="//@networknode.38/@ports/@port.0 //@networknode.39/@ports/@port.0" patternName="ptXdeactivate_56" overlaps="//@networknode.40/@allOverlaps.0" mappings="//@networknode.40/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.41"/>
     </ports>
@@ -361,9 +387,12 @@
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
     </allMappings>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ptXdeactivate_52_junction" inputPort="//@networknode.10/@ports/@port.2 //@networknode.40/@ports/@port.0" patternName="ptXdeactivate_52" overlaps="//@networknode.41/@allOverlaps.0" mappings="//@networknode.41/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ptXdeactivate_54_junction" inputPort="//@networknode.10/@ports/@port.2 //@networknode.40/@ports/@port.0" patternName="ptXdeactivate_54" overlaps="//@networknode.41/@allOverlaps.0" mappings="//@networknode.41/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.42"/>
     </ports>
@@ -373,6 +402,10 @@
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="2"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="2"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="ptXdeactivate_production" inputPort="//@networknode.41/@ports/@port.0" patternName="ptXdeactivate">
@@ -391,7 +424,7 @@
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ptYbwd_63_junction" inputPort="//@networknode.34/@ports/@port.2 //@networknode.44/@ports/@port.0" patternName="ptYbwd_63" overlaps="//@networknode.45/@allOverlaps.0" mappings="//@networknode.45/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ptYbwd_65_junction" inputPort="//@networknode.34/@ports/@port.2 //@networknode.44/@ports/@port.0" patternName="ptYbwd_65" overlaps="//@networknode.45/@allOverlaps.0" mappings="//@networknode.45/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.46"/>
     </ports>
@@ -402,6 +435,8 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="ptYbwd_production" inputPort="//@networknode.45/@ports/@port.0" patternName="ptYbwd">
@@ -412,11 +447,11 @@
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portTarget="//@networknode.49"/>
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.59"/>
-      <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.61"/>
+      <port xmi:type="hipe.network:SimplePort" portTarget="//@networknode.62"/>
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y_p"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ptYdeactivate_72_junction" inputPort="//@networknode.34/@ports/@port.3 //@networknode.44/@ports/@port.1" patternName="ptYdeactivate_72" overlaps="//@networknode.48/@allOverlaps.0" mappings="//@networknode.48/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ptYdeactivate_74_junction" inputPort="//@networknode.34/@ports/@port.3 //@networknode.44/@ports/@port.1" patternName="ptYdeactivate_74" overlaps="//@networknode.48/@allOverlaps.0" mappings="//@networknode.48/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.49"/>
     </ports>
@@ -427,9 +462,11 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ptYdeactivate_70_junction" inputPort="//@networknode.47/@ports/@port.0 //@networknode.48/@ports/@port.0" patternName="ptYdeactivate_70" overlaps="//@networknode.49/@allOverlaps.0" mappings="//@networknode.49/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ptYdeactivate_72_junction" inputPort="//@networknode.47/@ports/@port.0 //@networknode.48/@ports/@port.0" patternName="ptYdeactivate_72" overlaps="//@networknode.49/@allOverlaps.0" mappings="//@networknode.49/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.50"/>
     </ports>
@@ -440,9 +477,12 @@
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
     </allMappings>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="ptYdeactivate_68_junction" inputPort="//@networknode.10/@ports/@port.3 //@networknode.49/@ports/@port.0" patternName="ptYdeactivate_68" overlaps="//@networknode.50/@allOverlaps.0" mappings="//@networknode.50/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="ptYdeactivate_70_junction" inputPort="//@networknode.10/@ports/@port.3 //@networknode.49/@ports/@port.0" patternName="ptYdeactivate_70" overlaps="//@networknode.50/@allOverlaps.0" mappings="//@networknode.50/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.51"/>
     </ports>
@@ -452,6 +492,10 @@
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="2"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="2"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="ptYdeactivate_production" inputPort="//@networknode.50/@ports/@port.0" patternName="ptYdeactivate">
@@ -472,25 +516,25 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <nodeNames>t</nodeNames>
         <nodeNames>a1</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.107"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.109"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portTarget="//@networknode.57" initializationCode="" constraintName="check_constraint_10" predicateCode="!a1.equals(t)">
-        <indices>1</indices>
         <indices>0</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-        <nodeNames>a1</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <nodeNames>t</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.113"/>
+        <nodeNames>a1</nodeNames>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.115"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.64" initializationCode="" constraintName="check_constraint_14" predicateCode="!a.equals(t)">
-        <indices>0</indices>
         <indices>1</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-        <nodeNames>t</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
         <nodeNames>a</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.128"/>
+        <nodeNames>t</nodeNames>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.131"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.65" initializationCode="" constraintName="check_constraint_15" predicateCode="!a.equals(t)">
         <indices>1</indices>
@@ -499,7 +543,7 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
         <nodeNames>a</nodeNames>
         <nodeNames>t</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.131"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.134"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.68" initializationCode="" constraintName="check_constraint_18" predicateCode="!a.equals(t)">
         <indices>1</indices>
@@ -508,7 +552,7 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
         <nodeNames>a</nodeNames>
         <nodeNames>t</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.131"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.134"/>
       </port>
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
@@ -516,22 +560,22 @@
   <networknode xmi:type="hipe.network:ReferenceNode" name="T_y_2_reference" inputPort="//@networknode.77/@ports/@port.2 //@networknode.3/@ports/@port.3">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.55" initializationCode="" constraintName="check_constraint_8" predicateCode="!a2.equals(t)">
-        <indices>0</indices>
         <indices>1</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-        <nodeNames>t</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
         <nodeNames>a2</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.108"/>
+        <nodeNames>t</nodeNames>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.110"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.57" initializationCode="" constraintName="check_constraint_11" predicateCode="!a2.equals(t)">
-        <indices>1</indices>
         <indices>0</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-        <nodeNames>a2</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <nodeNames>t</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.114"/>
+        <nodeNames>a2</nodeNames>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.116"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.66" initializationCode="" constraintName="check_constraint_16" predicateCode="!a.equals(t)">
         <indices>1</indices>
@@ -540,7 +584,7 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
         <nodeNames>a</nodeNames>
         <nodeNames>t</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.134"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.137"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.67" initializationCode="" constraintName="check_constraint_17" predicateCode="!a.equals(t)">
         <indices>1</indices>
@@ -549,7 +593,7 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
         <nodeNames>a</nodeNames>
         <nodeNames>t</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.137"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.140"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.70" initializationCode="" constraintName="check_constraint_19" predicateCode="!a.equals(t)">
         <indices>1</indices>
@@ -558,21 +602,21 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
         <nodeNames>a</nodeNames>
         <nodeNames>t</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.137"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.140"/>
       </port>
     </ports>
     <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="tBound_79_junction" inputPort="//@networknode.53/@ports/@port.0 //@networknode.54/@ports/@port.0" patternName="tBound_79" overlaps="//@networknode.55/@allOverlaps.0" mappings="//@networknode.55/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="tBound_81_junction" inputPort="//@networknode.53/@ports/@port.0 //@networknode.54/@ports/@port.0" patternName="tBound_81" overlaps="//@networknode.55/@allOverlaps.0" mappings="//@networknode.55/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.56" initializationCode="" constraintName="check_constraint_9" predicateCode="!a1.equals(a2)">
-        <indices>1</indices>
         <indices>2</indices>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-        <nodeNames>a1</nodeNames>
         <nodeNames>a2</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.106"/>
+        <nodeNames>a1</nodeNames>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.108"/>
       </port>
     </ports>
     <allOverlaps xmi:type="hipe.network:Overlaps">
@@ -582,6 +626,9 @@
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="tBound_production" inputPort="//@networknode.55/@ports/@port.0" patternName="tBound">
@@ -589,7 +636,7 @@
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="a1" value="1"/>
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="a2" value="2"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="tBound_CONDITION_t_85_junction" inputPort="//@networknode.53/@ports/@port.1 //@networknode.54/@ports/@port.1" patternName="tBound_CONDITION_t_85" overlaps="//@networknode.57/@allOverlaps.0" hasLocalNodes="true" mappings="//@networknode.57/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="tBound_CONDITION_t_87_junction" inputPort="//@networknode.53/@ports/@port.1 //@networknode.54/@ports/@port.1" patternName="tBound_CONDITION_t_87" overlaps="//@networknode.57/@allOverlaps.0" hasLocalNodes="true" mappings="//@networknode.57/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.58" initializationCode="" constraintName="check_constraint_12" predicateCode="!a1.equals(a2)">
         <indices>2</indices>
@@ -598,32 +645,33 @@
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <nodeNames>a2</nodeNames>
         <nodeNames>a1</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.112"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.114"/>
       </port>
-      <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.62" initializationCode="" constraintName="check_constraint_13" predicateCode="!a1.equals(a2)">
+      <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.61" initializationCode="" constraintName="check_constraint_13" predicateCode="!a1.equals(a2)">
         <indices>2</indices>
         <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
         <nodeNames>a2</nodeNames>
         <nodeNames>a1</nodeNames>
-        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.112"/>
+        <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.114"/>
       </port>
     </ports>
     <allOverlaps xmi:type="hipe.network:Overlaps">
       <overlap xmi:type="hipe.network:Overlap"/>
     </allOverlaps>
-    <allMappings xmi:type="hipe.network:Mappings">
+    <allMappings xmi:type="hipe.network:Mappings" hasLocalNodes="true">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
       <mapping xmi:type="hipe.network:Mapping" origin="RIGHT" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="tBound_CONDITION_t_production" inputPort="//@networknode.57/@ports/@port.0" patternName="tBound_CONDITION_t">
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="t" value="0"/>
     <signatureElts xmi:type="hipe.network:IntegerToIntegerMapEntry" key="0" value="0"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="tPP_91_junction" inputPort="//@networknode.38/@ports/@port.1 //@networknode.47/@ports/@port.1" patternName="tPP_91" overlaps="//@networknode.59/@allOverlaps.0" mappings="//@networknode.59/@allMappings.0">
+  <networknode xmi:type="hipe.network:JunctionNode" name="tPP_93_junction" inputPort="//@networknode.38/@ports/@port.1 //@networknode.47/@ports/@port.1" patternName="tPP_93" overlaps="//@networknode.59/@allOverlaps.0" mappings="//@networknode.59/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.60"/>
     </ports>
@@ -634,15 +682,25 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="tPP_production" inputPort="//@networknode.59/@ports/@port.0" patternName="tPP">
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="t" value="0"/>
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="ps" value="1"/>
   </networknode>
-  <networknode xmi:type="hipe.network:JunctionNode" name="tPPfree_96_junction" inputPort="//@networknode.38/@ports/@port.2 //@networknode.47/@ports/@port.2" patternName="tPPfree_96" overlaps="//@networknode.61/@allOverlaps.0" mappings="//@networknode.61/@allMappings.0">
+  <networknode xmi:type="hipe.network:NACJunctionNode" name="tPPfree_100_nacjunction" inputPort="//@networknode.38/@ports/@port.2 //@networknode.57/@ports/@port.1" patternName="tPPfree_100" overlaps="//@networknode.61/@allOverlaps.0">
     <ports xmi:type="hipe.network:Ports">
-      <port xmi:type="hipe.network:SimplePort" portTarget="//@networknode.62"/>
+      <port xmi:type="hipe.network:SimplePort" portSlot="RIGHT" portTarget="//@networknode.62"/>
+    </ports>
+    <allOverlaps xmi:type="hipe.network:Overlaps">
+      <overlap xmi:type="hipe.network:Overlap"/>
+    </allOverlaps>
+  </networknode>
+  <networknode xmi:type="hipe.network:JunctionNode" name="tPPfree_98_junction" inputPort="//@networknode.47/@ports/@port.2 //@networknode.61/@ports/@port.0" patternName="tPPfree_98" overlaps="//@networknode.62/@allOverlaps.0" mappings="//@networknode.62/@allMappings.0">
+    <ports xmi:type="hipe.network:Ports">
+      <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.63"/>
     </ports>
     <allOverlaps xmi:type="hipe.network:Overlaps">
       <overlap xmi:type="hipe.network:Overlap"/>
@@ -651,15 +709,9 @@
     <allMappings xmi:type="hipe.network:Mappings">
       <mapping xmi:type="hipe.network:Mapping"/>
       <mapping xmi:type="hipe.network:Mapping" index="1"/>
+      <signatureMapping xmi:type="hipe.network:Mapping"/>
+      <signatureMapping xmi:type="hipe.network:Mapping" index="1"/>
     </allMappings>
-  </networknode>
-  <networknode xmi:type="hipe.network:NACJunctionNode" name="tPPfree_117_nacjunction" inputPort="//@networknode.61/@ports/@port.0 //@networknode.57/@ports/@port.1" patternName="tPPfree_117" overlaps="//@networknode.62/@allOverlaps.0">
-    <ports xmi:type="hipe.network:Ports">
-      <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.63"/>
-    </ports>
-    <allOverlaps xmi:type="hipe.network:Overlaps">
-      <overlap xmi:type="hipe.network:Overlap"/>
-    </allOverlaps>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="tPPfree_production" inputPort="//@networknode.62/@ports/@port.0" patternName="tPPfree">
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="t" value="0"/>
@@ -681,7 +733,7 @@
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="t" value="0"/>
     <signatureElts xmi:type="hipe.network:IntegerToIntegerMapEntry" key="0" value="0"/>
   </networknode>
-  <networknode xmi:type="hipe.network:NACJunctionNode" name="txFree_118_nacjunction" inputPort="//@networknode.74/@ports/@port.3 //@networknode.53/@ports/@port.4" patternName="txFree_118" overlaps="//@networknode.68/@allOverlaps.0">
+  <networknode xmi:type="hipe.network:NACJunctionNode" name="txFree_116_nacjunction" inputPort="//@networknode.74/@ports/@port.3 //@networknode.53/@ports/@port.4" patternName="txFree_116" overlaps="//@networknode.68/@allOverlaps.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.69"/>
     </ports>
@@ -692,7 +744,7 @@
   <networknode xmi:type="hipe.network:ProductionNode" name="txFree_production" inputPort="//@networknode.68/@ports/@port.0" patternName="txFree">
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="t" value="0"/>
   </networknode>
-  <networknode xmi:type="hipe.network:NACJunctionNode" name="tyFree_119_nacjunction" inputPort="//@networknode.75/@ports/@port.3 //@networknode.54/@ports/@port.4" patternName="tyFree_119" overlaps="//@networknode.70/@allOverlaps.0">
+  <networknode xmi:type="hipe.network:NACJunctionNode" name="tyFree_118_nacjunction" inputPort="//@networknode.75/@ports/@port.3 //@networknode.54/@ports/@port.4" patternName="tyFree_118" overlaps="//@networknode.70/@allOverlaps.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.71"/>
     </ports>
