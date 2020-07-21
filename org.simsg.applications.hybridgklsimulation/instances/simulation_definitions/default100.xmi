@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<org.simsg:SimDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GTLanguage="platform:/resource/org.emoflon.ibex.gt/model/Gt.ecore" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.simsg="http://www.simsg.org/simulationdefinition/simulationdefinition" xsi:schemaLocation="platform:/resource/org.emoflon.ibex.gt/model/Gt.ecore java://GTLanguage.GTLanguagePackage platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore java://org.emoflon.ibex.patternmodel.IBeXPatternModel.IBeXPatternModelPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage http://www.simsg.org/simulationdefinition/simulationdefinition java://SimulationDefinition.SimulationDefinitionPackage" name="default100" simulationModelURI="file:/instances/simulation_instances/default100.xmi" gtRulesURI="file:src-gen/org/simsg/applications/gklsimulation/gkl/api/gt-rules.xmi" ibexPatternsURI="file:src-gen/org/simsg/applications/gklsimulation/gkl/api/ibex-patterns.xmi">
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.2" rate="1.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.1" rate="10.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.5" rate="1.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.4" rate="10.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.8" rate="1.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.6" rate="10.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.11" rate="1.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.9" rate="10.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.0" rate="1.0"/>
+<org.simsg:SimDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GTLanguage="platform:/resource/org.emoflon.ibex.gt/model/Gt.ecore" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.simsg="http://www.simsg.org/simulationdefinition/simulationdefinition" xsi:schemaLocation="platform:/resource/org.emoflon.ibex.gt/model/Gt.ecore java://GTLanguage.GTLanguagePackage platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore java://org.emoflon.ibex.patternmodel.IBeXPatternModel.IBeXPatternModelPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage http://www.simsg.org/simulationdefinition/simulationdefinition java://SimulationDefinition.SimulationDefinitionPackage" name="default100" simulationModelURI="file:/instances/simulation_instances/default100.xmi" gtRulesURI="file:src-gen/org/simsg/applications/hybridgklsimulation/hybridgkl/api/gt-rules.xmi" ibexPatternsURI="file:src-gen/org/simsg/applications/hybridgklsimulation/hybridgkl/api/ibex-patterns.xmi">
   <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.3" rate="1.0"/>
-  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.7" rate="1.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.2" rate="10.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.6" rate="1.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.5" rate="10.0"/>
   <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.10" rate="1.0"/>
-  <observations xmi:type="org.simsg:PatternObservation" name="tPP" pattern="//@ibexPatternSet/@contextPatterns.18"/>
-  <observations xmi:type="org.simsg:PatternObservation" name="tPPfree" pattern="//@ibexPatternSet/@contextPatterns.19"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.8" rate="10.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.13" rate="1.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.11" rate="10.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.1" rate="1.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.4" rate="1.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.9" rate="1.0"/>
+  <ruleAnnotations xmi:type="org.simsg:StochasticRate" GTRule="//@GtRuleSet/@rules.12" rate="1.0"/>
+  <observations xmi:type="org.simsg:PatternObservation" name="tPP" pattern="//@ibexPatternSet/@contextPatterns.20"/>
+  <observations xmi:type="org.simsg:PatternObservation" name="tPPfree" pattern="//@ibexPatternSet/@contextPatterns.21"/>
   <GtRuleSet xmi:type="GTLanguage:GTRuleSet">
-    <rules xmi:type="GTLanguage:GTRule" name="ktXactivate" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.0/@nodes.0 //@GtRuleSet/@rules.0/@nodes.1 //@GtRuleSet/@rules.0/@nodes.2 //@GtRuleSet/@rules.0/@nodes.3">
+    <rules xmi:type="GTLanguage:GTRule" name="kFree" documentation="" ruleNodes="//@GtRuleSet/@rules.0/@nodes.0">
+      <nodes xmi:type="GTLanguage:GTNode" name="k">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
+      </nodes>
+    </rules>
+    <rules xmi:type="GTLanguage:GTRule" name="ktXactivate" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.1/@nodes.0 //@GtRuleSet/@rules.1/@nodes.1 //@GtRuleSet/@rules.1/@nodes.2 //@GtRuleSet/@rules.1/@nodes.3">
       <nodes xmi:type="GTLanguage:GTNode" name="us">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//U_s"/>
       </nodes>
@@ -29,7 +34,7 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ktXbwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.1/@nodes.0 //@GtRuleSet/@rules.1/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="ktXbwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.2/@nodes.0 //@GtRuleSet/@rules.2/@nodes.1">
       <nodes xmi:type="GTLanguage:GTNode" name="k">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </nodes>
@@ -37,15 +42,12 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ktXfwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.2/@nodes.0 //@GtRuleSet/@rules.2/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="ktXfwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.3/@nodes.0">
       <nodes xmi:type="GTLanguage:GTNode" name="k">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </nodes>
-      <nodes xmi:type="GTLanguage:GTNode" name="t">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ktYactivate" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.3/@nodes.0 //@GtRuleSet/@rules.3/@nodes.1 //@GtRuleSet/@rules.3/@nodes.2 //@GtRuleSet/@rules.3/@nodes.3">
+    <rules xmi:type="GTLanguage:GTRule" name="ktYactivate" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.4/@nodes.0 //@GtRuleSet/@rules.4/@nodes.1 //@GtRuleSet/@rules.4/@nodes.2 //@GtRuleSet/@rules.4/@nodes.3">
       <nodes xmi:type="GTLanguage:GTNode" name="us">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//U_s"/>
       </nodes>
@@ -59,7 +61,7 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ktYbwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.4/@nodes.0 //@GtRuleSet/@rules.4/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="ktYbwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.5/@nodes.0 //@GtRuleSet/@rules.5/@nodes.1">
       <nodes xmi:type="GTLanguage:GTNode" name="k">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </nodes>
@@ -67,15 +69,17 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ktYfwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.5/@nodes.0 //@GtRuleSet/@rules.5/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="ktYfwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.6/@nodes.0">
       <nodes xmi:type="GTLanguage:GTNode" name="k">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </nodes>
-      <nodes xmi:type="GTLanguage:GTNode" name="t">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+    </rules>
+    <rules xmi:type="GTLanguage:GTRule" name="pFree" documentation="" ruleNodes="//@GtRuleSet/@rules.7/@nodes.0">
+      <nodes xmi:type="GTLanguage:GTNode" name="p">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ptXbwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.6/@nodes.0 //@GtRuleSet/@rules.6/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="ptXbwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.8/@nodes.0 //@GtRuleSet/@rules.8/@nodes.1">
       <nodes xmi:type="GTLanguage:GTNode" name="p">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </nodes>
@@ -83,7 +87,7 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ptXdeactivate" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.7/@nodes.0 //@GtRuleSet/@rules.7/@nodes.1 //@GtRuleSet/@rules.7/@nodes.2 //@GtRuleSet/@rules.7/@nodes.3">
+    <rules xmi:type="GTLanguage:GTRule" name="ptXdeactivate" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.9/@nodes.0 //@GtRuleSet/@rules.9/@nodes.1 //@GtRuleSet/@rules.9/@nodes.2 //@GtRuleSet/@rules.9/@nodes.3">
       <nodes xmi:type="GTLanguage:GTNode" name="us">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//U_s"/>
       </nodes>
@@ -97,7 +101,12 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ptXfwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.8/@nodes.0 //@GtRuleSet/@rules.8/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="ptXfwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.10/@nodes.0">
+      <nodes xmi:type="GTLanguage:GTNode" name="p">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
+      </nodes>
+    </rules>
+    <rules xmi:type="GTLanguage:GTRule" name="ptYbwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.11/@nodes.0 //@GtRuleSet/@rules.11/@nodes.1">
       <nodes xmi:type="GTLanguage:GTNode" name="p">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </nodes>
@@ -105,15 +114,7 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ptYbwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.9/@nodes.0 //@GtRuleSet/@rules.9/@nodes.1">
-      <nodes xmi:type="GTLanguage:GTNode" name="p">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
-      </nodes>
-      <nodes xmi:type="GTLanguage:GTNode" name="t">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </nodes>
-    </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ptYdeactivate" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.10/@nodes.0 //@GtRuleSet/@rules.10/@nodes.1 //@GtRuleSet/@rules.10/@nodes.2 //@GtRuleSet/@rules.10/@nodes.3">
+    <rules xmi:type="GTLanguage:GTRule" name="ptYdeactivate" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.12/@nodes.0 //@GtRuleSet/@rules.12/@nodes.1 //@GtRuleSet/@rules.12/@nodes.2 //@GtRuleSet/@rules.12/@nodes.3">
       <nodes xmi:type="GTLanguage:GTNode" name="us">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//U_s"/>
       </nodes>
@@ -127,15 +128,12 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="ptYfwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.11/@nodes.0 //@GtRuleSet/@rules.11/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="ptYfwd" documentation="" executable="true" ruleNodes="//@GtRuleSet/@rules.13/@nodes.0">
       <nodes xmi:type="GTLanguage:GTNode" name="p">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </nodes>
-      <nodes xmi:type="GTLanguage:GTNode" name="t">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="tPP" documentation="" ruleNodes="//@GtRuleSet/@rules.12/@nodes.0 //@GtRuleSet/@rules.12/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="tPP" documentation="" ruleNodes="//@GtRuleSet/@rules.14/@nodes.0 //@GtRuleSet/@rules.14/@nodes.1">
       <nodes xmi:type="GTLanguage:GTNode" name="ps">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
       </nodes>
@@ -143,10 +141,20 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
     </rules>
-    <rules xmi:type="GTLanguage:GTRule" name="tPPfree" documentation="" ruleNodes="//@GtRuleSet/@rules.13/@nodes.0 //@GtRuleSet/@rules.13/@nodes.1">
+    <rules xmi:type="GTLanguage:GTRule" name="tPPfree" documentation="" ruleNodes="//@GtRuleSet/@rules.15/@nodes.0 //@GtRuleSet/@rules.15/@nodes.1">
       <nodes xmi:type="GTLanguage:GTNode" name="ps">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
       </nodes>
+      <nodes xmi:type="GTLanguage:GTNode" name="t">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+      </nodes>
+    </rules>
+    <rules xmi:type="GTLanguage:GTRule" name="txFree" documentation="" ruleNodes="//@GtRuleSet/@rules.16/@nodes.0">
+      <nodes xmi:type="GTLanguage:GTNode" name="t">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+      </nodes>
+    </rules>
+    <rules xmi:type="GTLanguage:GTRule" name="tyFree" documentation="" ruleNodes="//@GtRuleSet/@rules.17/@nodes.0">
       <nodes xmi:type="GTLanguage:GTNode" name="t">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </nodes>
@@ -177,163 +185,161 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </signatureNodes>
     </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ktXactivate">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.2/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.2/@signatureNodes.2">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
-      </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.2/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.2/@signatureNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
-      </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.2/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.2/@signatureNodes.3">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x_u"/>
-      </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@contextPatterns.2/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.2/@localEdges.0">
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="kFree">
+      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.1">
+        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.2/@signatureNodes.0" value="//@ibexPatternSet/@contextPatterns.1/@signatureNodes.0"/>
+      </invocations>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
-      </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.2/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.2/@localEdges.1 //@ibexPatternSet/@contextPatterns.2/@localEdges.2">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="us" incomingEdges="//@ibexPatternSet/@contextPatterns.2/@localEdges.2">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//U_s"/>
-      </signatureNodes>
     </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ktXbwd">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.1">
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ktXactivate">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.2">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.0">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
+      </localEdges>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.3/@signatureNodes.3">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x_u"/>
       </localEdges>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@contextPatterns.3/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.3/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.3/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.3/@localEdges.1">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
+      </signatureNodes>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.3/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.3/@localEdges.1 //@ibexPatternSet/@contextPatterns.3/@localEdges.2">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+      </signatureNodes>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="us" incomingEdges="//@ibexPatternSet/@contextPatterns.3/@localEdges.2">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//U_s"/>
+      </signatureNodes>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ktXbwd">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.4/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.4/@signatureNodes.1">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
+      </localEdges>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.4/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.4/@signatureNodes.0">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
+      </localEdges>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@contextPatterns.4/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.4/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
+      </signatureNodes>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.4/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.4/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ktXfwd">
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.1">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.4/@signatureNodes.0" value="//@ibexPatternSet/@contextPatterns.1/@signatureNodes.0"/>
-      </invocations>
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.21">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.4/@signatureNodes.1" value="//@ibexPatternSet/@contextPatterns.21/@signatureNodes.0"/>
-      </invocations>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ktYactivate">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.5/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.5/@signatureNodes.2">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.2">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.5/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.5/@signatureNodes.0">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.5/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.5/@signatureNodes.3">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.3">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y_u"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@contextPatterns.5/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.5/@localEdges.0">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </signatureNodes>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.5/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.5/@localEdges.1 //@ibexPatternSet/@contextPatterns.5/@localEdges.2">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.1 //@ibexPatternSet/@contextPatterns.6/@localEdges.2">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="us" incomingEdges="//@ibexPatternSet/@contextPatterns.5/@localEdges.2">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="us" incomingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.2">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//U_s"/>
       </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ktYbwd">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.1">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.7/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.7/@signatureNodes.1">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.6/@signatureNodes.0">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.7/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.7/@signatureNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.0">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@contextPatterns.7/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.7/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.6/@localEdges.1">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.7/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.7/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ktYfwd">
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.1">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.7/@signatureNodes.0" value="//@ibexPatternSet/@contextPatterns.1/@signatureNodes.0"/>
-      </invocations>
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.23">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.7/@signatureNodes.1" value="//@ibexPatternSet/@contextPatterns.23/@signatureNodes.0"/>
-      </invocations>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="k">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="pBound">
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.8/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.8/@signatureNodes.1"/>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.8/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.8/@signatureNodes.0">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.9/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.9/@signatureNodes.1"/>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.9/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.9/@signatureNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.8/@localEdges.0">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.9/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" outgoingEdges="//@ibexPatternSet/@contextPatterns.8/@localEdges.0">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
-      </signatureNodes>
-    </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="pBound-CONDITION-p">
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.9/@localNodes.0 //@ibexPatternSet/@contextPatterns.9/@signatureNodes.0"/>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.9/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.9/@localNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
-      </localEdges>
-      <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.9/@localEdges.0">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-      </localNodes>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" outgoingEdges="//@ibexPatternSet/@contextPatterns.9/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </signatureNodes>
     </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ptXbwd">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.10/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.10/@signatureNodes.1">
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="pBound-CONDITION-p">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.10/@localNodes.0 //@ibexPatternSet/@contextPatterns.10/@signatureNodes.0"/>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.10/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.10/@localNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.10/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.10/@signatureNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
-      </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@contextPatterns.10/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.10/@localEdges.0">
+      <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.10/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+      </localNodes>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" outgoingEdges="//@ibexPatternSet/@contextPatterns.10/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.10/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.10/@localEdges.1">
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="pFree">
+      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.10">
+        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.11/@signatureNodes.0" value="//@ibexPatternSet/@contextPatterns.10/@signatureNodes.0"/>
+      </invocations>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
+      </signatureNodes>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ptXbwd">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.12/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.12/@signatureNodes.1">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
+      </localEdges>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.12/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.12/@signatureNodes.0">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
+      </localEdges>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@contextPatterns.12/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.12/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
+      </signatureNodes>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.12/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.12/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ptXdeactivate">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.11/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.11/@signatureNodes.2">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.2">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.11/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.11/@signatureNodes.0">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.11/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.11/@signatureNodes.1">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.1">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x_p"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@contextPatterns.11/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.11/@localEdges.0">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps" incomingEdges="//@ibexPatternSet/@contextPatterns.11/@localEdges.2">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps" incomingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.2">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.11/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.11/@localEdges.1 //@ibexPatternSet/@contextPatterns.11/@localEdges.2">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.1 //@ibexPatternSet/@contextPatterns.13/@localEdges.2">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="us">
@@ -341,50 +347,41 @@
       </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ptXfwd">
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.9">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.12/@signatureNodes.0" value="//@ibexPatternSet/@contextPatterns.9/@signatureNodes.0"/>
-      </invocations>
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.21">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.12/@signatureNodes.1" value="//@ibexPatternSet/@contextPatterns.21/@signatureNodes.0"/>
-      </invocations>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ptYbwd">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.1">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.15/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.15/@signatureNodes.1">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.13/@signatureNodes.0">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.15/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.15/@signatureNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.0">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@contextPatterns.15/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.15/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.13/@localEdges.1">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.15/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.15/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ptYdeactivate">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.14/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.14/@signatureNodes.2">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.2">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.14/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.14/@signatureNodes.0">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.14/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.14/@signatureNodes.1">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.1">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y_p"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@contextPatterns.14/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.14/@localEdges.0">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@contextPatterns.16/@localEdges.1" outgoingEdges="//@ibexPatternSet/@contextPatterns.16/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps" incomingEdges="//@ibexPatternSet/@contextPatterns.14/@localEdges.2">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps" incomingEdges="//@ibexPatternSet/@contextPatterns.16/@localEdges.2">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.14/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.14/@localEdges.1 //@ibexPatternSet/@contextPatterns.14/@localEdges.2">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@contextPatterns.16/@localEdges.0" outgoingEdges="//@ibexPatternSet/@contextPatterns.16/@localEdges.1 //@ibexPatternSet/@contextPatterns.16/@localEdges.2">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="us">
@@ -392,118 +389,85 @@
       </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ptYfwd">
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.9">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.15/@signatureNodes.0" value="//@ibexPatternSet/@contextPatterns.9/@signatureNodes.0"/>
-      </invocations>
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.23">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.15/@signatureNodes.1" value="//@ibexPatternSet/@contextPatterns.23/@signatureNodes.0"/>
-      </invocations>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="p">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </signatureNodes>
     </contextPatterns>
     <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tBound">
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.16/@signatureNodes.1"/>
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.16/@signatureNodes.2"/>
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.1 //@ibexPatternSet/@contextPatterns.16/@signatureNodes.2"/>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.0">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.18/@signatureNodes.1"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.18/@signatureNodes.2"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.1 //@ibexPatternSet/@contextPatterns.18/@signatureNodes.2"/>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.16/@signatureNodes.1">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.2" targetNode="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.1">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a1" incomingEdges="//@ibexPatternSet/@contextPatterns.16/@localEdges.0">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a1" incomingEdges="//@ibexPatternSet/@contextPatterns.18/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a2" incomingEdges="//@ibexPatternSet/@contextPatterns.16/@localEdges.1">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a2" incomingEdges="//@ibexPatternSet/@contextPatterns.18/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-      </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.16/@localEdges.0 //@ibexPatternSet/@contextPatterns.16/@localEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </signatureNodes>
-    </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tBound-CONDITION-t">
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.17/@localNodes.0 //@ibexPatternSet/@contextPatterns.17/@localNodes.1"/>
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.17/@localNodes.0 //@ibexPatternSet/@contextPatterns.17/@signatureNodes.0"/>
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.17/@localNodes.1 //@ibexPatternSet/@contextPatterns.17/@signatureNodes.0"/>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.17/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.17/@localNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
-      </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.17/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.17/@localNodes.1">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
-      </localEdges>
-      <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a1" incomingEdges="//@ibexPatternSet/@contextPatterns.17/@localEdges.0">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-      </localNodes>
-      <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a2" incomingEdges="//@ibexPatternSet/@contextPatterns.17/@localEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-      </localNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.17/@localEdges.0 //@ibexPatternSet/@contextPatterns.17/@localEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </signatureNodes>
-    </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tPP">
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x_p"/>
-      </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.18/@signatureNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y_p"/>
-      </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps" incomingEdges="//@ibexPatternSet/@contextPatterns.18/@localEdges.0 //@ibexPatternSet/@contextPatterns.18/@localEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
       </signatureNodes>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.18/@localEdges.0 //@ibexPatternSet/@contextPatterns.18/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tPPfree">
-      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.17">
-        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.19/@signatureNodes.1" value="//@ibexPatternSet/@contextPatterns.17/@signatureNodes.0"/>
-      </invocations>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.19/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.19/@signatureNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x_p"/>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tBound-CONDITION-t">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.19/@localNodes.0 //@ibexPatternSet/@contextPatterns.19/@localNodes.1"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.19/@localNodes.0 //@ibexPatternSet/@contextPatterns.19/@signatureNodes.0"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.19/@localNodes.1 //@ibexPatternSet/@contextPatterns.19/@signatureNodes.0"/>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.19/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.19/@localNodes.0">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
       </localEdges>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.19/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.19/@signatureNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y_p"/>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.19/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.19/@localNodes.1">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps" incomingEdges="//@ibexPatternSet/@contextPatterns.19/@localEdges.0 //@ibexPatternSet/@contextPatterns.19/@localEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
-      </signatureNodes>
+      <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a1" incomingEdges="//@ibexPatternSet/@contextPatterns.19/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+      </localNodes>
+      <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a2" incomingEdges="//@ibexPatternSet/@contextPatterns.19/@localEdges.1">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+      </localNodes>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.19/@localEdges.0 //@ibexPatternSet/@contextPatterns.19/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tXBound">
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.20/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.20/@signatureNodes.1"/>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tPP">
       <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.20/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.20/@signatureNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x_p"/>
       </localEdges>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.20/@localEdges.0">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.20/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.20/@signatureNodes.0">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y_p"/>
+      </localEdges>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps" incomingEdges="//@ibexPatternSet/@contextPatterns.20/@localEdges.0 //@ibexPatternSet/@contextPatterns.20/@localEdges.1">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
       </signatureNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.20/@localEdges.0">
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.20/@localEdges.0 //@ibexPatternSet/@contextPatterns.20/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tXBound-CONDITION-t">
-      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.21/@localNodes.0 //@ibexPatternSet/@contextPatterns.21/@signatureNodes.0"/>
-      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.21/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.21/@localNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tPPfree">
+      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.19">
+        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.21/@signatureNodes.1" value="//@ibexPatternSet/@contextPatterns.19/@signatureNodes.0"/>
+      </invocations>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.21/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.21/@signatureNodes.0">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x_p"/>
       </localEdges>
-      <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.21/@localEdges.0">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
-      </localNodes>
-      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.21/@localEdges.0">
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.21/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.21/@signatureNodes.0">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y_p"/>
+      </localEdges>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="ps" incomingEdges="//@ibexPatternSet/@contextPatterns.21/@localEdges.0 //@ibexPatternSet/@contextPatterns.21/@localEdges.1">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P_s"/>
+      </signatureNodes>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.21/@localEdges.0 //@ibexPatternSet/@contextPatterns.21/@localEdges.1">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tYBound">
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tXBound">
       <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.22/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.22/@signatureNodes.1"/>
       <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.22/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.22/@signatureNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
       </localEdges>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.22/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
@@ -512,15 +476,55 @@
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tYBound-CONDITION-t">
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tXBound-CONDITION-t">
       <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.23/@localNodes.0 //@ibexPatternSet/@contextPatterns.23/@signatureNodes.0"/>
       <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.23/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.23/@localNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
       </localEdges>
       <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.23/@localEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
       </localNodes>
       <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.23/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+      </signatureNodes>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tYBound">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.24/@signatureNodes.0 //@ibexPatternSet/@contextPatterns.24/@signatureNodes.1"/>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.24/@signatureNodes.1" targetNode="//@ibexPatternSet/@contextPatterns.24/@signatureNodes.0">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
+      </localEdges>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.24/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+      </signatureNodes>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.24/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+      </signatureNodes>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tYBound-CONDITION-t">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXNodePair" values="//@ibexPatternSet/@contextPatterns.25/@localNodes.0 //@ibexPatternSet/@contextPatterns.25/@signatureNodes.0"/>
+      <localEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@contextPatterns.25/@signatureNodes.0" targetNode="//@ibexPatternSet/@contextPatterns.25/@localNodes.0">
+        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
+      </localEdges>
+      <localNodes xmi:type="IBeXPatternModel:IBeXNode" name="a" incomingEdges="//@ibexPatternSet/@contextPatterns.25/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//Agent"/>
+      </localNodes>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" outgoingEdges="//@ibexPatternSet/@contextPatterns.25/@localEdges.0">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+      </signatureNodes>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="txFree">
+      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.23">
+        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.26/@signatureNodes.0" value="//@ibexPatternSet/@contextPatterns.23/@signatureNodes.0"/>
+      </invocations>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t">
+        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
+      </signatureNodes>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="tyFree">
+      <invocations xmi:type="IBeXPatternModel:IBeXPatternInvocation" invokedPattern="//@ibexPatternSet/@contextPatterns.25">
+        <mapping xmi:type="IBeXPatternModel:IBeXNodeToNodeMapping" key="//@ibexPatternSet/@contextPatterns.27/@signatureNodes.0" value="//@ibexPatternSet/@contextPatterns.25/@signatureNodes.0"/>
+      </invocations>
+      <signatureNodes xmi:type="IBeXPatternModel:IBeXNode" name="t">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
       </signatureNodes>
     </contextPatterns>
@@ -537,17 +541,11 @@
     </createPatterns>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ktXbwd"/>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ktXfwd">
-      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@createPatterns.2/@createdEdges.1" outgoingEdges="//@ibexPatternSet/@createPatterns.2/@createdEdges.0">
+      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@createPatterns.2/@createdEdges.0" outgoingEdges="//@ibexPatternSet/@createPatterns.2/@createdEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </contextNodes>
-      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@createPatterns.2/@createdEdges.0" outgoingEdges="//@ibexPatternSet/@createPatterns.2/@createdEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </contextNodes>
-      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.2/@contextNodes.0" targetNode="//@ibexPatternSet/@createPatterns.2/@contextNodes.1">
+      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.2/@contextNodes.0" targetNode="//@ibexPatternSet/@createPatterns.2/@contextNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
-      </createdEdges>
-      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.2/@contextNodes.1" targetNode="//@ibexPatternSet/@createPatterns.2/@contextNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
       </createdEdges>
     </createPatterns>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ktYactivate">
@@ -563,17 +561,11 @@
     </createPatterns>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ktYbwd"/>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ktYfwd">
-      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@createPatterns.5/@createdEdges.1" outgoingEdges="//@ibexPatternSet/@createPatterns.5/@createdEdges.0">
+      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="k" incomingEdges="//@ibexPatternSet/@createPatterns.5/@createdEdges.0" outgoingEdges="//@ibexPatternSet/@createPatterns.5/@createdEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K"/>
       </contextNodes>
-      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@createPatterns.5/@createdEdges.0" outgoingEdges="//@ibexPatternSet/@createPatterns.5/@createdEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </contextNodes>
-      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.5/@contextNodes.0" targetNode="//@ibexPatternSet/@createPatterns.5/@contextNodes.1">
+      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.5/@contextNodes.0" targetNode="//@ibexPatternSet/@createPatterns.5/@contextNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//K/a"/>
-      </createdEdges>
-      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.5/@contextNodes.1" targetNode="//@ibexPatternSet/@createPatterns.5/@contextNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
       </createdEdges>
     </createPatterns>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ptXbwd"/>
@@ -589,17 +581,11 @@
       </createdEdges>
     </createPatterns>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ptXfwd">
-      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@createPatterns.8/@createdEdges.1" outgoingEdges="//@ibexPatternSet/@createPatterns.8/@createdEdges.0">
+      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@createPatterns.8/@createdEdges.0" outgoingEdges="//@ibexPatternSet/@createPatterns.8/@createdEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </contextNodes>
-      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@createPatterns.8/@createdEdges.0" outgoingEdges="//@ibexPatternSet/@createPatterns.8/@createdEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </contextNodes>
-      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.8/@contextNodes.0" targetNode="//@ibexPatternSet/@createPatterns.8/@contextNodes.1">
+      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.8/@contextNodes.0" targetNode="//@ibexPatternSet/@createPatterns.8/@contextNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
-      </createdEdges>
-      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.8/@contextNodes.1" targetNode="//@ibexPatternSet/@createPatterns.8/@contextNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/x"/>
       </createdEdges>
     </createPatterns>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ptYbwd"/>
@@ -615,17 +601,11 @@
       </createdEdges>
     </createPatterns>
     <createPatterns xmi:type="IBeXPatternModel:IBeXCreatePattern" name="ptYfwd">
-      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@createPatterns.11/@createdEdges.1" outgoingEdges="//@ibexPatternSet/@createPatterns.11/@createdEdges.0">
+      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="p" incomingEdges="//@ibexPatternSet/@createPatterns.11/@createdEdges.0" outgoingEdges="//@ibexPatternSet/@createPatterns.11/@createdEdges.0">
         <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P"/>
       </contextNodes>
-      <contextNodes xmi:type="IBeXPatternModel:IBeXNode" name="t" incomingEdges="//@ibexPatternSet/@createPatterns.11/@createdEdges.0" outgoingEdges="//@ibexPatternSet/@createPatterns.11/@createdEdges.1">
-        <type xmi:type="ecore:EClass" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T"/>
-      </contextNodes>
-      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.11/@contextNodes.0" targetNode="//@ibexPatternSet/@createPatterns.11/@contextNodes.1">
+      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.11/@contextNodes.0" targetNode="//@ibexPatternSet/@createPatterns.11/@contextNodes.0">
         <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//P/a"/>
-      </createdEdges>
-      <createdEdges xmi:type="IBeXPatternModel:IBeXEdge" sourceNode="//@ibexPatternSet/@createPatterns.11/@contextNodes.1" targetNode="//@ibexPatternSet/@createPatterns.11/@contextNodes.0">
-        <type xmi:type="ecore:EReference" href="platform:/resource/GoldbeterKoshland/model/GoldbeterKoshland.ecore#//T/y"/>
       </createdEdges>
     </createPatterns>
     <deletePatterns xmi:type="IBeXPatternModel:IBeXDeletePattern" name="ktXactivate">

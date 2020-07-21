@@ -15,8 +15,8 @@ Require-Bundle: org.eclipse.emf.ecore,
  org.emoflon.ibex.gt.democles,
  org.emoflon.ibex.gt.hipe,
  org.emoflon.ibex.gt.viatra,
- org.simsg.core;bundle-version="1.0.0",
- SimulationDefinition;bundle-version="0.1.0"
+ org.simsg.core,
+ SimulationDefinition
 Export-Package: org.simsg.applications.gklsimulation.gkl.api,
  org.simsg.applications.gklsimulation.gkl.api.matches,
  org.simsg.applications.gklsimulation.gkl.api.rules
