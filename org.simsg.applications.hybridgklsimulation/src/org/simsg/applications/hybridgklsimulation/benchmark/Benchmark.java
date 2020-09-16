@@ -17,7 +17,7 @@ import GoldbeterKoshland.util.ModelGenerator;
 public class Benchmark {
 	
 	public static void main(String[] args) {
-		createModels();
+//		createModels();
 //		Utils.generateGKSimulation("default100");
 		
 		HybridgklSimSGApi simsg = new HybridgklSimSGApi();
