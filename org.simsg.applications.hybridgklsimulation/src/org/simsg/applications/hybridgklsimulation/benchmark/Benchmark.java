@@ -17,7 +17,7 @@ import GoldbeterKoshland.util.ModelGenerator;
 public class Benchmark {
 	
 	public static void main(String[] args) {
-//		createModels();
+		createModels();
 //		Utils.generateGKSimulation("default100");
 		
 		HybridgklSimSGApi simsg = new HybridgklSimSGApi();
@@ -86,15 +86,15 @@ public class Benchmark {
 	}
 	
 	public static void createModels() {
-		ModelGenerator.createAndSaveModel("instances/default100.xmi", 100);
+		ModelGenerator.createAndSaveModel("instances/simulation_instances/default100.xmi", 100);
 		Utils.generateGKSimulation("default100");
-		ModelGenerator.createAndSaveModel("instances/default200.xmi", 200);
+		ModelGenerator.createAndSaveModel("instances/simulation_instances/default200.xmi", 200);
 		Utils.generateGKSimulation("default200");
-		ModelGenerator.createAndSaveModel("instances/default400.xmi", 400);
+		ModelGenerator.createAndSaveModel("instances/simulation_instances/default400.xmi", 400);
 		Utils.generateGKSimulation("default400");
-		ModelGenerator.createAndSaveModel("instances/default800.xmi", 800);
+		ModelGenerator.createAndSaveModel("instances/simulation_instances/default800.xmi", 800);
 		Utils.generateGKSimulation("default800");
-		ModelGenerator.createAndSaveModel("instances/default1600.xmi", 1600);
+		ModelGenerator.createAndSaveModel("instances/simulation_instances/default1600.xmi", 1600);
 		Utils.generateGKSimulation("default1600");
 	}
 
