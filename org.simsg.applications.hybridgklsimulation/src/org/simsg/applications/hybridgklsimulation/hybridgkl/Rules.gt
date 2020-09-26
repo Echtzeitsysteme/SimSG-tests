@@ -85,7 +85,7 @@ rule ktXfwd() {
 	k : K {
 		++ -a->k
 	}
-}
+} @ 1
 
 rule ktXbwd() {
 	k : K {
@@ -95,13 +95,13 @@ rule ktXbwd() {
 	t : T {
 		-- -x->k
 	}
-}
+} @ 10
 
 rule ktYfwd() {
 	k : K {
 		++ -a->k
 	}
-}
+} @ 1
 
 rule ktYbwd() {
 	k : K {
@@ -111,13 +111,13 @@ rule ktYbwd() {
 	t : T {
 		-- -y->k
 	}
-}
+}  @ 10
 
 rule ptXfwd() {
 	p : P {
 		++ -a->p
 	}
-}
+} @ 1
 
 rule ptXbwd() {
 	p : P {
@@ -127,13 +127,13 @@ rule ptXbwd() {
 	t : T {
 		-- -x->p
 	}
-}
+}  @ 10
 
 rule ptYfwd() {
 	p : P {
 		++ -a->p
 	}
-}
+} @ 1
 
 rule ptYbwd(){
 	p : P {
@@ -143,7 +143,7 @@ rule ptYbwd(){
 	t : T {
 		-- -y->p
 	}
-}
+}  @ 10
 
 rule ktXactivate(){
 	us : U_s
@@ -159,7 +159,7 @@ rule ktXactivate(){
 		++ -x_p->ps
 		-- -x_u->us
 	}
-}
+} @ 1
 
 rule ktYactivate() {
 	us : U_s
@@ -175,7 +175,7 @@ rule ktYactivate() {
 		++ -y_p->ps
 		-- -y_u->us
 	}
-}
+} @ 1
 
 rule ptXdeactivate() {
 	us : U_s
@@ -191,7 +191,7 @@ rule ptXdeactivate() {
 		++ -x_u->us
 		-- -x_p->ps
 	}
-}
+} @ 1
 
 rule ptYdeactivate() {
 	us : U_s
@@ -207,5 +207,5 @@ rule ptYdeactivate() {
 		++ -y_u->us
 		-- -y_p->ps
 	}
-}
+} @ 1
  
