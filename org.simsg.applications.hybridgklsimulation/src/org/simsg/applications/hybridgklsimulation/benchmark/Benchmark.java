@@ -1,13 +1,21 @@
 package org.simsg.applications.hybridgklsimulation.benchmark;
 
+import java.util.function.Supplier;
+
 import org.eclipse.emf.common.util.URI;
-import org.simsg.applications.hybridgklsimulation.adapter.HybridGkHiPEGT;
+import org.emoflon.ibex.gt.api.GraphTransformationApp;
+import org.simsg.applications.hybridgklsimulation.adapter.HybridGkGT;
 import org.simsg.applications.hybridgklsimulation.adapter.HybridGkPMC;
-import org.simsg.applications.hybridgklsimulation.adapter.HybridRuleUtils;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.HybridgklAPI;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.HybridgklApp;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.HybridgklDemoclesApp;
+import org.simsg.applications.hybridgklsimulation.hybridgkl.api.HybridgklHiPEApp;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.HybridgklSimSGApi;
+import org.simsg.core.gt.IBeXGT;
+import org.simsg.core.persistence.PersistenceManager;
+import org.simsg.core.persistence.SimplePersistenceManager;
+import org.simsg.core.pm.ibex.IBeXEngine;
+import org.simsg.core.simulation.BackendContainer;
 import org.simsg.core.simulation.Simulation;
 import org.simsg.core.simulation.SimulationConfigurator;
 import org.simsg.core.utils.Runtimer;
@@ -23,11 +31,22 @@ public class Benchmark {
 		HybridgklSimSGApi simsg = new HybridgklSimSGApi();
 		simsg.configureForHiPE();
 		simsg.configureStochasticSimulation();
-		
 		SimulationConfigurator config = simsg.getSimulationConfigurator();
-		config.setGT(HybridGkHiPEGT.class, "org.simsg.applications.hybridgklsimulation.hybridgkl.api");
-		config.setIBeXHiPEAsEngine("org.simsg.applications.hybridgklsimulation.hybridgkl.api");	
-		config.setPMC(HybridGkPMC.class);
+		
+		Supplier<BackendContainer> backendConstructor = () -> {
+			BackendContainer backend = new BackendContainer();
+			backend.persistence = createPersistenceManager();
+			GraphTransformationApp<?> app = new HybridgklHiPEApp();
+			IBeXGT gt = new HybridGkGT();
+			backend.gtEngine = gt;
+			backend.pmEngine = new IBeXEngine(app, gt::setApiAndInit);
+			backend.pmc = new HybridGkPMC();
+			backend.pmc.setEngine(backend.pmEngine);
+			
+			return backend;
+		};
+		
+		config.setBackend(backendConstructor);
 		config.setModel("default100");
 		config.addSimpleTerminationCondition(30000, -1);
 		//config.addSimpleTerminationCondition(-1, 20.0);
@@ -83,6 +102,17 @@ public class Benchmark {
 		System.out.println("Total: "+ (superToc-superTic)+"ms");
 		
 		api.terminate();
+	}
+	
+	private static PersistenceManager createPersistenceManager() {
+		PersistenceManager persistence =  new SimplePersistenceManager();
+		persistence.setProjectFolderPath(System.getProperty("user.dir"));
+		persistence.setRootDataFolderPath(System.getProperty("user.dir")+"/instances");
+		persistence.setSimulationDefinitionFolderPath(System.getProperty("user.dir")+"/instances/simulation_definitions");
+		persistence.setSimulationInstancesFolderPath(System.getProperty("user.dir")+"/instances/simulation_instances");
+		persistence.setSimulationResultsFolderPath(System.getProperty("user.dir")+"/instances/simulation_results");
+
+		return persistence;
 	}
 	
 	public static void createModels() {

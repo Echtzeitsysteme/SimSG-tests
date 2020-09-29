@@ -1,34 +1,28 @@
 package org.simsg.applications.hybridgklsimulation.adapter;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
-import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import org.emoflon.ibex.common.operational.SimpleMatch;
+import org.emoflon.ibex.gt.api.GraphTransformationAPI;
 import org.emoflon.ibex.gt.api.GraphTransformationMatch;
-import org.simsg.applications.hybridgklsimulation.hybridgkl.api.HybridgklAPI;
-import org.simsg.applications.hybridgklsimulation.hybridgkl.api.matches.KFreeMatch;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.matches.KtXfwdMatch;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.matches.KtYfwdMatch;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.matches.PtXfwdMatch;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.matches.PtYfwdMatch;
-import org.simsg.applications.hybridgklsimulation.hybridgkl.api.matches.TxFreeMatch;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.rules.KtXfwdRule;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.rules.KtYfwdRule;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.rules.PtXfwdRule;
 import org.simsg.applications.hybridgklsimulation.hybridgkl.api.rules.PtYfwdRule;
 import org.simsg.core.pm.engine.PatternMatchingEngine;
+import org.simsg.core.pm.ibex.IBeXEngine;
 import org.simsg.core.pm.ibex.IBeXMatch;
 import org.simsg.core.pm.match.SimSGMatch;
-import org.simsg.core.utils.IBeXApiWrapper;
 
 import GoldbeterKoshland.K;
 import GoldbeterKoshland.P;
@@ -159,14 +153,14 @@ public final class HybridRuleUtils {
 	}
 	
 	public static SimSGMatch constructKTX_FWD_LHS(PatternMatchingEngine engine) {		
-		IBeXApiWrapper api = IBeXApiWrapper.getInstance();
+		GraphTransformationAPI api = ((IBeXEngine)engine).getApi();
 		
 		SimpleMatch match = new SimpleMatch(KTX_FWD);
 		match.put(K_PARAM, engine.getRandomMatch(K_FREE).get(K_PARAM));
 		match.put(T_PARAM, engine.getRandomMatch(TX_FREE).get(T_PARAM));
 		GraphTransformationMatch<KtXfwdMatch, KtXfwdRule> gtMatch = null;
 		try {
-			gtMatch = new KtXfwdMatch((KtXfwdRule) api.getRules().get(KTX_FWD), match);
+			gtMatch = new KtXfwdMatch((KtXfwdRule) api.getPattern(KTX_FWD), match);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -178,14 +172,14 @@ public final class HybridRuleUtils {
 	}
 	
 	public static SimSGMatch constructKTY_FWD_LHS(PatternMatchingEngine engine) {		
-		IBeXApiWrapper api = IBeXApiWrapper.getInstance();
+		GraphTransformationAPI api = ((IBeXEngine)engine).getApi();
 		
 		SimpleMatch match = new SimpleMatch(KTY_FWD);
 		match.put(K_PARAM, engine.getRandomMatch(K_FREE).get(K_PARAM));
 		match.put(T_PARAM, engine.getRandomMatch(TY_FREE).get(T_PARAM));
 		GraphTransformationMatch<KtYfwdMatch, KtYfwdRule> gtMatch = null;
 		try {
-			gtMatch = new KtYfwdMatch((KtYfwdRule) api.getRules().get(KTY_FWD), match);
+			gtMatch = new KtYfwdMatch((KtYfwdRule) api.getPattern(KTY_FWD), match);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -197,14 +191,14 @@ public final class HybridRuleUtils {
 	}
 	
 	public static SimSGMatch constructPTX_FWD_LHS(PatternMatchingEngine engine) {		
-		IBeXApiWrapper api = IBeXApiWrapper.getInstance();
+		GraphTransformationAPI api = ((IBeXEngine)engine).getApi();
 		
 		SimpleMatch match = new SimpleMatch(PTX_FWD);
 		match.put(P_PARAM, engine.getRandomMatch(P_FREE).get(P_PARAM));
 		match.put(T_PARAM, engine.getRandomMatch(TX_FREE).get(T_PARAM));
 		GraphTransformationMatch<PtXfwdMatch, PtXfwdRule> gtMatch = null;
 		try {
-			gtMatch = new PtXfwdMatch((PtXfwdRule) api.getRules().get(PTX_FWD), match);
+			gtMatch = new PtXfwdMatch((PtXfwdRule) api.getPattern(PTX_FWD), match);
 		} catch (Exception e) {
 			return null;
 		}
@@ -215,14 +209,14 @@ public final class HybridRuleUtils {
 	}
 	
 	public static SimSGMatch constructPTY_FWD_LHS(PatternMatchingEngine engine) {
-		IBeXApiWrapper api = IBeXApiWrapper.getInstance();
+		GraphTransformationAPI api = ((IBeXEngine)engine).getApi();
 		
 		SimpleMatch match = new SimpleMatch(PTY_FWD);
 		match.put(P_PARAM, engine.getRandomMatch(P_FREE).get(P_PARAM));
 		match.put(T_PARAM, engine.getRandomMatch(TY_FREE).get(T_PARAM));
 		GraphTransformationMatch<PtYfwdMatch, PtYfwdRule> gtMatch = null;
 		try {
-			gtMatch = new PtYfwdMatch((PtYfwdRule) api.getRules().get(PTY_FWD), match);
+			gtMatch = new PtYfwdMatch((PtYfwdRule) api.getPattern(PTY_FWD), match);
 		} catch (Exception e) {
 			return null;
 		}
