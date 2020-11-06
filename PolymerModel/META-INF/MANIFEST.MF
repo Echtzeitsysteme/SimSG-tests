@@ -12,5 +12,6 @@ Export-Package: PolymerModel,
  PolymerModel.impl,
  PolymerModel.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore.xmi
 Bundle-ActivationPolicy: lazy

@@ -5,14 +5,14 @@ rule createEdge() {
 		++ -next->node2
 	}
 	node2 : Atom
-} when notConnected12
+} when notConnected12 @ 1.0
 
 rule deleteEdge() {
 	node1 : Atom {
 		-- -next->node2
 	}
 	node2 : Atom	
-}
+} @ 0.2
 
 rule bC2() {
 	node1 : Atom {
@@ -25,7 +25,7 @@ rule bC2() {
 	node2 : Atom {
 		++ -next-> node1
 	}
-} when notConnected13_3
+} when notConnected13_3 @ 1.0
 
 rule cC2() {
 	node1 : Atom {
@@ -38,7 +38,7 @@ rule cC2() {
 	node2 : Atom {
 		++ -next-> node1
 	}
-} when notConnected21
+} when notConnected21 @ 1.0
 
 condition notConnected12 = forbid connectedNodes12
 condition notConnected21 = forbid connectedNodes21
