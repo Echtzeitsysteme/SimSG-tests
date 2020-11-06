@@ -1,0 +1,70 @@
+import "platform:/resource/PolymerModel/model/PolymerModel.ecore"
+
+rule createEdge() {
+	node1 : Atom {
+		++ -next->node2
+	}
+	node2 : Atom
+} when notConnected12
+
+rule deleteEdge() {
+	node1 : Atom {
+		-- -next->node2
+	}
+	node2 : Atom	
+}
+
+rule bC2() {
+	node1 : Atom {
+		 -next->node3
+	}
+	node3 : Atom {
+		++ -next-> node2
+	}
+	
+	node2 : Atom {
+		++ -next-> node1
+	}
+} when notConnected13_3
+
+rule cC2() {
+	node1 : Atom {
+		 -next->node3
+	}
+	node3 : Atom {
+		-next-> node2
+	}
+	
+	node2 : Atom {
+		++ -next-> node1
+	}
+} when notConnected21
+
+condition notConnected12 = forbid connectedNodes12
+condition notConnected21 = forbid connectedNodes21
+condition notConnected32 = forbid connectedNodes32
+condition notConnected13_3 = notConnected21 && notConnected32
+
+pattern connectedNodes12() {
+	node1 : Atom {
+		-next->node2
+	}
+	
+	node2 : Atom
+}
+
+pattern connectedNodes21() {
+	node1 : Atom
+	
+	node2 : Atom {
+		-next->node1
+	}
+}
+
+pattern connectedNodes32() {
+	node3 : Atom {
+		-next->node2
+	}
+	
+	node2 : Atom
+}
