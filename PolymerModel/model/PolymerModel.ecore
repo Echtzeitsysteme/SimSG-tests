@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="PolymerModel" nsURI="platform:/resource/PolymerModel/model/PolymerModel.ecore"
+    nsPrefix="PolymerModel">
+  <eClassifiers xsi:type="ecore:EClass" name="Container">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atoms" upperBound="-1"
+        eType="#//Atom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Atom">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" lowerBound="1" eType="#//Atom"
+        eOpposite="#//Atom/previous"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="previous" lowerBound="1"
+        eType="#//Atom" eOpposite="#//Atom/next"/>
+  </eClassifiers>
+</ecore:EPackage>
