@@ -4,5 +4,7 @@
 <project reference="1.0,https://github.com/Echtzeitsysteme/SimSG-tests.git,master,GoldbeterKoshland"/>
 <project reference="1.0,https://github.com/Echtzeitsysteme/SimSG-tests.git,master,org.simsg.applications.gklsimulation"/>
 <project reference="1.0,https://github.com/Echtzeitsysteme/SimSG-tests.git,master,org.simsg.applications.hybridgklsimulation"/>
+<project reference="1.0,https://github.com/Echtzeitsysteme/SimSG-tests.git,master,PolymerModel"/>
+<project reference="1.0,https://github.com/Echtzeitsysteme/SimSG-tests.git,master,Polymers"/>
 </provider>
 </psf>
