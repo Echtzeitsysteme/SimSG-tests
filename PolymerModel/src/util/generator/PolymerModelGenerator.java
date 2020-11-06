@@ -40,6 +40,10 @@ public class PolymerModelGenerator {
 		return model;
 	}
 	
+	public void setNumOfAtoms(final int num) {
+		this.numOfAtoms = num;
+	}
+	
 	private void genAtoms() {
 		atoms = new LinkedList<>();
 		for(int i = 0; i<numOfAtoms; i++) {

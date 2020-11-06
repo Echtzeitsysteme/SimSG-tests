@@ -68,3 +68,17 @@ pattern connectedNodes32() {
 	
 	node2 : Atom
 }
+
+//Observations
+pattern triangle {
+	node1 : Atom {
+		 -next->node3
+	}
+	node3 : Atom {
+		-next-> node2
+	}
+	
+	node2 : Atom {
+		-next-> node1
+	}
+}
