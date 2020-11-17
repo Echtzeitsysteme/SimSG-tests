@@ -10,7 +10,7 @@ public class HybridGkGT extends IBeXGT {
 		if(HybridRuleUtils.RULES.contains(match.getPatternName())) {
 			HybridRuleUtils.RULE_APPLICATORS.get(match.getPatternName()).accept(match);
 		}else {
-			rules.get(match.getPatternName()).applyGeneric(match.asGtMatch());
+			rules.get(match.getPatternName()).applyGeneric(match.asGtMatch(), false);
 		}
 	}
 	
