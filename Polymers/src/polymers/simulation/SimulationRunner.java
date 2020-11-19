@@ -12,11 +12,11 @@ public class SimulationRunner {
 	public static void main(String[] args) {
 		RulesSimSGApi api = new RulesSimSGApi();
 		api.configureForHiPE();
+//		api.configureForDemocles();
 		api.configureStochasticSimulation();
 		SimulationConfigurator config = api.getSimulationConfigurator();
-//		config.setModel("users20_groups2_topics2");
 		config.setModel("10atoms_unconnected");
-//		config.addObservableStatistic();
+
 		
 //		Simulation sim = config.createSimulation();
 //		sim.initializeClocked();
@@ -24,11 +24,21 @@ public class SimulationRunner {
 //		sim.printCurrentMatches();
 //		sim.displayResults();
 //		sim.finish();
+		
 		SimulationContainer simContainer = config.createSimulations(1);
 		simContainer.initialize();
 		simContainer.run();
 		simContainer.displayResults();
 		simContainer.finish();
+		
+//		Simulation sim = config.createSimulation();
+//		sim.initialize();
+//		Simulation sim1 = config.createSimulation();
+//		sim1.initialize();
+//		Simulation sim2 = config.createSimulation();
+//		sim2.initialize();
+//		Simulation sim3 = config.createSimulation();
+//		sim3.initialize();
 	}
 
 }
