@@ -24,11 +24,11 @@ public class SimulationRunner {
 //		sim.displayResults();
 //		sim.finish();
 		
-		SimulationContainer simContainer = config.createSimulations(10);
+		SimulationContainer simContainer = config.createSimulations(20);
 		simContainer.initialize();
 		simContainer.run();
 		simContainer.displayResults();
-		simContainer.finish();
+		simContainer.displayAllResults();
 
 	}
 

@@ -9,7 +9,7 @@ rule createEdge() {
 
 rule deleteVertex{
 	-- node1 : Atom
-} @ 0.1
+} @ 0.025
 
 rule createVertex{
 	container : Container {
@@ -23,7 +23,7 @@ rule deleteEdge() {
 		-- -next->node2
 	}
 	node2 : Atom	
-} @ 0.2
+} @ 0.025
 
 rule bC2() {
 	node1 : Atom {

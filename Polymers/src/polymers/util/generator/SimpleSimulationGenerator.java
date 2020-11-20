@@ -21,7 +21,7 @@ public class SimpleSimulationGenerator {
 		gen.addPatternObservation("createEdge");
 		gen.addPatternObservation("deleteEdge");
 		gen.addPatternObservation("deleteVertex");
-		gen.addTerminationConditionIterations(1000);
+		gen.addTerminationConditionIterations(5000);
 		gen.saveDefinition(System.getProperty("user.dir")+"/instances/simulation_definitions/"+"10atoms_unconnected"+".xmi");
 	}
 
