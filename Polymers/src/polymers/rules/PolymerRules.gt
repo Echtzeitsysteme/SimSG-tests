@@ -7,16 +7,16 @@ rule createEdge() {
 	node2 : Atom
 } when notConnected @ 1.0
 
-rule deleteVertex{
-	-- node1 : Atom
-} @ 0.1
-
-rule createVertex{
-	container : Container {
-		++ -atoms->node1
-	}
-	++ node1 : Atom
-} @ 1.0
+//rule deleteVertex{
+//	-- node1 : Atom
+//} @ 0.1
+//
+//rule createVertex{
+//	container : Container {
+//		++ -atoms->node1
+//	}
+//	++ node1 : Atom
+//} @ 1.0
 
 rule deleteEdge() {
 	node1 : Atom {
