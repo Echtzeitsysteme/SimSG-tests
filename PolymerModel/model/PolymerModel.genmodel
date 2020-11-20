@@ -14,7 +14,6 @@
     </genClasses>
     <genClasses ecoreClass="PolymerModel.ecore#//Atom">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PolymerModel.ecore#//Atom/next"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference PolymerModel.ecore#//Atom/previous"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

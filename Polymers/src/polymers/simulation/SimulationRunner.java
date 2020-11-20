@@ -11,8 +11,8 @@ public class SimulationRunner {
 
 	public static void main(String[] args) {
 		RulesSimSGApi api = new RulesSimSGApi();
-		api.configureForHiPE();
-//		api.configureForDemocles();
+//		api.configureForHiPE();
+		api.configureForDemocles();
 		api.configureStochasticSimulation();
 		SimulationConfigurator config = api.getSimulationConfigurator();
 		config.setModel("10atoms_unconnected");
@@ -25,7 +25,7 @@ public class SimulationRunner {
 //		sim.displayResults();
 //		sim.finish();
 		
-		SimulationContainer simContainer = config.createSimulations(1);
+		SimulationContainer simContainer = config.createSimulations(10);
 		simContainer.initialize();
 		simContainer.run();
 		simContainer.displayResults();

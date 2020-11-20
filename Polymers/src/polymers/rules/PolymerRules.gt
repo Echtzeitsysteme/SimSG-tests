@@ -5,21 +5,18 @@ rule createEdge() {
 		++ -next->node2
 	}
 	node2 : Atom
-} when notConnected12 @ 1.0
+} when notConnected @ 1.0
 
-//rule deleteVertex{
-//	container : Container {
-//		-- -atoms -> node1
-//	}
-//	-- node1 : Atom
-//} @ 0.1
-//
-//rule createVertex{
-//	container : Container {
-//		++ -atoms->node1
-//	}
-//	++ node1 : Atom
-//} @ 1.0
+rule deleteVertex{
+	-- node1 : Atom
+} @ 0.1
+
+rule createVertex{
+	container : Container {
+		++ -atoms->node1
+	}
+	++ node1 : Atom
+} @ 1.0
 
 rule deleteEdge() {
 	node1 : Atom {
@@ -54,6 +51,7 @@ rule cC2() {
 	}
 } when notConnected21 @ 1.0
 
+condition notConnected = notConnected12 && notConnected21
 condition notConnected12 = forbid connectedNodes12
 condition notConnected21 = forbid connectedNodes21
 condition notConnected32 = forbid connectedNodes32
