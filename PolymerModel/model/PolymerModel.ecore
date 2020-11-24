@@ -7,9 +7,6 @@
         eType="#//Atom" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Atom">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="next" lowerBound="1" eType="#//Atom"
-        eOpposite="#//Atom/previous"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="previous" lowerBound="1"
-        eType="#//Atom" eOpposite="#//Atom/next"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" eType="#//Atom"/>
   </eClassifiers>
 </ecore:EPackage>

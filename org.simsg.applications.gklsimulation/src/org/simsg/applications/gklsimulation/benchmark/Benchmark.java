@@ -27,7 +27,7 @@ public class Benchmark {
 		sim.initializeClocked();
 		sim.runClocked();
 		sim.printCurrentMatches(); 
-		sim.displayResults();
+		sim.displayResults(true);
 		sim.saveModelGraph();
 		sim.finish();
 		

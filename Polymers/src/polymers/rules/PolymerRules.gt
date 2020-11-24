@@ -9,9 +9,12 @@ rule createEdge() {
 
 rule deleteVertex{
 	-- node1 : Atom
-} @ 0.1
+} @ 0.025
 
 rule createVertex{
+	container : Container {
+		++ -atoms->node1
+	}
 	++ node1 : Atom
 } @ 1.0
 
@@ -20,7 +23,7 @@ rule deleteEdge() {
 		-- -next->node2
 	}
 	node2 : Atom	
-} @ 0.2
+} @ 0.025
 
 rule bC2() {
 	node1 : Atom {
@@ -33,7 +36,7 @@ rule bC2() {
 	node2 : Atom {
 		++ -next-> node1
 	}
-} when notConnected13_3 @ 1.0
+} when notConnected23 @ 1.0
 
 rule cC2() {
 	node1 : Atom {
@@ -46,35 +49,36 @@ rule cC2() {
 	node2 : Atom {
 		++ -next-> node1
 	}
-} when notConnected21 @ 1.0
+} when notConnected2 @ 1.0
 
-condition notConnected12 = forbid connectedNodes12
-condition notConnected21 = forbid connectedNodes21
-condition notConnected32 = forbid connectedNodes32
-condition notConnected13_3 = notConnected21 && notConnected32
+condition notConnected1 = forbid connectedNode1
+condition notConnected2 = forbid connectedNode2
+condition notConnected3 = forbid connectedNode3
+condition notConnected12 = notConnected1 && notConnected2
+condition notConnected23 = notConnected2 && notConnected3
 
-pattern connectedNodes12() {
+pattern connectedNode1() {
 	node1 : Atom {
-		-next->node2
+		-next->node
 	}
 	
-	node2 : Atom
+	node : Atom
 }
 
-pattern connectedNodes21() {
-	node1 : Atom
-	
+pattern connectedNode2() {
 	node2 : Atom {
-		-next->node1
-	}
-}
-
-pattern connectedNodes32() {
-	node3 : Atom {
-		-next->node2
+		-next->node
 	}
 	
-	node2 : Atom
+	node : Atom
+}
+
+pattern connectedNode3() {
+	node3 : Atom {
+		-next->node
+	}
+	
+	node : Atom
 }
 
 //Observations

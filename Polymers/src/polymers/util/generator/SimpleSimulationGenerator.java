@@ -9,7 +9,7 @@ public class SimpleSimulationGenerator {
 	
 	public static void main(String[] args) {
 		PolymerModelGenerator polymersGen = new PolymerModelGenerator();
-		polymersGen.setNumOfAtoms(10);
+		polymersGen.setNumOfAtoms(0);
 		polymersGen.generate(System.getProperty("user.dir")+"/instances/simulation_instances/10atoms_unconnected.xmi");
 		
 		SimulationDefinitionGenerator gen = new SimulationDefinitionGenerator("10atoms_unconnected");
@@ -20,7 +20,8 @@ public class SimpleSimulationGenerator {
 		gen.addPatternObservation("bC2");
 		gen.addPatternObservation("createEdge");
 		gen.addPatternObservation("deleteEdge");
-		gen.addTerminationConditionIterations(1000);
+		gen.addPatternObservation("deleteVertex");
+		gen.addTerminationConditionIterations(5000);
 		gen.saveDefinition(System.getProperty("user.dir")+"/instances/simulation_definitions/"+"10atoms_unconnected"+".xmi");
 	}
 
