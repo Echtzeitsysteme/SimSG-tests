@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/Voter/src-gen" creationIcons="false" editDirectory="/Voter.edit/src-gen"
+    editorDirectory="/Voter.editor/src-gen" modelPluginID="Voter" modelName="Voter"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>Voter.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Voter" disposableProviderFactory="true" ecorePackage="Voter.ecore#/">
+    <genClasses ecoreClass="Voter.ecore#//Container">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Voter.ecore#//Container/voters"/>
+    </genClasses>
+    <genClasses ecoreClass="Voter.ecore#//Voter1">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter.ecore#//Voter1/link"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Voter.ecore#//Voter1/vote"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
