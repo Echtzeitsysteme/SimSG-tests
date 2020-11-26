@@ -91,7 +91,6 @@ pattern connectedV1V3() {
 	}
 }
 
-
 rule convert() {
 	v1:Voter1{
 	-link-> v2
