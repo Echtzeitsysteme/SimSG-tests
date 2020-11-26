@@ -17,7 +17,8 @@ public class SimpleSimulationGenerator {
 		gen.setModelURI(System.getProperty("user.dir")+"/instances/simulation_instances/"+"3voters_unconnected"+".xmi"); 
 		gen.addPatternObservation("disagree");
 		gen.addPatternObservation("agree");
-		gen.addPatternObservation("newVoter");
+//		gen.addPatternObservation("newVoterTrue");
+//		gen.addPatternObservation("newVoterFalse");
 		gen.addTerminationConditionIterations(100);
 		gen.saveDefinition(System.getProperty("user.dir")+"/instances/simulation_definitions/"+"3voters_unconnected"+".xmi");
 	}

@@ -11,7 +11,8 @@ public class SimulationRunner {
 	public static void main(String[] args) {
 		RulesSimSGApi api = new RulesSimSGApi();
 		api.configureForHiPE();
-		api.configureSimpleSimulation(false);
+//		api.configureSimpleSimulation(false);
+		api.configureStochasticSimulation();
 		SimulationConfigurator config = api.getSimulationConfigurator();
 		config.setConsoleInfoLevel(SimulationProcess.CONSOLE_LEVEL_DEBUG);
 //		config.setModel("users20_groups2_topics2");
@@ -23,6 +24,7 @@ public class SimulationRunner {
 		sim.printCurrentMatches();
 		sim.displayResults(true);
 		sim.finish();
+//		sim.saveModelGraph();
 	}
 
 }

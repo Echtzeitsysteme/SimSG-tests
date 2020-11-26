@@ -1,0 +1,104 @@
+import "platform:/resource/Voter/model/Voter.ecore"
+
+pattern voteTrue() {
+	v:Voter1
+	# v.vote == true
+}
+
+pattern voteFalse() {
+	v:Voter1
+	# v.vote == false
+}
+
+pattern disagree() {
+	v1:Voter1 {
+		-link-> v2
+	}
+	v2:Voter1 {
+		-link-> v1
+	}
+	# v1.vote != v2.vote
+}
+
+pattern agree() {
+	v1:Voter1 {
+		-link-> v2
+	}
+	v2:Voter1 {
+		-link-> v1
+	}
+	# v1.vote == v2.vote
+}
+
+rule newVoterTrue(){
+	++ v: Voter1 {
+		++ -link-> v0
+		++ -link-> v1
+		++ -link-> v2
+		.vote := true
+	}
+	v0:Voter1 {
+		++ -link-> v
+	}
+	v1:Voter1 {
+		++ -link-> v
+	}
+	v2:Voter1 {
+		++ -link-> v
+	}
+}@0.1
+
+rule newVoterFalse(){
+	++ v: Voter1 {
+		++ -link-> v0
+		++ -link-> v1
+		++ -link-> v2
+		.vote := false
+	}
+	v0:Voter1 {
+		++ -link-> v
+	}
+	v1:Voter1 {
+		++ -link-> v
+	}
+	v2:Voter1 {
+		++ -link-> v
+	}
+}@0.1
+
+rule switch() {
+	v1:Voter1{
+	-- -link-> v2
+	++ -link-> v3}
+	v2:Voter1{
+	-- -link-> v1
+	}
+	v3:Voter1{
+	++ -link-> v1
+	}
+	# v1.vote != v2.vote
+	# v1.vote == v3.vote 
+} when notConnectedV1V3 @ 0.5
+
+condition notConnectedV1V3 = forbid connectedV1V3
+
+pattern connectedV1V3() {
+	v1:Voter1{
+		-link-> v3
+	}
+	v3:Voter1{
+		-link-> v1
+	}
+}
+
+
+rule convert() {
+	v1:Voter1{
+	-link-> v2
+	.vote := v2.vote
+	}
+	v2:Voter1{
+	-link-> v1
+	}
+	# v1.vote != v2.vote
+}@0.2

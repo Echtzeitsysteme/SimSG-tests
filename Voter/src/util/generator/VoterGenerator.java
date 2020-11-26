@@ -48,6 +48,9 @@ public class VoterGenerator {
 		voters = new LinkedList<>();
 		for(int i = 0; i<numOfVoters; i++) {
 			Voter1 voter = factory.createVoter1();
+			if (i % 3 == 0) 
+				{voter.setVote(false);} 
+				{voter.setVote(true);};
 			voters.add(voter);
 		}
 	}
