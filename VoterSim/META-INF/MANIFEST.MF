@@ -20,7 +20,4 @@ Require-Bundle: org.eclipse.emf.ecore,
  Voter;bundle-version="0.1.0"
 Export-Package: voterSim.rules.api,
  voterSim.rules.api.matches,
- voterSim.rules.api.rules,
- voterSim.util.generator.api,
- voterSim.util.generator.api.matches,
- voterSim.util.generator.api.rules
+ voterSim.rules.api.rules
