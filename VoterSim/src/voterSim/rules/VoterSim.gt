@@ -20,7 +20,7 @@ pattern disagree() {
 	# v1.vote != v2.vote
 }
 
-pattern agree() {
+pattern agreeTrue() {
 	v1:Voter1 {
 		-link-> v2
 	}
@@ -30,6 +30,15 @@ pattern agree() {
 	# v1.vote == v2.vote
 }
 
+pattern agreeFalse() {
+	v1:Voter1 {
+		-link-> v2
+	}
+	v2:Voter1 {
+		-link-> v1
+	}
+	# v1.vote == v2.vote
+}
 rule newVoterTrue(){
 	++ v: Voter1 {
 		++ -link-> v0
@@ -66,7 +75,22 @@ rule newVoterFalse(){
 	}
 }@0.1
 
-rule switching() {
+//rule switchSame() {
+//	v1:Voter1{
+//	-- -link-> v2
+//	++ -link-> v3}
+//	v2:Voter1{
+//	-- -link-> v1
+//	}
+//	v3:Voter1{
+//	++ -link-> v1
+//	}
+//	# v1.vote != v2.vote
+//	# v1.vote == v3.vote 
+//} when notConnectedV1V3 @ 0.5
+
+
+rule switchRandom() {
 	v1:Voter1{
 	-- -link-> v2
 	++ -link-> v3}
@@ -77,7 +101,6 @@ rule switching() {
 	++ -link-> v1
 	}
 	# v1.vote != v2.vote
-	# v1.vote == v3.vote 
 } when notConnectedV1V3 @ 0.5
 
 condition notConnectedV1V3 = forbid connectedV1V3

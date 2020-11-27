@@ -23,11 +23,11 @@ import static akka.pattern.Patterns.ask;
 import voterSim.rules.hipe.engine.actor.NotificationActor;
 import voterSim.rules.hipe.engine.actor.DispatchActor;
 import voterSim.rules.hipe.engine.actor.edge.Voter1_link_0_reference;
-import voterSim.rules.hipe.engine.actor.junction.newVoterFalse_23_junction;
-import voterSim.rules.hipe.engine.actor.junction.newVoterFalse_21_junction;
-import voterSim.rules.hipe.engine.actor.junction.newVoterTrue_28_junction;
-import voterSim.rules.hipe.engine.actor.junction.newVoterTrue_26_junction;
-import voterSim.rules.hipe.engine.actor.junction.switching_32_junction;
+import voterSim.rules.hipe.engine.actor.junction.newVoterFalse_28_junction;
+import voterSim.rules.hipe.engine.actor.junction.newVoterFalse_26_junction;
+import voterSim.rules.hipe.engine.actor.junction.newVoterTrue_33_junction;
+import voterSim.rules.hipe.engine.actor.junction.newVoterTrue_31_junction;
+import voterSim.rules.hipe.engine.actor.junction.switchRandom_37_junction;
 import voterSim.rules.hipe.engine.actor.node.Voter1_object_SP0;
 import voterSim.rules.hipe.engine.actor.node.Voter1_object_SP1;
 
@@ -113,8 +113,10 @@ public class HiPEEngine implements IHiPEEngine{
 		}
 	
 	public void createProductionNodes() {
-		classes.put("agree_production", GenericProductionActor.class);
-		productionNodes2pattern.put("agree_production", "agree");
+		classes.put("agreeFalse_production", GenericProductionActor.class);
+		productionNodes2pattern.put("agreeFalse_production", "agreeFalse");
+		classes.put("agreeTrue_production", GenericProductionActor.class);
+		productionNodes2pattern.put("agreeTrue_production", "agreeTrue");
 		classes.put("connectedV1V3_production", GenericProductionActor.class);
 		productionNodes2pattern.put("connectedV1V3_production", "connectedV1V3");
 		classes.put("convert_production", GenericProductionActor.class);
@@ -125,8 +127,8 @@ public class HiPEEngine implements IHiPEEngine{
 		productionNodes2pattern.put("newVoterFalse_production", "newVoterFalse");
 		classes.put("newVoterTrue_production", GenericProductionActor.class);
 		productionNodes2pattern.put("newVoterTrue_production", "newVoterTrue");
-		classes.put("switching_production", GenericProductionActor.class);
-		productionNodes2pattern.put("switching_production", "switching");
+		classes.put("switchRandom_production", GenericProductionActor.class);
+		productionNodes2pattern.put("switchRandom_production", "switchRandom");
 		classes.put("voteFalse_production", GenericProductionActor.class);
 		productionNodes2pattern.put("voteFalse_production", "voteFalse");
 		classes.put("voteTrue_production", GenericProductionActor.class);
@@ -135,17 +137,18 @@ public class HiPEEngine implements IHiPEEngine{
 	}
 	
 	public void createJunctionNodes() {
-		classes.put("agree_1_junction", GenericJunctionActor.class);
-		classes.put("connectedV1V3_6_junction", GenericJunctionActor.class);
-		classes.put("convert_11_junction", GenericJunctionActor.class);
-		classes.put("disagree_16_junction", GenericJunctionActor.class);
-		classes.put("newVoterFalse_23_junction", newVoterFalse_23_junction.class);
-		classes.put("newVoterFalse_21_junction", newVoterFalse_21_junction.class);
-		classes.put("newVoterTrue_28_junction", newVoterTrue_28_junction.class);
-		classes.put("newVoterTrue_26_junction", newVoterTrue_26_junction.class);
-		classes.put("switching_34_junction", GenericJunctionActor.class);
-		classes.put("switching_32_junction", switching_32_junction.class);
-		classes.put("switching_31_nacjunction", GenericNACJunctionActor.class);
+		classes.put("agreeFalse_1_junction", GenericJunctionActor.class);
+		classes.put("agreeTrue_6_junction", GenericJunctionActor.class);
+		classes.put("connectedV1V3_11_junction", GenericJunctionActor.class);
+		classes.put("convert_16_junction", GenericJunctionActor.class);
+		classes.put("disagree_21_junction", GenericJunctionActor.class);
+		classes.put("newVoterFalse_28_junction", newVoterFalse_28_junction.class);
+		classes.put("newVoterFalse_26_junction", newVoterFalse_26_junction.class);
+		classes.put("newVoterTrue_33_junction", newVoterTrue_33_junction.class);
+		classes.put("newVoterTrue_31_junction", newVoterTrue_31_junction.class);
+		classes.put("switchRandom_39_junction", GenericJunctionActor.class);
+		classes.put("switchRandom_37_junction", switchRandom_37_junction.class);
+		classes.put("switchRandom_36_nacjunction", GenericNACJunctionActor.class);
 	}
 	
 	public void createReferenceNodes() {

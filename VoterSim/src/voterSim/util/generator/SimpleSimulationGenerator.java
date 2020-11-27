@@ -16,7 +16,10 @@ public class SimpleSimulationGenerator {
 		gen.setIBeXModel(URI.createFileURI(System.getProperty("user.dir")+"/src-gen/voterSim/rules/api/ibex-patterns.xmi"));
 		gen.setModelURI(System.getProperty("user.dir")+"/instances/simulation_instances/"+"3voters_unconnected"+".xmi"); 
 		gen.addPatternObservation("disagree");
-		gen.addPatternObservation("agree");
+		gen.addPatternObservation("agreeTrue");
+		gen.addPatternObservation("agreeFalse");
+		gen.addPatternObservation("voteTrue");
+		gen.addPatternObservation("voteFalse");
 //		gen.addPatternObservation("newVoterTrue");
 //		gen.addPatternObservation("newVoterFalse");
 		gen.addTerminationConditionIterations(100);

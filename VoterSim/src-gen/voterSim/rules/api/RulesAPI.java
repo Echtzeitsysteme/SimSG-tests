@@ -10,18 +10,19 @@ import org.emoflon.ibex.common.operational.IContextPatternInterpreter;
 import org.emoflon.ibex.gt.api.GraphTransformationAPI;
 import org.emoflon.ibex.gt.api.GraphTransformationPattern;
 import org.emoflon.ibex.gt.api.GraphTransformationRule;
-import voterSim.rules.api.rules.AgreePattern;
+import voterSim.rules.api.rules.AgreeFalsePattern;
+import voterSim.rules.api.rules.AgreeTruePattern;
 import voterSim.rules.api.rules.ConnectedV1V3Pattern;
 import voterSim.rules.api.rules.ConvertRule;
 import voterSim.rules.api.rules.DisagreePattern;
 import voterSim.rules.api.rules.NewVoterFalseRule;
 import voterSim.rules.api.rules.NewVoterTrueRule;
-import voterSim.rules.api.rules.SwitchingRule;
+import voterSim.rules.api.rules.SwitchRandomRule;
 import voterSim.rules.api.rules.VoteFalsePattern;
 import voterSim.rules.api.rules.VoteTruePattern;
 
 /**
- * The RulesAPI with 4 rules and 9 patterns.
+ * The RulesAPI with 4 rules and 10 patterns.
  */
 public class RulesAPI extends GraphTransformationAPI {
 	
@@ -74,8 +75,9 @@ public class RulesAPI extends GraphTransformationAPI {
 		map.put("convert", () -> convert());
 		map.put("newVoterFalse", () -> newVoterFalse());
 		map.put("newVoterTrue", () -> newVoterTrue());
-		map.put("switching", () -> switching());
-		map.put("agree", () -> agree());
+		map.put("switchRandom", () -> switchRandom());
+		map.put("agreeFalse", () -> agreeFalse());
+		map.put("agreeTrue", () -> agreeTrue());
 		map.put("connectedV1V3", () -> connectedV1V3());
 		map.put("disagree", () -> disagree());
 		map.put("voteFalse", () -> voteFalse());
@@ -93,8 +95,8 @@ public class RulesAPI extends GraphTransformationAPI {
 		newVoterFalse().getProbability().get().getProbability(), 0.0});					
 		map.put(newVoterTrue(), new double[]{
 		newVoterTrue().getProbability().get().getProbability(), 0.0});					
-		map.put(switching(), new double[]{
-		switching().getProbability().get().getProbability(), 0.0});					
+		map.put(switchRandom(), new double[]{
+		switchRandom().getProbability().get().getProbability(), 0.0});					
 		return map;
 	}
 					
@@ -141,31 +143,45 @@ public class RulesAPI extends GraphTransformationAPI {
 		}
 	}
 	/**
-	* Creates a new instance of the rule <code>switching()</code> which does the following:
-	* If this rule is not self-explaining, you really should add some comment in the specification.
+	* Creates a new instance of the rule <code>switchRandom()</code> which does the following:
+	* rule switchSame() {v1:Voter1{-- -link-> v2++ -link-> v3}v2:Voter1{-- -link-> v1}v3:Voter1{++ -link-> v1}# v1.vote != v2.vote# v1.vote == v3.vote} when notConnectedV1V3 @ 0.5
 	*
 	* @return the new instance of the rule»
 	*/
-	public SwitchingRule switching() {
+	public SwitchRandomRule switchRandom() {
 		try{
-			SwitchingRule rule = (SwitchingRule) interpreter.getRegisteredGraphTransformationPattern("switching");
+			SwitchRandomRule rule = (SwitchRandomRule) interpreter.getRegisteredGraphTransformationPattern("switchRandom");
 			return rule;
 		} catch(Exception e) {
-			return new SwitchingRule(this, interpreter);
+			return new SwitchRandomRule(this, interpreter);
 		}
 	}
 	/**
-	* Creates a new instance of the pattern <code>agree()</code> which does the following:
+	* Creates a new instance of the pattern <code>agreeFalse()</code> which does the following:
 	* If this pattern is not self-explaining, you really should add some comment in the specification.
 	*
 	* @return the new instance of the pattern»
 	*/
-	public AgreePattern agree() {
+	public AgreeFalsePattern agreeFalse() {
 		try{
-			AgreePattern pattern = (AgreePattern) interpreter.getRegisteredGraphTransformationPattern("agree");
+			AgreeFalsePattern pattern = (AgreeFalsePattern) interpreter.getRegisteredGraphTransformationPattern("agreeFalse");
 			return pattern;
 		} catch(Exception e) {
-			return new AgreePattern(this, interpreter);
+			return new AgreeFalsePattern(this, interpreter);
+		}
+	}
+	/**
+	* Creates a new instance of the pattern <code>agreeTrue()</code> which does the following:
+	* If this pattern is not self-explaining, you really should add some comment in the specification.
+	*
+	* @return the new instance of the pattern»
+	*/
+	public AgreeTruePattern agreeTrue() {
+		try{
+			AgreeTruePattern pattern = (AgreeTruePattern) interpreter.getRegisteredGraphTransformationPattern("agreeTrue");
+			return pattern;
+		} catch(Exception e) {
+			return new AgreeTruePattern(this, interpreter);
 		}
 	}
 	/**
