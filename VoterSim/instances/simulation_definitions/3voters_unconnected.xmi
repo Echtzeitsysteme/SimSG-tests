@@ -2,12 +2,9 @@
 <org.simsg:SimDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore" xmlns:org.simsg="http://www.simsg.org/simulationdefinition/simulationdefinition" xsi:schemaLocation="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore java://org.emoflon.ibex.patternmodel.IBeXPatternModel.IBeXPatternModelPackage http://www.simsg.org/simulationdefinition/simulationdefinition java://SimulationDefinition.SimulationDefinitionPackage" name="3voters_unconnected" simulationModelURI="file://home/emoflon/simsg-test-workspace/git/SimSG-tests/VoterSim/instances/simulation_instances/3voters_unconnected.xmi" ibexModelURI="file://home/emoflon/simsg-test-workspace/git/SimSG-tests/VoterSim/src-gen/voterSim/rules/api/ibex-patterns.xmi">
   <terminationConditions xmi:type="org.simsg:SimpleTerminationCondition" maxIterations="100"/>
   <observations xmi:type="org.simsg:PatternObservation" name="disagree">
-    <pattern xmi:type="IBeXPatternModel:IBeXContextPattern" href="../../src-gen/voterSim/rules/api/ibex-patterns.xmi#//@patternSet/@contextPatterns.1"/>
+    <pattern xmi:type="IBeXPatternModel:IBeXContextPattern" href="../../src-gen/voterSim/rules/api/ibex-patterns.xmi#//@patternSet/@contextPatterns.3"/>
   </observations>
   <observations xmi:type="org.simsg:PatternObservation" name="agree">
     <pattern xmi:type="IBeXPatternModel:IBeXContextPattern" href="../../src-gen/voterSim/rules/api/ibex-patterns.xmi#//@patternSet/@contextPatterns.0"/>
-  </observations>
-  <observations xmi:type="org.simsg:PatternObservation" name="newVoter">
-    <pattern xmi:type="IBeXPatternModel:IBeXContextPattern" href="../../src-gen/voterSim/rules/api/ibex-patterns.xmi#//@patternSet/@contextPatterns.2"/>
   </observations>
 </org.simsg:SimDefinition>

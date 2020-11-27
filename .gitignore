@@ -24,7 +24,7 @@
 */bin/*
 
 # Xtext
-*/src-gen/**/*.java
+#*/src-gen/**/*.java
 */src-gen/**/*.java._trace
 */src-gen/**/*.xtendbin
 */src-gen/**/*.xtextbin

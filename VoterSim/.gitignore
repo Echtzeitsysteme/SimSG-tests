@@ -1,5 +1,5 @@
 /bin
-/gen
-/src-gen
+#/gen
+#/src-gen
 /debug
 /instances/simulation_results

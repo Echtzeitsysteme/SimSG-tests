@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="ASCII"?>
+<IBeXPatternModel:IBeXModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore">
+  <patternSet>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="agree" documentation="" localEdges="//@edgeSet/@edges.12 //@edgeSet/@edges.20" signatureNodes="//@nodeSet/@nodes.9 //@nodeSet/@nodes.16">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.9">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.16">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </rhs>
+      </attributeConstraint>
+      <injectivityConstraints values="//@nodeSet/@nodes.9 //@nodeSet/@nodes.16"/>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="connectedV1V3" documentation="" localEdges="//@edgeSet/@edges.15 //@edgeSet/@edges.23" signatureNodes="//@nodeSet/@nodes.12 //@nodeSet/@nodes.20">
+      <injectivityConstraints values="//@nodeSet/@nodes.12 //@nodeSet/@nodes.20"/>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="convert" documentation="" localEdges="//@edgeSet/@edges.13 //@edgeSet/@edges.21" signatureNodes="//@nodeSet/@nodes.11 //@nodeSet/@nodes.18">
+      <attributeConstraint relation="UNEQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.11">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.18">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </rhs>
+      </attributeConstraint>
+      <injectivityConstraints values="//@nodeSet/@nodes.11 //@nodeSet/@nodes.18"/>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="disagree" documentation="" localEdges="//@edgeSet/@edges.11 //@edgeSet/@edges.19" signatureNodes="//@nodeSet/@nodes.8 //@nodeSet/@nodes.15">
+      <attributeConstraint relation="UNEQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.8">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.15">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </rhs>
+      </attributeConstraint>
+      <injectivityConstraints values="//@nodeSet/@nodes.8 //@nodeSet/@nodes.15"/>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterFalse" documentation="" signatureNodes="//@nodeSet/@nodes.4 //@nodeSet/@nodes.7 //@nodeSet/@nodes.14">
+      <injectivityConstraints values="//@nodeSet/@nodes.4 //@nodeSet/@nodes.7"/>
+      <injectivityConstraints values="//@nodeSet/@nodes.4 //@nodeSet/@nodes.14"/>
+      <injectivityConstraints values="//@nodeSet/@nodes.7 //@nodeSet/@nodes.14"/>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterTrue" documentation="" signatureNodes="//@nodeSet/@nodes.5 //@nodeSet/@nodes.10 //@nodeSet/@nodes.17">
+      <injectivityConstraints values="//@nodeSet/@nodes.5 //@nodeSet/@nodes.10"/>
+      <injectivityConstraints values="//@nodeSet/@nodes.5 //@nodeSet/@nodes.17"/>
+      <injectivityConstraints values="//@nodeSet/@nodes.10 //@nodeSet/@nodes.17"/>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="switching" documentation="" localEdges="//@edgeSet/@edges.10 //@edgeSet/@edges.18" signatureNodes="//@nodeSet/@nodes.6 //@nodeSet/@nodes.13 //@nodeSet/@nodes.19">
+      <attributeConstraint relation="UNEQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.6">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.13">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </rhs>
+      </attributeConstraint>
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.6">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.19">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </rhs>
+      </attributeConstraint>
+      <injectivityConstraints values="//@nodeSet/@nodes.6 //@nodeSet/@nodes.13"/>
+      <injectivityConstraints values="//@nodeSet/@nodes.6 //@nodeSet/@nodes.19"/>
+      <injectivityConstraints values="//@nodeSet/@nodes.13 //@nodeSet/@nodes.19"/>
+      <invocations invokedPattern="//@patternSet/@contextPatterns.1">
+        <mapping key="//@nodeSet/@nodes.6" value="//@nodeSet/@nodes.12"/>
+        <mapping key="//@nodeSet/@nodes.19" value="//@nodeSet/@nodes.20"/>
+      </invocations>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="voteFalse" documentation="" signatureNodes="//@nodeSet/@nodes.1">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.1">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000" stringValue="false"/>
+      </attributeConstraint>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="voteTrue" documentation="" signatureNodes="//@nodeSet/@nodes.3">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.3">
+          <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001" stringValue="true"/>
+      </attributeConstraint>
+    </contextPatterns>
+  </patternSet>
+  <ruleSet>
+    <rules name="convert" documentation="" lhs="//@patternSet/@contextPatterns.2">
+      <rhs name="convert_rhs" localEdges="//@edgeSet/@edges.13 //@edgeSet/@edges.21" signatureNodes="//@nodeSet/@nodes.11 //@nodeSet/@nodes.18"/>
+      <create name="convert">
+        <attributeAssignments node="//@nodeSet/@nodes.11">
+          <value xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.18">
+            <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+          </value>
+          <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </attributeAssignments>
+      </create>
+      <delete name="convert"/>
+      <probability>
+        <distribution type="STATIC">
+          <mean xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral" value="0.2"/>
+          <stddev xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral"/>
+        </distribution>
+      </probability>
+    </rules>
+    <rules name="newVoterFalse" documentation="" lhs="//@patternSet/@contextPatterns.4">
+      <rhs name="newVoterFalse_rhs" localEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.2 //@edgeSet/@edges.4 //@edgeSet/@edges.6 //@edgeSet/@edges.8 //@edgeSet/@edges.16" signatureNodes="//@nodeSet/@nodes.4 //@nodeSet/@nodes.7 //@nodeSet/@nodes.14 //@nodeSet/@nodes.0"/>
+      <create name="newVoterFalse" createdEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.2 //@edgeSet/@edges.4 //@edgeSet/@edges.6 //@edgeSet/@edges.8 //@edgeSet/@edges.16" createdNodes="//@nodeSet/@nodes.0">
+        <attributeAssignments node="//@nodeSet/@nodes.0">
+          <value xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000" stringValue="false"/>
+          <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </attributeAssignments>
+      </create>
+      <delete name="newVoterFalse"/>
+      <probability>
+        <distribution type="STATIC">
+          <mean xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral" value="0.1"/>
+          <stddev xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral"/>
+        </distribution>
+      </probability>
+    </rules>
+    <rules name="newVoterTrue" documentation="" lhs="//@patternSet/@contextPatterns.5">
+      <rhs name="newVoterTrue_rhs" localEdges="//@edgeSet/@edges.1 //@edgeSet/@edges.3 //@edgeSet/@edges.5 //@edgeSet/@edges.7 //@edgeSet/@edges.9 //@edgeSet/@edges.17" signatureNodes="//@nodeSet/@nodes.5 //@nodeSet/@nodes.10 //@nodeSet/@nodes.17 //@nodeSet/@nodes.2"/>
+      <create name="newVoterTrue" createdEdges="//@edgeSet/@edges.1 //@edgeSet/@edges.3 //@edgeSet/@edges.5 //@edgeSet/@edges.7 //@edgeSet/@edges.9 //@edgeSet/@edges.17" createdNodes="//@nodeSet/@nodes.2">
+        <attributeAssignments node="//@nodeSet/@nodes.2">
+          <value xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001" stringValue="true"/>
+          <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+        </attributeAssignments>
+      </create>
+      <delete name="newVoterTrue"/>
+      <probability>
+        <distribution type="STATIC">
+          <mean xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral" value="0.1"/>
+          <stddev xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral"/>
+        </distribution>
+      </probability>
+    </rules>
+    <rules name="switching" documentation="" lhs="//@patternSet/@contextPatterns.6">
+      <rhs name="switching_rhs" localEdges="//@edgeSet/@edges.14 //@edgeSet/@edges.22" signatureNodes="//@nodeSet/@nodes.6 //@nodeSet/@nodes.13 //@nodeSet/@nodes.19"/>
+      <create name="switching" createdEdges="//@edgeSet/@edges.14 //@edgeSet/@edges.22"/>
+      <delete name="switching" deletedEdges="//@edgeSet/@edges.10 //@edgeSet/@edges.18"/>
+      <probability>
+        <distribution type="STATIC">
+          <mean xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral" value="0.5"/>
+          <stddev xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral"/>
+        </distribution>
+      </probability>
+    </rules>
+  </ruleSet>
+  <nodeSet>
+    <nodes name="v" incomingEdges="//@edgeSet/@edges.6 //@edgeSet/@edges.8 //@edgeSet/@edges.16" outgoingEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.2 //@edgeSet/@edges.4">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v" incomingEdges="//@edgeSet/@edges.7 //@edgeSet/@edges.9 //@edgeSet/@edges.17" outgoingEdges="//@edgeSet/@edges.1 //@edgeSet/@edges.3 //@edgeSet/@edges.5">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v0" incomingEdges="//@edgeSet/@edges.0" outgoingEdges="//@edgeSet/@edges.6">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v0" incomingEdges="//@edgeSet/@edges.1" outgoingEdges="//@edgeSet/@edges.7">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" incomingEdges="//@edgeSet/@edges.18 //@edgeSet/@edges.22" outgoingEdges="//@edgeSet/@edges.10 //@edgeSet/@edges.14">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" incomingEdges="//@edgeSet/@edges.2" outgoingEdges="//@edgeSet/@edges.8">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" incomingEdges="//@edgeSet/@edges.19" outgoingEdges="//@edgeSet/@edges.11">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" incomingEdges="//@edgeSet/@edges.20" outgoingEdges="//@edgeSet/@edges.12">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" incomingEdges="//@edgeSet/@edges.3" outgoingEdges="//@edgeSet/@edges.9">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" incomingEdges="//@edgeSet/@edges.21" outgoingEdges="//@edgeSet/@edges.13">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" incomingEdges="//@edgeSet/@edges.23" outgoingEdges="//@edgeSet/@edges.15">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" incomingEdges="//@edgeSet/@edges.10" outgoingEdges="//@edgeSet/@edges.18">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" incomingEdges="//@edgeSet/@edges.4" outgoingEdges="//@edgeSet/@edges.16">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" incomingEdges="//@edgeSet/@edges.11" outgoingEdges="//@edgeSet/@edges.19">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" incomingEdges="//@edgeSet/@edges.12" outgoingEdges="//@edgeSet/@edges.20">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" incomingEdges="//@edgeSet/@edges.5" outgoingEdges="//@edgeSet/@edges.17">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" incomingEdges="//@edgeSet/@edges.13" outgoingEdges="//@edgeSet/@edges.21">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v3" incomingEdges="//@edgeSet/@edges.14" outgoingEdges="//@edgeSet/@edges.22">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v3" incomingEdges="//@edgeSet/@edges.15" outgoingEdges="//@edgeSet/@edges.23">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+  </nodeSet>
+  <edgeSet>
+    <edges name="v->v0" sourceNode="//@nodeSet/@nodes.0" targetNode="//@nodeSet/@nodes.4">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v->v0" sourceNode="//@nodeSet/@nodes.2" targetNode="//@nodeSet/@nodes.5">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v->v1" sourceNode="//@nodeSet/@nodes.0" targetNode="//@nodeSet/@nodes.7">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v->v1" sourceNode="//@nodeSet/@nodes.2" targetNode="//@nodeSet/@nodes.10">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v->v2" sourceNode="//@nodeSet/@nodes.0" targetNode="//@nodeSet/@nodes.14">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v->v2" sourceNode="//@nodeSet/@nodes.2" targetNode="//@nodeSet/@nodes.17">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v0->v" sourceNode="//@nodeSet/@nodes.4" targetNode="//@nodeSet/@nodes.0">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v0->v" sourceNode="//@nodeSet/@nodes.5" targetNode="//@nodeSet/@nodes.2">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v1->v" sourceNode="//@nodeSet/@nodes.7" targetNode="//@nodeSet/@nodes.0">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v1->v" sourceNode="//@nodeSet/@nodes.10" targetNode="//@nodeSet/@nodes.2">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v1->v2" sourceNode="//@nodeSet/@nodes.6" targetNode="//@nodeSet/@nodes.13">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v1->v2" sourceNode="//@nodeSet/@nodes.8" targetNode="//@nodeSet/@nodes.15">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v1->v2" sourceNode="//@nodeSet/@nodes.9" targetNode="//@nodeSet/@nodes.16">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v1->v2" sourceNode="//@nodeSet/@nodes.11" targetNode="//@nodeSet/@nodes.18">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v1->v3" sourceNode="//@nodeSet/@nodes.6" targetNode="//@nodeSet/@nodes.19">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v1->v3" sourceNode="//@nodeSet/@nodes.12" targetNode="//@nodeSet/@nodes.20">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v2->v" sourceNode="//@nodeSet/@nodes.14" targetNode="//@nodeSet/@nodes.0">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v2->v" sourceNode="//@nodeSet/@nodes.17" targetNode="//@nodeSet/@nodes.2">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v2->v1" sourceNode="//@nodeSet/@nodes.13" targetNode="//@nodeSet/@nodes.6">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v2->v1" sourceNode="//@nodeSet/@nodes.15" targetNode="//@nodeSet/@nodes.8">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v2->v1" sourceNode="//@nodeSet/@nodes.16" targetNode="//@nodeSet/@nodes.9">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v2->v1" sourceNode="//@nodeSet/@nodes.18" targetNode="//@nodeSet/@nodes.11">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v3->v1" sourceNode="//@nodeSet/@nodes.19" targetNode="//@nodeSet/@nodes.6">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="v3->v1" sourceNode="//@nodeSet/@nodes.20" targetNode="//@nodeSet/@nodes.12">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+  </edgeSet>
+</IBeXPatternModel:IBeXModel>
