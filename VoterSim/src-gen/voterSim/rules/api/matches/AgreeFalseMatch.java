@@ -3,29 +3,27 @@ package voterSim.rules.api.matches;
 import org.emoflon.ibex.common.operational.IMatch;
 import org.emoflon.ibex.gt.api.GraphTransformationMatch;
 import Voter.Voter1;
-import voterSim.rules.api.rules.SwitchingRule;
+import voterSim.rules.api.rules.AgreeFalsePattern;
 
 /**
- * A match for the rule <code>switching()</code>.
+ * A match for the pattern <code>agreeFalse()</code>.
  */
-public class SwitchingMatch extends GraphTransformationMatch<SwitchingMatch, SwitchingRule> {
+public class AgreeFalseMatch extends GraphTransformationMatch<AgreeFalseMatch, AgreeFalsePattern> {
 	private Voter1 varV1;
 	private Voter1 varV2;
-	private Voter1 varV3;
 
 	/**
-	 * Creates a new match for the rule <code>switching()</code>.
+	 * Creates a new match for the pattern <code>agreeFalse()</code>.
 	 * 
 	 * @param pattern
 	 *            the pattern
 	 * @param match
 	 *            the untyped match
 	 */
-	public SwitchingMatch(final SwitchingRule pattern, final IMatch match) {
+	public AgreeFalseMatch(final AgreeFalsePattern pattern, final IMatch match) {
 		super(pattern, match);
 		varV1 = (Voter1) match.get("v1");
 		varV2 = (Voter1) match.get("v2");
-		varV3 = (Voter1) match.get("v3");
 	}
 
 	/**
@@ -46,21 +44,11 @@ public class SwitchingMatch extends GraphTransformationMatch<SwitchingMatch, Swi
 		return varV2;
 	}
 
-	/**
-	 * Returns the v3.
-	 *
-	 * @return the v3
-	 */
-	public Voter1 getV3() {
-		return varV3;
-	}
-
 	@Override
 	public String toString() {
 		String s = "match {" + System.lineSeparator();
 		s += "	v1 --> " + varV1 + System.lineSeparator();
 		s += "	v2 --> " + varV2 + System.lineSeparator();
-		s += "	v3 --> " + varV3 + System.lineSeparator();
 		s += "} for " + getPattern();
 		return s;
 	}

@@ -10,19 +10,19 @@ import org.emoflon.ibex.common.operational.IMatch;
 import org.emoflon.ibex.gt.api.GraphTransformationPattern;
 import org.emoflon.ibex.gt.engine.GraphTransformationInterpreter;
 import Voter.Voter1;
-import voterSim.rules.api.matches.AgreeMatch;
+import voterSim.rules.api.matches.AgreeFalseMatch;
 import voterSim.rules.api.RulesAPI;
 
 /**
- * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@7e3f1c86 (name: v1), org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@35a2d36b (name: v2)] which does the following:
+ * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@3cab7f36 (name: v1), org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@7c400799 (name: v2)] which does the following:
  * If this pattern is not self-explaining, you really should add some comment in the specification.
  */
 @SuppressWarnings("unused")
-public class AgreePattern extends GraphTransformationPattern<AgreeMatch, AgreePattern> {
-	private static String patternName = "agree";
+public class AgreeFalsePattern extends GraphTransformationPattern<AgreeFalseMatch, AgreeFalsePattern> {
+	private static String patternName = "agreeFalse";
 
 	/**
-	 * Creates a new pattern agree().
+	 * Creates a new pattern agreeFalse().
 	 * 
 	 * @param api
 	 *            the API the pattern belongs to
@@ -30,13 +30,13 @@ public class AgreePattern extends GraphTransformationPattern<AgreeMatch, AgreePa
 	 *            the interpreter
 	 */
 	
-	public AgreePattern(final RulesAPI api, final GraphTransformationInterpreter interpreter) {
+	public AgreeFalsePattern(final RulesAPI api, final GraphTransformationInterpreter interpreter) {
 		super(api, interpreter, patternName);
 	}
 
 	@Override
-	public AgreeMatch convertMatch(final IMatch match) {
-		return new AgreeMatch(this, match);
+	public AgreeFalseMatch convertMatch(final IMatch match) {
+		return new AgreeFalseMatch(this, match);
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class AgreePattern extends GraphTransformationPattern<AgreeMatch, AgreePa
 	 * @param object
 	 *            the object to set
 	 */
-	public AgreePattern bindV1(final Voter1 object) {
+	public AgreeFalsePattern bindV1(final Voter1 object) {
 		parameters.put("v1", Objects.requireNonNull(object, "v1 must not be null!"));
 		return this;
 	}
@@ -64,7 +64,7 @@ public class AgreePattern extends GraphTransformationPattern<AgreeMatch, AgreePa
 	 * @param object
 	 *            the object to set
 	 */
-	public AgreePattern unbindV1() {
+	public AgreeFalsePattern unbindV1() {
 		parameters.remove("v1");
 		return this;
 	}
@@ -75,7 +75,7 @@ public class AgreePattern extends GraphTransformationPattern<AgreeMatch, AgreePa
 	 * @param object
 	 *            the object to set
 	 */
-	public AgreePattern bindV2(final Voter1 object) {
+	public AgreeFalsePattern bindV2(final Voter1 object) {
 		parameters.put("v2", Objects.requireNonNull(object, "v2 must not be null!"));
 		return this;
 	}
@@ -86,7 +86,7 @@ public class AgreePattern extends GraphTransformationPattern<AgreeMatch, AgreePa
 	 * @param object
 	 *            the object to set
 	 */
-	public AgreePattern unbindV2() {
+	public AgreeFalsePattern unbindV2() {
 		parameters.remove("v2");
 		return this;
 	}

@@ -27,14 +27,14 @@ import hipe.generic.actor.junction.GenericJunctionActor;
 
 import hipe.network.JunctionNode;
 
-public class newVoterFalse_21_junction extends GenericJunctionActor{
+public class newVoterTrue_31_junction extends GenericJunctionActor{
 	
 	@Override
 	protected void initializePorts(Map<String, ActorRef> name2actor, JunctionNode node) {
-		constraints.add(this::check_constraint_10);
+		constraints.add(this::check_constraint_14);
 		
 		ports = new LinkedList<>();
-		ports.add(new PortJunction(node.getPorts().getPort().get(0), getSelf(), name2actor.get("newVoterFalse_production"), this::returnTrue , 0  , false ));
+		ports.add(new PortJunction(node.getPorts().getPort().get(0), getSelf(), name2actor.get("newVoterTrue_production"), this::returnTrue , 0  , false ));
 	}
 	
 	@Override
@@ -55,9 +55,9 @@ public class newVoterFalse_21_junction extends GenericJunctionActor{
 		message.initialMessage.decrement();
 	}
 	
-	public boolean check_constraint_10(HMatch match, int index) {
-		Voter.Voter1 v1 = (Voter.Voter1) match.getNodes()[1];
-		Voter.Voter1 v2 = (Voter.Voter1) match.getNodes()[2];
+	public boolean check_constraint_14(HMatch match, int index) {
+		Voter.Voter1 v2 = (Voter.Voter1) match.getNodes()[1];
+		Voter.Voter1 v1 = (Voter.Voter1) match.getNodes()[2];
 		Voter.Voter1 v0 = (Voter.Voter1) match.getNodes()[0];
 		boolean predicate = !v0.equals(v1) && !v0.equals(v2);
 		match.setConstraintSatisfied(index, predicate);
