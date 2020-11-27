@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<IBeXPatternModel:IBeXModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore">
+  <patternSet>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="somePattern" documentation="" signatureNodes="//@nodeSet/@nodes.0"/>
+  </patternSet>
+  <ruleSet/>
+  <nodeSet>
+    <nodes name="v">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+  </nodeSet>
+  <edgeSet/>
+</IBeXPatternModel:IBeXModel>

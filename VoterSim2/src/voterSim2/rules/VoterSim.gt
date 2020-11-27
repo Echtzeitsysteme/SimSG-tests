@@ -1,0 +1,5 @@
+import "platform:/resource/Voter/model/Voter.ecore"
+
+pattern somePattern() {
+	v:Voter1
+}
