@@ -28,13 +28,13 @@ public class Voter1_object_SP0 extends GenericObjectActor<Voter.Voter1> {
 	@Override
 	protected void initializePorts(Map<String, ActorRef> name2actor, ObjectNode node) {
 		ports = new LinkedList<>();
-		ports.add(new PortNodeLeft<Voter.Voter1>(node.getPorts().getPort().get(0), getSelf(), name2actor.get("Voter1_link_0_reference"), this::returnTrue   ));
-		ports.add(new PortNodeMatchRight<Voter.Voter1>(node.getPorts().getPort().get(1), getSelf(), name2actor.get("newVoterFalse_28_junction"), this::returnTrue   , node.getName() ));
-		ports.add(new PortNodeMatchRight<Voter.Voter1>(node.getPorts().getPort().get(2), getSelf(), name2actor.get("newVoterTrue_33_junction"), this::returnTrue   , node.getName() ));
-		ports.add(new PortNodeMatch<Voter.Voter1>(node.getPorts().getPort().get(3), getSelf(), name2actor.get("voteFalse_production"), this::check_constraint_18 , 0   , node.getName() ));
+		ports.add(new PortNodeMatchLeft<Voter.Voter1>(node.getPorts().getPort().get(1), getSelf(), name2actor.get("newVoterFalse_1_junction"), this::returnTrue   , node.getName() ));
+		ports.add(new PortNodeMatchLeft<Voter.Voter1>(node.getPorts().getPort().get(0), getSelf(), name2actor.get("newVoterFalse_3_junction"), this::returnTrue   , node.getName() ));
+		ports.add(new PortNodeMatchRight<Voter.Voter1>(node.getPorts().getPort().get(2), getSelf(), name2actor.get("newVoterTrue_8_junction"), this::returnTrue   , node.getName() ));
+		ports.add(new PortNodeMatch<Voter.Voter1>(node.getPorts().getPort().get(3), getSelf(), name2actor.get("voteFalse_production"), this::check_constraint_5 , 0   , node.getName() ));
 	}
 	
-	public boolean check_constraint_18(Voter.Voter1 v, int index) {
+	public boolean check_constraint_5(Voter.Voter1 v, int index) {
 		return v.isVote()==false;
 	}
 	
