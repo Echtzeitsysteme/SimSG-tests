@@ -16,7 +16,7 @@ public class SimpleSimulationGenerator {
 		gen.addPatternObservation("disagree");
 		gen.addPatternObservation("agreeTrue");
 		gen.addPatternObservation("agreeFalse");
-		gen.addTerminationConditionIterations(100);
+		gen.addTerminationConditionIterations(1000);
 		gen.saveDefinition(System.getProperty("user.dir")+"/instances/simulation_definitions/"+"103voters_connected"+".xmi");
 	}
 }

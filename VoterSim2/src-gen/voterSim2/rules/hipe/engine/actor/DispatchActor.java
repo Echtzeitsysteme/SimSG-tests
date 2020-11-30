@@ -69,6 +69,10 @@ public class DispatchActor extends AbstractActor {
 			name2actor.get("Voter1_object_SP0").tell(new ObjectAdded<Voter.Voter1>(incUtil, _voter1), getSelf());
 			incUtil.newMessage();
 			name2actor.get("Voter1_object_SP1").tell(new ObjectAdded<Voter.Voter1>(incUtil, _voter1), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_object_SP2").tell(new ObjectAdded<Voter.Voter1>(incUtil, _voter1), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_object_SP3").tell(new ObjectAdded<Voter.Voter1>(incUtil, _voter1), getSelf());
 		});
 	}
 	
@@ -80,7 +84,15 @@ public class DispatchActor extends AbstractActor {
 			}
 			if(notification.getNotifier() instanceof Voter.Voter1) {
 				incUtil.newMessage();
+				name2actor.get("Voter1_object_SP3").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+			}
+			if(notification.getNotifier() instanceof Voter.Voter1) {
+				incUtil.newMessage();
 				name2actor.get("Voter1_object_SP1").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+			}
+			if(notification.getNotifier() instanceof Voter.Voter1) {
+				incUtil.newMessage();
+				name2actor.get("Voter1_object_SP2").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 		});
 		
@@ -90,6 +102,14 @@ public class DispatchActor extends AbstractActor {
 		feature2addEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Link(), notification -> {
 			incUtil.newMessage();
 			name2actor.get("Voter1_link_0_reference").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_1_reference").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_2_reference").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_3_reference").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_4_reference").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
 		});
 	}
 	
@@ -97,6 +117,14 @@ public class DispatchActor extends AbstractActor {
 		feature2removeEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Link(), notification -> {
 			incUtil.newMessage();
 			name2actor.get("Voter1_link_0_reference").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_1_reference").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_2_reference").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_3_reference").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_4_reference").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
 		});
 	}
 
@@ -201,6 +229,14 @@ public class DispatchActor extends AbstractActor {
 		if (node instanceof Voter.Voter1) {
 			incUtil.newMessage();
 			name2actor.get("Voter1_object_SP1").tell(new ObjectDeleted<Voter.Voter1>(incUtil, (Voter.Voter1) node), getSelf());
+		}
+		if (node instanceof Voter.Voter1) {
+			incUtil.newMessage();
+			name2actor.get("Voter1_object_SP2").tell(new ObjectDeleted<Voter.Voter1>(incUtil, (Voter.Voter1) node), getSelf());
+		}
+		if (node instanceof Voter.Voter1) {
+			incUtil.newMessage();
+			name2actor.get("Voter1_object_SP3").tell(new ObjectDeleted<Voter.Voter1>(incUtil, (Voter.Voter1) node), getSelf());
 		}
 	}
 }

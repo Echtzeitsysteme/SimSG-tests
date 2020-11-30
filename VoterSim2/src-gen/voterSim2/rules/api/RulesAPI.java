@@ -15,7 +15,7 @@ import voterSim2.rules.api.rules.AgreeTruePattern;
 import voterSim2.rules.api.rules.ConnectedV1V3Pattern;
 import voterSim2.rules.api.rules.ConvertRule;
 import voterSim2.rules.api.rules.DisagreePattern;
-import voterSim2.rules.api.rules.SwitchRandomRule;
+import voterSim2.rules.api.rules.SwitchSameRule;
 import voterSim2.rules.api.rules.VoteFalsePattern;
 import voterSim2.rules.api.rules.VoteTruePattern;
 
@@ -71,7 +71,7 @@ public class RulesAPI extends GraphTransformationAPI {
 	protected Map<String, Supplier<? extends GraphTransformationPattern<?,?>>> initiatePatternMap(){
 		Map<String, Supplier<? extends GraphTransformationPattern<?,?>>> map = new HashMap<>();
 		map.put("convert", () -> convert());
-		map.put("switchRandom", () -> switchRandom());
+		map.put("switchSame", () -> switchSame());
 		map.put("agreeFalse", () -> agreeFalse());
 		map.put("agreeTrue", () -> agreeTrue());
 		map.put("connectedV1V3", () -> connectedV1V3());
@@ -87,8 +87,8 @@ public class RulesAPI extends GraphTransformationAPI {
 			new HashMap<>();
 		map.put(convert(), new double[]{
 		convert().getProbability().get().getProbability(), 0.0});					
-		map.put(switchRandom(), new double[]{
-		switchRandom().getProbability().get().getProbability(), 0.0});					
+		map.put(switchSame(), new double[]{
+		switchSame().getProbability().get().getProbability(), 0.0});					
 		return map;
 	}
 					
@@ -107,17 +107,17 @@ public class RulesAPI extends GraphTransformationAPI {
 		}
 	}
 	/**
-	* Creates a new instance of the rule <code>switchRandom()</code> which does the following:
-	* rule switchSame() {v1:Voter1{-- -link-> v2++ -link-> v3}v2:Voter1{-- -link-> v1}v3:Voter1{++ -link-> v1}# v1.vote != v2.vote# v1.vote == v3.vote} when notConnectedV1V3 @ 0.5
+	* Creates a new instance of the rule <code>switchSame()</code> which does the following:
+	* If this rule is not self-explaining, you really should add some comment in the specification.
 	*
 	* @return the new instance of the rule»
 	*/
-	public SwitchRandomRule switchRandom() {
+	public SwitchSameRule switchSame() {
 		try{
-			SwitchRandomRule rule = (SwitchRandomRule) interpreter.getRegisteredGraphTransformationPattern("switchRandom");
+			SwitchSameRule rule = (SwitchSameRule) interpreter.getRegisteredGraphTransformationPattern("switchSame");
 			return rule;
 		} catch(Exception e) {
-			return new SwitchRandomRule(this, interpreter);
+			return new SwitchSameRule(this, interpreter);
 		}
 	}
 	/**

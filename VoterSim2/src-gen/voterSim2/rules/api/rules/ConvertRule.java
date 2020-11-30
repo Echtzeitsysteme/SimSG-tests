@@ -40,7 +40,7 @@ public class ConvertRule extends GraphTransformationRule<ConvertMatch, ConvertRu
 	 */
 
 	public ConvertRule(final RulesAPI api, final GraphTransformationInterpreter interpreter) {
-		super(api, interpreter, patternName, Optional.of(new StaticProbability<ConvertMatch, ConvertRule>(interpreter, 0.2, 0.0, IBeXDistributionType.STATIC, OptionalDouble.empty())));
+		super(api, interpreter, patternName, Optional.of(new StaticProbability<ConvertMatch, ConvertRule>(interpreter, 0.5, 0.0, IBeXDistributionType.STATIC, OptionalDouble.empty())));
 	}
 
 	@Override

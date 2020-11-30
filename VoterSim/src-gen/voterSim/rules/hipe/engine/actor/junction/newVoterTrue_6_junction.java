@@ -57,9 +57,9 @@ public class newVoterTrue_6_junction extends GenericJunctionActor{
 	
 	public boolean check_constraint_4(HMatch match, int index) {
 		Voter.Voter1 v2 = (Voter.Voter1) match.getNodes()[1];
-		Voter.Voter1 v0 = (Voter.Voter1) match.getNodes()[2];
-		Voter.Voter1 v1 = (Voter.Voter1) match.getNodes()[0];
-		boolean predicate = !v0.equals(v1) && !v1.equals(v2);
+		Voter.Voter1 v1 = (Voter.Voter1) match.getNodes()[2];
+		Voter.Voter1 v0 = (Voter.Voter1) match.getNodes()[0];
+		boolean predicate = !v0.equals(v1) && !v0.equals(v2);
 		match.setConstraintSatisfied(index, predicate);
 		return predicate;
 	}

@@ -28,6 +28,7 @@ pattern agreeTrue() {
 		-link-> v1
 	}
 	# v1.vote == v2.vote
+	# v1.vote == true
 }
 
 pattern agreeFalse() {
@@ -38,24 +39,10 @@ pattern agreeFalse() {
 		-link-> v1
 	}
 	# v1.vote == v2.vote
+	# v1.vote == false
 }
 
-//rule switchSame() {
-//	v1:Voter1{
-//	-- -link-> v2
-//	++ -link-> v3}
-//	v2:Voter1{
-//	-- -link-> v1
-//	}
-//	v3:Voter1{
-//	++ -link-> v1
-//	}
-//	# v1.vote != v2.vote
-//	# v1.vote == v3.vote 
-//} when notConnectedV1V3 @ 0.5
-
-
-rule switchRandom() {
+rule switchSame() {
 	v1:Voter1{
 	-- -link-> v2
 	++ -link-> v3}
@@ -66,7 +53,22 @@ rule switchRandom() {
 	++ -link-> v1
 	}
 	# v1.vote != v2.vote
-} when notConnectedV1V3 @ 0.5
+	# v1.vote == v3.vote 
+} when notConnectedV1V3 @ 0.2
+
+
+//rule switchRandom() {
+//	v1:Voter1{
+//	-- -link-> v2
+//	++ -link-> v3}
+//	v2:Voter1{
+//	-- -link-> v1
+//	}
+//	v3:Voter1{
+//	++ -link-> v1
+//	}
+//	# v1.vote != v2.vote
+//} when notConnectedV1V3 @ 0.2
 
 condition notConnectedV1V3 = forbid connectedV1V3
 
@@ -88,4 +90,4 @@ rule convert() {
 	-link-> v1
 	}
 	# v1.vote != v2.vote
-}@0.2
+}@ 0.5
