@@ -1,4 +1,4 @@
-package voterSim.rules.api.rules;
+package voterSim2.rules.api.rules;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,19 +10,19 @@ import org.emoflon.ibex.common.operational.IMatch;
 import org.emoflon.ibex.gt.api.GraphTransformationPattern;
 import org.emoflon.ibex.gt.engine.GraphTransformationInterpreter;
 import Voter.Voter1;
-import voterSim.rules.api.matches.VoteTrueMatch;
-import voterSim.rules.api.RulesAPI;
+import voterSim2.rules.api.matches.VoteFalseMatch;
+import voterSim2.rules.api.RulesAPI;
 
 /**
- * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@7f6533f4 (name: v)] which does the following:
+ * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@6ceddf8 (name: v)] which does the following:
  * If this pattern is not self-explaining, you really should add some comment in the specification.
  */
 @SuppressWarnings("unused")
-public class VoteTruePattern extends GraphTransformationPattern<VoteTrueMatch, VoteTruePattern> {
-	private static String patternName = "voteTrue";
+public class VoteFalsePattern extends GraphTransformationPattern<VoteFalseMatch, VoteFalsePattern> {
+	private static String patternName = "voteFalse";
 
 	/**
-	 * Creates a new pattern voteTrue().
+	 * Creates a new pattern voteFalse().
 	 * 
 	 * @param api
 	 *            the API the pattern belongs to
@@ -30,13 +30,13 @@ public class VoteTruePattern extends GraphTransformationPattern<VoteTrueMatch, V
 	 *            the interpreter
 	 */
 	
-	public VoteTruePattern(final RulesAPI api, final GraphTransformationInterpreter interpreter) {
+	public VoteFalsePattern(final RulesAPI api, final GraphTransformationInterpreter interpreter) {
 		super(api, interpreter, patternName);
 	}
 
 	@Override
-	public VoteTrueMatch convertMatch(final IMatch match) {
-		return new VoteTrueMatch(this, match);
+	public VoteFalseMatch convertMatch(final IMatch match) {
+		return new VoteFalseMatch(this, match);
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class VoteTruePattern extends GraphTransformationPattern<VoteTrueMatch, V
 	 * @param object
 	 *            the object to set
 	 */
-	public VoteTruePattern bindV(final Voter1 object) {
+	public VoteFalsePattern bindV(final Voter1 object) {
 		parameters.put("v", Objects.requireNonNull(object, "v must not be null!"));
 		return this;
 	}
@@ -63,7 +63,7 @@ public class VoteTruePattern extends GraphTransformationPattern<VoteTrueMatch, V
 	 * @param object
 	 *            the object to set
 	 */
-	public VoteTruePattern unbindV() {
+	public VoteFalsePattern unbindV() {
 		parameters.remove("v");
 		return this;
 	}

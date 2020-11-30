@@ -1,4 +1,4 @@
-package voterSim.rules.api.rules;
+package voterSim2.rules.api.rules;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,11 +10,11 @@ import org.emoflon.ibex.common.operational.IMatch;
 import org.emoflon.ibex.gt.api.GraphTransformationPattern;
 import org.emoflon.ibex.gt.engine.GraphTransformationInterpreter;
 import Voter.Voter1;
-import voterSim.rules.api.matches.VoteTrueMatch;
-import voterSim.rules.api.RulesAPI;
+import voterSim2.rules.api.matches.VoteTrueMatch;
+import voterSim2.rules.api.RulesAPI;
 
 /**
- * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@7f6533f4 (name: v)] which does the following:
+ * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@f087922 (name: v)] which does the following:
  * If this pattern is not self-explaining, you really should add some comment in the specification.
  */
 @SuppressWarnings("unused")

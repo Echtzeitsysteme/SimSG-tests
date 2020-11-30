@@ -1,4 +1,4 @@
-package voterSim.rules.hipe.engine.actor;
+package voterSim2.rules.hipe.engine.actor;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -87,9 +87,17 @@ public class DispatchActor extends AbstractActor {
 	}
 	
 	private void initializeAddEdge() {
+		feature2addEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Link(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_0_reference").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
+		});
 	}
 	
 	private void initializeRemoveEdge() {
+		feature2removeEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Link(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter1_link_0_reference").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
+		});
 	}
 
 	@Override
