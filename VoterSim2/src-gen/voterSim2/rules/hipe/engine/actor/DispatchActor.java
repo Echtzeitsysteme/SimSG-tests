@@ -84,15 +84,15 @@ public class DispatchActor extends AbstractActor {
 			}
 			if(notification.getNotifier() instanceof Voter.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_object_SP3").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
-			}
-			if(notification.getNotifier() instanceof Voter.Voter1) {
-				incUtil.newMessage();
 				name2actor.get("Voter1_object_SP1").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 			if(notification.getNotifier() instanceof Voter.Voter1) {
 				incUtil.newMessage();
 				name2actor.get("Voter1_object_SP2").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+			}
+			if(notification.getNotifier() instanceof Voter.Voter1) {
+				incUtil.newMessage();
+				name2actor.get("Voter1_object_SP3").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 		});
 		

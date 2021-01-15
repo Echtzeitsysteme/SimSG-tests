@@ -3,25 +3,25 @@ package voterSim2.rules.api.matches;
 import org.emoflon.ibex.common.operational.IMatch;
 import org.emoflon.ibex.gt.api.GraphTransformationMatch;
 import Voter.Voter1;
-import voterSim2.rules.api.rules.SwitchRandomRule;
+import voterSim2.rules.api.rules.SwitchSameRule;
 
 /**
- * A match for the rule <code>switchRandom()</code>.
+ * A match for the rule <code>switchSame()</code>.
  */
-public class SwitchRandomMatch extends GraphTransformationMatch<SwitchRandomMatch, SwitchRandomRule> {
+public class SwitchSameMatch extends GraphTransformationMatch<SwitchSameMatch, SwitchSameRule> {
 	private Voter1 varV1;
 	private Voter1 varV2;
 	private Voter1 varV3;
 
 	/**
-	 * Creates a new match for the rule <code>switchRandom()</code>.
+	 * Creates a new match for the rule <code>switchSame()</code>.
 	 * 
 	 * @param pattern
 	 *            the pattern
 	 * @param match
 	 *            the untyped match
 	 */
-	public SwitchRandomMatch(final SwitchRandomRule pattern, final IMatch match) {
+	public SwitchSameMatch(final SwitchSameRule pattern, final IMatch match) {
 		super(pattern, match);
 		varV1 = (Voter1) match.get("v1");
 		varV2 = (Voter1) match.get("v2");
