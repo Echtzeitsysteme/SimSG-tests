@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GroupVotersGen
+Bundle-SymbolicName: GroupVotersGen;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: 
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: GroupVotersGen
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ GroupVoters;bundle-version="0.1.0",
+ org.emoflon.ibex.common,
+ org.emoflon.ibex.gt,
+ org.emoflon.ibex.patternmodel,
+ org.emoflon.ibex.gt.democles,
+ org.emoflon.ibex.gt.hipe,
+ org.emoflon.ibex.gt.viatra,
+ org.simsg.core,
+ SimulationDefinition
+Export-Package: groupVotersGen.rules.api,
+ groupVotersGen.rules.api.matches,
+ groupVotersGen.rules.api.rules

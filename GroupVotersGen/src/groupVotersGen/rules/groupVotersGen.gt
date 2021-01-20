@@ -1,0 +1,108 @@
+import "platform:/resource/GroupVoters/model/GroupVoters.ecore"
+
+
+pattern voteTrue() {
+	v:Voter1
+	# v.vote == true
+}
+
+
+pattern voteFalse() {
+	v:Voter1
+	# v.vote == false
+}
+
+
+pattern agreeTrue() {
+	g:Group
+	v1:Voter1 
+	{
+		-member-> g
+	}
+	v2:Voter1 
+	{
+		-member-> g
+	}	
+	# v2.vote == false
+	# v1.vote == true
+} // when sharingGroupV1V2 
+
+
+pattern agreeFalse() {
+	 g:Group
+	v1:Voter1 {
+	 -member-> g
+	}
+	v2:Voter1 {
+	 -member-> g
+	}
+	# v2.vote == false
+	# v1.vote == false
+} // when sharingGroupV1V2
+
+
+//condition sharingGroupV1V2 = enforce sharingGroupV1V2Pattern
+//
+//pattern sharingGroupV1V2Pattern(){
+//	g:Group
+//	v1:Voter1 {
+//		-member-> g
+//	}
+//	v2:Voter1 {
+//		-member-> g
+//	}
+//}
+
+pattern homGroupFalse() {
+	g:Group
+} when noTrueMemberVG 
+
+condition noTrueMemberVG = forbid trueMemberVG
+
+pattern trueMemberVG{
+	g:Group
+	v:Voter1{
+		-member-> g
+	}
+	# v.vote == true
+}
+
+
+pattern homGroupTrue() {
+	g:Group{}
+} when noFalseMemberVG 
+
+condition noFalseMemberVG = forbid falseMemberVG
+
+pattern falseMemberVG{
+	g:Group{}
+	v:Voter1{
+		-member-> g
+	}
+	# v.vote == false
+}
+	
+pattern hetGroup() {
+	g:Group{}
+} when bothMembersVG 
+
+condition bothMembersVG = enforce falseMemberVG && enforce trueMemberVG
+
+
+rule newMembership(){
+	g:Group{}
+	v:Voter1{
+	++ -member-> g
+	}
+} when notConnectedVG @1
+
+condition notConnectedVG = forbid connectedVG
+
+pattern connectedVG() {
+	v:Voter1{
+		-member-> g
+	}
+	g:Group{
+	}
+}
+

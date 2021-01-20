@@ -1,0 +1,138 @@
+import "platform:/resource/GroupVoters/model/GroupVoters.ecore"
+
+// rules match groups rather than seeing them as a positive conditions
+// does this make it harder to compare with the basic voter model ?
+
+
+// voter changes vote to equal that of other voter in group
+
+rule convert() {
+	g:Group{}
+	v1:Voter1 {
+		-member-> g
+	}
+	v2:Voter1 {
+		-member-> g
+		.vote := v1.vote
+	}
+	# v1.vote != v2.vote
+} @ 1
+
+
+// switch group away from conflicting voter to voter with same vote
+
+rule switchSame() {
+	g1:Group{}
+	v1:Voter1 {
+	--	-member-> g1
+	++	-member-> g2
+	}
+	v2:Voter1 {
+		-member-> g1
+	}
+	g2:Group{}
+	v3:Voter1 {
+		-member-> g2
+	}
+	# v1.vote != v2.vote
+	# v1.vote == v3.vote
+} when v1notInG2 @ 0.05
+
+condition v1notInG2 = forbid v1InG2
+
+pattern v1InG2(){
+	g2:Group{}
+	v1:Voter1{
+		-member-> g2
+	}
+}
+
+
+pattern voteTrue() {
+	v:Voter1
+	# v.vote == true
+}
+
+
+pattern voteFalse() {
+	v:Voter1
+	# v.vote == false
+}
+
+
+pattern agreeTrue() {
+	g:Group
+	v1:Voter1 
+	{
+		-member-> g
+	}
+	v2:Voter1 
+	{
+		-member-> g
+	}	
+	# v2.vote == false
+	# v1.vote == true
+} // when sharingGroupV1V2 
+
+
+pattern agreeFalse() {
+	g:Group
+	v1:Voter1 {
+		-member-> g
+	}
+	v2:Voter1 {
+		-member-> g
+	}
+	# v2.vote == false
+	# v1.vote == false
+} // when sharingGroupV1V2
+
+
+//condition sharingGroupV1V2 = enforce sharingGroupV1V2Pattern
+//
+//pattern sharingGroupV1V2Pattern(){
+//	g:Group
+//	v1:Voter1 {
+//		-member-> g
+//	}
+//	v2:Voter1 {
+//		-member-> g
+//	}
+//}
+
+
+pattern homGroupFalse() {
+	g:Group{}
+} when noTrueMemberVG
+
+condition noTrueMemberVG = forbid trueMemberVG
+
+pattern trueMemberVG{
+	g:Group{}
+	v1:Voter1{
+		-member-> g
+	}
+	# v1.vote == true
+}
+
+
+pattern homGroupTrue() {
+	g:Group{}
+} when noFalseMemberVG 
+
+condition noFalseMemberVG = forbid falseMemberVG
+
+pattern falseMemberVG{
+	g:Group{}
+	v2:Voter1{
+		-member-> g
+	}
+	# v2.vote == false
+}
+	
+pattern hetGroup() {
+	g:Group{}
+} when bothMembersVG 
+
+condition bothMembersVG = enforce falseMemberVG && enforce trueMemberVG
+

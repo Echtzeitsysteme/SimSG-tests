@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="ASCII"?>
+<IBeXPatternModel:IBeXModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore">
+  <patternSet>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="agreeFalse" documentation="when sharingGroupV1V2" localEdges="//@edgeSet/@edges.7 //@edgeSet/@edges.9" signatureNodes="//@nodeSet/@nodes.3 //@nodeSet/@nodes.20 //@nodeSet/@nodes.22">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.22">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000" stringValue="false"/>
+      </attributeConstraint>
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.20">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000" stringValue="false"/>
+      </attributeConstraint>
+      <injectivityConstraints values="//@nodeSet/@nodes.20 //@nodeSet/@nodes.22"/>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="agreeTrue" documentation="" localEdges="//@edgeSet/@edges.6 //@edgeSet/@edges.8" signatureNodes="//@nodeSet/@nodes.1 //@nodeSet/@nodes.19 //@nodeSet/@nodes.21">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.21">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000" stringValue="false"/>
+      </attributeConstraint>
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.19">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001" stringValue="true"/>
+      </attributeConstraint>
+      <injectivityConstraints values="//@nodeSet/@nodes.19 //@nodeSet/@nodes.21"/>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="connectedVG" documentation="" localEdges="//@edgeSet/@edges.2" signatureNodes="//@nodeSet/@nodes.6 //@nodeSet/@nodes.13"/>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="falseMemberVG" documentation="" localEdges="//@edgeSet/@edges.0" signatureNodes="//@nodeSet/@nodes.2 //@nodeSet/@nodes.11">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.11">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000" stringValue="false"/>
+      </attributeConstraint>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="falseMemberVG-CONDITION-g" documentation="" localEdges="//@edgeSet/@edges.3" localNodes="//@nodeSet/@nodes.14" signatureNodes="//@nodeSet/@nodes.7">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.14">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000" stringValue="false"/>
+      </attributeConstraint>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="hetGroup" documentation="" signatureNodes="//@nodeSet/@nodes.9">
+      <invocations positive="true" invokedPattern="//@patternSet/@contextPatterns.4">
+        <mapping key="//@nodeSet/@nodes.9" value="//@nodeSet/@nodes.7"/>
+      </invocations>
+      <invocations positive="true" invokedPattern="//@patternSet/@contextPatterns.10">
+        <mapping key="//@nodeSet/@nodes.9" value="//@nodeSet/@nodes.8"/>
+      </invocations>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="homGroupFalse" documentation="when sharingGroupV1V2condition sharingGroupV1V2 = enforce sharingGroupV1V2Patternpattern sharingGroupV1V2Pattern(){g:Groupv1:Voter1 {-member-> g}v2:Voter1 {-member-> g}}" signatureNodes="//@nodeSet/@nodes.4">
+      <invocations invokedPattern="//@patternSet/@contextPatterns.10">
+        <mapping key="//@nodeSet/@nodes.4" value="//@nodeSet/@nodes.8"/>
+      </invocations>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="homGroupTrue" documentation="" signatureNodes="//@nodeSet/@nodes.0">
+      <invocations invokedPattern="//@patternSet/@contextPatterns.4">
+        <mapping key="//@nodeSet/@nodes.0" value="//@nodeSet/@nodes.7"/>
+      </invocations>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newMembership" documentation="" signatureNodes="//@nodeSet/@nodes.10 //@nodeSet/@nodes.16">
+      <invocations invokedPattern="//@patternSet/@contextPatterns.2">
+        <mapping key="//@nodeSet/@nodes.10" value="//@nodeSet/@nodes.6"/>
+        <mapping key="//@nodeSet/@nodes.16" value="//@nodeSet/@nodes.13"/>
+      </invocations>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="trueMemberVG" documentation="" localEdges="//@edgeSet/@edges.1" signatureNodes="//@nodeSet/@nodes.5 //@nodeSet/@nodes.12">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.12">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001" stringValue="true"/>
+      </attributeConstraint>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="trueMemberVG-CONDITION-g" documentation="" localEdges="//@edgeSet/@edges.4" localNodes="//@nodeSet/@nodes.15" signatureNodes="//@nodeSet/@nodes.8">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.15">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001" stringValue="true"/>
+      </attributeConstraint>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="voteFalse" documentation="" signatureNodes="//@nodeSet/@nodes.17">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.17">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000" stringValue="false"/>
+      </attributeConstraint>
+    </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="voteTrue" documentation="" signatureNodes="//@nodeSet/@nodes.18">
+      <attributeConstraint relation="EQUAL">
+        <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.18">
+          <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+        </lhs>
+        <rhs xsi:type="IBeXPatternModel:IBeXConstant" value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001" stringValue="true"/>
+      </attributeConstraint>
+    </contextPatterns>
+  </patternSet>
+  <ruleSet>
+    <rules name="newMembership" documentation="" lhs="//@patternSet/@contextPatterns.8">
+      <rhs name="newMembership_rhs" localEdges="//@edgeSet/@edges.5" signatureNodes="//@nodeSet/@nodes.10 //@nodeSet/@nodes.16"/>
+      <create name="newMembership" createdEdges="//@edgeSet/@edges.5"/>
+      <delete name="newMembership"/>
+      <probability>
+        <distribution type="STATIC">
+          <mean xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral" value="1.0"/>
+          <stddev xsi:type="IBeXPatternModel:IBeXArithmeticValueLiteral"/>
+        </distribution>
+      </probability>
+    </rules>
+  </ruleSet>
+  <nodeSet>
+    <nodes name="g">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g" incomingEdges="//@edgeSet/@edges.6 //@edgeSet/@edges.8">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g" incomingEdges="//@edgeSet/@edges.0">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g" incomingEdges="//@edgeSet/@edges.7 //@edgeSet/@edges.9">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g" incomingEdges="//@edgeSet/@edges.1">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g" incomingEdges="//@edgeSet/@edges.2">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g" incomingEdges="//@edgeSet/@edges.3">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g" incomingEdges="//@edgeSet/@edges.4">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="g" incomingEdges="//@edgeSet/@edges.5">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes name="v" outgoingEdges="//@edgeSet/@edges.0">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v" outgoingEdges="//@edgeSet/@edges.1">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v" outgoingEdges="//@edgeSet/@edges.2">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v" outgoingEdges="//@edgeSet/@edges.3">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v" outgoingEdges="//@edgeSet/@edges.4">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v" outgoingEdges="//@edgeSet/@edges.5">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" outgoingEdges="//@edgeSet/@edges.6">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v1" outgoingEdges="//@edgeSet/@edges.7">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" outgoingEdges="//@edgeSet/@edges.8">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" outgoingEdges="//@edgeSet/@edges.9">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+  </nodeSet>
+  <edgeSet>
+    <edges name="v->g" sourceNode="//@nodeSet/@nodes.11" targetNode="//@nodeSet/@nodes.2">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v->g" sourceNode="//@nodeSet/@nodes.12" targetNode="//@nodeSet/@nodes.5">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v->g" sourceNode="//@nodeSet/@nodes.13" targetNode="//@nodeSet/@nodes.6">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v->g" sourceNode="//@nodeSet/@nodes.14" targetNode="//@nodeSet/@nodes.7">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v->g" sourceNode="//@nodeSet/@nodes.15" targetNode="//@nodeSet/@nodes.8">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v->g" sourceNode="//@nodeSet/@nodes.16" targetNode="//@nodeSet/@nodes.10">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v1->g" sourceNode="//@nodeSet/@nodes.19" targetNode="//@nodeSet/@nodes.1">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v1->g" sourceNode="//@nodeSet/@nodes.20" targetNode="//@nodeSet/@nodes.3">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v2->g" sourceNode="//@nodeSet/@nodes.21" targetNode="//@nodeSet/@nodes.1">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="v2->g" sourceNode="//@nodeSet/@nodes.22" targetNode="//@nodeSet/@nodes.3">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+  </edgeSet>
+</IBeXPatternModel:IBeXModel>

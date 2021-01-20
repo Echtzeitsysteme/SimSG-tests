@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GroupVoters:GroupVotersContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GroupVoters="platform:/resource/GroupVoters/model/GroupVoters.ecore" xsi:schemaLocation="platform:/resource/GroupVoters/model/GroupVoters.ecore java://GroupVoters.GroupVotersPackage">
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1" vote="true"/>
+  <voter xmi:type="GroupVoters:Voter1"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+  <group xmi:type="GroupVoters:Group"/>
+</GroupVoters:GroupVotersContainer>

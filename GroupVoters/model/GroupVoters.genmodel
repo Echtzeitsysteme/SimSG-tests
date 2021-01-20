@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/GroupVoters/src-gen" creationIcons="false" editDirectory="/GroupVoters.edit/src-gen"
+    editorDirectory="/GroupVoters.editor/src-gen" modelPluginID="GroupVoters" modelName="GroupVoters"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>GroupVoters.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="GroupVoters" disposableProviderFactory="true" ecorePackage="GroupVoters.ecore#/">
+    <genClasses ecoreClass="GroupVoters.ecore#//GroupVotersContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GroupVoters.ecore#//GroupVotersContainer/voter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference GroupVoters.ecore#//GroupVotersContainer/group"/>
+    </genClasses>
+    <genClasses ecoreClass="GroupVoters.ecore#//Voter1">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference GroupVoters.ecore#//Voter1/member"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute GroupVoters.ecore#//Voter1/vote"/>
+    </genClasses>
+    <genClasses ecoreClass="GroupVoters.ecore#//Group"/>
+  </genPackages>
+</genmodel:GenModel>
