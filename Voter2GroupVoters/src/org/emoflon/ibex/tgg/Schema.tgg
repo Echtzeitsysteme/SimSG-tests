@@ -1,0 +1,23 @@
+#import "platform:/resource/Voter/model/Voter.ecore"
+#import "platform:/resource/GroupVoters/model/GroupVoters.ecore"
+
+#schema Voter2GroupVoters
+	
+#source {
+	Voter
+}
+
+#target { 
+	GroupVoters
+} 
+
+#correspondence {
+	Container2GroupVotersContainer {
+		#src->Container
+		#trg->GroupVotersContainer
+	}
+}
+
+#attributeConditions {
+	
+}

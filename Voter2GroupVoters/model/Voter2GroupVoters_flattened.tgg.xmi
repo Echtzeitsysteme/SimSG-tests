@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ASCII"?>
+<language:TGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:language="platform:/plugin/org.emoflon.ibex.tgg.language/model/Language.ecore" name="Voter2GroupVoters">
+  <src href="platform:/resource/Voter/model/Voter.ecore#/"/>
+  <trg href="platform:/resource/GroupVoters/model/GroupVoters.ecore#/"/>
+  <corr href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#/"/>
+  <rules name="Container2GroupVotersContainer">
+    <nodes name="c" bindingType="CREATE" incomingEdges="//@rules.0/@edges.0" incomingCorrsSource="//@rules.0/@nodes.2">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+    </nodes>
+    <nodes name="gvc" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.1" incomingCorrsTarget="//@rules.0/@nodes.2">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="c2gvc" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.0/@edges.0 //@rules.0/@edges.1" source="//@rules.0/@nodes.0" target="//@rules.0/@nodes.1">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+    </nodes>
+    <edges name="c2gvc__source__c_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.0/@nodes.2" trgNode="//@rules.0/@nodes.0">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+    </edges>
+    <edges name="c2gvc__target__gvc_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.0/@nodes.2" trgNode="//@rules.0/@nodes.1">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+    </edges>
+    <attributeConditionLibrary/>
+  </rules>
+  <attributeConstraintDefinitionLibrary/>
+</language:TGG>

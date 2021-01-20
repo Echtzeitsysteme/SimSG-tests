@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HiPEPattern:HiPEContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HiPEPattern="platform:/resource/hipe.pattern/model/HiPEPattern" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xsi:schemaLocation="platform:/resource/hipe.pattern/model/HiPEPattern java://hipe.pattern.HiPEPatternPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage">
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Container2GroupVotersContainer__BWD" partialPatterns="//@patterns.3" nodes="//@nodes.0" children="//@patterns.3"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Container2GroupVotersContainer__CONSISTENCY" partialPatterns="//@patterns.4" nodes="//@nodes.1 //@nodes.2 //@nodes.3 //@nodes.4" edges="//@edges.0 //@edges.1 //@edges.2 //@edges.3 //@edges.4" children="//@patterns.4 //@patterns.5 //@patterns.6 //@patterns.7 //@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Container2GroupVotersContainer__FWD" partialPatterns="//@patterns.9" nodes="//@nodes.5" children="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__BWD_1" nodes="//@nodes.0" parentPattern="//@patterns.0" invokedNodes="//@nodes.0" patternType="NODE" rootPattern="//@patterns.0"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="Container2GroupVotersContainer__CONSISTENCY_2" partialPatterns="//@patterns.5 //@patterns.6 //@patterns.7 //@patterns.8" nodes="//@nodes.1 //@nodes.2 //@nodes.3 //@nodes.4" edges="//@edges.2 //@edges.4 //@edges.1 //@edges.0 //@edges.3" parentPattern="//@patterns.1" invokedNodes="//@nodes.1 //@nodes.2 //@nodes.3 //@nodes.4" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__CONSISTENCY_3" nodes="//@nodes.1" parentPattern="//@patterns.4" invokedNodes="//@nodes.1" patternType="NODE" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__CONSISTENCY_4" nodes="//@nodes.2" parentPattern="//@patterns.4" invokedNodes="//@nodes.2" patternType="NODE" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__CONSISTENCY_5" nodes="//@nodes.3" parentPattern="//@patterns.4" invokedNodes="//@nodes.3" patternType="NODE" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__CONSISTENCY_6" nodes="//@nodes.4" parentPattern="//@patterns.4" invokedNodes="//@nodes.4" patternType="NODE" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__FWD_7" nodes="//@nodes.5" parentPattern="//@patterns.2" invokedNodes="//@nodes.5" patternType="NODE" rootPattern="//@patterns.2"/>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gvc" abstractPatterns="//@patterns.0 //@patterns.3" invokingPartialPatterns="//@patterns.3">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c" abstractPatterns="//@patterns.1 //@patterns.4 //@patterns.5" invokingPartialPatterns="//@patterns.4 //@patterns.5">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gvc" abstractPatterns="//@patterns.1 //@patterns.4 //@patterns.6" invokingPartialPatterns="//@patterns.4 //@patterns.6">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c2gvc" abstractPatterns="//@patterns.1 //@patterns.4 //@patterns.7" invokingPartialPatterns="//@patterns.4 //@patterns.7">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="Container2GroupVotersContainer_eMoflon_ProtocolNode" abstractPatterns="//@patterns.1 //@patterns.4 //@patterns.8" invokingPartialPatterns="//@patterns.4 //@patterns.8">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c" abstractPatterns="//@patterns.2 //@patterns.9" invokingPartialPatterns="//@patterns.9">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+  </nodes>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_source" source="//@nodes.3" target="//@nodes.1" abstractPatterns="//@patterns.1 //@patterns.4">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_target" source="//@nodes.3" target="//@nodes.2" abstractPatterns="//@patterns.1 //@patterns.4">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer__Marker_CREATE__SRC__c" source="//@nodes.4" target="//@nodes.1" abstractPatterns="//@patterns.1 //@patterns.4">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__SRC__c"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer__Marker_CREATE__TRG__gvc" source="//@nodes.4" target="//@nodes.2" abstractPatterns="//@patterns.1 //@patterns.4">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__TRG__gvc"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer__Marker_CREATE__CORR__c2gvc" source="//@nodes.4" target="//@nodes.3" abstractPatterns="//@patterns.1 //@patterns.4">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__CORR__c2gvc"/>
+  </edges>
+</HiPEPattern:HiPEContainer>

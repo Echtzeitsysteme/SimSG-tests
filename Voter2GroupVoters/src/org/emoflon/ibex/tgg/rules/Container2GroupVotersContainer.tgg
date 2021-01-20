@@ -1,0 +1,23 @@
+#using Voter2GroupVoters.*
+#using AttrCondDefLibrary.*
+
+#rule Container2GroupVotersContainer #with Voter2GroupVoters
+
+#source { 
+	++ c : Container
+}
+
+#target {
+	++ gvc : GroupVotersContainer
+}
+
+#correspondence {
+	++ c2gvc : Container2GroupVotersContainer {
+		#src->c
+		#trg->gvc
+	}
+}
+
+#attributeConditions {
+	
+}

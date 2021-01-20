@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Voter2GroupVoters" nsURI="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore"
+    nsPrefix="Voter2GroupVoters">
+  <eClassifiers xsi:type="ecore:EClass" name="Container2GroupVotersContainer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/Voter/model/Voter.ecore#//Container"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Container2GroupVotersContainer__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__c" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Voter/model/Voter.ecore#//Container"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__gvc" lowerBound="1"
+        eType="ecore:EClass platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__c2gvc" lowerBound="1"
+        eType="ecore:EClass platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+  </eClassifiers>
+</ecore:EPackage>

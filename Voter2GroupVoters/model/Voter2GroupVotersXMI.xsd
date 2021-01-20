@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:GroupVoters="platform:/resource/GroupVoters/model/GroupVoters.ecore" xmlns:Voter="platform:/resource/Voter/model/Voter.ecore" xmlns:Voter2GroupVoters="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore" xmlns:org.emoflon.ibex.tgg.runtime="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore">
+  <xsd:import namespace="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore" schemaLocation="runtime.xsd"/>
+  <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="platform:/plugin/org.eclipse.emf.ecore/model/XMI.xsd"/>
+  <xsd:import namespace="platform:/resource/GroupVoters/model/GroupVoters.ecore" schemaLocation="GroupVoters.xsd"/>
+  <xsd:import namespace="platform:/resource/Voter/model/Voter.ecore" schemaLocation="Voter.xsd"/>
+  <xsd:complexType name="Container2GroupVotersContainer">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="Voter:Container"/>
+      <xsd:element name="target" type="GroupVoters:GroupVotersContainer"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Container2GroupVotersContainer" type="Voter2GroupVoters:Container2GroupVotersContainer"/>
+  <xsd:complexType name="Container2GroupVotersContainer__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CREATE__SRC__c" type="Voter:Container"/>
+          <xsd:element name="CREATE__TRG__gvc" type="GroupVoters:GroupVotersContainer"/>
+          <xsd:element name="CREATE__CORR__c2gvc" type="Voter2GroupVoters:Container2GroupVotersContainer"/>
+        </xsd:choice>
+        <xsd:attribute name="CREATE__SRC__c" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__gvc" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__c2gvc" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Container2GroupVotersContainer__Marker" type="Voter2GroupVoters:Container2GroupVotersContainer__Marker"/>
+</xsd:schema>

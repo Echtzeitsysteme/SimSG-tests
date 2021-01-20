@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hipe.network:HiPENetwork xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HiPEPattern="platform:/resource/hipe.pattern/model/HiPEPattern" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:hipe.network="platform:/resource/hipe.network/model/hiPENetwork" xsi:schemaLocation="platform:/resource/hipe.pattern/model/HiPEPattern java://hipe.pattern.HiPEPatternPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage platform:/resource/hipe.network/model/hiPENetwork java://hipe.network.NetworkPackage">
+  <networknode xmi:type="hipe.network:DispatchNode" name="DispatchNode" objectNodes="//@networknode.2 //@networknode.3 //@networknode.4" notificationNode="//@networknode.1">
+    <metamodels xmi:type="ecore:EPackage" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#/"/>
+    <metamodels xmi:type="ecore:EPackage" href="platform:/resource/Voter/model/Voter.ecore#/"/>
+    <metamodels xmi:type="ecore:EPackage" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#/"/>
+  </networknode>
+  <networknode xmi:type="hipe.network:NotificationNode" name="NotificationNode" dispatchNode="//@networknode.0"/>
+  <networknode xmi:type="hipe.network:ObjectNode" name="Container_object" dispatchnode="//@networknode.0">
+    <ports xmi:type="hipe.network:Ports">
+      <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.5" patternName="Container2GroupVotersContainer__CO_2"/>
+    </ports>
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+  </networknode>
+  <networknode xmi:type="hipe.network:ObjectNode" name="Container2GroupVotersContainer_object" dispatchnode="//@networknode.0">
+    <ports xmi:type="hipe.network:Ports">
+      <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.5" patternName="Container2GroupVotersContainer__CO_3"/>
+    </ports>
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+  </networknode>
+  <networknode xmi:type="hipe.network:ObjectNode" name="GroupVotersContainer_object" dispatchnode="//@networknode.0">
+    <ports xmi:type="hipe.network:Ports">
+      <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.5" patternName="Container2GroupVotersContainer__CO_4"/>
+    </ports>
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </networknode>
+  <networknode xmi:type="hipe.network:LocalSearchNode" name="Container2GroupVotersContainer__CO_1_localSearch" inputPort="//@networknode.2/@ports/@port.0 //@networknode.3/@ports/@port.0 //@networknode.4/@ports/@port.0" patternName="Container2GroupVotersContainer__CO_1">
+    <ports xmi:type="hipe.network:Ports">
+      <port xmi:type="hipe.network:SimplePort" portSlot="CENTER" portTarget="//@networknode.6" patternName="Container2GroupVotersContainer__CO_1"/>
+    </ports>
+    <pattern xmi:type="HiPEPattern:HiPELargePattern" href="co_hipe-patterns.xmi#//@patterns.1"/>
+    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.0 //@networknode.5/@orchestrationComponents.1" name="edge_explorer_0_orchestration">
+      <entryElement xmi:type="HiPEPattern:HiPEEdge" href="co_hipe-patterns.xmi#//@edges.1"/>
+    </orchestrations>
+    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.0 //@networknode.5/@orchestrationComponents.1" name="edge_explorer_1_orchestration">
+      <entryElement xmi:type="HiPEPattern:HiPENode" href="co_hipe-patterns.xmi#//@nodes.1"/>
+    </orchestrations>
+    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.0 //@networknode.5/@orchestrationComponents.1" name="edge_explorer_2_orchestration">
+      <entryElement xmi:type="HiPEPattern:HiPENode" href="co_hipe-patterns.xmi#//@nodes.2"/>
+    </orchestrations>
+    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.1 //@networknode.5/@orchestrationComponents.0" name="edge_explorer_3_0_orchestration">
+      <entryElement xmi:type="HiPEPattern:HiPEEdge" href="co_hipe-patterns.xmi#//@edges.0"/>
+    </orchestrations>
+    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.1 //@networknode.5/@orchestrationComponents.0" name="edge_explorer_3_1_orchestration">
+      <entryElement xmi:type="HiPEPattern:HiPENode" href="co_hipe-patterns.xmi#//@nodes.0"/>
+    </orchestrations>
+    <orchestrationComponents xmi:type="hipe.network:EdgeExplorationComponent" name="edge_explorer">
+      <indices>1</indices>
+      <indices>2</indices>
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+      <edge xmi:type="HiPEPattern:HiPEEdge" href="co_hipe-patterns.xmi#//@edges.1"/>
+    </orchestrationComponents>
+    <orchestrationComponents xmi:type="hipe.network:EdgeExplorationComponent" name="edge_explorer_3">
+      <indices>1</indices>
+      <indices>0</indices>
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+      <edge xmi:type="HiPEPattern:HiPEEdge" href="co_hipe-patterns.xmi#//@edges.0"/>
+    </orchestrationComponents>
+  </networknode>
+  <networknode xmi:type="hipe.network:ProductionNode" name="Container2GroupVotersContainer__CO_production" inputPort="//@networknode.5/@ports/@port.0" patternName="Container2GroupVotersContainer__CO">
+    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="c" value="0"/>
+    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="c2gvc" value="1"/>
+    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="gvc" value="2"/>
+  </networknode>
+</hipe.network:HiPENetwork>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IBeXPatternModel:IBeXModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore" xsi:schemaLocation="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore java://org.emoflon.ibex.patternmodel.IBeXPatternModel.IBeXPatternModelPackage">
+  <patternSet xmi:type="IBeXPatternModel:IBeXPatternSet"/>
+  <nodeSet xmi:type="IBeXPatternModel:IBeXNodeSet"/>
+  <edgeSet xmi:type="IBeXPatternModel:IBeXEdgeSet"/>
+</IBeXPatternModel:IBeXModel>
