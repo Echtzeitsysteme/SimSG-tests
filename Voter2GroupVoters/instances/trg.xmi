@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:GroupVoters="platform:/resource/GroupVoters/model/GroupVoters.ecore">
+  <GroupVoters:GroupVotersContainer>
+    <voter member="/2"/>
+    <voter member="/1 /2 /3" vote="true"/>
+    <voter member="/1 /3" vote="true"/>
+    <voter member="/4"/>
+    <voter member="/4"/>
+  </GroupVoters:GroupVotersContainer>
+  <GroupVoters:Group/>
+  <GroupVoters:Group/>
+  <GroupVoters:Group/>
+  <GroupVoters:Group/>
+</xmi:XMI>

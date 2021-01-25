@@ -1,0 +1,34 @@
+#using Voter2GroupVoters.*
+#using AttrCondDefLibrary.*
+
+#rule Voter2GroupVoter #with Voter2GroupVoters
+
+#source { 
+	c : Container {
+		++ -voters->v
+	}
+	++ v : Voter.Voter1
+}
+
+#target {
+	gvc : GroupVotersContainer {
+		++ -voter->gV
+	}
+	++ gV : GroupVoters.Voter1
+}
+
+#correspondence {
+	c2gvc : Container2GroupVotersContainer {
+		#src->c
+		#trg->gvc
+	}
+	
+	++ v2gv :  Voter2GroupVoter {
+		#src->v
+		#trg->gV
+	}
+}
+
+#attributeConditions {
+	eq_boolean(v.vote, gV.vote)
+}

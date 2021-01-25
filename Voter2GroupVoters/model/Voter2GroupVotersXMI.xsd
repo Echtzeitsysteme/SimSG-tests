@@ -16,6 +16,30 @@
     <xsd:attribute name="target" type="xsd:string"/>
   </xsd:complexType>
   <xsd:element name="Container2GroupVotersContainer" type="Voter2GroupVoters:Container2GroupVotersContainer"/>
+  <xsd:complexType name="Voter2GroupVoter">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="Voter:Voter1"/>
+      <xsd:element name="target" type="GroupVoters:Voter1"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Voter2GroupVoter" type="Voter2GroupVoters:Voter2GroupVoter"/>
+  <xsd:complexType name="Voter2Group">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="Voter:Voter1"/>
+      <xsd:element name="target" type="GroupVoters:Group"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Voter2Group" type="Voter2GroupVoters:Voter2Group"/>
   <xsd:complexType name="Container2GroupVotersContainer__Marker">
     <xsd:complexContent>
       <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
@@ -31,4 +55,79 @@
     </xsd:complexContent>
   </xsd:complexType>
   <xsd:element name="Container2GroupVotersContainer__Marker" type="Voter2GroupVoters:Container2GroupVotersContainer__Marker"/>
+  <xsd:complexType name="Voter2Group__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__v" type="Voter:Voter1"/>
+          <xsd:element name="CONTEXT__SRC__v2" type="Voter:Voter1"/>
+          <xsd:element name="CONTEXT__TRG__gV" type="GroupVoters:Voter1"/>
+          <xsd:element name="CONTEXT__TRG__gV2" type="GroupVoters:Voter1"/>
+          <xsd:element name="CONTEXT__TRG__group" type="GroupVoters:Group"/>
+          <xsd:element name="CONTEXT__CORR__v2g1" type="Voter2GroupVoters:Voter2Group"/>
+          <xsd:element name="CREATE__CORR__v2g2" type="Voter2GroupVoters:Voter2Group"/>
+          <xsd:element name="CONTEXT__CORR__v2gv" type="Voter2GroupVoters:Voter2GroupVoter"/>
+          <xsd:element name="CONTEXT__CORR__v2gv2" type="Voter2GroupVoters:Voter2GroupVoter"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__v" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__SRC__v2" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__gV" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__gV2" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__group" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__v2g1" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__v2g2" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__v2gv" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__v2gv2" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Voter2Group__Marker" type="Voter2GroupVoters:Voter2Group__Marker"/>
+  <xsd:complexType name="Voter2GroupVoter__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__c" type="Voter:Container"/>
+          <xsd:element name="CREATE__SRC__v" type="Voter:Voter1"/>
+          <xsd:element name="CREATE__TRG__gV" type="GroupVoters:Voter1"/>
+          <xsd:element name="CONTEXT__TRG__gvc" type="GroupVoters:GroupVotersContainer"/>
+          <xsd:element name="CONTEXT__CORR__c2gvc" type="Voter2GroupVoters:Container2GroupVotersContainer"/>
+          <xsd:element name="CREATE__CORR__v2gv" type="Voter2GroupVoters:Voter2GroupVoter"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__c" type="xsd:string"/>
+        <xsd:attribute name="CREATE__SRC__v" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__gV" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__gvc" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__c2gvc" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__v2gv" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Voter2GroupVoter__Marker" type="Voter2GroupVoters:Voter2GroupVoter__Marker"/>
+  <xsd:complexType name="VoterRelation2VoterGroupRelation__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__v" type="Voter:Voter1"/>
+          <xsd:element name="CONTEXT__SRC__v2" type="Voter:Voter1"/>
+          <xsd:element name="CONTEXT__TRG__gV" type="GroupVoters:Voter1"/>
+          <xsd:element name="CONTEXT__TRG__gV2" type="GroupVoters:Voter1"/>
+          <xsd:element name="CREATE__TRG__group" type="GroupVoters:Group"/>
+          <xsd:element name="CREATE__CORR__v2g1" type="Voter2GroupVoters:Voter2Group"/>
+          <xsd:element name="CREATE__CORR__v2g2" type="Voter2GroupVoters:Voter2Group"/>
+          <xsd:element name="CONTEXT__CORR__v2gv" type="Voter2GroupVoters:Voter2GroupVoter"/>
+          <xsd:element name="CONTEXT__CORR__v2gv2" type="Voter2GroupVoters:Voter2GroupVoter"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__v" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__SRC__v2" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__gV" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__gV2" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__group" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__v2g1" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__v2g2" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__v2gv" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__v2gv2" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="VoterRelation2VoterGroupRelation__Marker" type="Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker"/>
 </xsd:schema>

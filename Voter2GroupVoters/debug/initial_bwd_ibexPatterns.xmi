@@ -1,12 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <IBeXPatternModel:IBeXModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xsi:schemaLocation="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore java://org.emoflon.ibex.patternmodel.IBeXPatternModel.IBeXPatternModelPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage">
   <patternSet xmi:type="IBeXPatternModel:IBeXPatternSet">
-    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="Container2GroupVotersContainer__BWD" signatureNodes="//@nodeSet/@nodes.0"/>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="Container2GroupVotersContainer__BWD" signatureNodes="//@nodeSet/@nodes.9"/>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="Voter2GroupVoter__BWD" localEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.1 //@edgeSet/@edges.6" signatureNodes="//@nodeSet/@nodes.0 //@nodeSet/@nodes.1 //@nodeSet/@nodes.10 //@nodeSet/@nodes.2"/>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="Voter2Group__BWD" localEdges="//@edgeSet/@edges.2 //@edgeSet/@edges.8 //@edgeSet/@edges.7 //@edgeSet/@edges.15 //@edgeSet/@edges.13 //@edgeSet/@edges.11 //@edgeSet/@edges.9 //@edgeSet/@edges.4" signatureNodes="//@nodeSet/@nodes.3 //@nodeSet/@nodes.5 //@nodeSet/@nodes.7 //@nodeSet/@nodes.11 //@nodeSet/@nodes.13 //@nodeSet/@nodes.15 //@nodeSet/@nodes.16 //@nodeSet/@nodes.18">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.11 //@nodeSet/@nodes.13"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.3 //@nodeSet/@nodes.5"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.16 //@nodeSet/@nodes.18"/>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="VoterRelation2VoterGroupRelation__BWD" localEdges="//@edgeSet/@edges.16 //@edgeSet/@edges.14 //@edgeSet/@edges.12 //@edgeSet/@edges.10 //@edgeSet/@edges.5 //@edgeSet/@edges.3" signatureNodes="//@nodeSet/@nodes.4 //@nodeSet/@nodes.6 //@nodeSet/@nodes.12 //@nodeSet/@nodes.14 //@nodeSet/@nodes.17 //@nodeSet/@nodes.19 //@nodeSet/@nodes.8">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.12 //@nodeSet/@nodes.14"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.4 //@nodeSet/@nodes.6"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.17 //@nodeSet/@nodes.19"/>
+    </contextPatterns>
   </patternSet>
   <nodeSet xmi:type="IBeXPatternModel:IBeXNodeSet">
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="c" incomingEdges="//@edgeSet/@edges.0">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="c2gvc" outgoingEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.1">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="gV" incomingEdges="//@edgeSet/@edges.6">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="gV" incomingEdges="//@edgeSet/@edges.9" outgoingEdges="//@edgeSet/@edges.2">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="gV" incomingEdges="//@edgeSet/@edges.10" outgoingEdges="//@edgeSet/@edges.3">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="gV2" incomingEdges="//@edgeSet/@edges.13" outgoingEdges="//@edgeSet/@edges.4">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="gV2" incomingEdges="//@edgeSet/@edges.14" outgoingEdges="//@edgeSet/@edges.5">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="group" incomingEdges="//@edgeSet/@edges.2 //@edgeSet/@edges.7 //@edgeSet/@edges.4">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="group" incomingEdges="//@edgeSet/@edges.5 //@edgeSet/@edges.3">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
     <nodes xmi:type="IBeXPatternModel:IBeXNode" name="gvc">
       <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
     </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="gvc" incomingEdges="//@edgeSet/@edges.1" outgoingEdges="//@edgeSet/@edges.6">
+      <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v" incomingEdges="//@edgeSet/@edges.8 //@edgeSet/@edges.11">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v" incomingEdges="//@edgeSet/@edges.12">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v2" incomingEdges="//@edgeSet/@edges.15">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v2" incomingEdges="//@edgeSet/@edges.16">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v2g1" outgoingEdges="//@edgeSet/@edges.8 //@edgeSet/@edges.7">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v2gv" outgoingEdges="//@edgeSet/@edges.11 //@edgeSet/@edges.9">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v2gv" outgoingEdges="//@edgeSet/@edges.12 //@edgeSet/@edges.10">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v2gv2" outgoingEdges="//@edgeSet/@edges.15 //@edgeSet/@edges.13">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="v2gv2" outgoingEdges="//@edgeSet/@edges.16 //@edgeSet/@edges.14">
+      <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
   </nodeSet>
-  <edgeSet xmi:type="IBeXPatternModel:IBeXEdgeSet"/>
+  <edgeSet xmi:type="IBeXPatternModel:IBeXEdgeSet">
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="c2gvc->c" sourceNode="//@nodeSet/@nodes.1" targetNode="//@nodeSet/@nodes.0">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="c2gvc->gvc" sourceNode="//@nodeSet/@nodes.1" targetNode="//@nodeSet/@nodes.10">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="gV->group" sourceNode="//@nodeSet/@nodes.3" targetNode="//@nodeSet/@nodes.7">
+      <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="gV->group" sourceNode="//@nodeSet/@nodes.4" targetNode="//@nodeSet/@nodes.8">
+      <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="gV2->group" sourceNode="//@nodeSet/@nodes.5" targetNode="//@nodeSet/@nodes.7">
+      <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="gV2->group" sourceNode="//@nodeSet/@nodes.6" targetNode="//@nodeSet/@nodes.8">
+      <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="gvc->gV" sourceNode="//@nodeSet/@nodes.10" targetNode="//@nodeSet/@nodes.2">
+      <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer/voter"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2g1->group" sourceNode="//@nodeSet/@nodes.15" targetNode="//@nodeSet/@nodes.7">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2g1->v" sourceNode="//@nodeSet/@nodes.15" targetNode="//@nodeSet/@nodes.11">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2gv->gV" sourceNode="//@nodeSet/@nodes.16" targetNode="//@nodeSet/@nodes.3">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2gv->gV" sourceNode="//@nodeSet/@nodes.17" targetNode="//@nodeSet/@nodes.4">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2gv->v" sourceNode="//@nodeSet/@nodes.16" targetNode="//@nodeSet/@nodes.11">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2gv->v" sourceNode="//@nodeSet/@nodes.17" targetNode="//@nodeSet/@nodes.12">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2gv2->gV2" sourceNode="//@nodeSet/@nodes.18" targetNode="//@nodeSet/@nodes.5">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2gv2->gV2" sourceNode="//@nodeSet/@nodes.19" targetNode="//@nodeSet/@nodes.6">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2gv2->v2" sourceNode="//@nodeSet/@nodes.18" targetNode="//@nodeSet/@nodes.13">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="v2gv2->v2" sourceNode="//@nodeSet/@nodes.19" targetNode="//@nodeSet/@nodes.14">
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+  </edgeSet>
 </IBeXPatternModel:IBeXModel>

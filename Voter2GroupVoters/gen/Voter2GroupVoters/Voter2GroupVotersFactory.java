@@ -31,6 +31,24 @@ public interface Voter2GroupVotersFactory extends EFactory {
 	Container2GroupVotersContainer createContainer2GroupVotersContainer();
 
 	/**
+	 * Returns a new object of class '<em>Voter2 Group Voter</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Voter2 Group Voter</em>'.
+	 * @generated
+	 */
+	Voter2GroupVoter createVoter2GroupVoter();
+
+	/**
+	 * Returns a new object of class '<em>Voter2 Group</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Voter2 Group</em>'.
+	 * @generated
+	 */
+	Voter2Group createVoter2Group();
+
+	/**
 	 * Returns a new object of class '<em>Container2 Group Voters Container Marker</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38,6 +56,33 @@ public interface Voter2GroupVotersFactory extends EFactory {
 	 * @generated
 	 */
 	Container2GroupVotersContainer__Marker createContainer2GroupVotersContainer__Marker();
+
+	/**
+	 * Returns a new object of class '<em>Voter2 Group Marker</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Voter2 Group Marker</em>'.
+	 * @generated
+	 */
+	Voter2Group__Marker createVoter2Group__Marker();
+
+	/**
+	 * Returns a new object of class '<em>Voter2 Group Voter Marker</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Voter2 Group Voter Marker</em>'.
+	 * @generated
+	 */
+	Voter2GroupVoter__Marker createVoter2GroupVoter__Marker();
+
+	/**
+	 * Returns a new object of class '<em>Voter Relation2 Voter Group Relation Marker</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Voter Relation2 Voter Group Relation Marker</em>'.
+	 * @generated
+	 */
+	VoterRelation2VoterGroupRelation__Marker createVoterRelation2VoterGroupRelation__Marker();
 
 	/**
 	 * Returns the package supported by this factory.

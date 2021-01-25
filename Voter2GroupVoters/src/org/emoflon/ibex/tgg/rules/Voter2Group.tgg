@@ -1,0 +1,33 @@
+#using Voter2GroupVoters.*
+#using AttrCondDefLibrary.*
+
+#rule Voter2Group #extends VoterRelation2VoterGroupRelation #with Voter2GroupVoters
+
+#source { 
+	v : Voter.Voter1
+	v2 : Voter.Voter1
+}
+
+#target {
+	gV : GroupVoters.Voter1 {
+		 -member->group
+	}
+	group : Group
+}
+
+#correspondence {
+	
+	v2g1 : Voter2Group {
+		#src->v
+		#trg->group
+	}
+	
+	++ v2g2 : Voter2Group {
+		#src->v2
+		#trg->group
+	}
+}
+
+#attributeConditions {
+	
+}

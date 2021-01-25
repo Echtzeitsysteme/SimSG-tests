@@ -22,6 +22,9 @@ import static akka.pattern.Patterns.ask;
 
 import Voter2GroupVoters.modelgen.hipe.engine.actor.NotificationActor;
 import Voter2GroupVoters.modelgen.hipe.engine.actor.DispatchActor;
+import Voter2GroupVoters.modelgen.hipe.engine.actor.localsearch.Voter2GroupVoter__GEN_1_localSearch;
+import Voter2GroupVoters.modelgen.hipe.engine.actor.junction.Voter2Group__GEN_5_junction;
+import Voter2GroupVoters.modelgen.hipe.engine.actor.junction.VoterRelation2VoterGroupRelation__GEN_26_junction;
 
 import hipe.engine.IHiPEEngine;
 import hipe.engine.message.InitActor;
@@ -105,21 +108,55 @@ public class HiPEEngine implements IHiPEEngine{
 		}
 	
 	public void createProductionNodes() {
+		classes.put("Voter2GroupVoter__GEN_production", GenericProductionActor.class);
+		productionNodes2pattern.put("Voter2GroupVoter__GEN_production", "Voter2GroupVoter__GEN");
+		classes.put("Voter2Group__GEN_production", GenericProductionActor.class);
+		productionNodes2pattern.put("Voter2Group__GEN_production", "Voter2Group__GEN");
+		classes.put("VoterRelation2VoterGroupRelation__GEN_production", GenericProductionActor.class);
+		productionNodes2pattern.put("VoterRelation2VoterGroupRelation__GEN_production", "VoterRelation2VoterGroupRelation__GEN");
 		
 	}
 	
 	public void createJunctionNodes() {
+		classes.put("Voter2GroupVoter__GEN_1_localSearch", Voter2GroupVoter__GEN_1_localSearch.class);
+		classes.put("Voter2Group__GEN_6_junction", GenericJunctionActor.class);
+		classes.put("Voter2Group__GEN_10_junction", GenericJunctionActor.class);
+		classes.put("Voter2Group__GEN_18_junction", GenericJunctionActor.class);
+		classes.put("Voter2Group__GEN_11_junction", GenericJunctionActor.class);
+		classes.put("Voter2Group__GEN_7_junction", GenericJunctionActor.class);
+		classes.put("Voter2Group__GEN_5_junction", Voter2Group__GEN_5_junction.class);
+		classes.put("VoterRelation2VoterGroupRelation__GEN_27_junction", GenericJunctionActor.class);
+		classes.put("VoterRelation2VoterGroupRelation__GEN_28_junction", GenericJunctionActor.class);
+		classes.put("VoterRelation2VoterGroupRelation__GEN_26_junction", VoterRelation2VoterGroupRelation__GEN_26_junction.class);
 	}
 	
 	public void createReferenceNodes() {
+		classes.put("Voter2GroupVoter_source_0_reference",Voter2GroupVoter_source_0_reference.class);
+		classes.put("Voter2GroupVoter_target_0_reference",Voter2GroupVoter_target_0_reference.class);
+		classes.put("Voter2Group_source_0_reference",Voter2Group_source_0_reference.class);
+		classes.put("Voter1_member_0_reference",Voter1_member_0_reference.class);
+		classes.put("Voter2Group_target_0_reference",Voter2Group_target_0_reference.class);
 		
 	}
 	
 	public void createObjectNodes() {
+		classes.put("Container_object",Container_object.class);
+		classes.put("Container2GroupVotersContainer_object",Container2GroupVotersContainer_object.class);
+		classes.put("GroupVotersContainer_object",GroupVotersContainer_object.class);
+		classes.put("Voter2GroupVoter_object",Voter2GroupVoter_object.class);
+		classes.put("Voter1_object",Voter1_object.class);
+		classes.put("Voter1_1_object",Voter1_1_object.class);
+		classes.put("Voter2Group_object",Voter2Group_object.class);
+		classes.put("Group_object",Group_object.class);
 		
 	}
 	
 	public void initializeReferenceNodes() {
+		name2initRefGen.put("Voter2GroupVoter_source_0_reference", new InitGenReferenceActor<Voter2GroupVoters.Voter2GroupVoter,Voter.Voter1>(name2actor, name2node.get("Voter2GroupVoter_source_0_reference"), (o) -> o instanceof Voter2GroupVoters.Voter2GroupVoter, (o) -> o.getSource(), null, false, prodUtil, incUtil));
+		name2initRefGen.put("Voter2GroupVoter_target_0_reference", new InitGenReferenceActor<Voter2GroupVoters.Voter2GroupVoter,GroupVoters.Voter1>(name2actor, name2node.get("Voter2GroupVoter_target_0_reference"), (o) -> o instanceof Voter2GroupVoters.Voter2GroupVoter, (o) -> o.getTarget(), null, false, prodUtil, incUtil));
+		name2initRefGen.put("Voter2Group_source_0_reference", new InitGenReferenceActor<Voter2GroupVoters.Voter2Group,Voter.Voter1>(name2actor, name2node.get("Voter2Group_source_0_reference"), (o) -> o instanceof Voter2GroupVoters.Voter2Group, (o) -> o.getSource(), null, false, prodUtil, incUtil));
+		name2initRefGen.put("Voter1_member_0_reference", new InitGenReferenceActor<GroupVoters.Voter1,GroupVoters.Group>(name2actor, name2node.get("Voter1_member_0_reference"), (o) -> o instanceof GroupVoters.Voter1, null, (o) -> o.getMember(), false, prodUtil, incUtil));
+		name2initRefGen.put("Voter2Group_target_0_reference", new InitGenReferenceActor<Voter2GroupVoters.Voter2Group,GroupVoters.Group>(name2actor, name2node.get("Voter2Group_target_0_reference"), (o) -> o instanceof Voter2GroupVoters.Voter2Group, (o) -> o.getTarget(), null, false, prodUtil, incUtil));
 	}
 	
 	/**
@@ -176,5 +213,18 @@ public class HiPEEngine implements IHiPEEngine{
 	
 }
 
+class Container_object extends GenericObjectActor<Voter.Container> { }
+class Container2GroupVotersContainer_object extends GenericObjectActor<Voter2GroupVoters.Container2GroupVotersContainer> { }
+class GroupVotersContainer_object extends GenericObjectActor<GroupVoters.GroupVotersContainer> { }
+class Voter2GroupVoter_object extends GenericObjectActor<Voter2GroupVoters.Voter2GroupVoter> { }
+class Voter1_object extends GenericObjectActor<Voter.Voter1> { }
+class Voter1_1_object extends GenericObjectActor<GroupVoters.Voter1> { }
+class Voter2Group_object extends GenericObjectActor<Voter2GroupVoters.Voter2Group> { }
+class Group_object extends GenericObjectActor<GroupVoters.Group> { }
 
+class Voter2GroupVoter_source_0_reference extends GenericReferenceActor<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1> { }
+class Voter2GroupVoter_target_0_reference extends GenericReferenceActor<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1> { }
+class Voter2Group_source_0_reference extends GenericReferenceActor<Voter2GroupVoters.Voter2Group, Voter.Voter1> { }
+class Voter1_member_0_reference extends GenericReferenceActor<GroupVoters.Voter1, GroupVoters.Group> { }
+class Voter2Group_target_0_reference extends GenericReferenceActor<Voter2GroupVoters.Voter2Group, GroupVoters.Group> { }
 

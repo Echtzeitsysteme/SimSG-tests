@@ -74,8 +74,28 @@ public class Voter2GroupVotersAdapterFactory extends AdapterFactoryImpl {
 				return createContainer2GroupVotersContainerAdapter();
 			}
 			@Override
+			public Adapter caseVoter2GroupVoter(Voter2GroupVoter object) {
+				return createVoter2GroupVoterAdapter();
+			}
+			@Override
+			public Adapter caseVoter2Group(Voter2Group object) {
+				return createVoter2GroupAdapter();
+			}
+			@Override
 			public Adapter caseContainer2GroupVotersContainer__Marker(Container2GroupVotersContainer__Marker object) {
 				return createContainer2GroupVotersContainer__MarkerAdapter();
+			}
+			@Override
+			public Adapter caseVoter2Group__Marker(Voter2Group__Marker object) {
+				return createVoter2Group__MarkerAdapter();
+			}
+			@Override
+			public Adapter caseVoter2GroupVoter__Marker(Voter2GroupVoter__Marker object) {
+				return createVoter2GroupVoter__MarkerAdapter();
+			}
+			@Override
+			public Adapter caseVoterRelation2VoterGroupRelation__Marker(VoterRelation2VoterGroupRelation__Marker object) {
+				return createVoterRelation2VoterGroupRelation__MarkerAdapter();
 			}
 			@Override
 			public Adapter caseTGGRuleApplication(TGGRuleApplication object) {
@@ -116,6 +136,34 @@ public class Voter2GroupVotersAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link Voter2GroupVoters.Voter2GroupVoter <em>Voter2 Group Voter</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Voter2GroupVoters.Voter2GroupVoter
+	 * @generated
+	 */
+	public Adapter createVoter2GroupVoterAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Voter2GroupVoters.Voter2Group <em>Voter2 Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Voter2GroupVoters.Voter2Group
+	 * @generated
+	 */
+	public Adapter createVoter2GroupAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link Voter2GroupVoters.Container2GroupVotersContainer__Marker <em>Container2 Group Voters Container Marker</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -126,6 +174,48 @@ public class Voter2GroupVotersAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createContainer2GroupVotersContainer__MarkerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Voter2GroupVoters.Voter2Group__Marker <em>Voter2 Group Marker</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Voter2GroupVoters.Voter2Group__Marker
+	 * @generated
+	 */
+	public Adapter createVoter2Group__MarkerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Voter2GroupVoters.Voter2GroupVoter__Marker <em>Voter2 Group Voter Marker</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Voter2GroupVoters.Voter2GroupVoter__Marker
+	 * @generated
+	 */
+	public Adapter createVoter2GroupVoter__MarkerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker <em>Voter Relation2 Voter Group Relation Marker</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker
+	 * @generated
+	 */
+	public Adapter createVoterRelation2VoterGroupRelation__MarkerAdapter() {
 		return null;
 	}
 

@@ -17,7 +17,7 @@ import org.emoflon.ibex.tgg.operational.strategies.opt.FWD_OPT;
 public class FWD_OPT_App extends FWD_OPT {
 
 	// eMoflon supports other pattern matching engines. Replace _DefaultRegistrationHelper with one of the other registrationHelpers from the *.config-package to choose between them. Default: Democles 
-	public static IRegistrationHelper registrationHelper = new _DefaultRegistrationHelper();
+	public static IRegistrationHelper registrationHelper = new HiPERegistrationHelper();
 
 	public FWD_OPT_App() throws IOException {
 		super(registrationHelper.createIbexOptions().resourceHandler(new TGGResourceHandler() {
@@ -25,9 +25,9 @@ public class FWD_OPT_App extends FWD_OPT {
 			public void saveModels() throws IOException {
 				// Use the commented code below to implement saveModels individually.
 				// source.save(null);
-				// target.save(null);
-				// corr.save(null);
-				// protocol.save(null);
+				target.save(null);
+				corr.save(null);
+				protocol.save(null);
 				
 				super.saveModels();
 			}
@@ -36,10 +36,10 @@ public class FWD_OPT_App extends FWD_OPT {
 			public void loadModels() throws IOException {
 				// Use the commented code below to implement loadModels individually.
 				// loadResource loads from a file while createResource creates a new resource without content
-				// source = loadResource(options.project.path() + "/instances/src.xmi");
-				// target = createResource(options.project.path() + "/instances/trg.xmi");
-				// corr = createResource(options.project.path() + "/instances/corr.xmi");
-				// protocol = createResource(options.project.path() + "/instances/protocol.xmi");
+				source = loadResource(options.project.path() + "/instances/src.xmi");
+				target = createResource(options.project.path() + "/instances/trg.xmi");
+				corr = createResource(options.project.path() + "/instances/corr.xmi");
+				protocol = createResource(options.project.path() + "/instances/protocol.xmi");
 				
 				super.loadModels();
 			}

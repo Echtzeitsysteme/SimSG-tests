@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="Voter2GroupVoters/gen/" modelPluginID="Voter2GroupVoters"
     modelName="Voter2GroupVoters" generateSchema="true" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
-    usedGenPackages="../../GroupVoters/model/GroupVoters.genmodel#//GroupVoters ../../Voter/model/Voter.genmodel#//Voter platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.genmodel#//runtime"
+    usedGenPackages="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.genmodel#//runtime ../../Voter/model/Voter.genmodel#//Voter ../../GroupVoters/model/GroupVoters.genmodel#//GroupVoters"
     operationReflection="true" importOrganizing="true">
   <foreignModel>Voter2GroupVoters.ecore</foreignModel>
   <genPackages prefix="Voter2GroupVoters" disposableProviderFactory="true" ecorePackage="Voter2GroupVoters.ecore#/">
@@ -11,10 +11,48 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
     </genClasses>
+    <genClasses ecoreClass="Voter2GroupVoters.ecore#//Voter2GroupVoter">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </genClasses>
+    <genClasses ecoreClass="Voter2GroupVoters.ecore#//Voter2Group">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group/target"/>
+    </genClasses>
     <genClasses ecoreClass="Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__SRC__c"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__TRG__gvc"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__CORR__c2gvc"/>
+    </genClasses>
+    <genClasses ecoreClass="Voter2GroupVoters.ecore#//Voter2Group__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__SRC__v"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__SRC__v2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__TRG__gV"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__TRG__gV2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__TRG__group"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__CORR__v2g1"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CREATE__CORR__v2g2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__CORR__v2gv"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__CORR__v2gv2"/>
+    </genClasses>
+    <genClasses ecoreClass="Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CONTEXT__SRC__c"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CREATE__SRC__v"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CREATE__TRG__gV"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CONTEXT__TRG__gvc"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CONTEXT__CORR__c2gvc"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CREATE__CORR__v2gv"/>
+    </genClasses>
+    <genClasses ecoreClass="Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__SRC__v"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__SRC__v2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__TRG__gV"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__TRG__gV2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CREATE__TRG__group"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CREATE__CORR__v2g1"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CREATE__CORR__v2g2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__CORR__v2gv"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__CORR__v2gv2"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

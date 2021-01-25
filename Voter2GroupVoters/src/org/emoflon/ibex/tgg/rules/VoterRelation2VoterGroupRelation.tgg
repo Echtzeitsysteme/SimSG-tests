@@ -1,0 +1,50 @@
+#using Voter2GroupVoters.*
+#using AttrCondDefLibrary.*
+
+#rule VoterRelation2VoterGroupRelation #with Voter2GroupVoters
+
+#source { 
+	
+	v : Voter.Voter1 {
+		++ -link->v2
+	}
+	v2 : Voter.Voter1
+}
+
+#target {
+	
+	gV : GroupVoters.Voter1 {
+		++ -member->group
+	}
+	gV2 : GroupVoters.Voter1 {
+		++ -member->group
+	}
+	++group : Group
+}
+
+#correspondence {
+	
+	v2gv :  Voter2GroupVoter {
+		#src->v
+		#trg->gV
+	}
+	
+	v2gv2 :  Voter2GroupVoter {
+		#src->v2
+		#trg->gV2
+	}
+	
+	++ v2g1 : Voter2Group {
+		#src->v
+		#trg->group
+	}
+	
+	++ v2g2 : Voter2Group {
+		#src->v2
+		#trg->group
+	}
+}
+
+#attributeConditions {
+	
+}

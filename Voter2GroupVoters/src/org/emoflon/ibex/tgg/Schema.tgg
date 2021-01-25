@@ -16,6 +16,16 @@
 		#src->Container
 		#trg->GroupVotersContainer
 	}
+	
+	Voter2GroupVoter {
+		#src->Voter.Voter1
+		#trg->GroupVoters.Voter1
+	}
+	
+	Voter2Group {
+		#src->Voter.Voter1
+		#trg->Group
+	}
 }
 
 #attributeConditions {

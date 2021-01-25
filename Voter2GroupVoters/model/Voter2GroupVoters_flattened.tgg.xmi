@@ -21,5 +21,215 @@
     </edges>
     <attributeConditionLibrary/>
   </rules>
-  <attributeConstraintDefinitionLibrary/>
+  <rules name="Voter2Group">
+    <nodes name="v" incomingEdges="//@rules.1/@edges.0 //@rules.1/@edges.4" outgoingEdges="//@rules.1/@edges.8" incomingCorrsSource="//@rules.1/@nodes.5 //@rules.1/@nodes.7">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" incomingEdges="//@rules.1/@edges.2 //@rules.1/@edges.6 //@rules.1/@edges.8" incomingCorrsSource="//@rules.1/@nodes.6 //@rules.1/@nodes.8">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="gV" domainType="TRG" incomingEdges="//@rules.1/@edges.5" outgoingEdges="//@rules.1/@edges.9" incomingCorrsTarget="//@rules.1/@nodes.7">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="gV2" domainType="TRG" incomingEdges="//@rules.1/@edges.7" outgoingEdges="//@rules.1/@edges.10" incomingCorrsTarget="//@rules.1/@nodes.8">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="group" domainType="TRG" incomingEdges="//@rules.1/@edges.1 //@rules.1/@edges.3 //@rules.1/@edges.9 //@rules.1/@edges.10" incomingCorrsTarget="//@rules.1/@nodes.5 //@rules.1/@nodes.6">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2g1" domainType="CORR" outgoingEdges="//@rules.1/@edges.0 //@rules.1/@edges.1" source="//@rules.1/@nodes.0" target="//@rules.1/@nodes.4">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2g2" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.1/@edges.2 //@rules.1/@edges.3" source="//@rules.1/@nodes.1" target="//@rules.1/@nodes.4">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2gv" domainType="CORR" outgoingEdges="//@rules.1/@edges.4 //@rules.1/@edges.5" source="//@rules.1/@nodes.0" target="//@rules.1/@nodes.2">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2gv2" domainType="CORR" outgoingEdges="//@rules.1/@edges.6 //@rules.1/@edges.7" source="//@rules.1/@nodes.1" target="//@rules.1/@nodes.3">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
+    <edges name="v2g1__source__v_eMoflonEdge" domainType="CORR" srcNode="//@rules.1/@nodes.5" trgNode="//@rules.1/@nodes.0">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+    </edges>
+    <edges name="v2g1__target__group_eMoflonEdge" domainType="CORR" srcNode="//@rules.1/@nodes.5" trgNode="//@rules.1/@nodes.4">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+    </edges>
+    <edges name="v2g2__source__v2_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.1/@nodes.6" trgNode="//@rules.1/@nodes.1">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+    </edges>
+    <edges name="v2g2__target__group_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.1/@nodes.6" trgNode="//@rules.1/@nodes.4">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+    </edges>
+    <edges name="v2gv__source__v_eMoflonEdge" domainType="CORR" srcNode="//@rules.1/@nodes.7" trgNode="//@rules.1/@nodes.0">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+    <edges name="v2gv__target__gV_eMoflonEdge" domainType="CORR" srcNode="//@rules.1/@nodes.7" trgNode="//@rules.1/@nodes.2">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges name="v2gv2__source__v2_eMoflonEdge" domainType="CORR" srcNode="//@rules.1/@nodes.8" trgNode="//@rules.1/@nodes.1">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+    <edges name="v2gv2__target__gV2_eMoflonEdge" domainType="CORR" srcNode="//@rules.1/@nodes.8" trgNode="//@rules.1/@nodes.3">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges name="v__link__v2_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.1/@nodes.0" trgNode="//@rules.1/@nodes.1">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="gV__member__group_eMoflonEdge" domainType="TRG" srcNode="//@rules.1/@nodes.2" trgNode="//@rules.1/@nodes.4">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="gV2__member__group_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.3" trgNode="//@rules.1/@nodes.4">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <attributeConditionLibrary/>
+  </rules>
+  <rules name="Voter2GroupVoter">
+    <nodes name="c" incomingEdges="//@rules.2/@edges.0" outgoingEdges="//@rules.2/@edges.4" incomingCorrsSource="//@rules.2/@nodes.4">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+    </nodes>
+    <nodes name="v" bindingType="CREATE" incomingEdges="//@rules.2/@edges.2 //@rules.2/@edges.4" incomingCorrsSource="//@rules.2/@nodes.5">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="gV" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.2/@edges.3 //@rules.2/@edges.5" incomingCorrsTarget="//@rules.2/@nodes.5">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="gvc" domainType="TRG" incomingEdges="//@rules.2/@edges.1" outgoingEdges="//@rules.2/@edges.5" incomingCorrsTarget="//@rules.2/@nodes.4">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="c2gvc" domainType="CORR" outgoingEdges="//@rules.2/@edges.0 //@rules.2/@edges.1" source="//@rules.2/@nodes.0" target="//@rules.2/@nodes.3">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2gv" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.2/@edges.2 //@rules.2/@edges.3" source="//@rules.2/@nodes.1" target="//@rules.2/@nodes.2">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
+    <edges name="c2gvc__source__c_eMoflonEdge" domainType="CORR" srcNode="//@rules.2/@nodes.4" trgNode="//@rules.2/@nodes.0">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+    </edges>
+    <edges name="c2gvc__target__gvc_eMoflonEdge" domainType="CORR" srcNode="//@rules.2/@nodes.4" trgNode="//@rules.2/@nodes.3">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+    </edges>
+    <edges name="v2gv__source__v_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.2/@nodes.5" trgNode="//@rules.2/@nodes.1">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+    <edges name="v2gv__target__gV_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.2/@nodes.5" trgNode="//@rules.2/@nodes.2">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges name="c__voters__v_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.2/@nodes.0" trgNode="//@rules.2/@nodes.1">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Container/voters"/>
+    </edges>
+    <edges name="gvc__voter__gV_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.2/@nodes.3" trgNode="//@rules.2/@nodes.2">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer/voter"/>
+    </edges>
+    <attributeConditionLibrary>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.2/@attributeConditionLibrary/@parameterValues.0 //@rules.2/@attributeConditionLibrary/@parameterValues.1"/>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.2/@nodes.1">
+        <attribute href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.2/@nodes.2">
+        <attribute href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+      </parameterValues>
+    </attributeConditionLibrary>
+  </rules>
+  <rules name="VoterRelation2VoterGroupRelation">
+    <nodes name="v" incomingEdges="//@rules.3/@edges.0 //@rules.3/@edges.4" outgoingEdges="//@rules.3/@edges.8" incomingCorrsSource="//@rules.3/@nodes.5 //@rules.3/@nodes.7">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="v2" incomingEdges="//@rules.3/@edges.2 //@rules.3/@edges.6 //@rules.3/@edges.8" incomingCorrsSource="//@rules.3/@nodes.6 //@rules.3/@nodes.8">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="gV" domainType="TRG" incomingEdges="//@rules.3/@edges.5" outgoingEdges="//@rules.3/@edges.9" incomingCorrsTarget="//@rules.3/@nodes.7">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="gV2" domainType="TRG" incomingEdges="//@rules.3/@edges.7" outgoingEdges="//@rules.3/@edges.10" incomingCorrsTarget="//@rules.3/@nodes.8">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+    </nodes>
+    <nodes name="group" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.3/@edges.1 //@rules.3/@edges.3 //@rules.3/@edges.9 //@rules.3/@edges.10" incomingCorrsTarget="//@rules.3/@nodes.5 //@rules.3/@nodes.6">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2g1" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.3/@edges.0 //@rules.3/@edges.1" source="//@rules.3/@nodes.0" target="//@rules.3/@nodes.4">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2g2" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.3/@edges.2 //@rules.3/@edges.3" source="//@rules.3/@nodes.1" target="//@rules.3/@nodes.4">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2gv" domainType="CORR" outgoingEdges="//@rules.3/@edges.4 //@rules.3/@edges.5" source="//@rules.3/@nodes.0" target="//@rules.3/@nodes.2">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="v2gv2" domainType="CORR" outgoingEdges="//@rules.3/@edges.6 //@rules.3/@edges.7" source="//@rules.3/@nodes.1" target="//@rules.3/@nodes.3">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+    </nodes>
+    <edges name="v2g1__source__v_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.3/@nodes.5" trgNode="//@rules.3/@nodes.0">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+    </edges>
+    <edges name="v2g1__target__group_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.3/@nodes.5" trgNode="//@rules.3/@nodes.4">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+    </edges>
+    <edges name="v2g2__source__v2_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.3/@nodes.6" trgNode="//@rules.3/@nodes.1">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+    </edges>
+    <edges name="v2g2__target__group_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.3/@nodes.6" trgNode="//@rules.3/@nodes.4">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+    </edges>
+    <edges name="v2gv__source__v_eMoflonEdge" domainType="CORR" srcNode="//@rules.3/@nodes.7" trgNode="//@rules.3/@nodes.0">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+    <edges name="v2gv__target__gV_eMoflonEdge" domainType="CORR" srcNode="//@rules.3/@nodes.7" trgNode="//@rules.3/@nodes.2">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges name="v2gv2__source__v2_eMoflonEdge" domainType="CORR" srcNode="//@rules.3/@nodes.8" trgNode="//@rules.3/@nodes.1">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+    </edges>
+    <edges name="v2gv2__target__gV2_eMoflonEdge" domainType="CORR" srcNode="//@rules.3/@nodes.8" trgNode="//@rules.3/@nodes.3">
+      <type href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+    </edges>
+    <edges name="v__link__v2_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.3/@nodes.0" trgNode="//@rules.3/@nodes.1">
+      <type href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+    </edges>
+    <edges name="gV__member__group_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.3/@nodes.2" trgNode="//@rules.3/@nodes.4">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <edges name="gV2__member__group_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.3/@nodes.3" trgNode="//@rules.3/@nodes.4">
+      <type href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+    </edges>
+    <attributeConditionLibrary/>
+  </rules>
+  <attributeConstraintDefinitionLibrary>
+    <tggAttributeConstraintDefinitions name="eq_boolean" userDefined="false">
+      <parameterDefinitions name="a">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </parameterDefinitions>
+      <parameterDefinitions name="b">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </parameterDefinitions>
+      <syncAdornments>
+        <value>B</value>
+        <value>B</value>
+      </syncAdornments>
+      <syncAdornments>
+        <value>B</value>
+        <value>F</value>
+      </syncAdornments>
+      <syncAdornments>
+        <value>F</value>
+        <value>B</value>
+      </syncAdornments>
+      <genAdornments>
+        <value>B</value>
+        <value>B</value>
+      </genAdornments>
+      <genAdornments>
+        <value>B</value>
+        <value>F</value>
+      </genAdornments>
+      <genAdornments>
+        <value>F</value>
+        <value>B</value>
+      </genAdornments>
+      <genAdornments>
+        <value>F</value>
+        <value>F</value>
+      </genAdornments>
+    </tggAttributeConstraintDefinitions>
+  </attributeConstraintDefinitionLibrary>
 </language:TGG>

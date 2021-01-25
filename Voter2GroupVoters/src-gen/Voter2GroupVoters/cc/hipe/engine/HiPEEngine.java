@@ -23,6 +23,12 @@ import static akka.pattern.Patterns.ask;
 import Voter2GroupVoters.cc.hipe.engine.actor.NotificationActor;
 import Voter2GroupVoters.cc.hipe.engine.actor.DispatchActor;
 import Voter2GroupVoters.cc.hipe.engine.actor.localsearch.Container2GroupVotersContainer__CONSISTENCY_4_localSearch;
+import Voter2GroupVoters.cc.hipe.engine.actor.localsearch.Voter2GroupVoter__CC_9_localSearch;
+import Voter2GroupVoters.cc.hipe.engine.actor.localsearch.Voter2GroupVoter__CONSISTENCY_15_localSearch;
+import Voter2GroupVoters.cc.hipe.engine.actor.localsearch.Voter2Group__CC_23_localSearch;
+import Voter2GroupVoters.cc.hipe.engine.actor.localsearch.Voter2Group__CONSISTENCY_32_localSearch;
+import Voter2GroupVoters.cc.hipe.engine.actor.localsearch.VoterRelation2VoterGroupRelation__CC_43_localSearch;
+import Voter2GroupVoters.cc.hipe.engine.actor.localsearch.VoterRelation2VoterGroupRelation__CONSISTENCY_51_localSearch;
 
 import hipe.engine.IHiPEEngine;
 import hipe.engine.message.InitActor;
@@ -110,12 +116,30 @@ public class HiPEEngine implements IHiPEEngine{
 		productionNodes2pattern.put("Container2GroupVotersContainer__CC_production", "Container2GroupVotersContainer__CC");
 		classes.put("Container2GroupVotersContainer__CONSISTENCY_production", GenericProductionActor.class);
 		productionNodes2pattern.put("Container2GroupVotersContainer__CONSISTENCY_production", "Container2GroupVotersContainer__CONSISTENCY");
+		classes.put("Voter2GroupVoter__CC_production", GenericProductionActor.class);
+		productionNodes2pattern.put("Voter2GroupVoter__CC_production", "Voter2GroupVoter__CC");
+		classes.put("Voter2GroupVoter__CONSISTENCY_production", GenericProductionActor.class);
+		productionNodes2pattern.put("Voter2GroupVoter__CONSISTENCY_production", "Voter2GroupVoter__CONSISTENCY");
+		classes.put("Voter2Group__CC_production", GenericProductionActor.class);
+		productionNodes2pattern.put("Voter2Group__CC_production", "Voter2Group__CC");
+		classes.put("Voter2Group__CONSISTENCY_production", GenericProductionActor.class);
+		productionNodes2pattern.put("Voter2Group__CONSISTENCY_production", "Voter2Group__CONSISTENCY");
+		classes.put("VoterRelation2VoterGroupRelation__CC_production", GenericProductionActor.class);
+		productionNodes2pattern.put("VoterRelation2VoterGroupRelation__CC_production", "VoterRelation2VoterGroupRelation__CC");
+		classes.put("VoterRelation2VoterGroupRelation__CONSISTENCY_production", GenericProductionActor.class);
+		productionNodes2pattern.put("VoterRelation2VoterGroupRelation__CONSISTENCY_production", "VoterRelation2VoterGroupRelation__CONSISTENCY");
 		
 	}
 	
 	public void createJunctionNodes() {
 		classes.put("Container2GroupVotersContainer__CC_1_junction", GenericJunctionActor.class);
 		classes.put("Container2GroupVotersContainer__CONSISTENCY_4_localSearch", Container2GroupVotersContainer__CONSISTENCY_4_localSearch.class);
+		classes.put("Voter2GroupVoter__CC_9_localSearch", Voter2GroupVoter__CC_9_localSearch.class);
+		classes.put("Voter2GroupVoter__CONSISTENCY_15_localSearch", Voter2GroupVoter__CONSISTENCY_15_localSearch.class);
+		classes.put("Voter2Group__CC_23_localSearch", Voter2Group__CC_23_localSearch.class);
+		classes.put("Voter2Group__CONSISTENCY_32_localSearch", Voter2Group__CONSISTENCY_32_localSearch.class);
+		classes.put("VoterRelation2VoterGroupRelation__CC_43_localSearch", VoterRelation2VoterGroupRelation__CC_43_localSearch.class);
+		classes.put("VoterRelation2VoterGroupRelation__CONSISTENCY_51_localSearch", VoterRelation2VoterGroupRelation__CONSISTENCY_51_localSearch.class);
 	}
 	
 	public void createReferenceNodes() {
@@ -123,10 +147,21 @@ public class HiPEEngine implements IHiPEEngine{
 	}
 	
 	public void createObjectNodes() {
-		classes.put("GroupVotersContainer_object",GroupVotersContainer_object.class);
 		classes.put("Container_object",Container_object.class);
+		classes.put("GroupVotersContainer_object",GroupVotersContainer_object.class);
 		classes.put("Container2GroupVotersContainer_object",Container2GroupVotersContainer_object.class);
 		classes.put("Container2GroupVotersContainer__Marker_object",Container2GroupVotersContainer__Marker_object.class);
+		classes.put("Voter2GroupVoter__Marker_object",Voter2GroupVoter__Marker_object.class);
+		classes.put("Group_object",Group_object.class);
+		classes.put("Voter2Group_object",Voter2Group_object.class);
+		classes.put("Voter2Group__Marker_object",Voter2Group__Marker_object.class);
+		classes.put("VoterRelation2VoterGroupRelation__Marker_object",VoterRelation2VoterGroupRelation__Marker_object.class);
+		classes.put("Voter1_object_SP0",Voter1_object_SP0.class);
+		classes.put("Voter1_object_SP1",Voter1_object_SP1.class);
+		classes.put("Voter1_1_object_SP0",Voter1_1_object_SP0.class);
+		classes.put("Voter1_1_object_SP1",Voter1_1_object_SP1.class);
+		classes.put("Voter2GroupVoter_object_SP0",Voter2GroupVoter_object_SP0.class);
+		classes.put("Voter2GroupVoter_object_SP1",Voter2GroupVoter_object_SP1.class);
 		
 	}
 	
@@ -187,9 +222,20 @@ public class HiPEEngine implements IHiPEEngine{
 	
 }
 
-class GroupVotersContainer_object extends GenericObjectActor<GroupVoters.GroupVotersContainer> { }
 class Container_object extends GenericObjectActor<Voter.Container> { }
+class GroupVotersContainer_object extends GenericObjectActor<GroupVoters.GroupVotersContainer> { }
 class Container2GroupVotersContainer_object extends GenericObjectActor<Voter2GroupVoters.Container2GroupVotersContainer> { }
 class Container2GroupVotersContainer__Marker_object extends GenericObjectActor<Voter2GroupVoters.Container2GroupVotersContainer__Marker> { }
+class Voter2GroupVoter__Marker_object extends GenericObjectActor<Voter2GroupVoters.Voter2GroupVoter__Marker> { }
+class Group_object extends GenericObjectActor<GroupVoters.Group> { }
+class Voter2Group_object extends GenericObjectActor<Voter2GroupVoters.Voter2Group> { }
+class Voter2Group__Marker_object extends GenericObjectActor<Voter2GroupVoters.Voter2Group__Marker> { }
+class VoterRelation2VoterGroupRelation__Marker_object extends GenericObjectActor<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker> { }
+class Voter1_object_SP0 extends GenericObjectActor<Voter.Voter1> { }
+class Voter1_object_SP1 extends GenericObjectActor<Voter.Voter1> { }
+class Voter1_1_object_SP0 extends GenericObjectActor<GroupVoters.Voter1> { }
+class Voter1_1_object_SP1 extends GenericObjectActor<GroupVoters.Voter1> { }
+class Voter2GroupVoter_object_SP0 extends GenericObjectActor<Voter2GroupVoters.Voter2GroupVoter> { }
+class Voter2GroupVoter_object_SP1 extends GenericObjectActor<Voter2GroupVoters.Voter2GroupVoter> { }
 
 

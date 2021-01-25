@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Voter:Container xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Voter="platform:/resource/Voter/model/Voter.ecore">
+  <voters link="//@voters.1 //@voters.2" vote="true"/>
+  <voters/>
+  <voters link="//@voters.0" vote="true"/>
+  <voters link="//@voters.4"/>
+  <voters/>
+</Voter:Container>

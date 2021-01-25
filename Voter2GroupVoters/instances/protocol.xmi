@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Voter2GroupVoters="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore">
+  <Voter2GroupVoters:Container2GroupVotersContainer__Marker>
+    <CREATE__SRC__c href="src.xmi#/"/>
+    <CREATE__TRG__gvc href="trg.xmi#/0"/>
+    <CREATE__CORR__c2gvc href="corr.xmi#/0"/>
+  </Voter2GroupVoters:Container2GroupVotersContainer__Marker>
+  <Voter2GroupVoters:Voter2GroupVoter__Marker>
+    <CONTEXT__SRC__c href="src.xmi#/"/>
+    <CREATE__SRC__v href="src.xmi#//@voters.1"/>
+    <CREATE__TRG__gV href="trg.xmi#/0/@voter.0"/>
+    <CONTEXT__TRG__gvc href="trg.xmi#/0"/>
+    <CONTEXT__CORR__c2gvc href="corr.xmi#/0"/>
+    <CREATE__CORR__v2gv href="corr.xmi#/1"/>
+  </Voter2GroupVoters:Voter2GroupVoter__Marker>
+  <Voter2GroupVoters:Voter2GroupVoter__Marker>
+    <CONTEXT__SRC__c href="src.xmi#/"/>
+    <CREATE__SRC__v href="src.xmi#//@voters.0"/>
+    <CREATE__TRG__gV href="trg.xmi#/0/@voter.1"/>
+    <CONTEXT__TRG__gvc href="trg.xmi#/0"/>
+    <CONTEXT__CORR__c2gvc href="corr.xmi#/0"/>
+    <CREATE__CORR__v2gv href="corr.xmi#/2"/>
+  </Voter2GroupVoters:Voter2GroupVoter__Marker>
+  <Voter2GroupVoters:Voter2GroupVoter__Marker>
+    <CONTEXT__SRC__c href="src.xmi#/"/>
+    <CREATE__SRC__v href="src.xmi#//@voters.2"/>
+    <CREATE__TRG__gV href="trg.xmi#/0/@voter.2"/>
+    <CONTEXT__TRG__gvc href="trg.xmi#/0"/>
+    <CONTEXT__CORR__c2gvc href="corr.xmi#/0"/>
+    <CREATE__CORR__v2gv href="corr.xmi#/3"/>
+  </Voter2GroupVoters:Voter2GroupVoter__Marker>
+  <Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker>
+    <CONTEXT__SRC__v href="src.xmi#//@voters.2"/>
+    <CONTEXT__SRC__v2 href="src.xmi#//@voters.0"/>
+    <CONTEXT__TRG__gV href="trg.xmi#/0/@voter.2"/>
+    <CONTEXT__TRG__gV2 href="trg.xmi#/0/@voter.1"/>
+    <CREATE__TRG__group href="trg.xmi#/1"/>
+    <CREATE__CORR__v2g1 href="corr.xmi#/4"/>
+    <CREATE__CORR__v2g2 href="corr.xmi#/5"/>
+    <CONTEXT__CORR__v2gv href="corr.xmi#/3"/>
+    <CONTEXT__CORR__v2gv2 href="corr.xmi#/2"/>
+  </Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker>
+  <Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker>
+    <CONTEXT__SRC__v href="src.xmi#//@voters.0"/>
+    <CONTEXT__SRC__v2 href="src.xmi#//@voters.1"/>
+    <CONTEXT__TRG__gV href="trg.xmi#/0/@voter.1"/>
+    <CONTEXT__TRG__gV2 href="trg.xmi#/0/@voter.0"/>
+    <CREATE__TRG__group href="trg.xmi#/2"/>
+    <CREATE__CORR__v2g1 href="corr.xmi#/6"/>
+    <CREATE__CORR__v2g2 href="corr.xmi#/7"/>
+    <CONTEXT__CORR__v2gv href="corr.xmi#/2"/>
+    <CONTEXT__CORR__v2gv2 href="corr.xmi#/1"/>
+  </Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker>
+  <Voter2GroupVoters:Voter2GroupVoter__Marker>
+    <CONTEXT__SRC__c href="src.xmi#/"/>
+    <CREATE__SRC__v href="src.xmi#//@voters.4"/>
+    <CREATE__TRG__gV href="trg.xmi#/0/@voter.3"/>
+    <CONTEXT__TRG__gvc href="trg.xmi#/0"/>
+    <CONTEXT__CORR__c2gvc href="corr.xmi#/0"/>
+    <CREATE__CORR__v2gv href="corr.xmi#/8"/>
+  </Voter2GroupVoters:Voter2GroupVoter__Marker>
+  <Voter2GroupVoters:Voter2GroupVoter__Marker>
+    <CONTEXT__SRC__c href="src.xmi#/"/>
+    <CREATE__SRC__v href="src.xmi#//@voters.3"/>
+    <CREATE__TRG__gV href="trg.xmi#/0/@voter.4"/>
+    <CONTEXT__TRG__gvc href="trg.xmi#/0"/>
+    <CONTEXT__CORR__c2gvc href="corr.xmi#/0"/>
+    <CREATE__CORR__v2gv href="corr.xmi#/9"/>
+  </Voter2GroupVoters:Voter2GroupVoter__Marker>
+  <Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker>
+    <CONTEXT__SRC__v href="src.xmi#//@voters.0"/>
+    <CONTEXT__SRC__v2 href="src.xmi#//@voters.2"/>
+    <CONTEXT__TRG__gV href="trg.xmi#/0/@voter.1"/>
+    <CONTEXT__TRG__gV2 href="trg.xmi#/0/@voter.2"/>
+    <CREATE__TRG__group href="trg.xmi#/3"/>
+    <CREATE__CORR__v2g1 href="corr.xmi#/10"/>
+    <CREATE__CORR__v2g2 href="corr.xmi#/11"/>
+    <CONTEXT__CORR__v2gv href="corr.xmi#/2"/>
+    <CONTEXT__CORR__v2gv2 href="corr.xmi#/3"/>
+  </Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker>
+  <Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker>
+    <CONTEXT__SRC__v href="src.xmi#//@voters.3"/>
+    <CONTEXT__SRC__v2 href="src.xmi#//@voters.4"/>
+    <CONTEXT__TRG__gV href="trg.xmi#/0/@voter.4"/>
+    <CONTEXT__TRG__gV2 href="trg.xmi#/0/@voter.3"/>
+    <CREATE__TRG__group href="trg.xmi#/4"/>
+    <CREATE__CORR__v2g1 href="corr.xmi#/12"/>
+    <CREATE__CORR__v2g2 href="corr.xmi#/13"/>
+    <CONTEXT__CORR__v2gv href="corr.xmi#/9"/>
+    <CONTEXT__CORR__v2gv2 href="corr.xmi#/8"/>
+  </Voter2GroupVoters:VoterRelation2VoterGroupRelation__Marker>
+</xmi:XMI>
