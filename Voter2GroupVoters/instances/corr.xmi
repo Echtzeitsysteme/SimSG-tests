@@ -5,24 +5,36 @@
     <target href="trg.xmi#/0"/>
   </Voter2GroupVoters:Container2GroupVotersContainer>
   <Voter2GroupVoters:Voter2GroupVoter>
-    <source href="src.xmi#//@voters.1"/>
+    <source href="src.xmi#//@voters.4"/>
     <target href="trg.xmi#/0/@voter.0"/>
   </Voter2GroupVoters:Voter2GroupVoter>
   <Voter2GroupVoters:Voter2GroupVoter>
-    <source href="src.xmi#//@voters.0"/>
+    <source href="src.xmi#//@voters.2"/>
     <target href="trg.xmi#/0/@voter.1"/>
   </Voter2GroupVoters:Voter2GroupVoter>
   <Voter2GroupVoters:Voter2GroupVoter>
-    <source href="src.xmi#//@voters.2"/>
+    <source href="src.xmi#//@voters.1"/>
     <target href="trg.xmi#/0/@voter.2"/>
   </Voter2GroupVoters:Voter2GroupVoter>
+  <Voter2GroupVoters:Voter2GroupVoter>
+    <source href="src.xmi#//@voters.3"/>
+    <target href="trg.xmi#/0/@voter.3"/>
+  </Voter2GroupVoters:Voter2GroupVoter>
   <Voter2GroupVoters:Voter2Group>
-    <source href="src.xmi#//@voters.2"/>
+    <source href="src.xmi#//@voters.3"/>
     <target href="trg.xmi#/1"/>
   </Voter2GroupVoters:Voter2Group>
   <Voter2GroupVoters:Voter2Group>
-    <source href="src.xmi#//@voters.0"/>
+    <source href="src.xmi#//@voters.4"/>
     <target href="trg.xmi#/1"/>
+  </Voter2GroupVoters:Voter2Group>
+  <Voter2GroupVoters:Voter2GroupVoter>
+    <source href="src.xmi#//@voters.0"/>
+    <target href="trg.xmi#/0/@voter.4"/>
+  </Voter2GroupVoters:Voter2GroupVoter>
+  <Voter2GroupVoters:Voter2Group>
+    <source href="src.xmi#//@voters.2"/>
+    <target href="trg.xmi#/2"/>
   </Voter2GroupVoters:Voter2Group>
   <Voter2GroupVoters:Voter2Group>
     <source href="src.xmi#//@voters.0"/>
@@ -32,14 +44,6 @@
     <source href="src.xmi#//@voters.1"/>
     <target href="trg.xmi#/2"/>
   </Voter2GroupVoters:Voter2Group>
-  <Voter2GroupVoters:Voter2GroupVoter>
-    <source href="src.xmi#//@voters.4"/>
-    <target href="trg.xmi#/0/@voter.3"/>
-  </Voter2GroupVoters:Voter2GroupVoter>
-  <Voter2GroupVoters:Voter2GroupVoter>
-    <source href="src.xmi#//@voters.3"/>
-    <target href="trg.xmi#/0/@voter.4"/>
-  </Voter2GroupVoters:Voter2GroupVoter>
   <Voter2GroupVoters:Voter2Group>
     <source href="src.xmi#//@voters.0"/>
     <target href="trg.xmi#/3"/>
@@ -47,13 +51,5 @@
   <Voter2GroupVoters:Voter2Group>
     <source href="src.xmi#//@voters.2"/>
     <target href="trg.xmi#/3"/>
-  </Voter2GroupVoters:Voter2Group>
-  <Voter2GroupVoters:Voter2Group>
-    <source href="src.xmi#//@voters.3"/>
-    <target href="trg.xmi#/4"/>
-  </Voter2GroupVoters:Voter2Group>
-  <Voter2GroupVoters:Voter2Group>
-    <source href="src.xmi#//@voters.4"/>
-    <target href="trg.xmi#/4"/>
   </Voter2GroupVoters:Voter2Group>
 </xmi:XMI>

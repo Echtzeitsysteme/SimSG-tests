@@ -11,8 +11,13 @@ import org.emoflon.ibex.tgg.operational.strategies.modules.TGGResourceHandler;
 
 import org.emoflon.ibex.tgg.run.voter2groupvoters.config.*;
 
+import com.google.common.base.Optional;
+
 import org.emoflon.ibex.tgg.operational.defaults.IbexOptions;
+import org.emoflon.ibex.tgg.operational.matches.ITGGMatch;
+import org.emoflon.ibex.tgg.operational.matches.ImmutableMatchContainer;
 import org.emoflon.ibex.tgg.operational.strategies.sync.INITIAL_FWD;
+import org.emoflon.ibex.tgg.operational.updatepolicy.IUpdatePolicy;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.emoflon.ibex.tgg.compiler.patterns.PatternSuffixes;
 
@@ -55,6 +60,20 @@ public class INITIAL_FWD_App extends INITIAL_FWD {
 		logger.info("Starting INITIAL FWD");
 		long tic = System.currentTimeMillis();
 		INITIAL_FWD_App init_fwd = new INITIAL_FWD_App();
+		init_fwd.getTGG().getRules().stream().forEach(rule -> System.out.println(rule.getName()));
+		init_fwd.setUpdatePolicy(new IUpdatePolicy() {
+			
+			@Override
+			public ITGGMatch chooseOneMatch(ImmutableMatchContainer matchContainer) {
+				java.util.Optional<ITGGMatch> optMatch = matchContainer.getMatches().stream()
+						.filter(match -> match.getPatternName().equals("Voter2Group__FWD")).findAny();
+				if(optMatch.isPresent()) {
+					return optMatch.get();
+				} else {
+					return matchContainer.getMatches().iterator().next();
+				}
+			}
+		});
 		long toc = System.currentTimeMillis();
 		logger.info("Completed init for FWD in: " + (toc - tic) + " ms");
 		
