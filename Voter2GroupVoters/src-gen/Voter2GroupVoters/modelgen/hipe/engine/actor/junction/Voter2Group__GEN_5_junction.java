@@ -56,12 +56,12 @@ public class Voter2Group__GEN_5_junction extends GenericJunctionActor{
 	}
 	
 	public boolean check_constraint_1(HMatch match, int index) {
-		Voter2GroupVoters.Voter2GroupVoter v2gv = (Voter2GroupVoters.Voter2GroupVoter) match.getNodes()[5];
-		Voter.Voter1 v2 = (Voter.Voter1) match.getNodes()[1];
-		Voter2GroupVoters.Voter2GroupVoter v2gv2 = (Voter2GroupVoters.Voter2GroupVoter) match.getNodes()[0];
 		GroupVoters.Voter1 gV = (GroupVoters.Voter1) match.getNodes()[6];
-		Voter.Voter1 v = (Voter.Voter1) match.getNodes()[4];
+		Voter.Voter1 v2 = (Voter.Voter1) match.getNodes()[1];
 		GroupVoters.Voter1 gV2 = (GroupVoters.Voter1) match.getNodes()[2];
+		Voter2GroupVoters.Voter2GroupVoter v2gv2 = (Voter2GroupVoters.Voter2GroupVoter) match.getNodes()[0];
+		Voter2GroupVoters.Voter2GroupVoter v2gv = (Voter2GroupVoters.Voter2GroupVoter) match.getNodes()[5];
+		Voter.Voter1 v = (Voter.Voter1) match.getNodes()[4];
 		boolean predicate = !v.equals(v2) && !gV.equals(gV2) && !v2gv.equals(v2gv2);
 		match.setConstraintSatisfied(index, predicate);
 		return predicate;

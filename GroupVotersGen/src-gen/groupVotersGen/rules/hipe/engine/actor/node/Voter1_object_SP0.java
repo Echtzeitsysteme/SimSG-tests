@@ -30,7 +30,7 @@ public class Voter1_object_SP0 extends GenericObjectActor<GroupVoters.Voter1> {
 		ports = new LinkedList<>();
 		ports.add(new PortNodeLeft<GroupVoters.Voter1>(node.getPorts().getPort().get(0), getSelf(), name2actor.get("Voter1_member_0_reference"), this::check_constraint_1 , 0   ));
 		ports.add(new PortNodeLeft<GroupVoters.Voter1>(node.getPorts().getPort().get(1), getSelf(), name2actor.get("Voter1_member_3_reference"), this::returnTrue   ));
-		ports.add(new PortNodeMatchLeft<GroupVoters.Voter1>(node.getPorts().getPort().get(2), getSelf(), name2actor.get("newMembership_31_junction"), this::returnTrue   , node.getName() ));
+		ports.add(new PortNodeMatchRight<GroupVoters.Voter1>(node.getPorts().getPort().get(2), getSelf(), name2actor.get("newMembership_31_junction"), this::returnTrue   , node.getName() ));
 	}
 	
 	public boolean check_constraint_1(GroupVoters.Voter1 v1, int index) {

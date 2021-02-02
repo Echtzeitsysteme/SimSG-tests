@@ -1,5 +1,5 @@
 import "platform:/resource/PolymerModel/model/PolymerModel.ecore"
-
+@optimize
 rule createEdge() {
 	node1 : Atom {
 		++ -next->node2
@@ -24,7 +24,7 @@ rule deleteEdge() {
 	}
 	node2 : Atom	
 } @ 0.025
-
+@optimize
 rule bC2() {
 	node1 : Atom {
 		 -next->node3

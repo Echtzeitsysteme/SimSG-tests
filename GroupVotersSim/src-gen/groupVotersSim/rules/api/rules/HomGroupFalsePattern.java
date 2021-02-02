@@ -14,7 +14,7 @@ import org.emoflon.ibex.gt.api.GraphTransformationPattern;
 import org.emoflon.ibex.gt.engine.GraphTransformationInterpreter;
 
 /**
- * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@737dd82e (name: g)] which does the following:
+ * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@2f69412b (name: g)] which does the following:
  * when sharingGroupV1V2condition sharingGroupV1V2 = enforce sharingGroupV1V2Patternpattern sharingGroupV1V2Pattern(){g:Groupv1:Voter1 {-member-> g}v2:Voter1 {-member-> g}}
  */
 @SuppressWarnings("unused")

@@ -128,9 +128,9 @@ public class Voter2GroupVotersPackageImpl extends EPackageImpl implements Voter2
 		isInited = true;
 
 		// Initialize simple dependencies
+		GroupVotersPackage.eINSTANCE.eClass();
 		RuntimePackage.eINSTANCE.eClass();
 		VoterPackage.eINSTANCE.eClass();
-		GroupVotersPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theVoter2GroupVotersPackage.createPackageContents();

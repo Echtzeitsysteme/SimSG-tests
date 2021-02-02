@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HiPEPattern:HiPEContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HiPEPattern="platform:/resource/hipe.pattern/model/HiPEPattern" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xsi:schemaLocation="platform:/resource/hipe.pattern/model/HiPEPattern java://hipe.pattern.HiPEPatternPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage">
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Container2GroupVotersContainer__BWD" partialPatterns="//@patterns.12" nodes="//@nodes.0" children="//@patterns.12"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Container2GroupVotersContainer__CONSISTENCY" partialPatterns="//@patterns.13" nodes="//@nodes.1 //@nodes.2 //@nodes.3 //@nodes.4" edges="//@edges.0 //@edges.1 //@edges.2 //@edges.3 //@edges.4" children="//@patterns.13 //@patterns.14 //@patterns.15 //@patterns.16 //@patterns.17"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Container2GroupVotersContainer__FWD" partialPatterns="//@patterns.18" nodes="//@nodes.5" children="//@patterns.18"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Voter2GroupVoter__BWD" partialPatterns="//@patterns.19" nodes="//@nodes.6 //@nodes.7 //@nodes.8 //@nodes.9" edges="//@edges.5 //@edges.6 //@edges.7" children="//@patterns.19 //@patterns.20 //@patterns.21 //@patterns.22 //@patterns.23"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Voter2GroupVoter__CONSISTENCY" partialPatterns="//@patterns.24" attributes="//@attributes.0 //@attributes.1" nodes="//@nodes.10 //@nodes.11 //@nodes.12 //@nodes.13 //@nodes.14 //@nodes.15 //@nodes.16" edges="//@edges.8 //@edges.9 //@edges.10 //@edges.11 //@edges.12 //@edges.13 //@edges.14 //@edges.15 //@edges.16 //@edges.17 //@edges.18 //@edges.19" children="//@patterns.24 //@patterns.25 //@patterns.26 //@patterns.27 //@patterns.28 //@patterns.29 //@patterns.30 //@patterns.31"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Voter2GroupVoter__FWD" partialPatterns="//@patterns.32" nodes="//@nodes.17 //@nodes.18 //@nodes.19 //@nodes.20" edges="//@edges.20 //@edges.21 //@edges.22" children="//@patterns.32 //@patterns.33 //@patterns.34 //@patterns.35 //@patterns.36"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Voter2Group__BWD" partialPatterns="//@patterns.37" nodes="//@nodes.21 //@nodes.22 //@nodes.23 //@nodes.24 //@nodes.25 //@nodes.26 //@nodes.27 //@nodes.28" edges="//@edges.23 //@edges.24 //@edges.25 //@edges.26 //@edges.27 //@edges.28 //@edges.29 //@edges.30" children="//@patterns.37 //@patterns.38 //@patterns.39 //@patterns.40 //@patterns.41 //@patterns.42 //@patterns.43 //@patterns.44 //@patterns.45"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Voter2Group__CONSISTENCY" partialPatterns="//@patterns.46" nodes="//@nodes.29 //@nodes.30 //@nodes.31 //@nodes.32 //@nodes.33 //@nodes.34 //@nodes.35 //@nodes.36 //@nodes.37 //@nodes.38" edges="//@edges.31 //@edges.32 //@edges.33 //@edges.34 //@edges.35 //@edges.36 //@edges.37 //@edges.38 //@edges.39 //@edges.40 //@edges.41 //@edges.42 //@edges.43 //@edges.44 //@edges.45 //@edges.46 //@edges.47 //@edges.48 //@edges.49 //@edges.50" children="//@patterns.46 //@patterns.47 //@patterns.48 //@patterns.49 //@patterns.50 //@patterns.51 //@patterns.52 //@patterns.53 //@patterns.54 //@patterns.55 //@patterns.56"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="Voter2Group__FWD" partialPatterns="//@patterns.57" nodes="//@nodes.39 //@nodes.40 //@nodes.41 //@nodes.42 //@nodes.43 //@nodes.44 //@nodes.45 //@nodes.46" edges="//@edges.51 //@edges.52 //@edges.53 //@edges.54 //@edges.55 //@edges.56 //@edges.57 //@edges.58" children="//@patterns.57 //@patterns.58 //@patterns.59 //@patterns.60 //@patterns.61 //@patterns.62 //@patterns.63 //@patterns.64 //@patterns.65"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="VoterRelation2VoterGroupRelation__BWD" partialPatterns="//@patterns.66" nodes="//@nodes.47 //@nodes.48 //@nodes.49 //@nodes.50 //@nodes.51 //@nodes.52 //@nodes.53" edges="//@edges.59 //@edges.60 //@edges.61 //@edges.62 //@edges.63 //@edges.64" children="//@patterns.66 //@patterns.67 //@patterns.68 //@patterns.69 //@patterns.70 //@patterns.71 //@patterns.72 //@patterns.73"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY" partialPatterns="//@patterns.74" nodes="//@nodes.54 //@nodes.55 //@nodes.56 //@nodes.57 //@nodes.58 //@nodes.59 //@nodes.60 //@nodes.61 //@nodes.62 //@nodes.63" edges="//@edges.65 //@edges.66 //@edges.67 //@edges.68 //@edges.69 //@edges.70 //@edges.71 //@edges.72 //@edges.73 //@edges.74 //@edges.75 //@edges.76 //@edges.77 //@edges.78 //@edges.79 //@edges.80 //@edges.81 //@edges.82 //@edges.83 //@edges.84" children="//@patterns.74 //@patterns.75 //@patterns.76 //@patterns.77 //@patterns.78 //@patterns.79 //@patterns.80 //@patterns.81 //@patterns.82 //@patterns.83 //@patterns.84"/>
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="VoterRelation2VoterGroupRelation__FWD" partialPatterns="//@patterns.85" nodes="//@nodes.64 //@nodes.65 //@nodes.66 //@nodes.67 //@nodes.68 //@nodes.69" edges="//@edges.85 //@edges.86 //@edges.87 //@edges.88 //@edges.89" children="//@patterns.85 //@patterns.86 //@patterns.87 //@patterns.88 //@patterns.89 //@patterns.90 //@patterns.91"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__BWD_1" nodes="//@nodes.0" parentPattern="//@patterns.0" invokedNodes="//@nodes.0" patternType="NODE" rootPattern="//@patterns.0"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="Container2GroupVotersContainer__CONSISTENCY_2" partialPatterns="//@patterns.14 //@patterns.15 //@patterns.16 //@patterns.17" nodes="//@nodes.1 //@nodes.2 //@nodes.3 //@nodes.4" edges="//@edges.3 //@edges.2 //@edges.1 //@edges.0 //@edges.4" parentPattern="//@patterns.1" invokedNodes="//@nodes.1 //@nodes.2 //@nodes.3 //@nodes.4" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__CONSISTENCY_3" nodes="//@nodes.1" parentPattern="//@patterns.13" invokedNodes="//@nodes.1" patternType="NODE" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__CONSISTENCY_4" nodes="//@nodes.2" parentPattern="//@patterns.13" invokedNodes="//@nodes.2" patternType="NODE" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__CONSISTENCY_5" nodes="//@nodes.3" parentPattern="//@patterns.13" invokedNodes="//@nodes.3" patternType="NODE" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__CONSISTENCY_6" nodes="//@nodes.4" parentPattern="//@patterns.13" invokedNodes="//@nodes.4" patternType="NODE" rootPattern="//@patterns.1"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Container2GroupVotersContainer__FWD_7" nodes="//@nodes.5" parentPattern="//@patterns.2" invokedNodes="//@nodes.5" patternType="NODE" rootPattern="//@patterns.2"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="Voter2GroupVoter__BWD_8" partialPatterns="//@patterns.20 //@patterns.21 //@patterns.22 //@patterns.23" nodes="//@nodes.6 //@nodes.7 //@nodes.8 //@nodes.9" edges="//@edges.5 //@edges.7 //@edges.6" parentPattern="//@patterns.3" invokedNodes="//@nodes.6 //@nodes.7 //@nodes.8 //@nodes.9" rootPattern="//@patterns.3"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__BWD_9" nodes="//@nodes.6" parentPattern="//@patterns.19" invokedNodes="//@nodes.6" patternType="NODE" rootPattern="//@patterns.3"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__BWD_10" nodes="//@nodes.7" parentPattern="//@patterns.19" invokedNodes="//@nodes.7" patternType="NODE" rootPattern="//@patterns.3"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__BWD_11" nodes="//@nodes.8" parentPattern="//@patterns.19" invokedNodes="//@nodes.8" patternType="NODE" rootPattern="//@patterns.3"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__BWD_12" nodes="//@nodes.9" parentPattern="//@patterns.19" invokedNodes="//@nodes.9" patternType="NODE" rootPattern="//@patterns.3"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="Voter2GroupVoter__CONSISTENCY_13" partialPatterns="//@patterns.25 //@patterns.26 //@patterns.27 //@patterns.28 //@patterns.29 //@patterns.30 //@patterns.31" attributeConstraints="//@attributeConstraints.0" attributes="//@attributes.0 //@attributes.1" nodes="//@nodes.10 //@nodes.11 //@nodes.12 //@nodes.13 //@nodes.14 //@nodes.15 //@nodes.16" edges="//@edges.8 //@edges.13 //@edges.19 //@edges.17 //@edges.10 //@edges.12 //@edges.15 //@edges.14 //@edges.16 //@edges.11 //@edges.18 //@edges.9" parentPattern="//@patterns.4" invokedNodes="//@nodes.10 //@nodes.11 //@nodes.12 //@nodes.13 //@nodes.14 //@nodes.15 //@nodes.16" rootPattern="//@patterns.4"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__CONSISTENCY_14" nodes="//@nodes.10" parentPattern="//@patterns.24" invokedNodes="//@nodes.10" patternType="NODE" rootPattern="//@patterns.4"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__CONSISTENCY_15" nodes="//@nodes.11" parentPattern="//@patterns.24" invokedNodes="//@nodes.11" patternType="NODE" rootPattern="//@patterns.4"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__CONSISTENCY_16" nodes="//@nodes.12" parentPattern="//@patterns.24" invokedNodes="//@nodes.12" patternType="NODE" rootPattern="//@patterns.4"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__CONSISTENCY_17" nodes="//@nodes.13" parentPattern="//@patterns.24" invokedNodes="//@nodes.13" patternType="NODE" rootPattern="//@patterns.4"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__CONSISTENCY_18" nodes="//@nodes.14" parentPattern="//@patterns.24" invokedNodes="//@nodes.14" patternType="NODE" rootPattern="//@patterns.4"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__CONSISTENCY_19" nodes="//@nodes.15" parentPattern="//@patterns.24" invokedNodes="//@nodes.15" patternType="NODE" rootPattern="//@patterns.4"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__CONSISTENCY_20" nodes="//@nodes.16" parentPattern="//@patterns.24" invokedNodes="//@nodes.16" patternType="NODE" rootPattern="//@patterns.4"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="Voter2GroupVoter__FWD_21" partialPatterns="//@patterns.33 //@patterns.34 //@patterns.35 //@patterns.36" nodes="//@nodes.17 //@nodes.18 //@nodes.19 //@nodes.20" edges="//@edges.20 //@edges.21 //@edges.22" parentPattern="//@patterns.5" invokedNodes="//@nodes.17 //@nodes.18 //@nodes.19 //@nodes.20" rootPattern="//@patterns.5"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__FWD_22" nodes="//@nodes.17" parentPattern="//@patterns.32" invokedNodes="//@nodes.17" patternType="NODE" rootPattern="//@patterns.5"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__FWD_23" nodes="//@nodes.18" parentPattern="//@patterns.32" invokedNodes="//@nodes.18" patternType="NODE" rootPattern="//@patterns.5"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__FWD_24" nodes="//@nodes.19" parentPattern="//@patterns.32" invokedNodes="//@nodes.19" patternType="NODE" rootPattern="//@patterns.5"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2GroupVoter__FWD_25" nodes="//@nodes.20" parentPattern="//@patterns.32" invokedNodes="//@nodes.20" patternType="NODE" rootPattern="//@patterns.5"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="Voter2Group__BWD_26" partialPatterns="//@patterns.38 //@patterns.39 //@patterns.40 //@patterns.41 //@patterns.42 //@patterns.43 //@patterns.44 //@patterns.45" nodeConstraints="//@nodeConstraints.0 //@nodeConstraints.1 //@nodeConstraints.2" nodes="//@nodes.21 //@nodes.22 //@nodes.23 //@nodes.24 //@nodes.25 //@nodes.26 //@nodes.27 //@nodes.28" edges="//@edges.26 //@edges.29 //@edges.27 //@edges.24 //@edges.25 //@edges.28 //@edges.23 //@edges.30" parentPattern="//@patterns.6" invokedNodes="//@nodes.21 //@nodes.22 //@nodes.23 //@nodes.24 //@nodes.25 //@nodes.26 //@nodes.27 //@nodes.28" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__BWD_27" nodes="//@nodes.21" parentPattern="//@patterns.37" invokedNodes="//@nodes.21" patternType="NODE" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__BWD_28" nodes="//@nodes.22" parentPattern="//@patterns.37" invokedNodes="//@nodes.22" patternType="NODE" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__BWD_29" nodes="//@nodes.23" parentPattern="//@patterns.37" invokedNodes="//@nodes.23" patternType="NODE" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__BWD_30" nodes="//@nodes.24" parentPattern="//@patterns.37" invokedNodes="//@nodes.24" patternType="NODE" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__BWD_31" nodes="//@nodes.25" parentPattern="//@patterns.37" invokedNodes="//@nodes.25" patternType="NODE" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__BWD_32" nodes="//@nodes.26" parentPattern="//@patterns.37" invokedNodes="//@nodes.26" patternType="NODE" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__BWD_33" nodes="//@nodes.27" parentPattern="//@patterns.37" invokedNodes="//@nodes.27" patternType="NODE" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__BWD_34" nodes="//@nodes.28" parentPattern="//@patterns.37" invokedNodes="//@nodes.28" patternType="NODE" rootPattern="//@patterns.6"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="Voter2Group__CONSISTENCY_35" partialPatterns="//@patterns.47 //@patterns.48 //@patterns.49 //@patterns.50 //@patterns.51 //@patterns.52 //@patterns.53 //@patterns.54 //@patterns.55 //@patterns.56" nodeConstraints="//@nodeConstraints.3 //@nodeConstraints.4 //@nodeConstraints.5" nodes="//@nodes.29 //@nodes.30 //@nodes.31 //@nodes.32 //@nodes.33 //@nodes.34 //@nodes.35 //@nodes.36 //@nodes.37 //@nodes.38" edges="//@edges.35 //@edges.46 //@edges.33 //@edges.39 //@edges.48 //@edges.44 //@edges.50 //@edges.34 //@edges.36 //@edges.47 //@edges.45 //@edges.41 //@edges.49 //@edges.31 //@edges.38 //@edges.42 //@edges.37 //@edges.43 //@edges.40 //@edges.32" parentPattern="//@patterns.7" invokedNodes="//@nodes.29 //@nodes.30 //@nodes.31 //@nodes.32 //@nodes.33 //@nodes.34 //@nodes.35 //@nodes.36 //@nodes.37 //@nodes.38" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_36" nodes="//@nodes.29" parentPattern="//@patterns.46" invokedNodes="//@nodes.29" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_37" nodes="//@nodes.30" parentPattern="//@patterns.46" invokedNodes="//@nodes.30" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_38" nodes="//@nodes.31" parentPattern="//@patterns.46" invokedNodes="//@nodes.31" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_39" nodes="//@nodes.32" parentPattern="//@patterns.46" invokedNodes="//@nodes.32" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_40" nodes="//@nodes.33" parentPattern="//@patterns.46" invokedNodes="//@nodes.33" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_41" nodes="//@nodes.34" parentPattern="//@patterns.46" invokedNodes="//@nodes.34" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_42" nodes="//@nodes.35" parentPattern="//@patterns.46" invokedNodes="//@nodes.35" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_43" nodes="//@nodes.36" parentPattern="//@patterns.46" invokedNodes="//@nodes.36" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_44" nodes="//@nodes.37" parentPattern="//@patterns.46" invokedNodes="//@nodes.37" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__CONSISTENCY_45" nodes="//@nodes.38" parentPattern="//@patterns.46" invokedNodes="//@nodes.38" patternType="NODE" rootPattern="//@patterns.7"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="Voter2Group__FWD_46" partialPatterns="//@patterns.58 //@patterns.59 //@patterns.60 //@patterns.61 //@patterns.62 //@patterns.63 //@patterns.64 //@patterns.65" nodeConstraints="//@nodeConstraints.6 //@nodeConstraints.7 //@nodeConstraints.8" nodes="//@nodes.39 //@nodes.40 //@nodes.41 //@nodes.42 //@nodes.43 //@nodes.44 //@nodes.45 //@nodes.46" edges="//@edges.57 //@edges.58 //@edges.54 //@edges.55 //@edges.51 //@edges.53 //@edges.56 //@edges.52" parentPattern="//@patterns.8" invokedNodes="//@nodes.39 //@nodes.40 //@nodes.41 //@nodes.42 //@nodes.43 //@nodes.44 //@nodes.45 //@nodes.46" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__FWD_47" nodes="//@nodes.39" parentPattern="//@patterns.57" invokedNodes="//@nodes.39" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__FWD_48" nodes="//@nodes.40" parentPattern="//@patterns.57" invokedNodes="//@nodes.40" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__FWD_49" nodes="//@nodes.41" parentPattern="//@patterns.57" invokedNodes="//@nodes.41" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__FWD_50" nodes="//@nodes.42" parentPattern="//@patterns.57" invokedNodes="//@nodes.42" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__FWD_51" nodes="//@nodes.43" parentPattern="//@patterns.57" invokedNodes="//@nodes.43" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__FWD_52" nodes="//@nodes.44" parentPattern="//@patterns.57" invokedNodes="//@nodes.44" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__FWD_53" nodes="//@nodes.45" parentPattern="//@patterns.57" invokedNodes="//@nodes.45" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="Voter2Group__FWD_54" nodes="//@nodes.46" parentPattern="//@patterns.57" invokedNodes="//@nodes.46" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="VoterRelation2VoterGroupRelation__BWD_55" partialPatterns="//@patterns.67 //@patterns.68 //@patterns.69 //@patterns.70 //@patterns.71 //@patterns.72 //@patterns.73" nodeConstraints="//@nodeConstraints.9 //@nodeConstraints.10 //@nodeConstraints.11" nodes="//@nodes.47 //@nodes.48 //@nodes.49 //@nodes.50 //@nodes.51 //@nodes.52 //@nodes.53" edges="//@edges.63 //@edges.59 //@edges.61 //@edges.62 //@edges.64 //@edges.60" parentPattern="//@patterns.9" invokedNodes="//@nodes.47 //@nodes.48 //@nodes.49 //@nodes.50 //@nodes.51 //@nodes.52 //@nodes.53" rootPattern="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__BWD_56" nodes="//@nodes.47" parentPattern="//@patterns.66" invokedNodes="//@nodes.47" patternType="NODE" rootPattern="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__BWD_57" nodes="//@nodes.48" parentPattern="//@patterns.66" invokedNodes="//@nodes.48" patternType="NODE" rootPattern="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__BWD_58" nodes="//@nodes.49" parentPattern="//@patterns.66" invokedNodes="//@nodes.49" patternType="NODE" rootPattern="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__BWD_59" nodes="//@nodes.50" parentPattern="//@patterns.66" invokedNodes="//@nodes.50" patternType="NODE" rootPattern="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__BWD_60" nodes="//@nodes.51" parentPattern="//@patterns.66" invokedNodes="//@nodes.51" patternType="NODE" rootPattern="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__BWD_61" nodes="//@nodes.52" parentPattern="//@patterns.66" invokedNodes="//@nodes.52" patternType="NODE" rootPattern="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__BWD_62" nodes="//@nodes.53" parentPattern="//@patterns.66" invokedNodes="//@nodes.53" patternType="NODE" rootPattern="//@patterns.9"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_63" partialPatterns="//@patterns.75 //@patterns.76 //@patterns.77 //@patterns.78 //@patterns.79 //@patterns.80 //@patterns.81 //@patterns.82 //@patterns.83 //@patterns.84" nodeConstraints="//@nodeConstraints.12 //@nodeConstraints.13 //@nodeConstraints.14 //@nodeConstraints.15" nodes="//@nodes.54 //@nodes.55 //@nodes.56 //@nodes.57 //@nodes.58 //@nodes.59 //@nodes.60 //@nodes.61 //@nodes.62 //@nodes.63" edges="//@edges.79 //@edges.81 //@edges.70 //@edges.77 //@edges.74 //@edges.82 //@edges.84 //@edges.75 //@edges.83 //@edges.68 //@edges.80 //@edges.73 //@edges.71 //@edges.78 //@edges.76 //@edges.66 //@edges.67 //@edges.72 //@edges.69 //@edges.65" parentPattern="//@patterns.10" invokedNodes="//@nodes.54 //@nodes.55 //@nodes.56 //@nodes.57 //@nodes.58 //@nodes.59 //@nodes.60 //@nodes.61 //@nodes.62 //@nodes.63" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_64" nodes="//@nodes.54" parentPattern="//@patterns.74" invokedNodes="//@nodes.54" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_65" nodes="//@nodes.55" parentPattern="//@patterns.74" invokedNodes="//@nodes.55" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_66" nodes="//@nodes.56" parentPattern="//@patterns.74" invokedNodes="//@nodes.56" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_67" nodes="//@nodes.57" parentPattern="//@patterns.74" invokedNodes="//@nodes.57" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_68" nodes="//@nodes.58" parentPattern="//@patterns.74" invokedNodes="//@nodes.58" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_69" nodes="//@nodes.59" parentPattern="//@patterns.74" invokedNodes="//@nodes.59" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_70" nodes="//@nodes.60" parentPattern="//@patterns.74" invokedNodes="//@nodes.60" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_71" nodes="//@nodes.61" parentPattern="//@patterns.74" invokedNodes="//@nodes.61" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_72" nodes="//@nodes.62" parentPattern="//@patterns.74" invokedNodes="//@nodes.62" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__CONSISTENCY_73" nodes="//@nodes.63" parentPattern="//@patterns.74" invokedNodes="//@nodes.63" patternType="NODE" rootPattern="//@patterns.10"/>
+  <patterns xmi:type="HiPEPattern:HiPELargePattern" name="VoterRelation2VoterGroupRelation__FWD_74" partialPatterns="//@patterns.86 //@patterns.87 //@patterns.88 //@patterns.89 //@patterns.90 //@patterns.91" nodeConstraints="//@nodeConstraints.16 //@nodeConstraints.17 //@nodeConstraints.18" nodes="//@nodes.64 //@nodes.65 //@nodes.66 //@nodes.67 //@nodes.68 //@nodes.69" edges="//@edges.86 //@edges.89 //@edges.88 //@edges.85 //@edges.87" parentPattern="//@patterns.11" invokedNodes="//@nodes.64 //@nodes.65 //@nodes.66 //@nodes.67 //@nodes.68 //@nodes.69" rootPattern="//@patterns.11"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__FWD_75" nodes="//@nodes.64" parentPattern="//@patterns.85" invokedNodes="//@nodes.64" patternType="NODE" rootPattern="//@patterns.11"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__FWD_76" nodes="//@nodes.65" parentPattern="//@patterns.85" invokedNodes="//@nodes.65" patternType="NODE" rootPattern="//@patterns.11"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__FWD_77" nodes="//@nodes.66" parentPattern="//@patterns.85" invokedNodes="//@nodes.66" patternType="NODE" rootPattern="//@patterns.11"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__FWD_78" nodes="//@nodes.67" parentPattern="//@patterns.85" invokedNodes="//@nodes.67" patternType="NODE" rootPattern="//@patterns.11"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__FWD_79" nodes="//@nodes.68" parentPattern="//@patterns.85" invokedNodes="//@nodes.68" patternType="NODE" rootPattern="//@patterns.11"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="VoterRelation2VoterGroupRelation__FWD_80" nodes="//@nodes.69" parentPattern="//@patterns.85" invokedNodes="//@nodes.69" patternType="NODE" rootPattern="//@patterns.11"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.24" rightNode="//@nodes.25" abstractPatterns="//@patterns.37" targetPatterns="//@patterns.6"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.21" rightNode="//@nodes.22" abstractPatterns="//@patterns.37" targetPatterns="//@patterns.6"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.27" rightNode="//@nodes.28" abstractPatterns="//@patterns.37" targetPatterns="//@patterns.6"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.29" rightNode="//@nodes.30" abstractPatterns="//@patterns.46" targetPatterns="//@patterns.7"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.31" rightNode="//@nodes.32" abstractPatterns="//@patterns.46" targetPatterns="//@patterns.7"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.36" rightNode="//@nodes.37" abstractPatterns="//@patterns.46" targetPatterns="//@patterns.7"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.42" rightNode="//@nodes.43" abstractPatterns="//@patterns.57" targetPatterns="//@patterns.8"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.39" rightNode="//@nodes.40" abstractPatterns="//@patterns.57" targetPatterns="//@patterns.8"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.45" rightNode="//@nodes.46" abstractPatterns="//@patterns.57" targetPatterns="//@patterns.8"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.49" rightNode="//@nodes.50" abstractPatterns="//@patterns.66" targetPatterns="//@patterns.9"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.47" rightNode="//@nodes.48" abstractPatterns="//@patterns.66" targetPatterns="//@patterns.9"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.51" rightNode="//@nodes.52" abstractPatterns="//@patterns.66" targetPatterns="//@patterns.9"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.54" rightNode="//@nodes.55" abstractPatterns="//@patterns.74" targetPatterns="//@patterns.10"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.56" rightNode="//@nodes.57" abstractPatterns="//@patterns.74" targetPatterns="//@patterns.10"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.59" rightNode="//@nodes.60" abstractPatterns="//@patterns.74" targetPatterns="//@patterns.10"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.61" rightNode="//@nodes.62" abstractPatterns="//@patterns.74" targetPatterns="//@patterns.10"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.66" rightNode="//@nodes.67" abstractPatterns="//@patterns.85" targetPatterns="//@patterns.11"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.64" rightNode="//@nodes.65" abstractPatterns="//@patterns.85" targetPatterns="//@patterns.11"/>
+  <nodeConstraints xmi:type="HiPEPattern:UnequalConstraint" leftNode="//@nodes.68" rightNode="//@nodes.69" abstractPatterns="//@patterns.85" targetPatterns="//@patterns.11"/>
+  <attributeConstraints xmi:type="HiPEPattern:ComplexConstraint" abstractPatterns="//@patterns.24" targetPatterns="//@patterns.4" attributes="//@attributes.0 //@attributes.1" predicateCode="csp_0.isSatisfied()" initializationCode="org.emoflon.ibex.tgg.operational.csp.constraints.Eq csp_0 = new org.emoflon.ibex.tgg.operational.csp.constraints.Eq();&#xA;csp_0.getVariables().add(new org.emoflon.ibex.tgg.operational.csp.RuntimeTGGAttributeConstraintVariable(true, v.isVote(), &quot;boolean&quot;));&#xA;csp_0.getVariables().add(new org.emoflon.ibex.tgg.operational.csp.RuntimeTGGAttributeConstraintVariable(true, gV.isVote(), &quot;boolean&quot;));&#xA;csp_0.solve();&#xA;"/>
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.11" value="org.eclipse.emf.ecore.impl.EAttributeImpl@fe41160 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.4 //@patterns.24">
+    <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
+  </attributes>
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.12" value="org.eclipse.emf.ecore.impl.EAttributeImpl@fddbf9b (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.4 //@patterns.24">
+    <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
+  </attributes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gvc" abstractPatterns="//@patterns.0 //@patterns.12" invokingPartialPatterns="//@patterns.12">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c" abstractPatterns="//@patterns.1 //@patterns.13 //@patterns.14" invokingPartialPatterns="//@patterns.13 //@patterns.14">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gvc" abstractPatterns="//@patterns.1 //@patterns.13 //@patterns.15" invokingPartialPatterns="//@patterns.13 //@patterns.15">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c2gvc" abstractPatterns="//@patterns.1 //@patterns.13 //@patterns.16" invokingPartialPatterns="//@patterns.13 //@patterns.16">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="Container2GroupVotersContainer_eMoflon_ProtocolNode" abstractPatterns="//@patterns.1 //@patterns.13 //@patterns.17" invokingPartialPatterns="//@patterns.13 //@patterns.17">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c" abstractPatterns="//@patterns.2 //@patterns.18" invokingPartialPatterns="//@patterns.18">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c" abstractPatterns="//@patterns.3 //@patterns.19 //@patterns.20" invokingPartialPatterns="//@patterns.19 //@patterns.20">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c2gvc" abstractPatterns="//@patterns.3 //@patterns.19 //@patterns.21" invokingPartialPatterns="//@patterns.19 //@patterns.21">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gvc" abstractPatterns="//@patterns.3 //@patterns.19 //@patterns.22" invokingPartialPatterns="//@patterns.19 //@patterns.22">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV" abstractPatterns="//@patterns.3 //@patterns.19 //@patterns.23" invokingPartialPatterns="//@patterns.19 //@patterns.23">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c" abstractPatterns="//@patterns.4 //@patterns.24 //@patterns.25" invokingPartialPatterns="//@patterns.24 //@patterns.25">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" attributes="//@attributes.0" abstractPatterns="//@patterns.4 //@patterns.24 //@patterns.26" invokingPartialPatterns="//@patterns.24 //@patterns.26">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV" attributes="//@attributes.1" abstractPatterns="//@patterns.4 //@patterns.24 //@patterns.27" invokingPartialPatterns="//@patterns.24 //@patterns.27">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gvc" abstractPatterns="//@patterns.4 //@patterns.24 //@patterns.28" invokingPartialPatterns="//@patterns.24 //@patterns.28">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c2gvc" abstractPatterns="//@patterns.4 //@patterns.24 //@patterns.29" invokingPartialPatterns="//@patterns.24 //@patterns.29">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv" abstractPatterns="//@patterns.4 //@patterns.24 //@patterns.30" invokingPartialPatterns="//@patterns.24 //@patterns.30">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="Voter2GroupVoter_eMoflon_ProtocolNode" abstractPatterns="//@patterns.4 //@patterns.24 //@patterns.31" invokingPartialPatterns="//@patterns.24 //@patterns.31">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c" abstractPatterns="//@patterns.5 //@patterns.32 //@patterns.33" invokingPartialPatterns="//@patterns.32 //@patterns.33">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Container"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="c2gvc" abstractPatterns="//@patterns.5 //@patterns.32 //@patterns.34" invokingPartialPatterns="//@patterns.32 //@patterns.34">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gvc" abstractPatterns="//@patterns.5 //@patterns.32 //@patterns.35" invokingPartialPatterns="//@patterns.32 //@patterns.35">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.5 //@patterns.32 //@patterns.36" invokingPartialPatterns="//@patterns.32 //@patterns.36">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV" abstractPatterns="//@patterns.6 //@patterns.37 //@patterns.38" invokingPartialPatterns="//@patterns.37 //@patterns.38">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV2" abstractPatterns="//@patterns.6 //@patterns.37 //@patterns.39" invokingPartialPatterns="//@patterns.37 //@patterns.39">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="group" abstractPatterns="//@patterns.6 //@patterns.37 //@patterns.40" invokingPartialPatterns="//@patterns.37 //@patterns.40">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.6 //@patterns.37 //@patterns.41" invokingPartialPatterns="//@patterns.37 //@patterns.41">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.6 //@patterns.37 //@patterns.42" invokingPartialPatterns="//@patterns.37 //@patterns.42">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2g1" abstractPatterns="//@patterns.6 //@patterns.37 //@patterns.43" invokingPartialPatterns="//@patterns.37 //@patterns.43">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv" abstractPatterns="//@patterns.6 //@patterns.37 //@patterns.44" invokingPartialPatterns="//@patterns.37 //@patterns.44">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv2" abstractPatterns="//@patterns.6 //@patterns.37 //@patterns.45" invokingPartialPatterns="//@patterns.37 //@patterns.45">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.47" invokingPartialPatterns="//@patterns.46 //@patterns.47">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.48" invokingPartialPatterns="//@patterns.46 //@patterns.48">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.49" invokingPartialPatterns="//@patterns.46 //@patterns.49">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV2" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.50" invokingPartialPatterns="//@patterns.46 //@patterns.50">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="group" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.51" invokingPartialPatterns="//@patterns.46 //@patterns.51">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2g1" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.52" invokingPartialPatterns="//@patterns.46 //@patterns.52">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2g2" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.53" invokingPartialPatterns="//@patterns.46 //@patterns.53">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.54" invokingPartialPatterns="//@patterns.46 //@patterns.54">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv2" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.55" invokingPartialPatterns="//@patterns.46 //@patterns.55">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="Voter2Group_eMoflon_ProtocolNode" abstractPatterns="//@patterns.7 //@patterns.46 //@patterns.56" invokingPartialPatterns="//@patterns.46 //@patterns.56">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV" abstractPatterns="//@patterns.8 //@patterns.57 //@patterns.58" invokingPartialPatterns="//@patterns.57 //@patterns.58">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV2" abstractPatterns="//@patterns.8 //@patterns.57 //@patterns.59" invokingPartialPatterns="//@patterns.57 //@patterns.59">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="group" abstractPatterns="//@patterns.8 //@patterns.57 //@patterns.60" invokingPartialPatterns="//@patterns.57 //@patterns.60">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.8 //@patterns.57 //@patterns.61" invokingPartialPatterns="//@patterns.57 //@patterns.61">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.8 //@patterns.57 //@patterns.62" invokingPartialPatterns="//@patterns.57 //@patterns.62">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2g1" abstractPatterns="//@patterns.8 //@patterns.57 //@patterns.63" invokingPartialPatterns="//@patterns.57 //@patterns.63">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv" abstractPatterns="//@patterns.8 //@patterns.57 //@patterns.64" invokingPartialPatterns="//@patterns.57 //@patterns.64">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv2" abstractPatterns="//@patterns.8 //@patterns.57 //@patterns.65" invokingPartialPatterns="//@patterns.57 //@patterns.65">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV" abstractPatterns="//@patterns.9 //@patterns.66 //@patterns.67" invokingPartialPatterns="//@patterns.66 //@patterns.67">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV2" abstractPatterns="//@patterns.9 //@patterns.66 //@patterns.68" invokingPartialPatterns="//@patterns.66 //@patterns.68">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.9 //@patterns.66 //@patterns.69" invokingPartialPatterns="//@patterns.66 //@patterns.69">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.9 //@patterns.66 //@patterns.70" invokingPartialPatterns="//@patterns.66 //@patterns.70">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv" abstractPatterns="//@patterns.9 //@patterns.66 //@patterns.71" invokingPartialPatterns="//@patterns.66 //@patterns.71">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv2" abstractPatterns="//@patterns.9 //@patterns.66 //@patterns.72" invokingPartialPatterns="//@patterns.66 //@patterns.72">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="group" abstractPatterns="//@patterns.9 //@patterns.66 //@patterns.73" invokingPartialPatterns="//@patterns.66 //@patterns.73">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.75" invokingPartialPatterns="//@patterns.74 //@patterns.75">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.76" invokingPartialPatterns="//@patterns.74 //@patterns.76">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.77" invokingPartialPatterns="//@patterns.74 //@patterns.77">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV2" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.78" invokingPartialPatterns="//@patterns.74 //@patterns.78">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="group" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.79" invokingPartialPatterns="//@patterns.74 //@patterns.79">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2g1" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.80" invokingPartialPatterns="//@patterns.74 //@patterns.80">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2g2" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.81" invokingPartialPatterns="//@patterns.74 //@patterns.81">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.82" invokingPartialPatterns="//@patterns.74 //@patterns.82">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv2" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.83" invokingPartialPatterns="//@patterns.74 //@patterns.83">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="VoterRelation2VoterGroupRelation_eMoflon_ProtocolNode" abstractPatterns="//@patterns.10 //@patterns.74 //@patterns.84" invokingPartialPatterns="//@patterns.74 //@patterns.84">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV" abstractPatterns="//@patterns.11 //@patterns.85 //@patterns.86" invokingPartialPatterns="//@patterns.85 //@patterns.86">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="gV2" abstractPatterns="//@patterns.11 //@patterns.85 //@patterns.87" invokingPartialPatterns="//@patterns.85 //@patterns.87">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.11 //@patterns.85 //@patterns.88" invokingPartialPatterns="//@patterns.85 //@patterns.88">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.11 //@patterns.85 //@patterns.89" invokingPartialPatterns="//@patterns.85 //@patterns.89">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv" abstractPatterns="//@patterns.11 //@patterns.85 //@patterns.90" invokingPartialPatterns="//@patterns.85 //@patterns.90">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2gv2" abstractPatterns="//@patterns.11 //@patterns.85 //@patterns.91" invokingPartialPatterns="//@patterns.85 //@patterns.91">
+    <type xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+  </nodes>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_source" source="//@nodes.3" target="//@nodes.1" abstractPatterns="//@patterns.1 //@patterns.13">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_target" source="//@nodes.3" target="//@nodes.2" abstractPatterns="//@patterns.1 //@patterns.13">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer__Marker_CREATE__SRC__c" source="//@nodes.4" target="//@nodes.1" abstractPatterns="//@patterns.1 //@patterns.13">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__SRC__c"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer__Marker_CREATE__TRG__gvc" source="//@nodes.4" target="//@nodes.2" abstractPatterns="//@patterns.1 //@patterns.13">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__TRG__gvc"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer__Marker_CREATE__CORR__c2gvc" source="//@nodes.4" target="//@nodes.3" abstractPatterns="//@patterns.1 //@patterns.13">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer__Marker/CREATE__CORR__c2gvc"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_source" source="//@nodes.7" target="//@nodes.6" abstractPatterns="//@patterns.3 //@patterns.19">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_target" source="//@nodes.7" target="//@nodes.8" abstractPatterns="//@patterns.3 //@patterns.19">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="GroupVotersContainer_voter" source="//@nodes.8" target="//@nodes.9" abstractPatterns="//@patterns.3 //@patterns.19">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer/voter"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_source" source="//@nodes.14" target="//@nodes.10" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_target" source="//@nodes.14" target="//@nodes.13" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.15" target="//@nodes.11" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.15" target="//@nodes.12" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container_voters" source="//@nodes.10" target="//@nodes.11" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter/model/Voter.ecore#//Container/voters"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="GroupVotersContainer_voter" source="//@nodes.13" target="//@nodes.12" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//GroupVotersContainer/voter"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter__Marker_CONTEXT__SRC__c" source="//@nodes.16" target="//@nodes.10" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CONTEXT__SRC__c"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter__Marker_CONTEXT__TRG__gvc" source="//@nodes.16" target="//@nodes.13" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CONTEXT__TRG__gvc"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter__Marker_CREATE__SRC__v" source="//@nodes.16" target="//@nodes.11" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CREATE__SRC__v"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter__Marker_CREATE__TRG__gV" source="//@nodes.16" target="//@nodes.12" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CREATE__TRG__gV"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter__Marker_CONTEXT__CORR__c2gvc" source="//@nodes.16" target="//@nodes.14" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CONTEXT__CORR__c2gvc"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter__Marker_CREATE__CORR__v2gv" source="//@nodes.16" target="//@nodes.15" abstractPatterns="//@patterns.4 //@patterns.24">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter__Marker/CREATE__CORR__v2gv"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_source" source="//@nodes.18" target="//@nodes.17" abstractPatterns="//@patterns.5 //@patterns.32">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container2GroupVotersContainer_target" source="//@nodes.18" target="//@nodes.19" abstractPatterns="//@patterns.5 //@patterns.32">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Container_voters" source="//@nodes.17" target="//@nodes.20" abstractPatterns="//@patterns.5 //@patterns.32">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter/model/Voter.ecore#//Container/voters"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.21" target="//@nodes.23" abstractPatterns="//@patterns.6 //@patterns.37">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_source" source="//@nodes.26" target="//@nodes.24" abstractPatterns="//@patterns.6 //@patterns.37">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_target" source="//@nodes.26" target="//@nodes.23" abstractPatterns="//@patterns.6 //@patterns.37">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.28" target="//@nodes.25" abstractPatterns="//@patterns.6 //@patterns.37">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.28" target="//@nodes.22" abstractPatterns="//@patterns.6 //@patterns.37">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.27" target="//@nodes.24" abstractPatterns="//@patterns.6 //@patterns.37">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.27" target="//@nodes.21" abstractPatterns="//@patterns.6 //@patterns.37">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.22" target="//@nodes.23" abstractPatterns="//@patterns.6 //@patterns.37">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_source" source="//@nodes.34" target="//@nodes.29" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_target" source="//@nodes.34" target="//@nodes.33" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_source" source="//@nodes.35" target="//@nodes.30" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_target" source="//@nodes.35" target="//@nodes.33" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.36" target="//@nodes.29" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.36" target="//@nodes.31" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.37" target="//@nodes.30" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.37" target="//@nodes.32" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_link" source="//@nodes.29" target="//@nodes.30" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.31" target="//@nodes.33" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.32" target="//@nodes.33" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CONTEXT__SRC__v" source="//@nodes.38" target="//@nodes.29" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__SRC__v"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CONTEXT__SRC__v2" source="//@nodes.38" target="//@nodes.30" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__SRC__v2"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CONTEXT__TRG__gV" source="//@nodes.38" target="//@nodes.31" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__TRG__gV"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CONTEXT__TRG__gV2" source="//@nodes.38" target="//@nodes.32" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__TRG__gV2"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CONTEXT__TRG__group" source="//@nodes.38" target="//@nodes.33" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__TRG__group"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CONTEXT__CORR__v2g1" source="//@nodes.38" target="//@nodes.34" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__CORR__v2g1"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CONTEXT__CORR__v2gv" source="//@nodes.38" target="//@nodes.36" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__CORR__v2gv"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CONTEXT__CORR__v2gv2" source="//@nodes.38" target="//@nodes.37" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CONTEXT__CORR__v2gv2"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group__Marker_CREATE__CORR__v2g2" source="//@nodes.38" target="//@nodes.35" abstractPatterns="//@patterns.7 //@patterns.46">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group__Marker/CREATE__CORR__v2g2"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.39" target="//@nodes.41" abstractPatterns="//@patterns.8 //@patterns.57">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_source" source="//@nodes.44" target="//@nodes.42" abstractPatterns="//@patterns.8 //@patterns.57">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_target" source="//@nodes.44" target="//@nodes.41" abstractPatterns="//@patterns.8 //@patterns.57">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.46" target="//@nodes.43" abstractPatterns="//@patterns.8 //@patterns.57">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.46" target="//@nodes.40" abstractPatterns="//@patterns.8 //@patterns.57">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.45" target="//@nodes.42" abstractPatterns="//@patterns.8 //@patterns.57">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.45" target="//@nodes.39" abstractPatterns="//@patterns.8 //@patterns.57">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_link" source="//@nodes.42" target="//@nodes.43" abstractPatterns="//@patterns.8 //@patterns.57">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.52" target="//@nodes.50" abstractPatterns="//@patterns.9 //@patterns.66">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.52" target="//@nodes.48" abstractPatterns="//@patterns.9 //@patterns.66">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.51" target="//@nodes.49" abstractPatterns="//@patterns.9 //@patterns.66">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.51" target="//@nodes.47" abstractPatterns="//@patterns.9 //@patterns.66">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.48" target="//@nodes.53" abstractPatterns="//@patterns.9 //@patterns.66">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.47" target="//@nodes.53" abstractPatterns="//@patterns.9 //@patterns.66">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_source" source="//@nodes.59" target="//@nodes.54" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_target" source="//@nodes.59" target="//@nodes.58" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_source" source="//@nodes.60" target="//@nodes.55" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2Group_target" source="//@nodes.60" target="//@nodes.58" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2Group/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.61" target="//@nodes.54" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.61" target="//@nodes.56" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.62" target="//@nodes.55" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.62" target="//@nodes.57" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_link" source="//@nodes.54" target="//@nodes.55" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.56" target="//@nodes.58" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_member" source="//@nodes.57" target="//@nodes.58" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/member"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v" source="//@nodes.63" target="//@nodes.54" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__SRC__v"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2" source="//@nodes.63" target="//@nodes.55" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__SRC__v2"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV" source="//@nodes.63" target="//@nodes.56" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__TRG__gV"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2" source="//@nodes.63" target="//@nodes.57" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__TRG__gV2"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CREATE__TRG__group" source="//@nodes.63" target="//@nodes.58" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CREATE__TRG__group"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv" source="//@nodes.63" target="//@nodes.61" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__CORR__v2gv"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2" source="//@nodes.63" target="//@nodes.62" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CONTEXT__CORR__v2gv2"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1" source="//@nodes.63" target="//@nodes.59" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CREATE__CORR__v2g1"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2" source="//@nodes.63" target="//@nodes.60" abstractPatterns="//@patterns.10 //@patterns.74">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//VoterRelation2VoterGroupRelation__Marker/CREATE__CORR__v2g2"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.69" target="//@nodes.67" abstractPatterns="//@patterns.11 //@patterns.85">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.69" target="//@nodes.65" abstractPatterns="//@patterns.11 //@patterns.85">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_source" source="//@nodes.68" target="//@nodes.66" abstractPatterns="//@patterns.11 //@patterns.85">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/source"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter2GroupVoter_target" source="//@nodes.68" target="//@nodes.64" abstractPatterns="//@patterns.11 //@patterns.85">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter/target"/>
+  </edges>
+  <edges xmi:type="HiPEPattern:HiPEEdge" name="Voter1_link" source="//@nodes.66" target="//@nodes.67" abstractPatterns="//@patterns.11 //@patterns.85">
+    <type xmi:type="ecore:EReference" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/link"/>
+  </edges>
+</HiPEPattern:HiPEContainer>

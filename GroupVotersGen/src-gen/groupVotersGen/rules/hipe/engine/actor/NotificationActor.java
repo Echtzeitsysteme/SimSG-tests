@@ -25,11 +25,11 @@ public class NotificationActor extends GenericNotificationActor {
 			children.addAll(_groupvoterscontainer.getGroup());
 			return children;
 		});
-		explorationConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroup(), obj -> {
+		explorationConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1(), obj -> {
 			Collection<EObject> children = new LinkedList<>();
 			return children;
 		});
-		explorationConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1(), obj -> {
+		explorationConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroup(), obj -> {
 			Collection<EObject> children = new LinkedList<>();
 			return children;
 		});

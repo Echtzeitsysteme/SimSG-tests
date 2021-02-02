@@ -1,6 +1,7 @@
 package voterSim.rules.hipe.engine;
 
-import org.eclipse.emf.common.notify.Notification;
+import java.io.File;
+import java.io.IOException;
 
 import java.text.DecimalFormat;
 import java.lang.Thread;
@@ -22,12 +23,14 @@ import static akka.pattern.Patterns.ask;
 
 import voterSim.rules.hipe.engine.actor.NotificationActor;
 import voterSim.rules.hipe.engine.actor.DispatchActor;
-import voterSim.rules.hipe.engine.actor.junction.newVoterFalse_3_junction;
-import voterSim.rules.hipe.engine.actor.junction.newVoterFalse_1_junction;
-import voterSim.rules.hipe.engine.actor.junction.newVoterTrue_8_junction;
-import voterSim.rules.hipe.engine.actor.junction.newVoterTrue_6_junction;
 import voterSim.rules.hipe.engine.actor.node.Voter1_object_SP0;
 import voterSim.rules.hipe.engine.actor.node.Voter1_object_SP1;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 
 import hipe.engine.IHiPEEngine;
 import hipe.engine.message.InitActor;
@@ -78,6 +81,35 @@ public class HiPEEngine implements IHiPEEngine{
 		this.network = network;
 	}
 	
+	public HiPEEngine() {
+		thread = Thread.currentThread();
+		incUtil.registerWakeUpCall(this::wakeUp);
+		
+		loadNetwork();
+	}
+	
+	public void loadNetwork() {
+		ResourceSet rs = new ResourceSetImpl();
+		String cp = "";
+		File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath().toString() + getClass().getPackageName().replace(".", "/") + "/" + "hipe-network.xmi");
+				try {
+					 cp = file.getCanonicalPath();
+					 cp = cp.replace("%20", " ");
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+		URI uri = URI.createFileURI(cp);
+		Resource r = rs.createResource(uri);
+
+		try {
+			r.load(null);
+			network = (HiPENetwork) r.getContents().get(0);
+		} catch(Exception e) {
+			throw new RuntimeException("Network file could not be loaded via " + uri);	
+		}
+	}
+	
 	public boolean wakeUp() {
 		thread.interrupt();
 		return true;
@@ -111,10 +143,18 @@ public class HiPEEngine implements IHiPEEngine{
 		}
 	
 	public void createProductionNodes() {
-		classes.put("newVoterFalse_production", GenericProductionActor.class);
-		productionNodes2pattern.put("newVoterFalse_production", "newVoterFalse");
-		classes.put("newVoterTrue_production", GenericProductionActor.class);
-		productionNodes2pattern.put("newVoterTrue_production", "newVoterTrue");
+		classes.put("newVoterFalse_0_production", GenericProductionActor.class);
+		productionNodes2pattern.put("newVoterFalse_0_production", "newVoterFalse_0");
+		classes.put("newVoterFalse_1_production", GenericProductionActor.class);
+		productionNodes2pattern.put("newVoterFalse_1_production", "newVoterFalse_1");
+		classes.put("newVoterFalse_2_production", GenericProductionActor.class);
+		productionNodes2pattern.put("newVoterFalse_2_production", "newVoterFalse_2");
+		classes.put("newVoterTrue_0_production", GenericProductionActor.class);
+		productionNodes2pattern.put("newVoterTrue_0_production", "newVoterTrue_0");
+		classes.put("newVoterTrue_1_production", GenericProductionActor.class);
+		productionNodes2pattern.put("newVoterTrue_1_production", "newVoterTrue_1");
+		classes.put("newVoterTrue_2_production", GenericProductionActor.class);
+		productionNodes2pattern.put("newVoterTrue_2_production", "newVoterTrue_2");
 		classes.put("voteFalse_production", GenericProductionActor.class);
 		productionNodes2pattern.put("voteFalse_production", "voteFalse");
 		classes.put("voteTrue_production", GenericProductionActor.class);
@@ -123,10 +163,6 @@ public class HiPEEngine implements IHiPEEngine{
 	}
 	
 	public void createJunctionNodes() {
-		classes.put("newVoterFalse_3_junction", newVoterFalse_3_junction.class);
-		classes.put("newVoterFalse_1_junction", newVoterFalse_1_junction.class);
-		classes.put("newVoterTrue_8_junction", newVoterTrue_8_junction.class);
-		classes.put("newVoterTrue_6_junction", newVoterTrue_6_junction.class);
 	}
 	
 	public void createReferenceNodes() {

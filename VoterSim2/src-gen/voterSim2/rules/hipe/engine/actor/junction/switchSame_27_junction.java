@@ -28,7 +28,7 @@ import hipe.generic.actor.junction.GenericJunctionActor;
 import hipe.network.JunctionNode;
 
 public class switchSame_27_junction extends GenericJunctionActor{
-	private Map<Object, Collection<HMatch>> voter1AttrMap = HiPEMultiUtil.createMap();
+	private Map<Object, Collection<HMatch>> voter1_1_AttrMap = HiPEMultiUtil.createMap();
 	
 	@Override
 	protected void initializePorts(Map<String, ActorRef> name2actor, JunctionNode node) {
@@ -41,26 +41,26 @@ public class switchSame_27_junction extends GenericJunctionActor{
 	@Override
 	protected void registerMatchForAttributeChanges(HMatch match) {
 		Object[] matchObjects = match.getNodes();
-		Collection<HMatch> voter1_0_Matches = voter1AttrMap.get(matchObjects[0]);
+		Collection<HMatch> voter1_0_Matches = voter1_1_AttrMap.get(matchObjects[0]);
 		if(voter1_0_Matches == null) {
 			voter1_0_Matches = new LinkedList<>();
-			voter1AttrMap.put(matchObjects[0], voter1_0_Matches);
+			voter1_1_AttrMap.put(matchObjects[0], voter1_0_Matches);
 		}
 		
 		voter1_0_Matches.add(match);
 		
-		Collection<HMatch> voter1_1_Matches = voter1AttrMap.get(matchObjects[1]);
+		Collection<HMatch> voter1_1_Matches = voter1_1_AttrMap.get(matchObjects[1]);
 		if(voter1_1_Matches == null) {
 			voter1_1_Matches = new LinkedList<>();
-			voter1AttrMap.put(matchObjects[1], voter1_1_Matches);
+			voter1_1_AttrMap.put(matchObjects[1], voter1_1_Matches);
 		}
 		
 		voter1_1_Matches.add(match);
 		
-		Collection<HMatch> voter1_2_Matches = voter1AttrMap.get(matchObjects[2]);
+		Collection<HMatch> voter1_2_Matches = voter1_1_AttrMap.get(matchObjects[2]);
 		if(voter1_2_Matches == null) {
 			voter1_2_Matches = new LinkedList<>();
-			voter1AttrMap.put(matchObjects[2], voter1_2_Matches);
+			voter1_1_AttrMap.put(matchObjects[2], voter1_2_Matches);
 		}
 		
 		voter1_2_Matches.add(match);
@@ -70,15 +70,15 @@ public class switchSame_27_junction extends GenericJunctionActor{
 	@Override
 	protected void deregisterMatchForAttributeChanges(Set<HMatch> matches, HMatch match) {
 		Object[] matchObjects = match.getNodes();
-		Collection<HMatch> matches_0 = voter1AttrMap.get(matchObjects[0]);
+		Collection<HMatch> matches_0 = voter1_1_AttrMap.get(matchObjects[0]);
 		if(matches_0 != null) {
 			matches.remove(match);
 		}
-		Collection<HMatch> matches_1 = voter1AttrMap.get(matchObjects[1]);
+		Collection<HMatch> matches_1 = voter1_1_AttrMap.get(matchObjects[1]);
 		if(matches_1 != null) {
 			matches.remove(match);
 		}
-		Collection<HMatch> matches_2 = voter1AttrMap.get(matchObjects[2]);
+		Collection<HMatch> matches_2 = voter1_1_AttrMap.get(matchObjects[2]);
 		if(matches_2 != null) {
 			matches.remove(match);
 		}
@@ -92,8 +92,8 @@ public class switchSame_27_junction extends GenericJunctionActor{
 		}
 		Object obj = message.node;
 		if(obj instanceof Voter.Voter1) {
-			if(voter1AttrMap.containsKey(obj)) {
-				for(HMatch attr_match : voter1AttrMap.get(obj)) {
+			if(voter1_1_AttrMap.containsKey(obj)) {
+				for(HMatch attr_match : voter1_1_AttrMap.get(obj)) {
 					for(int i=0; i<ports.size(); i++) {
 						Port<HMatch> port = ports.get(i);
 						HMatch match = attr_match;

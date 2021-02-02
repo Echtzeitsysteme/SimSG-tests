@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="ASCII"?>
 <IBeXPatternModel:IBeXModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore">
   <patternSet>
-    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterFalse" documentation="" signatureNodes="//@nodeSet/@nodes.4 //@nodeSet/@nodes.6 //@nodeSet/@nodes.8">
-      <injectivityConstraints values="//@nodeSet/@nodes.4 //@nodeSet/@nodes.6"/>
-      <injectivityConstraints values="//@nodeSet/@nodes.4 //@nodeSet/@nodes.8"/>
-      <injectivityConstraints values="//@nodeSet/@nodes.6 //@nodeSet/@nodes.8"/>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXDisjointContextPattern" name="newVoterFalse" subpatterns="//@patternSet/@contextPatterns.1 //@patternSet/@contextPatterns.2 //@patternSet/@contextPatterns.3">
+      <injectivityConstraints patterns="//@patternSet/@contextPatterns.1 //@patternSet/@contextPatterns.2 //@patternSet/@contextPatterns.3">
+        <injectivityConstraints pattern1="//@patternSet/@contextPatterns.1" pattern2="//@patternSet/@contextPatterns.2" node1="//@nodeSet/@nodes.8" node2="//@nodeSet/@nodes.6"/>
+        <injectivityConstraints pattern1="//@patternSet/@contextPatterns.1" pattern2="//@patternSet/@contextPatterns.3" node1="//@nodeSet/@nodes.8" node2="//@nodeSet/@nodes.4"/>
+        <injectivityConstraints pattern1="//@patternSet/@contextPatterns.2" pattern2="//@patternSet/@contextPatterns.3" node1="//@nodeSet/@nodes.6" node2="//@nodeSet/@nodes.4"/>
+      </injectivityConstraints>
+      <nonOptimizedPattern name="newVoterFalse" documentation="" signatureNodes="//@nodeSet/@nodes.4 //@nodeSet/@nodes.6 //@nodeSet/@nodes.8" optimizedDisjoint="true">
+        <injectivityConstraints values="//@nodeSet/@nodes.4 //@nodeSet/@nodes.6"/>
+        <injectivityConstraints values="//@nodeSet/@nodes.4 //@nodeSet/@nodes.8"/>
+        <injectivityConstraints values="//@nodeSet/@nodes.6 //@nodeSet/@nodes.8"/>
+      </nonOptimizedPattern>
     </contextPatterns>
-    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterTrue" documentation="" signatureNodes="//@nodeSet/@nodes.5 //@nodeSet/@nodes.7 //@nodeSet/@nodes.9">
-      <injectivityConstraints values="//@nodeSet/@nodes.5 //@nodeSet/@nodes.7"/>
-      <injectivityConstraints values="//@nodeSet/@nodes.5 //@nodeSet/@nodes.9"/>
-      <injectivityConstraints values="//@nodeSet/@nodes.7 //@nodeSet/@nodes.9"/>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterFalse_0" signatureNodes="//@nodeSet/@nodes.8" subpattern="true"/>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterFalse_1" signatureNodes="//@nodeSet/@nodes.6" subpattern="true"/>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterFalse_2" signatureNodes="//@nodeSet/@nodes.4" subpattern="true"/>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXDisjointContextPattern" name="newVoterTrue" subpatterns="//@patternSet/@contextPatterns.5 //@patternSet/@contextPatterns.6 //@patternSet/@contextPatterns.7">
+      <injectivityConstraints patterns="//@patternSet/@contextPatterns.5 //@patternSet/@contextPatterns.6 //@patternSet/@contextPatterns.7">
+        <injectivityConstraints pattern1="//@patternSet/@contextPatterns.5" pattern2="//@patternSet/@contextPatterns.6" node1="//@nodeSet/@nodes.5" node2="//@nodeSet/@nodes.9"/>
+        <injectivityConstraints pattern1="//@patternSet/@contextPatterns.5" pattern2="//@patternSet/@contextPatterns.7" node1="//@nodeSet/@nodes.5" node2="//@nodeSet/@nodes.7"/>
+        <injectivityConstraints pattern1="//@patternSet/@contextPatterns.6" pattern2="//@patternSet/@contextPatterns.7" node1="//@nodeSet/@nodes.9" node2="//@nodeSet/@nodes.7"/>
+      </injectivityConstraints>
+      <nonOptimizedPattern name="newVoterTrue" documentation="" signatureNodes="//@nodeSet/@nodes.5 //@nodeSet/@nodes.7 //@nodeSet/@nodes.9" optimizedDisjoint="true">
+        <injectivityConstraints values="//@nodeSet/@nodes.5 //@nodeSet/@nodes.7"/>
+        <injectivityConstraints values="//@nodeSet/@nodes.5 //@nodeSet/@nodes.9"/>
+        <injectivityConstraints values="//@nodeSet/@nodes.7 //@nodeSet/@nodes.9"/>
+      </nonOptimizedPattern>
     </contextPatterns>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterTrue_0" signatureNodes="//@nodeSet/@nodes.5" subpattern="true"/>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterTrue_1" signatureNodes="//@nodeSet/@nodes.9" subpattern="true"/>
+    <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="newVoterTrue_2" signatureNodes="//@nodeSet/@nodes.7" subpattern="true"/>
     <contextPatterns xsi:type="IBeXPatternModel:IBeXContextPattern" name="voteFalse" documentation="" signatureNodes="//@nodeSet/@nodes.1">
       <attributeConstraint relation="EQUAL">
         <lhs xsi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.1">
@@ -29,7 +49,7 @@
     </contextPatterns>
   </patternSet>
   <ruleSet>
-    <rules name="newVoterFalse" documentation="" lhs="//@patternSet/@contextPatterns.0">
+    <rules name="newVoterFalse" documentation="" lhs="//@patternSet/@contextPatterns.0/@nonOptimizedPattern">
       <rhs name="newVoterFalse_rhs" localEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.2 //@edgeSet/@edges.4 //@edgeSet/@edges.6 //@edgeSet/@edges.8 //@edgeSet/@edges.10" signatureNodes="//@nodeSet/@nodes.4 //@nodeSet/@nodes.6 //@nodeSet/@nodes.8 //@nodeSet/@nodes.0"/>
       <create name="newVoterFalse" createdEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.2 //@edgeSet/@edges.4 //@edgeSet/@edges.6 //@edgeSet/@edges.8 //@edgeSet/@edges.10" createdNodes="//@nodeSet/@nodes.0">
         <attributeAssignments node="//@nodeSet/@nodes.0">
@@ -45,7 +65,7 @@
         </distribution>
       </probability>
     </rules>
-    <rules name="newVoterTrue" documentation="" lhs="//@patternSet/@contextPatterns.1">
+    <rules name="newVoterTrue" documentation="" lhs="//@patternSet/@contextPatterns.4/@nonOptimizedPattern">
       <rhs name="newVoterTrue_rhs" localEdges="//@edgeSet/@edges.1 //@edgeSet/@edges.3 //@edgeSet/@edges.5 //@edgeSet/@edges.7 //@edgeSet/@edges.9 //@edgeSet/@edges.11" signatureNodes="//@nodeSet/@nodes.5 //@nodeSet/@nodes.7 //@nodeSet/@nodes.9 //@nodeSet/@nodes.2"/>
       <create name="newVoterTrue" createdEdges="//@edgeSet/@edges.1 //@edgeSet/@edges.3 //@edgeSet/@edges.5 //@edgeSet/@edges.7 //@edgeSet/@edges.9 //@edgeSet/@edges.11" createdNodes="//@nodeSet/@nodes.2">
         <attributeAssignments node="//@nodeSet/@nodes.2">

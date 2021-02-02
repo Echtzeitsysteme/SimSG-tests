@@ -10,7 +10,7 @@ pattern voteFalse() {
 	# v.vote == false
 }
 
-
+@optimize
 rule newVoterTrue(){
 	++ v: Voter1 {
 		++ -link-> v0
@@ -28,7 +28,7 @@ rule newVoterTrue(){
 		++ -link-> v
 	}
 }@0.1
-
+@optimize
 rule newVoterFalse(){
 	++ v: Voter1 {
 		++ -link-> v0

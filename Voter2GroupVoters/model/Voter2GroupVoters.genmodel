@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="Voter2GroupVoters/gen/" modelPluginID="Voter2GroupVoters"
     modelName="Voter2GroupVoters" generateSchema="true" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
-    usedGenPackages="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.genmodel#//runtime ../../Voter/model/Voter.genmodel#//Voter ../../GroupVoters/model/GroupVoters.genmodel#//GroupVoters"
+    usedGenPackages="../../GroupVoters/model/GroupVoters.genmodel#//GroupVoters platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.genmodel#//runtime ../../Voter/model/Voter.genmodel#//Voter"
     operationReflection="true" importOrganizing="true">
   <foreignModel>Voter2GroupVoters.ecore</foreignModel>
   <genPackages prefix="Voter2GroupVoters" disposableProviderFactory="true" ecorePackage="Voter2GroupVoters.ecore#/">

@@ -1,6 +1,7 @@
 package groupVotersSim.rules.hipe.engine;
 
-import org.eclipse.emf.common.notify.Notification;
+import java.io.File;
+import java.io.IOException;
 
 import java.text.DecimalFormat;
 import java.lang.Thread;
@@ -29,6 +30,12 @@ import groupVotersSim.rules.hipe.engine.actor.junction.switchSame_39_junction;
 import groupVotersSim.rules.hipe.engine.actor.junction.switchSame_37_junction;
 import groupVotersSim.rules.hipe.engine.actor.node.Voter1_object_SP0;
 import groupVotersSim.rules.hipe.engine.actor.node.Voter1_object_SP1;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 
 import hipe.engine.IHiPEEngine;
 import hipe.engine.message.InitActor;
@@ -77,6 +84,35 @@ public class HiPEEngine implements IHiPEEngine{
 		incUtil.registerWakeUpCall(this::wakeUp);
 		
 		this.network = network;
+	}
+	
+	public HiPEEngine() {
+		thread = Thread.currentThread();
+		incUtil.registerWakeUpCall(this::wakeUp);
+		
+		loadNetwork();
+	}
+	
+	public void loadNetwork() {
+		ResourceSet rs = new ResourceSetImpl();
+		String cp = "";
+		File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath().toString() + getClass().getPackageName().replace(".", "/") + "/" + "hipe-network.xmi");
+				try {
+					 cp = file.getCanonicalPath();
+					 cp = cp.replace("%20", " ");
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+		URI uri = URI.createFileURI(cp);
+		Resource r = rs.createResource(uri);
+
+		try {
+			r.load(null);
+			network = (HiPENetwork) r.getContents().get(0);
+		} catch(Exception e) {
+			throw new RuntimeException("Network file could not be loaded via " + uri);	
+		}
 	}
 	
 	public boolean wakeUp() {

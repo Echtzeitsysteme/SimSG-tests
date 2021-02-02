@@ -16,7 +16,7 @@ import voterSim.rules.api.rules.VoteFalsePattern;
 import voterSim.rules.api.rules.VoteTruePattern;
 
 /**
- * The RulesAPI with 2 rules and 4 patterns.
+ * The RulesAPI with 2 rules and 10 patterns.
  */
 public class RulesAPI extends GraphTransformationAPI {
 	
