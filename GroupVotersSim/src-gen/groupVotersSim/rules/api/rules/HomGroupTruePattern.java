@@ -14,7 +14,7 @@ import org.emoflon.ibex.gt.api.GraphTransformationPattern;
 import org.emoflon.ibex.gt.engine.GraphTransformationInterpreter;
 
 /**
- * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@363b885f (name: g)] which does the following:
+ * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@215dc81 (name: g)] which does the following:
  * If this pattern is not self-explaining, you really should add some comment in the specification.
  */
 @SuppressWarnings("unused")

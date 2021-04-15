@@ -56,12 +56,12 @@
   <networknode xmi:type="hipe.network:ReferenceNode" name="Voter1_link_2_reference" inputPort="//@networknode.23/@ports/@port.1 //@networknode.24/@ports/@port.1">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portTarget="//@networknode.8" patternName="agreeTrue_7" initializationCode="" constraintName="check_constraint_7" predicateCode="!v1.equals(v2) &amp;&amp; v1.isVote()==v2.isVote()">
-        <indices>0</indices>
         <indices>1</indices>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v1</nodeNames>
         <nodeNames>v2</nodeNames>
+        <nodeNames>v1</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.14"/>
       </port>
@@ -71,12 +71,12 @@
   <networknode xmi:type="hipe.network:ReferenceNode" name="Voter1_link_3_reference" inputPort="//@networknode.25/@ports/@port.1 //@networknode.26/@ports/@port.1">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.8" patternName="agreeTrue_8" initializationCode="" constraintName="check_constraint_8" predicateCode="!v1.equals(v2) &amp;&amp; v1.isVote()==v2.isVote()">
-        <indices>1</indices>
         <indices>0</indices>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v1</nodeNames>
         <nodeNames>v2</nodeNames>
+        <nodeNames>v1</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.15"/>
       </port>
@@ -105,80 +105,80 @@
   <networknode xmi:type="hipe.network:ReferenceNode" name="Voter1_link_4_reference" inputPort="//@networknode.23/@ports/@port.2 //@networknode.24/@ports/@port.2">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portTarget="//@networknode.11" patternName="connectedV1V3_12" initializationCode="" constraintName="check_constraint_9" predicateCode="!v1.equals(v3)">
-        <indices>0</indices>
         <indices>1</indices>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v1</nodeNames>
         <nodeNames>v3</nodeNames>
+        <nodeNames>v1</nodeNames>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.19"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.11" patternName="connectedV1V3_13" initializationCode="" constraintName="check_constraint_10" predicateCode="!v1.equals(v3)">
-        <indices>1</indices>
         <indices>0</indices>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v1</nodeNames>
         <nodeNames>v3</nodeNames>
+        <nodeNames>v1</nodeNames>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.20"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portTarget="//@networknode.13" patternName="convert_17" initializationCode="" constraintName="check_constraint_11" predicateCode="!v1.equals(v2) &amp;&amp; v1.isVote()!=v2.isVote()">
-        <indices>0</indices>
         <indices>1</indices>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v1</nodeNames>
         <nodeNames>v2</nodeNames>
+        <nodeNames>v1</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.24"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.13" patternName="convert_18" initializationCode="" constraintName="check_constraint_12" predicateCode="!v1.equals(v2) &amp;&amp; v1.isVote()!=v2.isVote()">
-        <indices>1</indices>
         <indices>0</indices>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v1</nodeNames>
         <nodeNames>v2</nodeNames>
+        <nodeNames>v1</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.25"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portTarget="//@networknode.15" patternName="disagree_22" initializationCode="" constraintName="check_constraint_13" predicateCode="!v1.equals(v2) &amp;&amp; v1.isVote()!=v2.isVote()">
-        <indices>0</indices>
         <indices>1</indices>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v1</nodeNames>
         <nodeNames>v2</nodeNames>
+        <nodeNames>v1</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.29"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.15" patternName="disagree_23" initializationCode="" constraintName="check_constraint_14" predicateCode="!v1.equals(v2) &amp;&amp; v1.isVote()!=v2.isVote()">
-        <indices>1</indices>
         <indices>0</indices>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v1</nodeNames>
         <nodeNames>v2</nodeNames>
+        <nodeNames>v1</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.30"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portTarget="//@networknode.17" patternName="switchSame_30" initializationCode="" constraintName="check_constraint_15" predicateCode="!v1.equals(v2) &amp;&amp; v1.isVote()!=v2.isVote()">
-        <indices>1</indices>
         <indices>0</indices>
+        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v2</nodeNames>
         <nodeNames>v1</nodeNames>
+        <nodeNames>v2</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.37"/>
       </port>
       <port xmi:type="hipe.network:ConstraintPort" portSlot="RIGHT" portTarget="//@networknode.17" patternName="switchSame_31" initializationCode="" constraintName="check_constraint_16" predicateCode="!v1.equals(v2) &amp;&amp; v1.isVote()!=v2.isVote()">
-        <indices>0</indices>
         <indices>1</indices>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v2</nodeNames>
         <nodeNames>v1</nodeNames>
+        <nodeNames>v2</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.38"/>
       </port>
@@ -261,15 +261,15 @@
   <networknode xmi:type="hipe.network:JunctionNode" name="switchSame_27_junction" inputPort="//@networknode.25/@ports/@port.2 //@networknode.17/@ports/@port.0" patternName="switchSame_27" overlaps="//@networknode.18/@allOverlaps.0" mappings="//@networknode.18/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portTarget="//@networknode.19" patternName="switchSame_27" initializationCode="" constraintName="check_constraint_17" predicateCode="!v1.equals(v3) &amp;&amp; !v2.equals(v3) &amp;&amp; v1.isVote()==v3.isVote()">
+        <indices>1</indices>
         <indices>2</indices>
         <indices>0</indices>
-        <indices>1</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
+        <nodeNames>v1</nodeNames>
         <nodeNames>v2</nodeNames>
         <nodeNames>v3</nodeNames>
-        <nodeNames>v1</nodeNames>
         <attributes xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="hipe-patterns.xmi#//@patterns.34"/>
       </port>

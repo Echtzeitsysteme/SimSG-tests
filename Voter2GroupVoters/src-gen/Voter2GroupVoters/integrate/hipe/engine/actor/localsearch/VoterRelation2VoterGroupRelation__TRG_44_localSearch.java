@@ -59,11 +59,11 @@ public class VoterRelation2VoterGroupRelation__TRG_44_localSearch extends Generi
 		name2explorer.put("node_constraint", node_constraint);
 		EdgeLookupMethods edge_explorer_methods = new EdgeLookupMethods();
 						edge_explorer_methods.multi_lookup = (o) -> ((GroupVoters.Voter1) o).getMember();
-						edge_explorer = new CachedEdgeExplorer(this, 0, 2, edge_explorer_methods);
+						edge_explorer = new CachedEdgeExplorer(this, 1, 2, edge_explorer_methods);
 		name2explorer.put("edge_explorer", edge_explorer);
 		EdgeLookupMethods edge_explorer_3_methods = new EdgeLookupMethods();
 						edge_explorer_3_methods.multi_lookup = (o) -> ((GroupVoters.Voter1) o).getMember();
-						edge_explorer_3 = new CachedEdgeExplorer(this, 1, 2, edge_explorer_3_methods);
+						edge_explorer_3 = new CachedEdgeExplorer(this, 0, 2, edge_explorer_3_methods);
 		name2explorer.put("edge_explorer_3", edge_explorer_3);
 	}
 	
@@ -91,25 +91,29 @@ public class VoterRelation2VoterGroupRelation__TRG_44_localSearch extends Generi
 		Object[] objs = match.getNodes();
 		switch(msg.patternName) {
 			case "VoterRelation2VoterGroupRelation__TRG_45": 
-				edge_explorer.registerSourceObject(objs[0]);
-				
-				// gV
-				HMatch match_0 = new LocalSearchMatch(3);
-				match_0.getNodes()[0] = objs[0];
-				start(edge_explorer_1_orchestration, match_0);
-				edge_explorer_3.registerSourceObject(objs[0]);
-				
-				// gV2
-				HMatch match_1 = new LocalSearchMatch(3);
-				match_1.getNodes()[1] = objs[0];
-				start(edge_explorer_3_1_orchestration, match_1);
+				if(true) {
+					edge_explorer_3.registerSourceObject(objs[0]);
+					
+					// gV
+					HMatch match_0 = new LocalSearchMatch(3);
+					match_0.getNodes()[0] = objs[0];
+					start(edge_explorer_3_1_orchestration, match_0);
+					edge_explorer.registerSourceObject(objs[0]);
+					
+					// gV2
+					HMatch match_1 = new LocalSearchMatch(3);
+					match_1.getNodes()[1] = objs[0];
+					start(edge_explorer_1_orchestration, match_1);
+				}
 				break;
 			case "VoterRelation2VoterGroupRelation__TRG_47": 
-				
-				// group
-				HMatch match_2 = new LocalSearchMatch(3);
-				match_2.getNodes()[2] = objs[0];
-				start(edge_explorer_2_orchestration, match_2);
+				if(true) {
+					
+					// group
+					HMatch match_2 = new LocalSearchMatch(3);
+					match_2.getNodes()[2] = objs[0];
+					start(edge_explorer_2_orchestration, match_2);
+				}
 				break;
 			default: throw new RuntimeException("Detected unknown match from " + msg.patternName);
 		}
@@ -146,7 +150,7 @@ public class VoterRelation2VoterGroupRelation__TRG_44_localSearch extends Generi
 				edge_explorer.registerEdge(msg.source, msg.target);
 				HMatch match = new LocalSearchMatch(3);
 				Object[] objs = match.getNodes();
-				objs[0] = msg.source;
+				objs[1] = msg.source;
 				objs[2] = msg.target;
 				currentDepth++;
 				start(edge_explorer_0_orchestration, match);
@@ -157,7 +161,7 @@ public class VoterRelation2VoterGroupRelation__TRG_44_localSearch extends Generi
 				edge_explorer.registerEdge(msg.source, msg.target);
 				HMatch match = new LocalSearchMatch(3);
 				Object[] objs = match.getNodes();
-				objs[0] = msg.source;
+				objs[1] = msg.source;
 				objs[2] = msg.target;
 				currentDepth++;
 				start(edge_explorer_0_orchestration, match);
@@ -168,7 +172,7 @@ public class VoterRelation2VoterGroupRelation__TRG_44_localSearch extends Generi
 				edge_explorer.registerEdge(msg.source, msg.target);
 				HMatch match = new LocalSearchMatch(3);
 				Object[] objs = match.getNodes();
-				objs[0] = msg.source;
+				objs[1] = msg.source;
 				objs[2] = msg.target;
 				currentDepth++;
 				start(edge_explorer_0_orchestration, match);
@@ -179,7 +183,7 @@ public class VoterRelation2VoterGroupRelation__TRG_44_localSearch extends Generi
 				edge_explorer_3.registerEdge(msg.source, msg.target);
 				HMatch match = new LocalSearchMatch(3);
 				Object[] objs = match.getNodes();
-				objs[1] = msg.source;
+				objs[0] = msg.source;
 				objs[2] = msg.target;
 				currentDepth++;
 				start(edge_explorer_3_0_orchestration, match);
@@ -190,7 +194,7 @@ public class VoterRelation2VoterGroupRelation__TRG_44_localSearch extends Generi
 				edge_explorer_3.registerEdge(msg.source, msg.target);
 				HMatch match = new LocalSearchMatch(3);
 				Object[] objs = match.getNodes();
-				objs[1] = msg.source;
+				objs[0] = msg.source;
 				objs[2] = msg.target;
 				currentDepth++;
 				start(edge_explorer_3_0_orchestration, match);

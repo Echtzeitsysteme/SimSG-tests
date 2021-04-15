@@ -43,12 +43,12 @@ import org.eclipse.emf.ecore.EObject;
 
 public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 	ConstraintChecker constraint_checker;
-	CachedEdgeExplorer edge_explorer;
-	EdgeExplorer edge_explorer_3;
-	EdgeExplorer edge_explorer_4;
+	EdgeExplorer edge_explorer;
+	CachedEdgeExplorer edge_explorer_3;
+	CachedEdgeExplorer edge_explorer_4;
 	CachedEdgeExplorer edge_explorer_5;
 	CachedEdgeExplorer edge_explorer_6;
-	CachedEdgeExplorer edge_explorer_7;
+	EdgeExplorer edge_explorer_7;
 	
 	SearchOrchestration edge_explorer_0_orchestration;
 	SearchOrchestration edge_explorer_1_orchestration;
@@ -59,8 +59,8 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 	SearchOrchestration edge_explorer_4_1_orchestration;
 	SearchOrchestration edge_explorer_4_2_orchestration;
 	SearchOrchestration edge_explorer_5_0_orchestration;
-	SearchOrchestration edge_explorer_5_1_orchestration;
 	SearchOrchestration edge_explorer_6_0_orchestration;
+	SearchOrchestration edge_explorer_6_1_orchestration;
 	SearchOrchestration edge_explorer_7_0_orchestration;
 	
 	
@@ -69,30 +69,30 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 		constraint_checker = new ConstraintChecker(this, this::constraint_checker_method);
 		name2explorer.put("constraint_checker", constraint_checker);
 		EdgeLookupMethods edge_explorer_methods = new EdgeLookupMethods();
-						edge_explorer_methods.unique_lookup = (o) -> ((Voter2GroupVoters.Container2GroupVotersContainer) o).getSource();
-						edge_explorer = new CachedEdgeExplorer(this, 1, 0, edge_explorer_methods);
+						edge_explorer_methods.multi_lookup = (o) -> ((Voter.Container) o).getVoters();
+						edge_explorer_methods.unique_opposite_lookup = (o) -> {EObject result = ((EObject) o).eContainer(); if(result instanceof Voter.Container) return edge_explorer_methods.multi_lookup.apply(result).contains(o) ? result : null; else return null;};
+						edge_explorer = new EdgeExplorer(this, 0, 4, edge_explorer_methods);
 		name2explorer.put("edge_explorer", edge_explorer);
 		EdgeLookupMethods edge_explorer_3_methods = new EdgeLookupMethods();
-						edge_explorer_3_methods.multi_lookup = (o) -> ((Voter.Container) o).getVoters();
-						edge_explorer_3_methods.unique_opposite_lookup = (o) -> {EObject result = ((EObject) o).eContainer(); if(result instanceof Voter.Container) return edge_explorer_3_methods.multi_lookup.apply(result).contains(o) ? result : null; else return null;};
-						edge_explorer_3 = new EdgeExplorer(this, 0, 4, edge_explorer_3_methods);
+						edge_explorer_3_methods.unique_lookup = (o) -> ((Voter2GroupVoters.Container2GroupVotersContainer) o).getSource();
+						edge_explorer_3 = new CachedEdgeExplorer(this, 1, 0, edge_explorer_3_methods);
 		name2explorer.put("edge_explorer_3", edge_explorer_3);
 		EdgeLookupMethods edge_explorer_4_methods = new EdgeLookupMethods();
-						edge_explorer_4_methods.multi_lookup = (o) -> ((GroupVoters.GroupVotersContainer) o).getVoter();
-						edge_explorer_4_methods.unique_opposite_lookup = (o) -> {EObject result = ((EObject) o).eContainer(); if(result instanceof GroupVoters.GroupVotersContainer) return edge_explorer_4_methods.multi_lookup.apply(result).contains(o) ? result : null; else return null;};
-						edge_explorer_4 = new EdgeExplorer(this, 2, 3, edge_explorer_4_methods);
+						edge_explorer_4_methods.unique_lookup = (o) -> ((Voter2GroupVoters.Voter2GroupVoter) o).getTarget();
+						edge_explorer_4 = new CachedEdgeExplorer(this, 5, 3, edge_explorer_4_methods);
 		name2explorer.put("edge_explorer_4", edge_explorer_4);
 		EdgeLookupMethods edge_explorer_5_methods = new EdgeLookupMethods();
-						edge_explorer_5_methods.unique_lookup = (o) -> ((Voter2GroupVoters.Voter2GroupVoter) o).getTarget();
-						edge_explorer_5 = new CachedEdgeExplorer(this, 5, 3, edge_explorer_5_methods);
+						edge_explorer_5_methods.unique_lookup = (o) -> ((Voter2GroupVoters.Voter2GroupVoter) o).getSource();
+						edge_explorer_5 = new CachedEdgeExplorer(this, 5, 4, edge_explorer_5_methods);
 		name2explorer.put("edge_explorer_5", edge_explorer_5);
 		EdgeLookupMethods edge_explorer_6_methods = new EdgeLookupMethods();
-						edge_explorer_6_methods.unique_lookup = (o) -> ((Voter2GroupVoters.Voter2GroupVoter) o).getSource();
-						edge_explorer_6 = new CachedEdgeExplorer(this, 5, 4, edge_explorer_6_methods);
+						edge_explorer_6_methods.unique_lookup = (o) -> ((Voter2GroupVoters.Container2GroupVotersContainer) o).getTarget();
+						edge_explorer_6 = new CachedEdgeExplorer(this, 1, 2, edge_explorer_6_methods);
 		name2explorer.put("edge_explorer_6", edge_explorer_6);
 		EdgeLookupMethods edge_explorer_7_methods = new EdgeLookupMethods();
-						edge_explorer_7_methods.unique_lookup = (o) -> ((Voter2GroupVoters.Container2GroupVotersContainer) o).getTarget();
-						edge_explorer_7 = new CachedEdgeExplorer(this, 1, 2, edge_explorer_7_methods);
+						edge_explorer_7_methods.multi_lookup = (o) -> ((GroupVoters.GroupVotersContainer) o).getVoter();
+						edge_explorer_7_methods.unique_opposite_lookup = (o) -> {EObject result = ((EObject) o).eContainer(); if(result instanceof GroupVoters.GroupVotersContainer) return edge_explorer_7_methods.multi_lookup.apply(result).contains(o) ? result : null; else return null;};
+						edge_explorer_7 = new EdgeExplorer(this, 2, 3, edge_explorer_7_methods);
 		name2explorer.put("edge_explorer_7", edge_explorer_7);
 	}
 	
@@ -107,8 +107,8 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 		edge_explorer_4_1_orchestration = initializeOrchestration(node.getOrchestrations().get(6).getPlan());
 		edge_explorer_4_2_orchestration = initializeOrchestration(node.getOrchestrations().get(7).getPlan());
 		edge_explorer_5_0_orchestration = initializeOrchestration(node.getOrchestrations().get(8).getPlan());
-		edge_explorer_5_1_orchestration = initializeOrchestration(node.getOrchestrations().get(9).getPlan());
-		edge_explorer_6_0_orchestration = initializeOrchestration(node.getOrchestrations().get(10).getPlan());
+		edge_explorer_6_0_orchestration = initializeOrchestration(node.getOrchestrations().get(9).getPlan());
+		edge_explorer_6_1_orchestration = initializeOrchestration(node.getOrchestrations().get(10).getPlan());
 		edge_explorer_7_0_orchestration = initializeOrchestration(node.getOrchestrations().get(11).getPlan());
 	}
 	
@@ -126,50 +126,62 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 		Object[] objs = match.getNodes();
 		switch(msg.patternName) {
 			case "Voter2GroupVoter__CO_6": 
-				
-				// c
-				HMatch match_0 = new LocalSearchMatch(6);
-				match_0.getNodes()[0] = objs[0];
-				start(edge_explorer_2_orchestration, match_0);
+				if(true) {
+					
+					// c
+					HMatch match_0 = new LocalSearchMatch(6);
+					match_0.getNodes()[0] = objs[0];
+					start(edge_explorer_1_orchestration, match_0);
+				}
 				break;
 			case "Voter2GroupVoter__CO_7": 
-				edge_explorer.registerSourceObject(objs[0]);
-				edge_explorer_7.registerSourceObject(objs[0]);
-				
-				// c2gvc
-				HMatch match_1 = new LocalSearchMatch(6);
-				match_1.getNodes()[1] = objs[0];
-				start(edge_explorer_1_orchestration, match_1);
+				if(true) {
+					edge_explorer_3.registerSourceObject(objs[0]);
+					edge_explorer_6.registerSourceObject(objs[0]);
+					
+					// c2gvc
+					HMatch match_1 = new LocalSearchMatch(6);
+					match_1.getNodes()[1] = objs[0];
+					start(edge_explorer_3_1_orchestration, match_1);
+				}
 				break;
 			case "Voter2GroupVoter__CO_8": 
-				
-				// gvc
-				HMatch match_2 = new LocalSearchMatch(6);
-				match_2.getNodes()[2] = objs[0];
-				start(edge_explorer_4_1_orchestration, match_2);
+				if(true) {
+					
+					// gvc
+					HMatch match_2 = new LocalSearchMatch(6);
+					match_2.getNodes()[2] = objs[0];
+					start(edge_explorer_6_1_orchestration, match_2);
+				}
 				break;
 			case "Voter2GroupVoter__CO_9": 
-				
-				// gV
-				HMatch match_3 = new LocalSearchMatch(6);
-				match_3.getNodes()[3] = objs[0];
-				start(edge_explorer_4_2_orchestration, match_3);
+				if(true) {
+					
+					// gV
+					HMatch match_3 = new LocalSearchMatch(6);
+					match_3.getNodes()[3] = objs[0];
+					start(edge_explorer_4_2_orchestration, match_3);
+				}
 				break;
 			case "Voter2GroupVoter__CO_10": 
-				
-				// v
-				HMatch match_4 = new LocalSearchMatch(6);
-				match_4.getNodes()[4] = objs[0];
-				start(edge_explorer_3_1_orchestration, match_4);
+				if(true) {
+					
+					// v
+					HMatch match_4 = new LocalSearchMatch(6);
+					match_4.getNodes()[4] = objs[0];
+					start(edge_explorer_2_orchestration, match_4);
+				}
 				break;
 			case "Voter2GroupVoter__CO_11": 
-				edge_explorer_5.registerSourceObject(objs[0]);
-				edge_explorer_6.registerSourceObject(objs[0]);
-				
-				// v2gv
-				HMatch match_5 = new LocalSearchMatch(6);
-				match_5.getNodes()[5] = objs[0];
-				start(edge_explorer_5_1_orchestration, match_5);
+				if(true) {
+					edge_explorer_4.registerSourceObject(objs[0]);
+					edge_explorer_5.registerSourceObject(objs[0]);
+					
+					// v2gv
+					HMatch match_5 = new LocalSearchMatch(6);
+					match_5.getNodes()[5] = objs[0];
+					start(edge_explorer_4_1_orchestration, match_5);
+				}
 				break;
 			default: throw new RuntimeException("Detected unknown match from " + msg.patternName);
 		}
@@ -212,41 +224,6 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 		initialMessage = msg.initialMessage;
 		
 		switch(msg.refName) {
-		case "Container2GroupVotersContainer_source_Container": 
-			{
-				edge_explorer.registerEdge(msg.source, msg.target);
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[1] = msg.source;
-				objs[0] = msg.target;
-				currentDepth++;
-				start(edge_explorer_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			{
-				edge_explorer.registerEdge(msg.source, msg.target);
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[1] = msg.source;
-				objs[0] = msg.target;
-				currentDepth++;
-				start(edge_explorer_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			{
-				edge_explorer.registerEdge(msg.source, msg.target);
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[1] = msg.source;
-				objs[0] = msg.target;
-				currentDepth++;
-				start(edge_explorer_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			break;
 		case "Container_voters_Voter1": 
 			{
 				HMatch match = new LocalSearchMatch(6);
@@ -254,7 +231,7 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 				objs[0] = msg.source;
 				objs[4] = msg.target;
 				currentDepth++;
-				start(edge_explorer_3_0_orchestration, match);
+				start(edge_explorer_0_orchestration, match);
 				currentDepth--;
 			}
 			
@@ -264,7 +241,113 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 				objs[0] = msg.source;
 				objs[4] = msg.target;
 				currentDepth++;
+				start(edge_explorer_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			{
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[0] = msg.source;
+				objs[4] = msg.target;
+				currentDepth++;
+				start(edge_explorer_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			break;
+		case "Container2GroupVotersContainer_source_Container": 
+			{
+				edge_explorer_3.registerEdge(msg.source, msg.target);
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[1] = msg.source;
+				objs[0] = msg.target;
+				currentDepth++;
 				start(edge_explorer_3_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			{
+				edge_explorer_3.registerEdge(msg.source, msg.target);
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[1] = msg.source;
+				objs[0] = msg.target;
+				currentDepth++;
+				start(edge_explorer_3_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			break;
+		case "Voter2GroupVoter_target_Voter1": 
+			{
+				edge_explorer_4.registerEdge(msg.source, msg.target);
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[5] = msg.source;
+				objs[3] = msg.target;
+				currentDepth++;
+				start(edge_explorer_4_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			{
+				edge_explorer_4.registerEdge(msg.source, msg.target);
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[5] = msg.source;
+				objs[3] = msg.target;
+				currentDepth++;
+				start(edge_explorer_4_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			{
+				edge_explorer_4.registerEdge(msg.source, msg.target);
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[5] = msg.source;
+				objs[3] = msg.target;
+				currentDepth++;
+				start(edge_explorer_4_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			break;
+		case "Voter2GroupVoter_source_Voter1": 
+			{
+				edge_explorer_5.registerEdge(msg.source, msg.target);
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[5] = msg.source;
+				objs[4] = msg.target;
+				currentDepth++;
+				start(edge_explorer_5_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			break;
+		case "Container2GroupVotersContainer_target_GroupVotersContainer": 
+			{
+				edge_explorer_6.registerEdge(msg.source, msg.target);
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[1] = msg.source;
+				objs[2] = msg.target;
+				currentDepth++;
+				start(edge_explorer_6_0_orchestration, match);
+				currentDepth--;
+			}
+			
+			{
+				edge_explorer_6.registerEdge(msg.source, msg.target);
+				HMatch match = new LocalSearchMatch(6);
+				Object[] objs = match.getNodes();
+				objs[1] = msg.source;
+				objs[2] = msg.target;
+				currentDepth++;
+				start(edge_explorer_6_0_orchestration, match);
 				currentDepth--;
 			}
 			
@@ -275,76 +358,6 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 				Object[] objs = match.getNodes();
 				objs[2] = msg.source;
 				objs[3] = msg.target;
-				currentDepth++;
-				start(edge_explorer_4_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			{
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[2] = msg.source;
-				objs[3] = msg.target;
-				currentDepth++;
-				start(edge_explorer_4_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			{
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[2] = msg.source;
-				objs[3] = msg.target;
-				currentDepth++;
-				start(edge_explorer_4_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			break;
-		case "Voter2GroupVoter_target_Voter1": 
-			{
-				edge_explorer_5.registerEdge(msg.source, msg.target);
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[5] = msg.source;
-				objs[3] = msg.target;
-				currentDepth++;
-				start(edge_explorer_5_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			{
-				edge_explorer_5.registerEdge(msg.source, msg.target);
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[5] = msg.source;
-				objs[3] = msg.target;
-				currentDepth++;
-				start(edge_explorer_5_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			break;
-		case "Voter2GroupVoter_source_Voter1": 
-			{
-				edge_explorer_6.registerEdge(msg.source, msg.target);
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[5] = msg.source;
-				objs[4] = msg.target;
-				currentDepth++;
-				start(edge_explorer_6_0_orchestration, match);
-				currentDepth--;
-			}
-			
-			break;
-		case "Container2GroupVotersContainer_target_GroupVotersContainer": 
-			{
-				edge_explorer_7.registerEdge(msg.source, msg.target);
-				HMatch match = new LocalSearchMatch(6);
-				Object[] objs = match.getNodes();
-				objs[1] = msg.source;
-				objs[2] = msg.target;
 				currentDepth++;
 				start(edge_explorer_7_0_orchestration, match);
 				currentDepth--;
@@ -361,37 +374,34 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 		initialMessage = msg.initialMessage;
 		
 		switch(msg.refName) {
-		case "Container2GroupVotersContainer_source_Container": 
-				edge_explorer.deregisterEdge(msg.source, msg.target);
+		case "Container_voters_Voter1": 
 				Collection<HMatch> matches_0 = obj2matches.get(msg.source);
 				if(matches_0 != null && !matches_0.isEmpty()) {
 					Collection<HMatch> toBeRemoved_0 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_0) {
-						if(m.getNodes()[0].equals(msg.target))
+						if(m.getNodes()[4].equals(msg.target))
 							toBeRemoved_0.add(m);
 					}
 					if(!toBeRemoved_0.isEmpty()) {
 						sendDeletedMatches(toBeRemoved_0);
 					}
 				}
-				edge_explorer.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_1 = obj2matches.get(msg.source);
 				if(matches_1 != null && !matches_1.isEmpty()) {
 					Collection<HMatch> toBeRemoved_1 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_1) {
-						if(m.getNodes()[0].equals(msg.target))
+						if(m.getNodes()[4].equals(msg.target))
 							toBeRemoved_1.add(m);
 					}
 					if(!toBeRemoved_1.isEmpty()) {
 						sendDeletedMatches(toBeRemoved_1);
 					}
 				}
-				edge_explorer.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_2 = obj2matches.get(msg.source);
 				if(matches_2 != null && !matches_2.isEmpty()) {
 					Collection<HMatch> toBeRemoved_2 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_2) {
-						if(m.getNodes()[0].equals(msg.target))
+						if(m.getNodes()[4].equals(msg.target))
 							toBeRemoved_2.add(m);
 					}
 					if(!toBeRemoved_2.isEmpty()) {
@@ -399,23 +409,25 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 					}
 				}
 				break;
-		case "Container_voters_Voter1": 
+		case "Container2GroupVotersContainer_source_Container": 
+				edge_explorer_3.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_3 = obj2matches.get(msg.source);
 				if(matches_3 != null && !matches_3.isEmpty()) {
 					Collection<HMatch> toBeRemoved_3 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_3) {
-						if(m.getNodes()[4].equals(msg.target))
+						if(m.getNodes()[0].equals(msg.target))
 							toBeRemoved_3.add(m);
 					}
 					if(!toBeRemoved_3.isEmpty()) {
 						sendDeletedMatches(toBeRemoved_3);
 					}
 				}
+				edge_explorer_3.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_4 = obj2matches.get(msg.source);
 				if(matches_4 != null && !matches_4.isEmpty()) {
 					Collection<HMatch> toBeRemoved_4 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_4) {
-						if(m.getNodes()[4].equals(msg.target))
+						if(m.getNodes()[0].equals(msg.target))
 							toBeRemoved_4.add(m);
 					}
 					if(!toBeRemoved_4.isEmpty()) {
@@ -423,7 +435,8 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 					}
 				}
 				break;
-		case "GroupVotersContainer_voter_Voter1": 
+		case "Voter2GroupVoter_target_Voter1": 
+				edge_explorer_4.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_5 = obj2matches.get(msg.source);
 				if(matches_5 != null && !matches_5.isEmpty()) {
 					Collection<HMatch> toBeRemoved_5 = HiPEMultiUtil.createSet();
@@ -435,6 +448,7 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 						sendDeletedMatches(toBeRemoved_5);
 					}
 				}
+				edge_explorer_4.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_6 = obj2matches.get(msg.source);
 				if(matches_6 != null && !matches_6.isEmpty()) {
 					Collection<HMatch> toBeRemoved_6 = HiPEMultiUtil.createSet();
@@ -446,6 +460,7 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 						sendDeletedMatches(toBeRemoved_6);
 					}
 				}
+				edge_explorer_4.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_7 = obj2matches.get(msg.source);
 				if(matches_7 != null && !matches_7.isEmpty()) {
 					Collection<HMatch> toBeRemoved_7 = HiPEMultiUtil.createSet();
@@ -458,39 +473,39 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 					}
 				}
 				break;
-		case "Voter2GroupVoter_target_Voter1": 
+		case "Voter2GroupVoter_source_Voter1": 
 				edge_explorer_5.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_8 = obj2matches.get(msg.source);
 				if(matches_8 != null && !matches_8.isEmpty()) {
 					Collection<HMatch> toBeRemoved_8 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_8) {
-						if(m.getNodes()[3].equals(msg.target))
+						if(m.getNodes()[4].equals(msg.target))
 							toBeRemoved_8.add(m);
 					}
 					if(!toBeRemoved_8.isEmpty()) {
 						sendDeletedMatches(toBeRemoved_8);
 					}
 				}
-				edge_explorer_5.deregisterEdge(msg.source, msg.target);
+				break;
+		case "Container2GroupVotersContainer_target_GroupVotersContainer": 
+				edge_explorer_6.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_9 = obj2matches.get(msg.source);
 				if(matches_9 != null && !matches_9.isEmpty()) {
 					Collection<HMatch> toBeRemoved_9 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_9) {
-						if(m.getNodes()[3].equals(msg.target))
+						if(m.getNodes()[2].equals(msg.target))
 							toBeRemoved_9.add(m);
 					}
 					if(!toBeRemoved_9.isEmpty()) {
 						sendDeletedMatches(toBeRemoved_9);
 					}
 				}
-				break;
-		case "Voter2GroupVoter_source_Voter1": 
 				edge_explorer_6.deregisterEdge(msg.source, msg.target);
 				Collection<HMatch> matches_10 = obj2matches.get(msg.source);
 				if(matches_10 != null && !matches_10.isEmpty()) {
 					Collection<HMatch> toBeRemoved_10 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_10) {
-						if(m.getNodes()[4].equals(msg.target))
+						if(m.getNodes()[2].equals(msg.target))
 							toBeRemoved_10.add(m);
 					}
 					if(!toBeRemoved_10.isEmpty()) {
@@ -498,13 +513,12 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 					}
 				}
 				break;
-		case "Container2GroupVotersContainer_target_GroupVotersContainer": 
-				edge_explorer_7.deregisterEdge(msg.source, msg.target);
+		case "GroupVotersContainer_voter_Voter1": 
 				Collection<HMatch> matches_11 = obj2matches.get(msg.source);
 				if(matches_11 != null && !matches_11.isEmpty()) {
 					Collection<HMatch> toBeRemoved_11 = HiPEMultiUtil.createSet();
 					for(HMatch m : matches_11) {
-						if(m.getNodes()[2].equals(msg.target))
+						if(m.getNodes()[3].equals(msg.target))
 							toBeRemoved_11.add(m);
 					}
 					if(!toBeRemoved_11.isEmpty()) {
@@ -645,7 +659,7 @@ public class Voter2GroupVoter__CO_5_localSearch extends GenericLocalSearchActor{
 				formerMatches_4 = formerMatches_4.stream().filter(m -> !constraint_checker.check(m)).collect(Collectors.toList());
 				sendDeletedMatches(formerMatches_4);
 			}
-			start(edge_explorer_3_1_orchestration, match_4);
+			start(edge_explorer_2_orchestration, match_4);
 		}
 		
 		message.initialMessage.decrement();

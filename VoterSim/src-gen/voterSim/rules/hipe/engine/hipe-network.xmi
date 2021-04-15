@@ -5,10 +5,10 @@
   </networknode>
   <networknode xmi:type="hipe.network:NotificationNode" name="NotificationNode" dispatchNode="//@networknode.0"/>
   <networknode xmi:type="hipe.network:ProductionNode" name="newVoterFalse_0_production" inputPort="//@networknode.10/@ports/@port.0" patternName="newVoterFalse_0">
-    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v2" value="0"/>
+    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v1" value="0"/>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="newVoterFalse_1_production" inputPort="//@networknode.11/@ports/@port.0" patternName="newVoterFalse_1">
-    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v1" value="0"/>
+    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v2" value="0"/>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="newVoterFalse_2_production" inputPort="//@networknode.10/@ports/@port.1" patternName="newVoterFalse_2">
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v0" value="0"/>
@@ -17,10 +17,10 @@
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v0" value="0"/>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="newVoterTrue_1_production" inputPort="//@networknode.10/@ports/@port.2" patternName="newVoterTrue_1">
-    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v2" value="0"/>
+    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v1" value="0"/>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="newVoterTrue_2_production" inputPort="//@networknode.11/@ports/@port.2" patternName="newVoterTrue_2">
-    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v1" value="0"/>
+    <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v2" value="0"/>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="voteFalse_production" inputPort="//@networknode.10/@ports/@port.3" patternName="voteFalse">
     <labelToIndex xmi:type="hipe.network:StringToIntegerMapEntry" key="v" value="0"/>

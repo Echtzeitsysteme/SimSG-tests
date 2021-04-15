@@ -18,18 +18,18 @@
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="voteTrue_8" attributeConstraints="//@attributeConstraints.1" attributes="//@attributes.2 //@attributes.3" nodes="//@nodes.7" parentPattern="//@patterns.7" invokedNodes="//@nodes.7" patternType="NODE" rootPattern="//@patterns.7"/>
   <attributeConstraints xmi:type="HiPEPattern:RelationalConstraint" abstractPatterns="//@patterns.14" targetPatterns="//@patterns.6" leftAttribute="//@attributes.0" rightAttribute="//@attributes.1"/>
   <attributeConstraints xmi:type="HiPEPattern:RelationalConstraint" abstractPatterns="//@patterns.15" targetPatterns="//@patterns.7" leftAttribute="//@attributes.2" rightAttribute="//@attributes.3"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.6" value="org.eclipse.emf.ecore.impl.EAttributeImpl@264e68a6 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.6 //@patterns.14">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.6" value="org.eclipse.emf.ecore.impl.EAttributeImpl@65d4b64e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.6 //@patterns.14">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="false" abstractPatterns="//@patterns.6 //@patterns.14"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.7" value="org.eclipse.emf.ecore.impl.EAttributeImpl@264e68a6 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.7 //@patterns.15">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.7" value="org.eclipse.emf.ecore.impl.EAttributeImpl@65d4b64e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.7 //@patterns.15">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/Voter/model/Voter.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="true" abstractPatterns="//@patterns.7 //@patterns.15"/>
-  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.0 //@patterns.8" invokingPartialPatterns="//@patterns.8">
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v1" abstractPatterns="//@patterns.0 //@patterns.8" invokingPartialPatterns="//@patterns.8">
     <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
   </nodes>
-  <nodes xmi:type="HiPEPattern:HiPENode" name="v1" abstractPatterns="//@patterns.1 //@patterns.9" invokingPartialPatterns="//@patterns.9">
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.1 //@patterns.9" invokingPartialPatterns="//@patterns.9">
     <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
   </nodes>
   <nodes xmi:type="HiPEPattern:HiPENode" name="v0" abstractPatterns="//@patterns.2 //@patterns.10" invokingPartialPatterns="//@patterns.10">
@@ -38,10 +38,10 @@
   <nodes xmi:type="HiPEPattern:HiPENode" name="v0" abstractPatterns="//@patterns.3 //@patterns.11" invokingPartialPatterns="//@patterns.11">
     <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
   </nodes>
-  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.4 //@patterns.12" invokingPartialPatterns="//@patterns.12">
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v1" abstractPatterns="//@patterns.4 //@patterns.12" invokingPartialPatterns="//@patterns.12">
     <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
   </nodes>
-  <nodes xmi:type="HiPEPattern:HiPENode" name="v1" abstractPatterns="//@patterns.5 //@patterns.13" invokingPartialPatterns="//@patterns.13">
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v2" abstractPatterns="//@patterns.5 //@patterns.13" invokingPartialPatterns="//@patterns.13">
     <type xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
   </nodes>
   <nodes xmi:type="HiPEPattern:HiPENode" name="v" attributes="//@attributes.0" abstractPatterns="//@patterns.6 //@patterns.14" invokingPartialPatterns="//@patterns.14">

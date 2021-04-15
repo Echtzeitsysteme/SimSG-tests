@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hipe.network:HiPENetwork xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:HiPEPattern="platform:/resource/hipe.pattern/model/HiPEPattern" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:hipe.network="platform:/resource/hipe.network/model/hiPENetwork" xsi:schemaLocation="platform:/resource/hipe.pattern/model/HiPEPattern java://hipe.pattern.HiPEPatternPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage platform:/resource/hipe.network/model/hiPENetwork java://hipe.network.NetworkPackage">
   <networknode xmi:type="hipe.network:DispatchNode" name="DispatchNode" objectNodes="//@networknode.2 //@networknode.3 //@networknode.4 //@networknode.8 //@networknode.9 //@networknode.11 //@networknode.14 //@networknode.17" notificationNode="//@networknode.1">
+    <metamodels xmi:type="ecore:EPackage" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#/"/>
     <metamodels xmi:type="ecore:EPackage" href="platform:/resource/Voter/model/Voter.ecore#/"/>
     <metamodels xmi:type="ecore:EPackage" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#/"/>
-    <metamodels xmi:type="ecore:EPackage" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#/"/>
   </networknode>
   <networknode xmi:type="hipe.network:NotificationNode" name="NotificationNode" dispatchNode="//@networknode.0"/>
   <networknode xmi:type="hipe.network:ObjectNode" name="Container_object" dispatchnode="//@networknode.0">
@@ -30,31 +30,31 @@
     </ports>
     <pattern xmi:type="HiPEPattern:HiPELargePattern" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@patterns.3"/>
     <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.0 //@networknode.5/@orchestrationComponents.1" name="edge_explorer_0_orchestration">
-      <entryElement xmi:type="HiPEPattern:HiPEEdge" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@edges.0"/>
+      <entryElement xmi:type="HiPEPattern:HiPEEdge" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@edges.1"/>
     </orchestrations>
     <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.0 //@networknode.5/@orchestrationComponents.1" name="edge_explorer_1_orchestration">
       <entryElement xmi:type="HiPEPattern:HiPENode" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@nodes.1"/>
     </orchestrations>
     <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.0 //@networknode.5/@orchestrationComponents.1" name="edge_explorer_2_orchestration">
-      <entryElement xmi:type="HiPEPattern:HiPENode" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@nodes.0"/>
-    </orchestrations>
-    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.1 //@networknode.5/@orchestrationComponents.0" name="edge_explorer_3_0_orchestration">
-      <entryElement xmi:type="HiPEPattern:HiPEEdge" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@edges.1"/>
-    </orchestrations>
-    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.1 //@networknode.5/@orchestrationComponents.0" name="edge_explorer_3_1_orchestration">
       <entryElement xmi:type="HiPEPattern:HiPENode" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@nodes.2"/>
     </orchestrations>
+    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.1 //@networknode.5/@orchestrationComponents.0" name="edge_explorer_3_0_orchestration">
+      <entryElement xmi:type="HiPEPattern:HiPEEdge" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@edges.0"/>
+    </orchestrations>
+    <orchestrations xmi:type="hipe.network:SearchOrchestration" plan="//@networknode.5/@orchestrationComponents.1 //@networknode.5/@orchestrationComponents.0" name="edge_explorer_3_1_orchestration">
+      <entryElement xmi:type="HiPEPattern:HiPENode" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@nodes.0"/>
+    </orchestrations>
     <orchestrationComponents xmi:type="hipe.network:EdgeExplorationComponent" name="edge_explorer">
-      <indices>1</indices>
-      <indices>0</indices>
-      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
-      <edge xmi:type="HiPEPattern:HiPEEdge" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@edges.0"/>
-    </orchestrationComponents>
-    <orchestrationComponents xmi:type="hipe.network:EdgeExplorationComponent" name="edge_explorer_3">
       <indices>1</indices>
       <indices>2</indices>
       <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/target"/>
       <edge xmi:type="HiPEPattern:HiPEEdge" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@edges.1"/>
+    </orchestrationComponents>
+    <orchestrationComponents xmi:type="hipe.network:EdgeExplorationComponent" name="edge_explorer_3">
+      <indices>1</indices>
+      <indices>0</indices>
+      <type xmi:type="ecore:EReference" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Container2GroupVotersContainer/source"/>
+      <edge xmi:type="HiPEPattern:HiPEEdge" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@edges.0"/>
     </orchestrationComponents>
   </networknode>
   <networknode xmi:type="hipe.network:ProductionNode" name="Voter2GroupVoter__GEN_production" inputPort="//@networknode.5/@ports/@port.0" patternName="Voter2GroupVoter__GEN">
@@ -223,24 +223,24 @@
   <networknode xmi:type="hipe.network:JunctionNode" name="Voter2Group__GEN_5_junction" inputPort="//@networknode.12/@ports/@port.0 //@networknode.21/@ports/@port.0" patternName="Voter2Group__GEN_5" overlaps="//@networknode.22/@allOverlaps.0" mappings="//@networknode.22/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.23" patternName="Voter2Group__GEN_5" initializationCode="" constraintName="check_constraint_1" predicateCode="!v.equals(v2) &amp;&amp; !gV.equals(gV2) &amp;&amp; !v2gv.equals(v2gv2)">
-        <indices>6</indices>
-        <indices>1</indices>
-        <indices>2</indices>
-        <indices>0</indices>
-        <indices>5</indices>
         <indices>4</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+        <indices>6</indices>
+        <indices>5</indices>
+        <indices>2</indices>
+        <indices>1</indices>
+        <indices>0</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
-        <types xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>gV</nodeNames>
-        <nodeNames>v2</nodeNames>
-        <nodeNames>gV2</nodeNames>
-        <nodeNames>v2gv2</nodeNames>
-        <nodeNames>v2gv</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
         <nodeNames>v</nodeNames>
+        <nodeNames>gV</nodeNames>
+        <nodeNames>v2gv</nodeNames>
+        <nodeNames>gV2</nodeNames>
+        <nodeNames>v2</nodeNames>
+        <nodeNames>v2gv2</nodeNames>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@patterns.7"/>
       </port>
     </ports>
@@ -309,24 +309,24 @@
   <networknode xmi:type="hipe.network:JunctionNode" name="VoterRelation2VoterGroupRelation__GEN_26_junction" inputPort="//@networknode.24/@ports/@port.0 //@networknode.25/@ports/@port.0" patternName="VoterRelation2VoterGroupRelation__GEN_26" overlaps="//@networknode.26/@allOverlaps.0" mappings="//@networknode.26/@allMappings.0">
     <ports xmi:type="hipe.network:Ports">
       <port xmi:type="hipe.network:ConstraintPort" portSlot="CENTER" portTarget="//@networknode.27" patternName="VoterRelation2VoterGroupRelation__GEN_26" initializationCode="" constraintName="check_constraint_2" predicateCode="!v.equals(v2) &amp;&amp; !gV.equals(gV2) &amp;&amp; !v2gv.equals(v2gv2)">
-        <indices>0</indices>
         <indices>2</indices>
-        <indices>5</indices>
-        <indices>3</indices>
         <indices>4</indices>
+        <indices>3</indices>
         <indices>1</indices>
-        <types xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+        <indices>0</indices>
+        <indices>5</indices>
         <types xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
-        <types xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
+        <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
         <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <types xmi:type="ecore:EClass" href="platform:/resource/Voter/model/Voter.ecore#//Voter1"/>
-        <nodeNames>v2gv2</nodeNames>
+        <types xmi:type="ecore:EClass" href="platform:/resource/Voter2GroupVoters/model/Voter2GroupVoters.ecore#//Voter2GroupVoter"/>
+        <types xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
         <nodeNames>gV2</nodeNames>
-        <nodeNames>gV</nodeNames>
-        <nodeNames>v2gv</nodeNames>
         <nodeNames>v</nodeNames>
+        <nodeNames>v2gv</nodeNames>
         <nodeNames>v2</nodeNames>
+        <nodeNames>v2gv2</nodeNames>
+        <nodeNames>gV</nodeNames>
         <pattern xmi:type="HiPEPattern:HiPEPartialPattern" href="file:/H:/Eclipse%20Workspaces/simsg-test/git/SimSG-tests/Voter2GroupVoters/src-gen/Voter2GroupVoters/modelgen/hipe/engine//hipe-patterns.xmi#//@patterns.28"/>
       </port>
     </ports>

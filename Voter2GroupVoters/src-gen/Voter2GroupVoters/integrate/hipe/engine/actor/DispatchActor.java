@@ -63,47 +63,15 @@ public class DispatchActor extends AbstractActor {
 	}
 	
 	private void initializeAdd() {
-		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker(), obj -> {
-			Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker _voterrelation2votergrouprelation__marker = (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) obj;
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__Marker_object").tell(new ObjectAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker>(incUtil, _voterrelation2votergrouprelation__marker), getSelf());
-		});
-		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group(), obj -> {
-			Voter2GroupVoters.Voter2Group _voter2group = (Voter2GroupVoters.Voter2Group) obj;
-			incUtil.newMessage();
-			name2actor.get("Voter2Group_object").tell(new ObjectAdded<Voter2GroupVoters.Voter2Group>(incUtil, _voter2group), getSelf());
-		});
-		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker(), obj -> {
-			Voter2GroupVoters.Voter2Group__Marker _voter2group__marker = (Voter2GroupVoters.Voter2Group__Marker) obj;
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__Marker_object").tell(new ObjectAdded<Voter2GroupVoters.Voter2Group__Marker>(incUtil, _voter2group__marker), getSelf());
-		});
-		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker(), obj -> {
-			Voter2GroupVoters.Voter2GroupVoter__Marker _voter2groupvoter__marker = (Voter2GroupVoters.Voter2GroupVoter__Marker) obj;
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__Marker_object").tell(new ObjectAdded<Voter2GroupVoters.Voter2GroupVoter__Marker>(incUtil, _voter2groupvoter__marker), getSelf());
-		});
-		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker(), obj -> {
-			Voter2GroupVoters.Container2GroupVotersContainer__Marker _container2groupvoterscontainer__marker = (Voter2GroupVoters.Container2GroupVotersContainer__Marker) obj;
-			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__Marker_object").tell(new ObjectAdded<Voter2GroupVoters.Container2GroupVotersContainer__Marker>(incUtil, _container2groupvoterscontainer__marker), getSelf());
-		});
-		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer(), obj -> {
-			Voter2GroupVoters.Container2GroupVotersContainer _container2groupvoterscontainer = (Voter2GroupVoters.Container2GroupVotersContainer) obj;
-			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer_object").tell(new ObjectAdded<Voter2GroupVoters.Container2GroupVotersContainer>(incUtil, _container2groupvoterscontainer), getSelf());
-		});
 		type2addConsumer.put(Voter.VoterPackage.eINSTANCE.getContainer(), obj -> {
 			Voter.Container _container = (Voter.Container) obj;
 			incUtil.newMessage();
 			name2actor.get("Container_object").tell(new ObjectAdded<Voter.Container>(incUtil, _container), getSelf());
 		});
-		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter(), obj -> {
-			Voter2GroupVoters.Voter2GroupVoter _voter2groupvoter = (Voter2GroupVoters.Voter2GroupVoter) obj;
+		type2addConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroup(), obj -> {
+			GroupVoters.Group _group = (GroupVoters.Group) obj;
 			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter_object_SP0").tell(new ObjectAdded<Voter2GroupVoters.Voter2GroupVoter>(incUtil, _voter2groupvoter), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter_object_SP1").tell(new ObjectAdded<Voter2GroupVoters.Voter2GroupVoter>(incUtil, _voter2groupvoter), getSelf());
+			name2actor.get("Group_object").tell(new ObjectAdded<GroupVoters.Group>(incUtil, _group), getSelf());
 		});
 		type2addConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1(), obj -> {
 			GroupVoters.Voter1 _voter1 = (GroupVoters.Voter1) obj;
@@ -112,15 +80,20 @@ public class DispatchActor extends AbstractActor {
 			incUtil.newMessage();
 			name2actor.get("Voter1_object_SP1").tell(new ObjectAdded<GroupVoters.Voter1>(incUtil, _voter1), getSelf());
 		});
-		type2addConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroup(), obj -> {
-			GroupVoters.Group _group = (GroupVoters.Group) obj;
+		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer(), obj -> {
+			Voter2GroupVoters.Container2GroupVotersContainer _container2groupvoterscontainer = (Voter2GroupVoters.Container2GroupVotersContainer) obj;
 			incUtil.newMessage();
-			name2actor.get("Group_object").tell(new ObjectAdded<GroupVoters.Group>(incUtil, _group), getSelf());
+			name2actor.get("Container2GroupVotersContainer_object").tell(new ObjectAdded<Voter2GroupVoters.Container2GroupVotersContainer>(incUtil, _container2groupvoterscontainer), getSelf());
 		});
 		type2addConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroupVotersContainer(), obj -> {
 			GroupVoters.GroupVotersContainer _groupvoterscontainer = (GroupVoters.GroupVotersContainer) obj;
 			incUtil.newMessage();
 			name2actor.get("GroupVotersContainer_object").tell(new ObjectAdded<GroupVoters.GroupVotersContainer>(incUtil, _groupvoterscontainer), getSelf());
+		});
+		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker(), obj -> {
+			Voter2GroupVoters.Voter2Group__Marker _voter2group__marker = (Voter2GroupVoters.Voter2Group__Marker) obj;
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__Marker_object").tell(new ObjectAdded<Voter2GroupVoters.Voter2Group__Marker>(incUtil, _voter2group__marker), getSelf());
 		});
 		type2addConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1(), obj -> {
 			Voter.Voter1 _voter1 = (Voter.Voter1) obj;
@@ -129,34 +102,121 @@ public class DispatchActor extends AbstractActor {
 			incUtil.newMessage();
 			name2actor.get("Voter1_1_object_SP1").tell(new ObjectAdded<Voter.Voter1>(incUtil, _voter1), getSelf());
 		});
+		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker(), obj -> {
+			Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker _voterrelation2votergrouprelation__marker = (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) obj;
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__Marker_object").tell(new ObjectAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker>(incUtil, _voterrelation2votergrouprelation__marker), getSelf());
+		});
+		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter(), obj -> {
+			Voter2GroupVoters.Voter2GroupVoter _voter2groupvoter = (Voter2GroupVoters.Voter2GroupVoter) obj;
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter_object_SP0").tell(new ObjectAdded<Voter2GroupVoters.Voter2GroupVoter>(incUtil, _voter2groupvoter), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter_object_SP1").tell(new ObjectAdded<Voter2GroupVoters.Voter2GroupVoter>(incUtil, _voter2groupvoter), getSelf());
+		});
+		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker(), obj -> {
+			Voter2GroupVoters.Container2GroupVotersContainer__Marker _container2groupvoterscontainer__marker = (Voter2GroupVoters.Container2GroupVotersContainer__Marker) obj;
+			incUtil.newMessage();
+			name2actor.get("Container2GroupVotersContainer__Marker_object").tell(new ObjectAdded<Voter2GroupVoters.Container2GroupVotersContainer__Marker>(incUtil, _container2groupvoterscontainer__marker), getSelf());
+		});
+		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group(), obj -> {
+			Voter2GroupVoters.Voter2Group _voter2group = (Voter2GroupVoters.Voter2Group) obj;
+			incUtil.newMessage();
+			name2actor.get("Voter2Group_object").tell(new ObjectAdded<Voter2GroupVoters.Voter2Group>(incUtil, _voter2group), getSelf());
+		});
+		type2addConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker(), obj -> {
+			Voter2GroupVoters.Voter2GroupVoter__Marker _voter2groupvoter__marker = (Voter2GroupVoters.Voter2GroupVoter__Marker) obj;
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__Marker_object").tell(new ObjectAdded<Voter2GroupVoters.Voter2GroupVoter__Marker>(incUtil, _voter2groupvoter__marker), getSelf());
+		});
 	}
 	
 	private void initializeSet() {
 		feature2setConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Vote(), notification -> {
 			if(notification.getNotifier() instanceof Voter.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_1_object_SP1").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+				name2actor.get("Voter1_1_object_SP0").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 			if(notification.getNotifier() instanceof Voter.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_1_object_SP0").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+				name2actor.get("Voter1_1_object_SP1").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 		});
 		
 		feature2setConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1_Vote(), notification -> {
 			if(notification.getNotifier() instanceof GroupVoters.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_object_SP1").tell(new AttributeChanged<GroupVoters.Voter1>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+				name2actor.get("Voter1_object_SP0").tell(new AttributeChanged<GroupVoters.Voter1>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 			if(notification.getNotifier() instanceof GroupVoters.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_object_SP0").tell(new AttributeChanged<GroupVoters.Voter1>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+				name2actor.get("Voter1_object_SP1").tell(new AttributeChanged<GroupVoters.Voter1>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 		});
 		
 	}
 	
 	private void initializeAddEdge() {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter_Target(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__BWD_48_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__BWD_48_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2Group>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2_Voter2Group"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__TRG__group(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Group>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Group) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__TRG__group_Group"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2Group>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1_Voter2Group"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2gv(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__CORR__v2gv_Voter2GroupVoter"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV_Voter1"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__CORR__v2gv(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "Voter2GroupVoter__Marker_CREATE__CORR__v2gv_Voter2GroupVoter"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2gv2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__CORR__v2gv2_Voter2GroupVoter"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__TRG__gvc(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer__Marker, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer__Marker_CREATE__TRG__gvc_GroupVotersContainer"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer_Source(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__BWD_9_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__FWD_15_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
+		});
 		feature2addEdgeConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1_Member(), notification -> {
 			incUtil.newMessage();
 			name2actor.get("Voter2Group__TRG_21_localSearch").tell(new ReferenceAdded<GroupVoters.Voter1, GroupVoters.Group>(incUtil,(GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getNewValue(), "Voter1_member_Group"), getSelf());
@@ -169,49 +229,29 @@ public class DispatchActor extends AbstractActor {
 			incUtil.newMessage();
 			name2actor.get("VoterRelation2VoterGroupRelation__TRG_44_localSearch").tell(new ReferenceAdded<GroupVoters.Voter1, GroupVoters.Group>(incUtil,(GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getNewValue(), "Voter1_member_Group"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__SRC__c(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2_Voter1"), getSelf());
+			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer__Marker, Voter.Container>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Container2GroupVotersContainer__Marker_CREATE__SRC__c_Container"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__TRG__gvc(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__SRC__v2(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer__Marker, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer__Marker_CREATE__TRG__gvc_GroupVotersContainer"), getSelf());
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__SRC__v2_Voter1"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__CORR__c2gvc(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer_Target(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter2GroupVoters.Container2GroupVotersContainer>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNewValue(), "Voter2GroupVoter__Marker_CONTEXT__CORR__c2gvc_Container2GroupVotersContainer"), getSelf());
+			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer_target_GroupVotersContainer"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__BWD_9_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer_target_GroupVotersContainer"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__FWD_15_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer_target_GroupVotersContainer"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__CORR__c2gvc(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV_Voter1"), getSelf());
+			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer__Marker, Voter2GroupVoters.Container2GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer__Marker_CREATE__CORR__c2gvc_Container2GroupVotersContainer"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CREATE__CORR__v2g2(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__SRC__v(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2Group>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getNewValue(), "Voter2Group__Marker_CREATE__CORR__v2g2_Voter2Group"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__gV(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__TRG__gV_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2gv2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__CORR__v2gv2_Voter2GroupVoter"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__group(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Group>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Group) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__TRG__group_Group"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__SRC__v(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__SRC__v_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__CORR__v2gv(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "Voter2GroupVoter__Marker_CREATE__CORR__v2gv_Voter2GroupVoter"), getSelf());
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2GroupVoter__Marker_CREATE__SRC__v_Voter1"), getSelf());
 		});
 		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group_Target(), notification -> {
 			incUtil.newMessage();
@@ -225,41 +265,91 @@ public class DispatchActor extends AbstractActor {
 			incUtil.newMessage();
 			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getNewValue(), "Voter2Group_target_Group"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer_Source(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__SRC__v(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__BWD_9_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__FWD_15_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__SRC__v_Voter1"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2_Voter2GroupVoter"), getSelf());
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2_Voter1"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2g1(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__SRC__c(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2Group>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__CORR__v2g1_Voter2Group"), getSelf());
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter.Container>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Voter2GroupVoter__Marker_CONTEXT__SRC__c_Container"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2gv(), notification -> {
+		feature2addEdgeConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroupVotersContainer_Voter(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__CORR__v2gv_Voter2GroupVoter"), getSelf());
+			name2actor.get("Voter2GroupVoter__TRG_6_localSearch").tell(new ReferenceAdded<GroupVoters.GroupVotersContainer, GroupVoters.Voter1>(incUtil,(GroupVoters.GroupVotersContainer) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "GroupVotersContainer_voter_Voter1"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__group(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2Group>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2_Voter2Group"), getSelf());
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Group>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Group) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__TRG__group_Group"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v_Voter1"), getSelf());
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2_Voter1"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Link(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__SRC_31_localSearch").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__SRC_53_localSearch").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
 		});
 		feature2addEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getContainer_Voters(), notification -> {
 			incUtil.newMessage();
 			name2actor.get("Voter2GroupVoter__SRC_12_localSearch").tell(new ReferenceAdded<Voter.Container, Voter.Voter1>(incUtil,(Voter.Container) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Container_voters_Voter1"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__SRC__v(), notification -> {
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2GroupVoter__Marker_CREATE__SRC__v_Voter1"), getSelf());
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2_Voter2GroupVoter"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__gV(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__TRG__gV_Voter1"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv_Voter2GroupVoter"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v_Voter1"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__TRG__gvc(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Voter2GroupVoter__Marker_CONTEXT__TRG__gvc_GroupVotersContainer"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__CORR__c2gvc(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter2GroupVoters.Container2GroupVotersContainer>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNewValue(), "Voter2GroupVoter__Marker_CONTEXT__CORR__c2gvc_Container2GroupVotersContainer"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group_Source(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__TRG__gV(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter__Marker_CREATE__TRG__gV_Voter1"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CREATE__CORR__v2g2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2Group>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getNewValue(), "Voter2Group__Marker_CREATE__CORR__v2g2_Voter2Group"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__gV2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__TRG__gV2_Voter1"), getSelf());
+		});
+		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2g1(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2Group>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__CORR__v2g1_Voter2Group"), getSelf());
 		});
 		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter_Source(), notification -> {
 			incUtil.newMessage();
@@ -281,235 +371,9 @@ public class DispatchActor extends AbstractActor {
 			incUtil.newMessage();
 			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
 		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__CORR__c2gvc(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer__Marker, Voter2GroupVoters.Container2GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer__Marker_CREATE__CORR__c2gvc_Container2GroupVotersContainer"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2Group>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1_Voter2Group"), getSelf());
-		});
-		feature2addEdgeConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroupVotersContainer_Voter(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__TRG_6_localSearch").tell(new ReferenceAdded<GroupVoters.GroupVotersContainer, GroupVoters.Voter1>(incUtil,(GroupVoters.GroupVotersContainer) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "GroupVotersContainer_voter_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter_Target(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__BWD_48_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__BWD_48_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__TRG__group(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Group>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Group) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__TRG__group_Group"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__TRG__gvc(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Voter2GroupVoter__Marker_CONTEXT__TRG__gvc_GroupVotersContainer"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Link(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__SRC_31_localSearch").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__SRC_53_localSearch").tell(new ReferenceAdded<Voter.Voter1, Voter.Voter1>(incUtil,(Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter1_link_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__TRG__gV(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2GroupVoter__Marker_CREATE__TRG__gV_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__SRC__v2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__SRC__v2_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__SRC__c(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer__Marker, Voter.Container>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Container2GroupVotersContainer__Marker_CREATE__SRC__c_Container"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__SRC__c(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter.Container>(incUtil,(Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter.Container) notification.getNewValue(), "Voter2GroupVoter__Marker_CONTEXT__SRC__c_Container"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil,(Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getNewValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv_Voter2GroupVoter"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer_Target(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer_target_GroupVotersContainer"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__BWD_9_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer_target_GroupVotersContainer"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__FWD_15_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Container2GroupVotersContainer, GroupVoters.GroupVotersContainer>(incUtil,(Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getNewValue(), "Container2GroupVotersContainer_target_GroupVotersContainer"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__gV2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getNewValue(), "Voter2Group__Marker_CONTEXT__TRG__gV2_Voter1"), getSelf());
-		});
-		feature2addEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group_Source(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceAdded<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil,(Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getNewValue(), "Voter2Group_source_Voter1"), getSelf());
-		});
 	}
 	
 	private void initializeRemoveEdge() {
-		feature2removeEdgeConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1_Member(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__TRG_21_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__TRG_21_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__TRG_44_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__TRG_44_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__TRG__gvc(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer__Marker, GroupVoters.GroupVotersContainer>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getOldValue(), "Container2GroupVotersContainer__Marker_CREATE__TRG__gvc_GroupVotersContainer"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__CORR__c2gvc(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter2GroupVoters.Container2GroupVotersContainer>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter2GroupVoters.Container2GroupVotersContainer) notification.getOldValue(), "Voter2GroupVoter__Marker_CONTEXT__CORR__c2gvc_Container2GroupVotersContainer"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CREATE__CORR__v2g2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2Group>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getOldValue(), "Voter2Group__Marker_CREATE__CORR__v2g2_Voter2Group"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__gV(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__TRG__gV_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2gv2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__CORR__v2gv2_Voter2GroupVoter"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__group(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__TRG__group_Group"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__SRC__v(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__SRC__v_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__CORR__v2gv(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "Voter2GroupVoter__Marker_CREATE__CORR__v2gv_Voter2GroupVoter"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group_Target(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer_Source(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__BWD_9_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__FWD_15_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2_Voter2GroupVoter"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2g1(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2Group>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__CORR__v2g1_Voter2Group"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2gv(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__CORR__v2gv_Voter2GroupVoter"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2Group>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2_Voter2Group"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getContainer_Voters(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__SRC_12_localSearch").tell(new ReferenceDeleted<Voter.Container, Voter.Voter1>(incUtil, (Voter.Container) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Container_voters_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__SRC__v(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter__Marker_CREATE__SRC__v_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter_Source(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__BWD_48_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__BWD_48_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__CORR__c2gvc(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer__Marker, Voter2GroupVoters.Container2GroupVotersContainer>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (Voter2GroupVoters.Container2GroupVotersContainer) notification.getOldValue(), "Container2GroupVotersContainer__Marker_CREATE__CORR__c2gvc_Container2GroupVotersContainer"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2Group>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1_Voter2Group"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroupVotersContainer_Voter(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__TRG_6_localSearch").tell(new ReferenceDeleted<GroupVoters.GroupVotersContainer, GroupVoters.Voter1>(incUtil, (GroupVoters.GroupVotersContainer) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "GroupVotersContainer_voter_Voter1"), getSelf());
-		});
 		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter_Target(), notification -> {
 			incUtil.newMessage();
 			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
@@ -530,39 +394,65 @@ public class DispatchActor extends AbstractActor {
 			incUtil.newMessage();
 			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "Voter2GroupVoter_target_Voter1"), getSelf());
 		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2Group>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g2_Voter2Group"), getSelf());
+		});
 		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__TRG__group(), notification -> {
 			incUtil.newMessage();
 			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Group>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__TRG__group_Group"), getSelf());
 		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__TRG__gvc(), notification -> {
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, GroupVoters.GroupVotersContainer>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getOldValue(), "Voter2GroupVoter__Marker_CONTEXT__TRG__gvc_GroupVotersContainer"), getSelf());
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2Group>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CREATE__CORR__v2g1_Voter2Group"), getSelf());
 		});
-		feature2removeEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Link(), notification -> {
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2gv(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2Group__SRC_31_localSearch").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__SRC_53_localSearch").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__CORR__v2gv_Voter2GroupVoter"), getSelf());
 		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__TRG__gV(), notification -> {
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "Voter2GroupVoter__Marker_CREATE__TRG__gV_Voter1"), getSelf());
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV_Voter1"), getSelf());
 		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__SRC__v2(), notification -> {
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__CORR__v2gv(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__SRC__v2_Voter1"), getSelf());
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "Voter2GroupVoter__Marker_CREATE__CORR__v2gv_Voter2GroupVoter"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2gv2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__CORR__v2gv2_Voter2GroupVoter"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__TRG__gvc(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer__Marker, GroupVoters.GroupVotersContainer>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getOldValue(), "Container2GroupVotersContainer__Marker_CREATE__TRG__gvc_GroupVotersContainer"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer_Source(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__BWD_9_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__FWD_15_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer, Voter.Container>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Container2GroupVotersContainer_source_Container"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1_Member(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__TRG_21_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__TRG_21_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__TRG_44_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__TRG_44_localSearch").tell(new ReferenceDeleted<GroupVoters.Voter1, GroupVoters.Group>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter1_member_Group"), getSelf());
 		});
 		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__SRC__c(), notification -> {
 			incUtil.newMessage();
 			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer__Marker, Voter.Container>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Container2GroupVotersContainer__Marker_CREATE__SRC__c_Container"), getSelf());
 		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__SRC__c(), notification -> {
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__SRC__v2(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter.Container>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Voter2GroupVoter__Marker_CONTEXT__SRC__c_Container"), getSelf());
-		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv(), notification -> {
-			incUtil.newMessage();
-			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv_Voter2GroupVoter"), getSelf());
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__SRC__v2_Voter1"), getSelf());
 		});
 		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer_Target(), notification -> {
 			incUtil.newMessage();
@@ -572,9 +462,83 @@ public class DispatchActor extends AbstractActor {
 			incUtil.newMessage();
 			name2actor.get("Voter2GroupVoter__FWD_15_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer, GroupVoters.GroupVotersContainer>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getOldValue(), "Container2GroupVotersContainer_target_GroupVotersContainer"), getSelf());
 		});
-		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__gV2(), notification -> {
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getContainer2GroupVotersContainer__Marker_CREATE__CORR__c2gvc(), notification -> {
 			incUtil.newMessage();
-			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__TRG__gV2_Voter1"), getSelf());
+			name2actor.get("Container2GroupVotersContainer__CONSISTENCY_3_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Container2GroupVotersContainer__Marker, Voter2GroupVoters.Container2GroupVotersContainer>(incUtil, (Voter2GroupVoters.Container2GroupVotersContainer__Marker) notification.getNotifier(), (Voter2GroupVoters.Container2GroupVotersContainer) notification.getOldValue(), "Container2GroupVotersContainer__Marker_CREATE__CORR__c2gvc_Container2GroupVotersContainer"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__SRC__v(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter__Marker_CREATE__SRC__v_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group_Target(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group_target_Group"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__SRC__v(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__SRC__v_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v2_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__SRC__c(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter.Container>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter.Container) notification.getOldValue(), "Voter2GroupVoter__Marker_CONTEXT__SRC__c_Container"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroupVotersContainer_Voter(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__TRG_6_localSearch").tell(new ReferenceDeleted<GroupVoters.GroupVotersContainer, GroupVoters.Voter1>(incUtil, (GroupVoters.GroupVotersContainer) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "GroupVotersContainer_voter_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__group(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Group>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Group) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__TRG__group_Group"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__TRG__gV2_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Link(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__SRC_31_localSearch").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__SRC_53_localSearch").tell(new ReferenceDeleted<Voter.Voter1, Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter1_link_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter.VoterPackage.eINSTANCE.getContainer_Voters(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__SRC_12_localSearch").tell(new ReferenceDeleted<Voter.Container, Voter.Voter1>(incUtil, (Voter.Container) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Container_voters_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv2_Voter2GroupVoter"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__gV(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__TRG__gV_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2GroupVoter) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__CORR__v2gv_Voter2GroupVoter"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker, Voter.Voter1>(incUtil, (Voter2GroupVoters.VoterRelation2VoterGroupRelation__Marker) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "VoterRelation2VoterGroupRelation__Marker_CONTEXT__SRC__v_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__TRG__gvc(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, GroupVoters.GroupVotersContainer>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (GroupVoters.GroupVotersContainer) notification.getOldValue(), "Voter2GroupVoter__Marker_CONTEXT__TRG__gvc_GroupVotersContainer"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CONTEXT__CORR__c2gvc(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, Voter2GroupVoters.Container2GroupVotersContainer>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (Voter2GroupVoters.Container2GroupVotersContainer) notification.getOldValue(), "Voter2GroupVoter__Marker_CONTEXT__CORR__c2gvc_Container2GroupVotersContainer"), getSelf());
 		});
 		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group_Source(), notification -> {
 			incUtil.newMessage();
@@ -587,6 +551,42 @@ public class DispatchActor extends AbstractActor {
 			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2Group_source_Voter1"), getSelf());
 			incUtil.newMessage();
 			name2actor.get("VoterRelation2VoterGroupRelation__CONSISTENCY_61_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2Group_source_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter__Marker_CREATE__TRG__gV(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "Voter2GroupVoter__Marker_CREATE__TRG__gV_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CREATE__CORR__v2g2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2Group>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getOldValue(), "Voter2Group__Marker_CREATE__CORR__v2g2_Voter2Group"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__TRG__gV2(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, GroupVoters.Voter1>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (GroupVoters.Voter1) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__TRG__gV2_Voter1"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2Group__Marker_CONTEXT__CORR__v2g1(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__CONSISTENCY_41_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2Group__Marker, Voter2GroupVoters.Voter2Group>(incUtil, (Voter2GroupVoters.Voter2Group__Marker) notification.getNotifier(), (Voter2GroupVoters.Voter2Group) notification.getOldValue(), "Voter2Group__Marker_CONTEXT__CORR__v2g1_Voter2Group"), getSelf());
+		});
+		feature2removeEdgeConsumer.put(Voter2GroupVoters.Voter2GroupVotersPackage.eINSTANCE.getVoter2GroupVoter_Source(), notification -> {
+			incUtil.newMessage();
+			name2actor.get("Voter2GroupVoter__CONSISTENCY_18_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__BWD_25_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter2Group__FWD_34_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__BWD_48_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__BWD_48_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
+			incUtil.newMessage();
+			name2actor.get("VoterRelation2VoterGroupRelation__FWD_56_localSearch").tell(new ReferenceDeleted<Voter2GroupVoters.Voter2GroupVoter, Voter.Voter1>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) notification.getNotifier(), (Voter.Voter1) notification.getOldValue(), "Voter2GroupVoter_source_Voter1"), getSelf());
 		});
 	}
 
@@ -684,6 +684,18 @@ public class DispatchActor extends AbstractActor {
 	
 	private void handleRemoveAdapter(Notification notification) {
 		Object node = notification.getNotifier();
+		if (node instanceof Voter.Container) {
+			incUtil.newMessage();
+			name2actor.get("Container_object").tell(new ObjectDeleted<Voter.Container>(incUtil, (Voter.Container) node), getSelf());
+		}
+		if (node instanceof Voter.Voter1) {
+			incUtil.newMessage();
+			name2actor.get("Voter1_1_object_SP0").tell(new ObjectDeleted<Voter.Voter1>(incUtil, (Voter.Voter1) node), getSelf());
+		}
+		if (node instanceof Voter.Voter1) {
+			incUtil.newMessage();
+			name2actor.get("Voter1_1_object_SP1").tell(new ObjectDeleted<Voter.Voter1>(incUtil, (Voter.Voter1) node), getSelf());
+		}
 		if (node instanceof GroupVoters.GroupVotersContainer) {
 			incUtil.newMessage();
 			name2actor.get("GroupVotersContainer_object").tell(new ObjectDeleted<GroupVoters.GroupVotersContainer>(incUtil, (GroupVoters.GroupVotersContainer) node), getSelf());
@@ -731,18 +743,6 @@ public class DispatchActor extends AbstractActor {
 		if (node instanceof Voter2GroupVoters.Voter2GroupVoter) {
 			incUtil.newMessage();
 			name2actor.get("Voter2GroupVoter_object_SP1").tell(new ObjectDeleted<Voter2GroupVoters.Voter2GroupVoter>(incUtil, (Voter2GroupVoters.Voter2GroupVoter) node), getSelf());
-		}
-		if (node instanceof Voter.Container) {
-			incUtil.newMessage();
-			name2actor.get("Container_object").tell(new ObjectDeleted<Voter.Container>(incUtil, (Voter.Container) node), getSelf());
-		}
-		if (node instanceof Voter.Voter1) {
-			incUtil.newMessage();
-			name2actor.get("Voter1_1_object_SP0").tell(new ObjectDeleted<Voter.Voter1>(incUtil, (Voter.Voter1) node), getSelf());
-		}
-		if (node instanceof Voter.Voter1) {
-			incUtil.newMessage();
-			name2actor.get("Voter1_1_object_SP1").tell(new ObjectDeleted<Voter.Voter1>(incUtil, (Voter.Voter1) node), getSelf());
 		}
 	}
 }

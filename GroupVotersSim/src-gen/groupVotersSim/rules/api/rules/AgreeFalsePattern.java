@@ -15,7 +15,7 @@ import org.emoflon.ibex.gt.api.GraphTransformationPattern;
 import org.emoflon.ibex.gt.engine.GraphTransformationInterpreter;
 
 /**
- * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@876adfd (name: g), org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@6f1dc461 (name: v1), org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@7064386a (name: v2)] which does the following:
+ * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@11441ac8 (name: g), org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@38831453 (name: v1), org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@18a52d4a (name: v2)] which does the following:
  * when sharingGroupV1V2
  */
 @SuppressWarnings("unused")

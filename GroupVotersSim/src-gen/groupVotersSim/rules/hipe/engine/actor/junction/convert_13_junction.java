@@ -103,8 +103,8 @@ public class convert_13_junction extends GenericJunctionActor{
 	}
 	
 	public boolean check_constraint_6(HMatch match, int index) {
-		GroupVoters.Voter1 v2 = (GroupVoters.Voter1) match.getNodes()[2];
 		GroupVoters.Voter1 v1 = (GroupVoters.Voter1) match.getNodes()[0];
+		GroupVoters.Voter1 v2 = (GroupVoters.Voter1) match.getNodes()[2];
 		boolean predicate = !v1.equals(v2) && v1.isVote()!=v2.isVote();
 		match.setConstraintSatisfied(index, predicate);
 		return predicate;

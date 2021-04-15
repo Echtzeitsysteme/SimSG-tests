@@ -56,8 +56,8 @@ public class agreeFalse_1_junction extends GenericJunctionActor{
 	}
 	
 	public boolean check_constraint_3(HMatch match, int index) {
-		GroupVoters.Voter1 v1 = (GroupVoters.Voter1) match.getNodes()[0];
 		GroupVoters.Voter1 v2 = (GroupVoters.Voter1) match.getNodes()[2];
+		GroupVoters.Voter1 v1 = (GroupVoters.Voter1) match.getNodes()[0];
 		boolean predicate = !v1.equals(v2);
 		match.setConstraintSatisfied(index, predicate);
 		return predicate;

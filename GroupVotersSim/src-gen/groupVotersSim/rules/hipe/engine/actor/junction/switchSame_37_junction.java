@@ -115,11 +115,11 @@ public class switchSame_37_junction extends GenericJunctionActor{
 	}
 	
 	public boolean check_constraint_8(HMatch match, int index) {
+		GroupVoters.Group g2 = (GroupVoters.Group) match.getNodes()[1];
 		GroupVoters.Group g1 = (GroupVoters.Group) match.getNodes()[3];
+		GroupVoters.Voter1 v3 = (GroupVoters.Voter1) match.getNodes()[0];
 		GroupVoters.Voter1 v2 = (GroupVoters.Voter1) match.getNodes()[4];
 		GroupVoters.Voter1 v1 = (GroupVoters.Voter1) match.getNodes()[2];
-		GroupVoters.Voter1 v3 = (GroupVoters.Voter1) match.getNodes()[0];
-		GroupVoters.Group g2 = (GroupVoters.Group) match.getNodes()[1];
 		boolean predicate = !g1.equals(g2) && !v1.equals(v3) && !v2.equals(v3) && v1.isVote()==v3.isVote();
 		match.setConstraintSatisfied(index, predicate);
 		return predicate;

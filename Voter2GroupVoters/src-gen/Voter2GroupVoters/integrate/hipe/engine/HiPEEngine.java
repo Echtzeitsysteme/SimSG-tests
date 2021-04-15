@@ -105,14 +105,22 @@ public class HiPEEngine implements IHiPEEngine{
 	public void loadNetwork() {
 		ResourceSet rs = new ResourceSetImpl();
 		String cp = "";
-		File file = new File(getClass().getProtectionDomain().getCodeSource().getLocation().getPath().toString() + getClass().getPackageName().replace(".", "/") + "/" + "hipe-network.xmi");
-				try {
-					 cp = file.getCanonicalPath();
-					 cp = cp.replace("%20", " ");
-				} catch (IOException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
+		
+		String path = getClass().getProtectionDomain().getCodeSource().getLocation().getPath().toString();
+		// fix that is necessary if executed in an eclipse plugin context
+		if(!path.contains("bin/"))
+			path += "bin/";
+		path += getClass().getPackageName().replace(".", "/") + "/" + "hipe-network.xmi";
+		
+		File file = new File(path);
+		
+		try {
+			 cp = file.getCanonicalPath();
+			 cp = cp.replace("%20", " ");
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		URI uri = URI.createFileURI(cp);
 		Resource r = rs.createResource(uri);
 

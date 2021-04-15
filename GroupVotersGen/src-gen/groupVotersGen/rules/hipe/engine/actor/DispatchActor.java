@@ -63,15 +63,6 @@ public class DispatchActor extends AbstractActor {
 	}
 	
 	private void initializeAdd() {
-		type2addConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1(), obj -> {
-			GroupVoters.Voter1 _voter1 = (GroupVoters.Voter1) obj;
-			incUtil.newMessage();
-			name2actor.get("Voter1_object_SP0").tell(new ObjectAdded<GroupVoters.Voter1>(incUtil, _voter1), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter1_object_SP1").tell(new ObjectAdded<GroupVoters.Voter1>(incUtil, _voter1), getSelf());
-			incUtil.newMessage();
-			name2actor.get("Voter1_object_SP2").tell(new ObjectAdded<GroupVoters.Voter1>(incUtil, _voter1), getSelf());
-		});
 		type2addConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getGroup(), obj -> {
 			GroupVoters.Group _group = (GroupVoters.Group) obj;
 			incUtil.newMessage();
@@ -81,17 +72,26 @@ public class DispatchActor extends AbstractActor {
 			incUtil.newMessage();
 			name2actor.get("Group_object_SP2").tell(new ObjectAdded<GroupVoters.Group>(incUtil, _group), getSelf());
 		});
+		type2addConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1(), obj -> {
+			GroupVoters.Voter1 _voter1 = (GroupVoters.Voter1) obj;
+			incUtil.newMessage();
+			name2actor.get("Voter1_object_SP0").tell(new ObjectAdded<GroupVoters.Voter1>(incUtil, _voter1), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_object_SP1").tell(new ObjectAdded<GroupVoters.Voter1>(incUtil, _voter1), getSelf());
+			incUtil.newMessage();
+			name2actor.get("Voter1_object_SP2").tell(new ObjectAdded<GroupVoters.Voter1>(incUtil, _voter1), getSelf());
+		});
 	}
 	
 	private void initializeSet() {
 		feature2setConsumer.put(GroupVoters.GroupVotersPackage.eINSTANCE.getVoter1_Vote(), notification -> {
 			if(notification.getNotifier() instanceof GroupVoters.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_object_SP2").tell(new AttributeChanged<GroupVoters.Voter1>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+				name2actor.get("Voter1_object_SP0").tell(new AttributeChanged<GroupVoters.Voter1>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 			if(notification.getNotifier() instanceof GroupVoters.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_object_SP0").tell(new AttributeChanged<GroupVoters.Voter1>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+				name2actor.get("Voter1_object_SP2").tell(new AttributeChanged<GroupVoters.Voter1>(incUtil, (GroupVoters.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 			if(notification.getNotifier() instanceof GroupVoters.Voter1) {
 				incUtil.newMessage();

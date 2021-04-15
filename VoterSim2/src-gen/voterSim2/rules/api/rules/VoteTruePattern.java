@@ -14,7 +14,7 @@ import voterSim2.rules.api.matches.VoteTrueMatch;
 import voterSim2.rules.api.RulesAPI;
 
 /**
- * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@3383625f (name: v)] which does the following:
+ * The pattern [org.emoflon.ibex.patternmodel.IBeXPatternModel.impl.IBeXNodeImpl@4926b2a (name: v)] which does the following:
  * If this pattern is not self-explaining, you really should add some comment in the specification.
  */
 @SuppressWarnings("unused")

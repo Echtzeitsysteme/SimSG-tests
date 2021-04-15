@@ -76,11 +76,11 @@ public class DispatchActor extends AbstractActor {
 		feature2setConsumer.put(Voter.VoterPackage.eINSTANCE.getVoter1_Vote(), notification -> {
 			if(notification.getNotifier() instanceof Voter.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_object_SP1").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+				name2actor.get("Voter1_object_SP0").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 			if(notification.getNotifier() instanceof Voter.Voter1) {
 				incUtil.newMessage();
-				name2actor.get("Voter1_object_SP0").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
+				name2actor.get("Voter1_object_SP1").tell(new AttributeChanged<Voter.Voter1>(incUtil, (Voter.Voter1) notification.getNotifier(), notification.getOldValue()), getSelf());
 			}
 		});
 		

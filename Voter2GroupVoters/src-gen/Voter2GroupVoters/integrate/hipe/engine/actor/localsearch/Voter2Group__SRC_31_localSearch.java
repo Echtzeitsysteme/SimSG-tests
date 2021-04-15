@@ -82,17 +82,19 @@ public class Voter2Group__SRC_31_localSearch extends GenericLocalSearchActor{
 		Object[] objs = match.getNodes();
 		switch(msg.patternName) {
 			case "Voter2Group__SRC_32": 
-				edge_explorer.registerSourceObject(objs[0]);
-				
-				// v
-				HMatch match_0 = new LocalSearchMatch(2);
-				match_0.getNodes()[0] = objs[0];
-				start(edge_explorer_1_orchestration, match_0);
-				
-				// v2
-				HMatch match_1 = new LocalSearchMatch(2);
-				match_1.getNodes()[1] = objs[0];
-				start(edge_explorer_2_orchestration, match_1);
+				if(true) {
+					edge_explorer.registerSourceObject(objs[0]);
+					
+					// v
+					HMatch match_0 = new LocalSearchMatch(2);
+					match_0.getNodes()[0] = objs[0];
+					start(edge_explorer_1_orchestration, match_0);
+					
+					// v2
+					HMatch match_1 = new LocalSearchMatch(2);
+					match_1.getNodes()[1] = objs[0];
+					start(edge_explorer_2_orchestration, match_1);
+				}
 				break;
 			default: throw new RuntimeException("Detected unknown match from " + msg.patternName);
 		}

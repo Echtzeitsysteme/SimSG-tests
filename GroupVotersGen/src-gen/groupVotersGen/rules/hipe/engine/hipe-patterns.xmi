@@ -23,10 +23,10 @@
       <invocationNodeMap xmi:type="HiPEPattern:HiPENodeToHiPENodeMap" key="//@nodes.16" value="//@nodes.10"/>
     </patternInvocations>
   </patterns>
-  <patterns xmi:type="HiPEPattern:HiPEPattern" name="newMembership" partialPatterns="//@patterns.42" nodes="//@nodes.18 //@nodes.17" children="//@patterns.42 //@patterns.43 //@patterns.44 //@patterns.45">
+  <patterns xmi:type="HiPEPattern:HiPEPattern" name="newMembership" partialPatterns="//@patterns.42" nodes="//@nodes.17 //@nodes.18" children="//@patterns.42 //@patterns.43 //@patterns.44 //@patterns.45">
     <patternInvocations xmi:type="HiPEPattern:HiPEPatternInvocation" invokedPattern="//@patterns.2" positive="false">
-      <invocationNodeMap xmi:type="HiPEPattern:HiPENodeToHiPENodeMap" key="//@nodes.17" value="//@nodes.7"/>
-      <invocationNodeMap xmi:type="HiPEPattern:HiPENodeToHiPENodeMap" key="//@nodes.18" value="//@nodes.6"/>
+      <invocationNodeMap xmi:type="HiPEPattern:HiPENodeToHiPENodeMap" key="//@nodes.17" value="//@nodes.6"/>
+      <invocationNodeMap xmi:type="HiPEPattern:HiPENodeToHiPENodeMap" key="//@nodes.18" value="//@nodes.7"/>
     </patternInvocations>
   </patterns>
   <patterns xmi:type="HiPEPattern:HiPEPattern" name="trueMemberVG" partialPatterns="//@patterns.46" attributes="//@attributes.14 //@attributes.15" nodes="//@nodes.19 //@nodes.20" edges="//@edges.8" children="//@patterns.46 //@patterns.47 //@patterns.48"/>
@@ -62,10 +62,10 @@
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="homGroupFalse_27" nodes="//@nodes.15" parentPattern="//@patterns.38" invokedNodes="//@nodes.15" patternType="NODE" rootPattern="//@patterns.6"/>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="homGroupTrue_28" partialPatterns="//@patterns.41 //@patterns.31" nodes="//@nodes.16" parentPattern="//@patterns.7" positive="false" invokedNodes="//@nodes.16" invocation="//@patterns.7/@patternInvocations.0" patternType="NODE" rootPattern="//@patterns.7"/>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="homGroupTrue_29" nodes="//@nodes.16" parentPattern="//@patterns.40" invokedNodes="//@nodes.16" patternType="NODE" rootPattern="//@patterns.7"/>
-  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="newMembership_30" partialPatterns="//@patterns.43 //@patterns.25" nodes="//@nodes.18 //@nodes.17" parentPattern="//@patterns.8" positive="false" invokedNodes="//@nodes.18 //@nodes.17" invocation="//@patterns.8/@patternInvocations.0" rootPattern="//@patterns.8"/>
-  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="newMembership_31" partialPatterns="//@patterns.44 //@patterns.45" nodes="//@nodes.18 //@nodes.17" parentPattern="//@patterns.42" invokedNodes="//@nodes.18 //@nodes.17" rootPattern="//@patterns.8"/>
-  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="newMembership_32" nodes="//@nodes.18" parentPattern="//@patterns.43" invokedNodes="//@nodes.18" patternType="NODE" rootPattern="//@patterns.8"/>
-  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="newMembership_33" nodes="//@nodes.17" parentPattern="//@patterns.43" invokedNodes="//@nodes.17" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="newMembership_30" partialPatterns="//@patterns.43 //@patterns.25" nodes="//@nodes.17 //@nodes.18" parentPattern="//@patterns.8" positive="false" invokedNodes="//@nodes.17 //@nodes.18" invocation="//@patterns.8/@patternInvocations.0" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="newMembership_31" partialPatterns="//@patterns.44 //@patterns.45" nodes="//@nodes.17 //@nodes.18" parentPattern="//@patterns.42" invokedNodes="//@nodes.17 //@nodes.18" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="newMembership_32" nodes="//@nodes.17" parentPattern="//@patterns.43" invokedNodes="//@nodes.17" patternType="NODE" rootPattern="//@patterns.8"/>
+  <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="newMembership_33" nodes="//@nodes.18" parentPattern="//@patterns.43" invokedNodes="//@nodes.18" patternType="NODE" rootPattern="//@patterns.8"/>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="trueMemberVG_34" partialPatterns="//@patterns.47 //@patterns.48" nodes="//@nodes.20 //@nodes.19" edges="//@edges.8" parentPattern="//@patterns.9" invokedNodes="//@nodes.20 //@nodes.19" patternType="EDGE" rootPattern="//@patterns.9"/>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="trueMemberVG_35" attributeConstraints="//@attributeConstraints.7" attributes="//@attributes.14 //@attributes.15" nodes="//@nodes.20" parentPattern="//@patterns.46" invokedNodes="//@nodes.20" patternType="NODE" rootPattern="//@patterns.9"/>
   <patterns xmi:type="HiPEPattern:HiPEPartialPattern" name="trueMemberVG_36" nodes="//@nodes.19" parentPattern="//@patterns.46" invokedNodes="//@nodes.19" patternType="NODE" rootPattern="//@patterns.9"/>
@@ -83,43 +83,43 @@
   <attributeConstraints xmi:type="HiPEPattern:RelationalConstraint" abstractPatterns="//@patterns.47" targetPatterns="//@patterns.46" leftAttribute="//@attributes.14" rightAttribute="//@attributes.15"/>
   <attributeConstraints xmi:type="HiPEPattern:RelationalConstraint" abstractPatterns="//@patterns.49" targetPatterns="//@patterns.11" leftAttribute="//@attributes.16" rightAttribute="//@attributes.17"/>
   <attributeConstraints xmi:type="HiPEPattern:RelationalConstraint" abstractPatterns="//@patterns.50" targetPatterns="//@patterns.12" leftAttribute="//@attributes.18" rightAttribute="//@attributes.19"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.2" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.0 //@patterns.18">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.2" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.0 //@patterns.18">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="false" abstractPatterns="//@patterns.0 //@patterns.18"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.1" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.0 //@patterns.16">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.1" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.0 //@patterns.16">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="false" abstractPatterns="//@patterns.0 //@patterns.16"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.5" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.1 //@patterns.24">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.5" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.1 //@patterns.24">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="false" abstractPatterns="//@patterns.1 //@patterns.24"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.4" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.1 //@patterns.22">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.4" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.1 //@patterns.22">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="true" abstractPatterns="//@patterns.1 //@patterns.22"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.9" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.3 //@patterns.29">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.9" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.3 //@patterns.29">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="false" abstractPatterns="//@patterns.3 //@patterns.29"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.11" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.4 //@patterns.32">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.11" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.4 //@patterns.32">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="false" abstractPatterns="//@patterns.4 //@patterns.32"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.14" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.10 //@patterns.35">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.14" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.10 //@patterns.35">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="true" abstractPatterns="//@patterns.10 //@patterns.35"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.20" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.9 //@patterns.47">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.20" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.9 //@patterns.47">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="true" abstractPatterns="//@patterns.9 //@patterns.47"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.21" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.11 //@patterns.49">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.21" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.11 //@patterns.49">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="false" abstractPatterns="//@patterns.11 //@patterns.49"/>
-  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.22" value="org.eclipse.emf.ecore.impl.EAttributeImpl@7ad32331 (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.12 //@patterns.50">
+  <attributes xmi:type="HiPEPattern:HiPEAttribute" node="//@nodes.22" value="org.eclipse.emf.ecore.impl.EAttributeImpl@138bab5e (name: vote) (ordered: true, unique: true, lowerBound: 0, upperBound: 1) (changeable: true, volatile: false, transient: false, defaultValueLiteral: null, unsettable: false, derived: false) (iD: false)" abstractPatterns="//@patterns.12 //@patterns.50">
     <eAttribute xmi:type="ecore:EAttribute" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1/vote"/>
   </attributes>
   <attributes xmi:type="HiPEPattern:HiPEAttribute" value="true" abstractPatterns="//@patterns.12 //@patterns.50"/>
@@ -174,11 +174,11 @@
   <nodes xmi:type="HiPEPattern:HiPENode" name="g" abstractPatterns="//@patterns.7 //@patterns.40 //@patterns.41" invokingPartialPatterns="//@patterns.40 //@patterns.41">
     <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
   </nodes>
-  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.8 //@patterns.42 //@patterns.43 //@patterns.45" invokingPartialPatterns="//@patterns.42 //@patterns.43 //@patterns.45">
-    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
-  </nodes>
   <nodes xmi:type="HiPEPattern:HiPENode" name="g" abstractPatterns="//@patterns.8 //@patterns.42 //@patterns.43 //@patterns.44" invokingPartialPatterns="//@patterns.42 //@patterns.43 //@patterns.44">
     <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
+  </nodes>
+  <nodes xmi:type="HiPEPattern:HiPENode" name="v" abstractPatterns="//@patterns.8 //@patterns.42 //@patterns.43 //@patterns.45" invokingPartialPatterns="//@patterns.42 //@patterns.43 //@patterns.45">
+    <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Voter1"/>
   </nodes>
   <nodes xmi:type="HiPEPattern:HiPENode" name="g" abstractPatterns="//@patterns.9 //@patterns.46 //@patterns.48" invokingPartialPatterns="//@patterns.46 //@patterns.48">
     <type xmi:type="ecore:EClass" href="platform:/resource/GroupVoters/model/GroupVoters.ecore#//Group"/>
